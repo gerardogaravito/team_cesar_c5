@@ -1,0 +1,28 @@
+//------------------------------ Colors
+$main-color: #f0a500;
+$main-lighter-color: #ffd649;
+$second-color: #263238;
+$background-color: #f4f4f4;
+$text-color: #000a12;
+//-- Borders
+$main-border: 2px solid $second-color;
+$second-border: 4px solid $main-color;
+//-- Shadows
+$box-shadow: 0 4px 0 $second-color;
+
+//------------------------------ Fonts
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+$font-family: "Montserrat", sans-serif;
+$size-xs: 18px;
+$size-s: 24px;
+$size-m: 36px;
+$size-l: 48px;
+$size-xl: 68px;
+$size-xxl: 144px;
+
+//------------------------------ Spacing
+$space: 8px;
+$space2: 20px;
+$space3: 30px;
+$space4: 40px;
+$border-radius: 10px;

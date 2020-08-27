@@ -1,0 +1,21 @@
+//------------------------------ import scss
+@import "./tokens.scss";
+
+//------------------------------ Styles
+.icon {
+  margin: 0 $space;
+  padding: $space;
+  border-radius: 50%;
+  border: $main-border;
+  color: $second-color;
+  font-size: $size-s;
+  box-shadow: $box-shadow;
+  &--active {
+    @extend .icon;
+    background-color: $main-color;
+  }
+  &--inactive {
+    @extend .icon;
+    background-color: $background-color;
+  }
+}
