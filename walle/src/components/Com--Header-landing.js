@@ -11,7 +11,7 @@ class HeaderLanding extends Component {
       <Fragment>
         <header className="Header">
           <img className="Header__brand" src={Logo} alt="Logo de Walle" />
-          <div className="HeaderLanding__nav">
+          <div className="Header__nav">
             <button className="second-button">Login</button>
             <button className="main-button">Registro</button>
           </div>
