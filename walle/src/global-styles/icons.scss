@@ -10,6 +10,7 @@
   color: $second-color;
   font-size: $size-icons;
   box-shadow: $box-shadow;
+  cursor: pointer;
 
   &--active {
     @extend .icon;
