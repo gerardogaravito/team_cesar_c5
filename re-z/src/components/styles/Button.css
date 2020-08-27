@@ -8,6 +8,7 @@
   width: 214px;
   height: 63px;
   border-radius: 20px;
+  outline: inherit;
 }
 
 .button:hover {
