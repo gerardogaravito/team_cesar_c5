@@ -6,10 +6,10 @@ import fotoComida from '../images/fotoComida.jpg'; //se trae la imagen y la guar
 class RecipeCardHorizontalSimple extends React.Component {
   render() {
     return <div className='card'>
-      <img className='card__image' src={fotoComida} alt="Foto de Comida"/>
       <div className='banner'>
         <h1 className='banner__title'>Lorem Ipsum 36</h1>
       </div>
+      <img className='card__image' src={fotoComida} alt="Foto de Comida"/>
     </div>
   }
 }
