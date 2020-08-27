@@ -1,0 +1,27 @@
+//------------------------------ import scss
+@import "./tokens.scss";
+
+//------------------------------ Styles
+.button {
+  border-radius: $border-radius;
+  border: $main-border;
+  color: $second-color;
+  font-family: $font-family;
+  font-size: $size-xs;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.main-button {
+  @extend .button;
+  padding: $space $space3;
+  background-color: $main-color;
+  box-shadow: $box-shadow;
+}
+
+.second-button {
+  @extend .button;
+  padding: $space $space4;
+  margin-right: $space2;
+  background-color: $background-color;
+}

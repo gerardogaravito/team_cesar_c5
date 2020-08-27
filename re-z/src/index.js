@@ -1,17 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+import Button from './components/Button'
+import RecipeCardHorizontalSimple from './components/RecipeCardHorizontalSimple'
+// ---las librerías de abajo venían con create-react-app, aun no las sé usar entonces las comenté---
+//import './index.css';
+// import App from './App';
+// import * as serviceWorker from './serviceWorker';
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+
+
+const container = document.getElementById('app');
+
+// ReactDOM.render( qué, dónde)
+// ReactDOM.render( <elemento/>, dónde)
+ReactDOM.render(<RecipeCardHorizontalSimple/>, container);
