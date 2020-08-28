@@ -1,0 +1,24 @@
+//------------------------------ import scss
+@import "./tokens.scss";
+
+//------------------------------ Styles
+h1 {
+  font-size: $size-xxl;
+  background: $gradien-title;
+  color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-stroke-width: 5px;
+  -webkit-text-stroke-color: $second-color;
+}
+
+h2 {
+  font-size: $size-l;
+}
+
+h3 {
+  font-size: $size-m;
+}
+
+p {
+  font-size: $size-xs;
+}

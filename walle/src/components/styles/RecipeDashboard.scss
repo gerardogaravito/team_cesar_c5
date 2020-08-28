@@ -1,6 +1,6 @@
 //------------------------------ import
 @import "../../global-styles//tokens.scss";
-
+@import "../../global-styles/typo.scss";
 //------------------------------ Styles
 .Dashboard {
   display: grid;
@@ -15,7 +15,6 @@
     grid-column: 1 / -1;
     grid-row: 1 / 2;
     align-self: center;
-    font-size: $size-l;
   }
 
   &__text {

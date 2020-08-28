@@ -1,5 +1,6 @@
 //------------------------------ import scss
 @import "../../global-styles/tokens.scss";
+@import "../../global-styles/typo.scss";
 @import "../../global-styles/buttons.scss";
 
 //------------------------------ Styles
@@ -15,17 +16,6 @@
   background-blend-mode: normal, lighten, normal;
   background-size: cover;
   background-position: center;
-
-  &__title {
-    position: relative;
-    font-size: $size-xxl;
-    font-weight: bold;
-    background: $gradien-title;
-    color: transparent;
-    -webkit-background-clip: text;
-    -webkit-text-stroke-width: 5px;
-    -webkit-text-stroke-color: $second-color;
-  }
 
   &__description {
     display: flex;

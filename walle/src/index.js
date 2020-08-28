@@ -7,8 +7,9 @@ import ReactDOM from "react-dom";
 // import MainHero from "./components/Com--Main-hero";
 // import SearchHero from "./components/Com--Search-hero";
 // import Footer from "./components/Com--Footer";
-import RecipeDashboard from "./components/Com--Recipes-dashboard";
+// import RecipeDashboard from "./components/Com--Recipes-dashboard";
+import IngredientCarrousel from "./components/Com--Ingredient-carrousel";
 
 //------------------------------ import styles and images
 
-ReactDOM.render(<RecipeDashboard />, document.getElementById("root"));
+ReactDOM.render(<IngredientCarrousel />, document.getElementById("root"));
