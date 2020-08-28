@@ -1,0 +1,32 @@
+//------------------------------ import
+@import "../../global-styles/Globalstyles.scss";
+
+//------------------------------ Styles
+.CardDashboard {
+  @extend .CardStyles;
+  position: relative;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 60%,
+    rgba(255, 255, 255, 0.5) 100%
+  );
+  background-blend-mode: normal, lighten, normal;
+
+  &__img {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__name {
+    position: absolute;
+    bottom: $space;
+    left: $space;
+    color: $background-color;
+    font-size: $size-s;
+    font-weight: bold;
+    -webkit-text-stroke: 1px $second-color;
+  }
+}
