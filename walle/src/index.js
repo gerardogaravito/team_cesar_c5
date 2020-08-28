@@ -9,8 +9,9 @@ import ReactDOM from "react-dom";
 // import Footer from "./components/Com--Footer";
 // import RecipeDashboard from "./components/Com--Recipes-dashboard";
 // import IngredientCarrousel from "./components/Com--Ingredient-carrousel";
-import RecipeCarrousel from "./components/Com--Recipe-carrousel";
+// import RecipeCarrousel from "./components/Com--Recipe-carrousel";
+import RecommendationCarrousel from "./components/Com--Recomendations-carrousel";
 
 //------------------------------ import styles and images
 
-ReactDOM.render(<RecipeCarrousel />, document.getElementById("root"));
+ReactDOM.render(<RecommendationCarrousel />, document.getElementById("root"));
