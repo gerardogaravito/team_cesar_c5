@@ -2,23 +2,14 @@
 @import "../../global-styles/Globalstyles.scss";
 
 //------------------------------ Styles
-.Header {
+.Footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: $space2 $space4;
+  background-color: $second-color;
+
   &__brand {
     width: 150px;
-  }
-  &__nav {
-    display: flex;
-    align-items: center;
-  }
-  &__img {
-    width: 100px;
-    height: 100px;
-    margin-left: $space;
-    border-radius: 50%;
-    border: $second-border;
-    object-fit: cover;
   }
 }

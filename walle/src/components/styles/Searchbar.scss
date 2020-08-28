@@ -1,0 +1,25 @@
+//------------------------------ import scss
+@import "../../global-styles/Globalstyles.scss";
+
+//------------------------------ Styles
+.Search-bar {
+  width: 60%;
+  height: $space4;
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-top: $space;
+
+  &__input {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: $space4;
+    padding-left: $space4;
+    color: $text-color;
+    font-size: $size-xs;
+    border: $main-border;
+    border-radius: $space4;
+  }
+}

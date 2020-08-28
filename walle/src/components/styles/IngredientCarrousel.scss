@@ -1,0 +1,13 @@
+//------------------------------ import scss
+@import "../../global-styles/Globalstyles.scss";
+
+//------------------------------ Styles
+.Ingredient-carrousel {
+  &__title {
+    margin-bottom: $space2;
+  }
+  &__cards {
+    display: flex;
+    justify-content: space-between;
+  }
+}

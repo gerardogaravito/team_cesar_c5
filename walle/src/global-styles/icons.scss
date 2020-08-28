@@ -8,14 +8,29 @@
   border-radius: 50%;
   border: $main-border;
   color: $second-color;
-  font-size: $size-s;
+  font-size: $size-icons;
   box-shadow: $box-shadow;
+  cursor: pointer;
+
   &--active {
     @extend .icon;
     background-color: $main-color;
   }
+
   &--inactive {
     @extend .icon;
     background-color: $background-color;
+  }
+
+  &--search {
+    @extend .icon;
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    height: $space4;
+    width: $space4;
+    margin: 0;
+    box-shadow: none;
+    background-color: $main-color;
   }
 }

@@ -9,6 +9,12 @@ $main-border: 2px solid $second-color;
 $second-border: 4px solid $main-color;
 //-- Shadows
 $box-shadow: 0 4px 0 $second-color;
+//-- Gradients
+$gradien-title: linear-gradient(
+  90deg,
+  rgba(240, 165, 0, 1) 0%,
+  rgba(255, 214, 73, 1) 46%
+);
 
 //------------------------------ Fonts
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
@@ -19,6 +25,7 @@ $size-m: 36px;
 $size-l: 48px;
 $size-xl: 68px;
 $size-xxl: 144px;
+$size-icons: 45px;
 
 //------------------------------ Spacing
 $space: 8px;
