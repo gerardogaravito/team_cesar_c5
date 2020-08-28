@@ -1,0 +1,40 @@
+//------------------------------ import scss
+@import "../../global-styles/Globalstyles.scss";
+
+//------------------------------ Styles
+.RecommendationCard {
+  @extend .CardStyles;
+  overflow: hidden;
+  padding: $space;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  &__img {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    border-radius: $border-radius;
+  }
+
+  &__title {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 60%;
+      height: 2px;
+      left: 50%;
+      bottom: -$space;
+      transform: translate(-50%);
+      background-color: $main-color;
+    }
+  }
+
+  &__text {
+    text-align: center;
+    font-size: $size-xs;
+  }
+}
