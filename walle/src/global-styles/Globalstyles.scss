@@ -1,0 +1,18 @@
+@import "./tokens.scss";
+@import "./typo.scss";
+@import "./buttons.scss";
+@import "./icons.scss";
+
+//------------------------------ styles restart
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $font-family;
+}
+
+.CardStyles {
+  border-radius: $border-radius;
+  border: $main-border;
+  box-shadow: $box-shadow;
+}

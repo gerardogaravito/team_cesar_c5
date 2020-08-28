@@ -6,11 +6,9 @@ import { FaTwitter, FaFacebookF, FaInstagram } from "react-icons/fa";
 
 //------------------------------ import styles and images
 import "./styles/Footer.scss";
-import "../global-styles/buttons.scss";
-import "../global-styles/icons.scss";
 import Logo from "../images/logo-walle.png";
 
-const Footer = (props) => {
+const Footer = () => {
   return (
     <Fragment>
       <footer className="Footer">

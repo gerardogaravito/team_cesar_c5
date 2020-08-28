@@ -1,11 +1,11 @@
 //------------------------------ import
-@import "../../global-styles//tokens.scss";
-@import "../../global-styles/typo.scss";
+@import "../../global-styles/Globalstyles.scss";
+
 //------------------------------ Styles
 .Dashboard {
-  display: grid;
   height: 600px;
   width: 60%;
+  display: grid;
   margin: 0 auto;
   grid-template-columns: 26% 23% 5% 23% 23%;
   grid-template-rows: 18% 22% 18% 32% 10%;
@@ -23,6 +23,7 @@
   }
 }
 
+//------------------------------ Layout placement
 .card1 {
   grid-column: 4 / span 1;
   grid-row: 2 / span 2;
@@ -44,45 +45,11 @@
 }
 
 .card5 {
-  grid-column: 2 / span 2;
+  grid-column: 2 / span 1;
   grid-row: 4 / span 1;
 }
 
 .card6 {
-  grid-column: 4 / span 1;
+  grid-column: 3 / span 2;
   grid-row: 4 / span 1;
-}
-
-.CardDashboard {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  border-radius: $border-radius;
-  border: $main-border;
-  box-shadow: $box-shadow;
-  overflow: hidden;
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0) 60%,
-    rgba(255, 255, 255, 0.5) 100%
-  );
-  background-blend-mode: normal, lighten, normal;
-
-  &__img {
-    position: absolute;
-    z-index: -1;
-    width: 100%;
-  }
-
-  &__title {
-    position: absolute;
-    bottom: $space;
-    left: $space;
-    color: $background-color;
-    font-size: $size-s;
-    font-weight: bold;
-    -webkit-background-clip: text;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: $second-color;
-  }
 }

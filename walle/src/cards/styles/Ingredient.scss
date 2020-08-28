@@ -1,20 +1,20 @@
 //------------------------------ import scss
-@import "../../global-styles/tokens.scss";
-@import "../../global-styles/typo.scss";
+@import "../../global-styles/Globalstyles.scss";
 
 //------------------------------ Styles
 .Ingredient-card {
+  @extend .CardStyles;
+  position: relative;
   width: 250px;
   height: 80px;
   overflow: hidden;
-  position: relative;
-  border-radius: $border-radius;
-  border: $main-border;
-  box-shadow: $box-shadow;
+
   &__img {
     width: 100%;
-    transform: translateY(-50%);
+    height: 100%;
+    object-fit: cover;
   }
+
   &__name {
     position: absolute;
     top: 50%;
@@ -23,7 +23,6 @@
     font-size: $size-m;
     font-weight: bold;
     -webkit-background-clip: text;
-    -webkit-text-stroke-width: 0.5px;
-    -webkit-text-stroke-color: $background-color;
+    -webkit-text-stroke: 0.5px $background-color;
   }
 }
