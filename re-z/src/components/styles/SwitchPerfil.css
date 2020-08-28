@@ -37,7 +37,7 @@ input[type="checkbox"]:before{
     left: 0;
     background: #FFBC42;
     transform: translate(2px, 2px);
-    transition: .5s;
+    transition: .2s;
 }
 input:checked[type="checkbox"]:before{
     left: 29px;
@@ -54,6 +54,7 @@ input:checked[type="checkbox"]:before{
     align-items: flex-end;
     top: 54px;
     right: 1px;
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.25));
 }
 .perfilMenu a{
     color: #FFBC42;
@@ -61,4 +62,8 @@ input:checked[type="checkbox"]:before{
     font-size: 20px;
     padding-right: 15px;
     padding-top: 22px;
+}
+.perfilMenu a:hover{
+    font-size: 22px;
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.25));
 }
