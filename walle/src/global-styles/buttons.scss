@@ -31,3 +31,19 @@
   margin-right: $space2;
   background-color: $background-color;
 }
+
+.recipe-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  margin-left: $space;
+  padding: $space 0;
+  border-radius: $border-radius;
+  border: $main-border;
+  color: $second-color;
+  background-color: $background-color;
+}
+.recipe-button > p {
+  margin-right: $space;
+}
