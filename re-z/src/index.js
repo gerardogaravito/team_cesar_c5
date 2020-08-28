@@ -17,5 +17,4 @@ const container = document.getElementById('app');
 
 // ReactDOM.render( qué, dónde)
 // ReactDOM.render( <elemento/>, dónde)
-ReactDOM.render(<Button/>, container);
-ReactDOM.render(<FooterA/>, container);
+ReactDOM.render(<RecipeCardHorizontalSimple/>, container);
