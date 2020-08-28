@@ -1,8 +1,7 @@
 .SwtchContainer{
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 18px;
+    right: 68px;
     display: flex;
 }
 .SwtchContainer img{
@@ -11,6 +10,7 @@
     width: 30px;
     transform: translate(2px, 2px);
     z-index: 1;
+    cursor: pointer;
 }
 input[type="checkbox"]{
     position: relative;
@@ -24,16 +24,41 @@ input[type="checkbox"]{
     transition: .5s;
 }
 input:checked[type="checkbox"]{
-    background: black;
+    background: #218380;
 
 }
-input:checked[type="checkbox"]:before{
-    content: '';
+input[type="checkbox"]:before{
+    content: "";
     position: absolute;
     height: 30px;
     width: 30px;
     border-radius: 20px;
     top: 0;
     left: 0;
+    background: #FFBC42;
+    transform: translate(2px, 2px);
+    transition: .5s;
+}
+input:checked[type="checkbox"]:before{
+    left: 29px;
+}
 
+.perfilMenu{
+    background: #218380;
+    width: 226px;
+    height: 225px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    align-items: flex-end;
+    top: 54px;
+    right: 1px;
+}
+.perfilMenu a{
+    color: #FFBC42;
+    text-decoration: none;
+    font-size: 20px;
+    padding-right: 15px;
+    padding-top: 22px;
 }
