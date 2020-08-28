@@ -4,6 +4,7 @@ import './global.css';
 
 import Button from './components/Button'
 import RecipeCardHorizontalSimple from './components/RecipeCardHorizontalSimple'
+import RecipeCardHorizontalDerecha from './components/RecipeCardHorizontalDerecha'
 
 // ---las librerías de abajo venían con create-react-app, aun no las sé usar entonces las comenté---
 // import App from './App';
@@ -15,4 +16,4 @@ const container = document.getElementById('app');
 
 // ReactDOM.render( qué, dónde)
 // ReactDOM.render( <elemento/>, dónde)
-ReactDOM.render(<Button/>, container);
+ReactDOM.render(<RecipeCardHorizontalDerecha/>, container);
