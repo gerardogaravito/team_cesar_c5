@@ -5,6 +5,7 @@ import './global.css';
 import Button from './components/Button'
 import RecipeCardHorizontalSimple from './components/RecipeCardHorizontalSimple'
 import FooterA from './components/FooterA'
+import RecipeCardHorizontalDerecha from './components/RecipeCardHorizontalDerecha'
 
 // ---las librerías de abajo venían con create-react-app, aun no las sé usar entonces las comenté---
 // import App from './App';

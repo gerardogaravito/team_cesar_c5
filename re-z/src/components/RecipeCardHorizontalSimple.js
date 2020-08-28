@@ -1,15 +1,15 @@
 import React from 'react';
 
 import "./styles/RecipeCardHorizontalSimple.css" // traer los estilos
-import fotoComida from '../images/fotoComida.jpg'; //se trae la imagen y la guarda en la variable fotoComida
+import fotoComida from '../images/fotoComida.png'; //se trae la imagen y la guarda en la variable fotoComida
 
 class RecipeCardHorizontalSimple extends React.Component {
   render() {
-    return <div className='card'>
-      <div className='banner'>
-        <h1 className='banner__title'>Lorem Ipsum 36</h1>
+    return <div className='cardsimple'>
+      <div className='cardsimple__info'>
+        <h1 className='cardsimple__info--title'>Lorem Ipsum 36</h1>
       </div>
-      <img className='card__image' src={fotoComida} alt="Foto de Comida"/>
+      <img className='cardsimple__image' src={fotoComida} alt="Foto de Comida"/>
     </div>
   }
 }
