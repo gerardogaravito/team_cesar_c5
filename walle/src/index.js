@@ -6,8 +6,9 @@ import ReactDOM from "react-dom";
 // import HeaderLanding from "./components/Com--Header-landing";
 // import MainHero from "./components/Com--Main-hero";
 // import SearchHero from "./components/Com--Search-hero";
-import Footer from "./components/Com--Footer";
+// import Footer from "./components/Com--Footer";
+import RecipeDashboard from "./components/Com--Recipes-dashboard";
 
 //------------------------------ import styles and images
 
-ReactDOM.render(<Footer />, document.getElementById("root"));
+ReactDOM.render(<RecipeDashboard />, document.getElementById("root"));
