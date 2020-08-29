@@ -1,0 +1,25 @@
+//------------------------------ import scss
+@import "./tokens.scss";
+
+//------------------------------ import styles
+.input {
+  display: flex;
+  flex-direction: column;
+  margin-right: $space;
+  flex-grow: 1;
+
+  &-text {
+    margin-bottom: $space;
+    padding: 5px;
+    font-size: $size-xs;
+    border-radius: $border-radius;
+    border: $main-border;
+    background-color: $background-color;
+  }
+
+  &-label {
+    color: $second-color;
+    font-weight: bold;
+    margin-bottom: $space;
+  }
+}
