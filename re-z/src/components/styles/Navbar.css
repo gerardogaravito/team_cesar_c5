@@ -1,0 +1,20 @@
+.Navbar{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.styles-log{
+    width: 90px;
+    height: 35px;
+}
+.styles-log img{
+    width: 90px;
+    height: 35px;
+    padding-left: 58px;
+}
