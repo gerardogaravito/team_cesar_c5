@@ -12,7 +12,22 @@
     z-index: 1;
     cursor: pointer;
 }
-input[type="checkbox"]{
+.perfil-btn{
+    position: relative;
+    width: 63px;
+    height: 34px;
+    appearance: none;
+    background: #8F2D56;
+    outline: none;
+    border-radius: 20px;
+    box-shadow: inset 0 0 5px rgba(0,0,0,.2);
+}
+.perfil-btn img{
+    animation-name: open;
+
+}
+
+/* input[type="checkbox"]{
     position: relative;
     width: 63px;
     height: 34px;
@@ -41,7 +56,7 @@ input[type="checkbox"]:before{
 }
 input:checked[type="checkbox"]:before{
     left: 29px;
-}
+} */
 
 .perfilMenu{
     background: #218380;
@@ -66,4 +81,17 @@ input:checked[type="checkbox"]:before{
 .perfilMenu a:hover{
     font-size: 22px;
     filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.25));
+}
+.close-btn{
+position: absolute;
+}
+.close-btn button{
+    background: none;
+}
+.close-btn button img{
+    position: relative;
+    top: 0px;
+    right: 65px;
+    z-index: 2;
+
 }
