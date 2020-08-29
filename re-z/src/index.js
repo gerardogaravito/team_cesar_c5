@@ -14,6 +14,7 @@ import Search from './components/Search'
 // import App from './App';
 // import * as serviceWorker from './serviceWorker';
 import Navbar from "./components/Navbar"
+import Home from "./components/page/Home"
 
 
 const container = document.getElementById('app');
@@ -25,4 +26,5 @@ const container = document.getElementById('app');
 /* ReactDOM.render(<Button/>, container); */
 /* ReactDOM.render(<FooterA/>, container); */
 /* ReactDOM.render(<Search/>, container); */
-ReactDOM.render(<Navbar/>, container);
+/* ReactDOM.render(<Navbar/>, container); */
+ReactDOM.render(<Home/>, container);
