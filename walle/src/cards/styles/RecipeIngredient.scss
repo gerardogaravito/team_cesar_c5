@@ -11,7 +11,7 @@
     position: relative;
     display: flex;
     align-items: center;
-    padding-left: $space3;
+    padding-left: $space4;
 
     &::before {
       content: "";
@@ -29,7 +29,7 @@
       right: 0;
       top: 50%;
       height: 2px;
-      width: calc(100% - 40px);
+      width: calc(100% - 30px);
       transform: translateY(-50%);
       background-color: $second-color;
       opacity: 0;
@@ -38,7 +38,6 @@
   }
 
   &__cant {
-    margin-left: $space;
     color: $main-color;
     font-size: $size-m;
     font-weight: bold;

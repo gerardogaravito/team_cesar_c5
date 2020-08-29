@@ -10,7 +10,7 @@ const RecipeIngredientItem = (props) => {
   return (
     <Fragment>
       <div className="RecipeIngredientItem">
-        <input className="" type="checkbox" name="" id={props.id} />
+        <input type="checkbox" name="" id={props.id} />
         <label className="RecipeIngredientItem__label" htmlFor={props.id}>
           <p className="RecipeIngredientItem__cant">{props.cant}</p>
           <p className="RecipeIngredientItem__name">{props.name}</p>
