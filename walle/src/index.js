@@ -16,8 +16,9 @@ import ReactDOM from "react-dom";
 // import RecipeIngredientsList from "./components/Com--Recipe-ingredients";
 // import RecipeInstructionsList from "./components/Com--Recipe-instructions";
 // import UserInfo from "./components/Com--User-info";
-import Payment from "./components/Com--Payment";
+// import Payment from "./components/Com--Payment";
+import Metadata from "./cards/Card--Metadata";
 
 //------------------------------ import styles and images
 
-ReactDOM.render(<Payment />, document.getElementById("root"));
+ReactDOM.render(<Metadata />, document.getElementById("root"));
