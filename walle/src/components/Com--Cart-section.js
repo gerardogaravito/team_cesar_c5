@@ -2,10 +2,10 @@
 import React, { Fragment } from "react";
 
 //------------------------------ import components
-import CartIngredient from "./Card--Ingredient-list";
+import CartIngredient from "../cards/Card--Cart-ingredient";
 
 //------------------------------ import styles and images
-import "./styles/CartSection.scss";
+import "../cards/styles/CartSection.scss";
 
 const CartSection = (props) => {
   return (

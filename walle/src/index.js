@@ -12,8 +12,10 @@ import ReactDOM from "react-dom";
 // import RecipeCarrousel from "./components/Com--Recipe-carrousel";
 // import RecommendationCarrousel from "./components/Com--Recomendations-carrousel";
 // import CartHead from "./cards/Card--Cart-head";
-import CartSection from "./cards/Card--Cart-section";
+// import CartSection from "./components/Com--Cart-section";
+// import RecipeIngredientsList from "./components/Com--Recipe-ingredients";
+import RecipeInstructionsList from "./components/Com--Recipe-instructions";
 
 //------------------------------ import styles and images
 
-ReactDOM.render(<CartSection />, document.getElementById("root"));
+ReactDOM.render(<RecipeInstructionsList />, document.getElementById("root"));

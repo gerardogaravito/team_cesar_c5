@@ -1,0 +1,53 @@
+//------------------------------ import scss
+@import "../../global-styles/Globalstyles.scss";
+
+//------------------------------ Styles
+.InstructionItem {
+  display: flex;
+
+  &__label {
+    position: relative;
+    display: flex;
+    padding-left: $space4;
+    margin-bottom: $space2;
+
+    &::before {
+      content: "";
+      @extend .checkbox;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      transition: 0.2s;
+    }
+  }
+
+  &__step {
+    color: $main-color;
+    font-size: $size-m;
+    font-weight: bold;
+  }
+
+  &__description {
+    transform: translateY(40%);
+    margin-left: $space;
+    transition: 0.2s;
+  }
+}
+
+//------------------------------ Animations
+[type="checkbox"] {
+  display: none;
+}
+
+[type="checkbox"]:checked + .InstructionItem__label::before {
+  background-color: $second-color;
+  border: 2px solid $main-color;
+  box-shadow: none;
+}
+
+[type="checkbox"]:checked
+  + .InstructionItem__label
+  > .InstructionItem__description {
+  text-decoration: line-through;
+}
