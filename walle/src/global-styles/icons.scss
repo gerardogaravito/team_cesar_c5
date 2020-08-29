@@ -34,6 +34,18 @@
     box-shadow: none;
     background-color: $main-color;
   }
+
+  &--list {
+    justify-self: center;
+    padding: $space;
+    font-size: $size-m;
+    color: $second-color;
+    border: $main-border;
+    border-radius: 50%;
+    background-color: $main-color;
+    box-shadow: $box-shadow;
+    cursor: pointer;
+  }
 }
 
 //------------------------------ animations
