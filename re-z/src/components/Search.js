@@ -21,14 +21,14 @@ class Searchinput extends Component{
 
     render() {
       return (
-        <section className="Search-icon">
+        <div className="Search-icon">
             <button name="" onClick={this._openModal}>
                 <img src={Searchicon} alt="Search"/>
             </button>
             {this.state.isModalOpen &&
                 <Searchinput onClose={this._closeModal}/> 
             }
-        </section> 
+        </div> 
       );
     }
   }

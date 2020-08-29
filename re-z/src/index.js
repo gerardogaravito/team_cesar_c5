@@ -13,7 +13,7 @@ import Search from './components/Search'
 // ---las librerías de abajo venían con create-react-app, aun no las sé usar entonces las comenté---
 // import App from './App';
 // import * as serviceWorker from './serviceWorker';
-
+import Navbar from "./components/Navbar"
 
 
 const container = document.getElementById('app');
@@ -24,4 +24,5 @@ const container = document.getElementById('app');
 /* ReactDOM.render(<SwitchPerfil/>, container); */
 /* ReactDOM.render(<Button/>, container); */
 /* ReactDOM.render(<FooterA/>, container); */
-ReactDOM.render(<Search/>, container);
+/* ReactDOM.render(<Search/>, container); */
+ReactDOM.render(<Navbar/>, container);

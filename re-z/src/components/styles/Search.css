@@ -1,6 +1,7 @@
 .Search-icon{
-    position: relative;
+    position: absolute;
     display: flex;
+    justify-content: center;
     width: 100%;
 }
 .Search-icon button{
@@ -9,12 +10,10 @@
     padding: 0;
     cursor: pointer;
     outline: inherit; 
-    position: absolute; 
-    top: 18px;
-    left: 50%;
+    top: 18px; 
+    align-self: center;
     width: 35px;
     height: 35px;
-    justify-content: center;
 }
 .Search-icon button:hover{
     filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.25));
@@ -29,15 +28,15 @@
     width: 30vw;
     height: 40px;
     border-radius: 20px;
-    top: 60px;
+    top: 100px;
     left: 35vw;
-    position: absolute;
     box-shadow: inset 0 0 5px rgba(0,0,0,.2);
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 .search-input img{
+    position: relative;
     height: 30px;
     padding-right: 5%;
     cursor: pointer;
