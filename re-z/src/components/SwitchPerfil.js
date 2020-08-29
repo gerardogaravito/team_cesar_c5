@@ -23,32 +23,24 @@ class Modal extends Component{
         )
     }
 }
-
-class SwitchPerfil extends React.Component {
-    state = {isModalOpen: false}
-    _openModal = () => this.setState({isModalOpen: true})
-    _closeModal = () => this.setState({isModalOpen: false})
-
+ class SwitchPerfil extends React.Component {
+    constructor(props) {
+      super(props);
+      this.state = {isToggleOn: true};
+      this.handleClick = this.handleClick.bind(this);
+    }
+    handleClick() {
+      this.setState(state => ({
+        isToggleOn: !state.isToggleOn
+      }));
+    }
     render() {
       return (
-         <level className="SwtchContainer">
-
-            <div className="perfil-btn" onClick={this._openModal}>
-                <img src={Avatar} alt="Avatar"/>
-            </div>
-            {this.state.isModalOpen && 
-                <Modal onClose={this._closeModal}/>
-            }
-           
-         </level>   
-      )     
+        <level className="SwtchContainer">
+        <input type="checkbox" name="" onClick={this.handleClick}></input>
+        {this.state.isToggleOn ? '' : <Modal onClose={this._closeModal}/>}
+        </level> 
+      );
     }
   }
-
-
-
- export default SwitchPerfil;
-/*  <input type="checkbox" name="" onClick={this._openModal}></input>
- {this.state.isModalOpen && 
-     <Modal onClose={this._closeModal}/>
- } */
+  export default SwitchPerfil;

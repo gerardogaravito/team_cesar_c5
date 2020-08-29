@@ -20,6 +20,7 @@ const container = document.getElementById('app');
 
 // ReactDOM.render( qué, dónde)
 // ReactDOM.render( <elemento/>, dónde)
+
 /* ReactDOM.render(<SwitchPerfil/>, container); */
 ReactDOM.render(<SwitchPerfil/>, container);
 /* ReactDOM.render(<Button/>, container); */

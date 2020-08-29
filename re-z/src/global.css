@@ -4,9 +4,14 @@
   font-size: 12px;
 }
 
-button {
+/* button {
   border: none;
   padding: 0;
   cursor: pointer;
   outline: inherit;
 }
+
+button:hover {  
+  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.25));
+  transform: scale(1.01);
+} */

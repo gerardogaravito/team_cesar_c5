@@ -9,11 +9,11 @@ class RecipeCardHorizontalDerecha extends React.Component {
     return <button className='cardright'>
       <div className='cardright__info'>
         <div className='cardright__info--title'>Lorem Ipsum 30</div>
-        <div className='cardright__info--text'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi quia fuga architecto error perferendis aperiam pariatur voluptate tenetur incidunt. Maiores temporibus odio voluptates obcaecati ex recusandae iusto corporis ducimus? Similique?</div>
-        <div className='cardright__info--time'>
-          <img src={timeIcon} alt="tiempo de preparación"/>
-          <div className='cardright__info--time-text'>70 min</div>
-        </div>
+        <div className='cardright__info--text'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium pariatur quia reprehenderit, distinctio quidem aut sed officia? Omnis qui voluptates eaque quia sequi? Quasi sit molestias minima nihil autem repellat.</div>
+      </div>
+      <div className='cardright__time'>
+        <img src={timeIcon} alt="tiempo de preparación"/>
+        <div className='cardright__time--text'>70 min</div>
       </div>
       <div className='cardright_image'>
         <img src={fotoComida2} alt="foto de comida"/>
