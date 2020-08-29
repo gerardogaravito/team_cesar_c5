@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './global.css';
+// import fotoComida from './images/fotoComida.png'
 
 import Button from './components/Button'
 import RecipeCardHorizontalSimple from './components/RecipeCardHorizontalSimple'
@@ -17,4 +18,9 @@ const container = document.getElementById('app');
 
 // ReactDOM.render( qué, dónde)
 // ReactDOM.render( <elemento/>, dónde)
-ReactDOM.render(<RecipeCardHorizontalSimple/>, container);
+ReactDOM.render(<RecipeCardHorizontalSimple 
+  recipeTitle='Pozole Lorem Ipsum 36'
+  // fotoComida={fotoComida }
+  />,
+  container
+);
