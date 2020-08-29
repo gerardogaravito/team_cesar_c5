@@ -44,6 +44,16 @@
   color: $second-color;
   background-color: $background-color;
 }
+
 .recipe-button > p {
   margin-right: $space;
+}
+
+.checkbox {
+  width: $space2;
+  height: $space2;
+  border-radius: 50%;
+  background-color: $background-color;
+  border: $main-border;
+  box-shadow: $box-shadow;
 }
