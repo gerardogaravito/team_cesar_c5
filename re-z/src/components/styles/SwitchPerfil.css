@@ -66,14 +66,14 @@ input:checked[type="checkbox"]:before{
     filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.25));
 }
 .close-btn{
-position: absolute;
+    position: absolute;
 }
 .close-btn button{
     background: none;
     border: none;
-  padding: 0;
-  cursor: pointer;
-  outline: inherit;
+    padding: 0;
+    cursor: pointer;
+    outline: inherit;
 }
 .close-btn button img{
     position: relative;
