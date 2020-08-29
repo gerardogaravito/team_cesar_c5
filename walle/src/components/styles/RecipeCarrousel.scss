@@ -1,0 +1,17 @@
+//------------------------------ Import
+@import "../../global-styles/Globalstyles.scss";
+
+//------------------------------ styles
+.Recipe-carrousel {
+  &__cards-container {
+    height: 450px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: $space;
+  }
+}
+
+.main-card {
+  grid-row: 1 / span 2;
+}

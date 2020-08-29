@@ -1,0 +1,12 @@
+//------------------------------ import scss
+@import "../../global-styles/Globalstyles.scss";
+
+//------------------------------ Styles
+.Recommendation-carrousel {
+  &__container {
+    height: 350px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: $space2;
+  }
+}

@@ -1,0 +1,32 @@
+//------------------------------ import scss
+@import "../../global-styles/Globalstyles.scss";
+
+//------------------------------ Styles
+.UserInfo {
+  display: flex;
+
+  &__nav {
+    margin-right: $space4;
+    text-align: center;
+  }
+
+  &__img {
+    display: block;
+    width: 250px;
+    height: 250px;
+    margin-bottom: $space2;
+    border-radius: 50%;
+    object-fit: cover;
+    border: $second-border;
+  }
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  &__direction {
+    display: flex;
+  }
+}

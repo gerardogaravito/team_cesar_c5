@@ -24,16 +24,17 @@ This is the initial list of components:
 3. Com--Cart-section
 4. Com--Cart-head
 5. Com--Recipe-instructions
-6. Com--Recipe-ingredients
+6. ~~Com--Recipe-ingredients~~
 7. Com--Recipe-metadata
-8. Com--Recipe-dasboard
-9. Com--Recipe-carrousel
-10. Com--Recomendations-carrousel
+8. ~~Com--Recipe-dasboard~~
+9. ~~Com--Recipe-carrousel~~
+10. ~~Com--Recomendations-carrousel~~
 11. Com--Instructions-list
-12. Com--Search-hero
-13. Com--Main-hero
-14. Com--Header-home
-15. Com--Header-landing
+12. ~~Com--Search-hero~~
+13. ~~Com--Main-hero~~
+14. ~~Com--Header-home~~
+15. ~~Com--Header-landing~~
+16. Com--Login
 
 This components are specified in figma https://www.figma.com/file/nPhHPUFx0Q0dJQSbKumqTY/Proyecto-grupal-Walee?node-id=0%3A1
 
