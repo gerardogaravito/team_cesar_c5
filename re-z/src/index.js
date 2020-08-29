@@ -8,7 +8,7 @@ import RecipeCardHorizontalSimple from './components/RecipeCardHorizontalSimple'
 /* import FooterA from './components/FooterA' */
 /* import RecipeCardHorizontalDerecha from './components/RecipeCardHorizontalDerecha'
 import Switch from './components/SwitchPerfil';
-import PerfilSWitch from './components/Perfil'; */
+ */
 import Search from './components/Search'
 // ---las librerías de abajo venían con create-react-app, aun no las sé usar entonces las comenté---
 // import App from './App';
@@ -21,7 +21,6 @@ const container = document.getElementById('app');
 // ReactDOM.render( qué, dónde)
 // ReactDOM.render( <elemento/>, dónde)
 
-/* ReactDOM.render(<SwitchPerfil/>, container); */
 /* ReactDOM.render(<SwitchPerfil/>, container); */
 /* ReactDOM.render(<Button/>, container); */
 /* ReactDOM.render(<FooterA/>, container); */

@@ -8,29 +8,26 @@ class Searchinput extends Component{
         return(
           <div className="search-input">
                 <input type="text" placeholder="¿Qué estas buscando?" name="search"/>
-                <img src={CloseIcon} alt="Close"/> 
+                <img src={CloseIcon} alt="Close" onClick={this.props.onClose}/> 
           </div>
         )
     }
 }
  class Search extends React.Component {
-    constructor(props) {
-      super(props);
-      this.state = {isToggleOn: true};
-      this.handleClick = this.handleClick.bind(this);
-    }
-    handleClick() {
-      this.setState(state => ({
-        isToggleOn: !state.isToggleOn
-      }));
-    }
+    state = {isModalOpen: false}
+
+    _openModal = () => this.setState({ isModalOpen:true })
+    _closeModal = () => this.setState({ isModalOpen:false })
+
     render() {
       return (
         <section className="Search-icon">
-            <button type="checkbox" name="" onClick={this.handleClick}>
+            <button name="" onClick={this._openModal}>
                 <img src={Searchicon} alt="Search"/>
             </button>
-            {this.state.isToggleOn ? '' : <Searchinput/>}
+            {this.state.isModalOpen &&
+                <Searchinput onClose={this._closeModal}/> 
+            }
         </section> 
       );
     }
