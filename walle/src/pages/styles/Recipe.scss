@@ -1,0 +1,9 @@
+//------------------------------ import scss
+@import "../../global-styles/Globalstyles.scss";
+
+//------------------------------ Styles
+.Recipe {
+  &__body {
+    padding: 0 $main-padding;
+  }
+}

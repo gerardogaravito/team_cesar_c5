@@ -22,8 +22,9 @@ import ReactDOM from "react-dom";
 // import SignUpModal from "./components/Com--Singup";
 // import InstructionsSection from "./cards/Card--Instructions";
 // import LandingPage from "./pages/Pag--Langing";
-import HomePage from "./pages/Pag--Home";
+// import HomePage from "./pages/Pag--Home";
+import RecipePage from "./pages/Pag--Recipe";
 
 //------------------------------ import styles and images
 
-ReactDOM.render(<HomePage />, document.getElementById("root"));
+ReactDOM.render(<RecipePage />, document.getElementById("root"));

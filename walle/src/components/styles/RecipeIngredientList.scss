@@ -3,6 +3,7 @@
 
 //------------------------------ styles
 .Recipe-ingredients {
+  margin: $margin-sections 0;
   &__container-list {
     @extend .CardStyles;
     display: flex;
