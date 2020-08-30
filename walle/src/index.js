@@ -20,8 +20,9 @@ import ReactDOM from "react-dom";
 // import Metadata from "./cards/Card--Metadata";
 // import LoginModal from "./components/Com--LoginModal";
 // import SignUpModal from "./components/Com--Singup";
-import InstructionsSection from "./cards/Card--Instructions";
+// import InstructionsSection from "./cards/Card--Instructions";
+import LandingPage from "./pages/Pag--Langing";
 
 //------------------------------ import styles and images
 
-ReactDOM.render(<InstructionsSection />, document.getElementById("root"));
+ReactDOM.render(<LandingPage />, document.getElementById("root"));
