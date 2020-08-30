@@ -17,8 +17,10 @@ import ReactDOM from "react-dom";
 // import RecipeInstructionsList from "./components/Com--Recipe-instructions";
 // import UserInfo from "./components/Com--User-info";
 // import Payment from "./components/Com--Payment";
-import Metadata from "./cards/Card--Metadata";
+// import Metadata from "./cards/Card--Metadata";
+// import LoginModal from "./components/Com--LoginModal";
+import SignUpModal from "./components/Com--Singup";
 
 //------------------------------ import styles and images
 
-ReactDOM.render(<Metadata />, document.getElementById("root"));
+ReactDOM.render(<SignUpModal />, document.getElementById("root"));
