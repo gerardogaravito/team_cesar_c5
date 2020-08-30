@@ -23,8 +23,9 @@ import ReactDOM from "react-dom";
 // import InstructionsSection from "./cards/Card--Instructions";
 // import LandingPage from "./pages/Pag--Langing";
 // import HomePage from "./pages/Pag--Home";
-import RecipePage from "./pages/Pag--Recipe";
+// import RecipePage from "./pages/Pag--Recipe";
+import UserPage from "./pages/Pag--User";
 
 //------------------------------ import styles and images
 
-ReactDOM.render(<RecipePage />, document.getElementById("root"));
+ReactDOM.render(<UserPage />, document.getElementById("root"));

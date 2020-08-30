@@ -1,0 +1,10 @@
+//------------------------------ import scss
+@import "../../global-styles/Globalstyles.scss";
+
+//------------------------------ Styles
+.User {
+  margin: $space4 0;
+  &__body {
+    padding: 0 $main-padding;
+  }
+}

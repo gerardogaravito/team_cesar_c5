@@ -4,6 +4,7 @@
 //------------------------------ Styles
 .UserInfo {
   display: flex;
+  margin: $margin-sections 0;
 
   &__nav {
     margin-right: $space4;
