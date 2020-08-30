@@ -19,22 +19,22 @@ This is a React app, so we are working thinking in components.
 
 This is the initial list of components:
 
-1. Com--User-info
-2. Com--Payment
-3. Com--Cart-section
-4. Com--Cart-head
-5. Com--Recipe-instructions
+1. ~~Com--User-info~~
+2. ~~Com--Payment~~
+3. ~~Com--Cart-section~~
+4. ~~Com--Cart-head~~
+5. ~~Com--Recipe-instructions~~
 6. ~~Com--Recipe-ingredients~~
-7. Com--Recipe-metadata
+7. ~~Com--Recipe-metadata~~
 8. ~~Com--Recipe-dasboard~~
 9. ~~Com--Recipe-carrousel~~
 10. ~~Com--Recomendations-carrousel~~
-11. Com--Instructions-list
+11. ~~Com--Instructions-list~~
 12. ~~Com--Search-hero~~
 13. ~~Com--Main-hero~~
 14. ~~Com--Header-home~~
 15. ~~Com--Header-landing~~
-16. Com--Login
+16. ~~Com--Login~~
 
 This components are specified in figma https://www.figma.com/file/nPhHPUFx0Q0dJQSbKumqTY/Proyecto-grupal-Walee?node-id=0%3A1
 
@@ -57,7 +57,6 @@ The styles are set with Sass. Each component has his own Sass file and it's save
 ```javascript
 //------------------------------ import libraries
 import React from "react";
-import ReactDOM from "react-dom";
 
 //------------------------------ import components
 
@@ -68,7 +67,7 @@ const Greeting = () => {
   return <h1>Hola Bienvenido a Wall-e.</h1>;
 };
 
-ReactDOM.render(<Greeting />, document.getElementById("root"));
+export default Greeting;
 ```
 
 ![](https://i.imgur.com/taHRsCB.png)
