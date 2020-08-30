@@ -19,8 +19,9 @@ import ReactDOM from "react-dom";
 // import Payment from "./components/Com--Payment";
 // import Metadata from "./cards/Card--Metadata";
 // import LoginModal from "./components/Com--LoginModal";
-import SignUpModal from "./components/Com--Singup";
+// import SignUpModal from "./components/Com--Singup";
+import InstructionsSection from "./cards/Card--Instructions";
 
 //------------------------------ import styles and images
 
-ReactDOM.render(<SignUpModal />, document.getElementById("root"));
+ReactDOM.render(<InstructionsSection />, document.getElementById("root"));
