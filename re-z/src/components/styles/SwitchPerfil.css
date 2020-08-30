@@ -1,0 +1,86 @@
+.SwtchContainer{
+    position: absolute;
+    top: 18px;
+    right: 68px;
+    display: flex;
+}
+.SwtchContainer img{
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    transform: translate(2px, 2px);
+    z-index: 1;
+    cursor: pointer;
+}
+input[type="checkbox"]{
+    position: relative;
+    width: 63px;
+    height: 34px;
+    appearance: none;
+    background: #8F2D56;
+    outline: none;
+    border-radius: 20px;
+    box-shadow: inset 0 0 5px rgba(0,0,0,.2);
+    transition: .5s;
+}
+input:checked[type="checkbox"]{
+    background: #218380;
+}
+input[type="checkbox"]:before{
+    content: "";
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    border-radius: 20px;
+    top: 0;
+    left: 0;
+    background-image: url(https://bit.ly/32Au0sJ);
+    background-size: 100% 100%;
+    /* background: #FFBC42; */
+    transform: translate(2px, 2px);
+    transition: .2s;
+}
+input:checked[type="checkbox"]:before{
+    left: 29px;
+}
+.perfilMenu{
+    background: #218380;
+    width: 226px;
+    height: 225px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    align-items: flex-end;
+    top: 54px;
+    right: 1px;
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.25));
+}
+.perfilMenu a{
+    color: #FFBC42;
+    text-decoration: none;
+    font-size: 20px;
+    padding-right: 15px;
+    padding-top: 22px;
+}
+.perfilMenu a:hover{
+    font-size: 22px;
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.25));
+}
+.close-btn{
+    position: absolute;
+}
+.close-btn button{
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    outline: inherit;
+}
+.close-btn button img{
+    position: relative;
+    top: 0px;
+    right: 65px;
+    z-index: 2;
+    
+}

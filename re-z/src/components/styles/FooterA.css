@@ -1,0 +1,48 @@
+footer{
+    background-color: #FFBC42;
+    margin: 0px;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+}
+.text-Block{
+    text-decoration: none;
+    margin-left: 10%;
+    margin-top: 30px;
+}
+.text-Block ul {
+    list-style-type: none;
+}
+.text-Block ul li a{
+    text-decoration: none;
+    color: #8F2D56;
+    font-size: 18px;
+}
+.text-Block ul li a:hover{
+    font-size: 20px;
+    text-decoration: none;
+}
+.copyrigth-style{
+    color: #8F2D56;
+    padding-inline-start: 40px;
+    position: absolute;
+    bottom: 30px;
+}
+.socialNetwork-menu{
+    position: absolute;
+    right: 5%;
+    bottom: 30px;
+}
+.socialNetwork-menu img{
+    height: 30px;
+    width: 30px;
+    padding-left: 15px;
+}
+.socialNetwork-menu img:hover{
+    height: 35px;
+    width: 35px;
+    cursor: pointer;
+}

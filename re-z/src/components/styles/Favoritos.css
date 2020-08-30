@@ -1,0 +1,12 @@
+.Favoritos-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+.favoritos__title {
+  margin: 30px 0px;
+  color: #8F2D56;
+  font-size: 36px;
+}
