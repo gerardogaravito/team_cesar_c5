@@ -7,7 +7,7 @@ class Searchinput extends Component{
     render(){
         return(
           <div className="search-input">
-                <input type="text" placeholder="¿Qué estas buscando?" name="search"/>
+                <input type="text" placeholder="¿Qué estás buscando?" name="search"/>
                 <img src={CloseIcon} alt="Close" onClick={this.props.onClose}/> 
           </div>
         )

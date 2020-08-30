@@ -36,7 +36,6 @@ input[type="checkbox"]:before{
     left: 0;
     background-image: url(https://bit.ly/32Au0sJ);
     background-size: 100% 100%;
-    /* background: #FFBC42; */
     transform: translate(2px, 2px);
     transition: .2s;
 }
