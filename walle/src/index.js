@@ -21,8 +21,9 @@ import ReactDOM from "react-dom";
 // import LoginModal from "./components/Com--LoginModal";
 // import SignUpModal from "./components/Com--Singup";
 // import InstructionsSection from "./cards/Card--Instructions";
-import LandingPage from "./pages/Pag--Langing";
+// import LandingPage from "./pages/Pag--Langing";
+import HomePage from "./pages/Pag--Home";
 
 //------------------------------ import styles and images
 
-ReactDOM.render(<LandingPage />, document.getElementById("root"));
+ReactDOM.render(<HomePage />, document.getElementById("root"));

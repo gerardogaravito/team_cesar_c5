@@ -3,6 +3,7 @@
 
 //------------------------------ styles
 .Recipe-carrousel {
+  margin: $margin-sections 0;
   &__cards-container {
     height: 450px;
     display: grid;
