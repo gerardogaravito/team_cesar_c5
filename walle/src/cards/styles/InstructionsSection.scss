@@ -1,0 +1,28 @@
+//------------------------------ import scss
+@import "../../global-styles/Globalstyles.scss";
+
+//------------------------------ Styles
+.InstructionsSection {
+  @extend .CardStyles;
+  margin: $margin-sections 0;
+  padding: $space2;
+  background-color: $main-lighter-color;
+
+  &__icons {
+    height: 250px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-items: center;
+  }
+
+  &__icon {
+    width: 200px;
+    font-weight: bold;
+    color: $second-color;
+    text-align: center;
+    & > p {
+      margin-top: $space;
+    }
+  }
+}

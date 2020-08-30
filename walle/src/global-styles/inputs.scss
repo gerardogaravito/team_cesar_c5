@@ -8,13 +8,25 @@
   margin-right: $space;
   flex-grow: 1;
 
+  &--centered {
+    @extend .input;
+    align-items: center;
+    margin-bottom: $space2;
+  }
+
   &-text {
+    width: 100%;
     margin-bottom: $space;
     padding: 5px;
     font-size: $size-xs;
     border-radius: $border-radius;
     border: $main-border;
     background-color: $background-color;
+
+    &--centered {
+      @extend .input-text;
+      text-align: center;
+    }
   }
 
   &-label {

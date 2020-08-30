@@ -15,8 +15,14 @@ import ReactDOM from "react-dom";
 // import CartSection from "./components/Com--Cart-section";
 // import RecipeIngredientsList from "./components/Com--Recipe-ingredients";
 // import RecipeInstructionsList from "./components/Com--Recipe-instructions";
-import UserInfo from "./components/Com--User-info";
+// import UserInfo from "./components/Com--User-info";
+// import Payment from "./components/Com--Payment";
+// import Metadata from "./cards/Card--Metadata";
+// import LoginModal from "./components/Com--LoginModal";
+// import SignUpModal from "./components/Com--Singup";
+// import InstructionsSection from "./cards/Card--Instructions";
+import LandingPage from "./pages/Pag--Langing";
 
 //------------------------------ import styles and images
 
-ReactDOM.render(<UserInfo />, document.getElementById("root"));
+ReactDOM.render(<LandingPage />, document.getElementById("root"));

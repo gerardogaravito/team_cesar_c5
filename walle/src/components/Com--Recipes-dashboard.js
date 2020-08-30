@@ -13,7 +13,6 @@ class RecipeDashboard extends Component {
     return (
       <Fragment>
         <section className="Dashboard">
-          <h2 className="Dashboard__title">Nuestras recetas</h2>
           <p className="Dashboard__text">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio sunt
             commodi, deleniti quidem porro veritatis maxime vero nesciunt magni

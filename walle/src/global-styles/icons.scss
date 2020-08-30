@@ -46,6 +46,11 @@
     box-shadow: $box-shadow;
     cursor: pointer;
   }
+
+  &--xl {
+    font-size: $size-m;
+    color: $second-color;
+  }
 }
 
 //------------------------------ animations

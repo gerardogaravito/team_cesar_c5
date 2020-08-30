@@ -3,6 +3,7 @@
 
 //------------------------------ Styles
 .Recommendation-carrousel {
+  margin: $margin-sections 0;
   &__container {
     height: 350px;
     display: grid;
