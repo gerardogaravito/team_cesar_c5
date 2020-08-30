@@ -9,7 +9,7 @@ class RecipeCardHorizontalSimple extends React.Component {
     return <button className='cardsimple'>
       <img className='cardsimple__image' src={fotoComida} alt="Foto de Comida"/>
       <div className='cardsimple__info'>
-        <h1 className='cardsimple__info--title'>Lorem Ipsum 36</h1>
+        <h1 className='cardsimple__info--title'>{this.props.recipeTitle}</h1>
       </div>
     </button>
   }

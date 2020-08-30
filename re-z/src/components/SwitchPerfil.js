@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 import './styles/SwitchPerfil.css';
 
@@ -8,7 +9,7 @@ class Modal extends Component{
             <section>
               <div className="perfilMenu">
                   <a href="">Configuración</a>
-                  <a href="">Tus Favoritas</a>
+                  <Link to="/home/favoritos">Tus Favoritas</Link>
                   <a href="">Ver carrito de compra</a>
                   <a href="">Cerrar sesión</a>
               </div>
@@ -16,7 +17,7 @@ class Modal extends Component{
         )
     }
 }
- class SwitchPerfil extends React.Component {
+class SwitchPerfil extends React.Component {
     constructor(props) {
       super(props);
       this.state = {isToggleOn: true};
