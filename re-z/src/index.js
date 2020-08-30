@@ -8,11 +8,12 @@ import SwitchPerfil from "./components/SwitchPerfil"
 import RecipeCardHorizontalSimple from './components/RecipeCardHorizontalSimple'
 /* import FooterA from './components/FooterA' */
 /* import RecipeCardHorizontalDerecha from './components/RecipeCardHorizontalDerecha'
-import Switch from './components/SwitchPerfil';
- */
+import Switch from './components/SwitchPerfil';*/
 import Search from './components/Search'
 import Navbar from "./components/Navbar"
 import Home from "./components/page/Home"
+import Favoritos from "./components/page/Favoritos"
+import App from "./components/App"
 
 
 const container = document.getElementById('app');
@@ -31,4 +32,4 @@ const container = document.getElementById('app');
 /* ReactDOM.render(<FooterA/>, container); */
 /* ReactDOM.render(<Search/>, container); */
 /* ReactDOM.render(<Navbar/>, container); */
-ReactDOM.render(<Home/>, container);
+ReactDOM.render(<App/>, container);
