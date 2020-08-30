@@ -2,10 +2,8 @@
 @import "../../global-styles/Globalstyles.scss";
 
 //------------------------------ Styles
-.Ingredient-carrousel {
-  margin: $margin-sections 0;
-  &__cards {
-    display: flex;
-    justify-content: space-between;
+.Landing {
+  &__body {
+    padding: 0 $main-padding;
   }
 }

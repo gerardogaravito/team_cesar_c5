@@ -4,6 +4,7 @@
 //------------------------------ Styles
 .InstructionsSection {
   @extend .CardStyles;
+  margin: $margin-sections 0;
   padding: $space2;
   background-color: $main-lighter-color;
 
