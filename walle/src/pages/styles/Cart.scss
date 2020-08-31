@@ -1,0 +1,9 @@
+//------------------------------ import scss
+@import "../../global-styles/Globalstyles.scss";
+
+//------------------------------ Styles
+.Cart {
+  &__body {
+    padding: 0 $main-padding;
+  }
+}

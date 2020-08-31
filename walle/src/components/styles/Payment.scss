@@ -3,6 +3,7 @@
 
 //------------------------------ Styles
 .Payment {
+  margin: $margin-sections 0;
   &__description {
     display: flex;
     justify-content: space-between;
