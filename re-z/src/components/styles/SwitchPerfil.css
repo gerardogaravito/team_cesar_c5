@@ -22,6 +22,7 @@ input[type="checkbox"]{
     border-radius: 20px;
     box-shadow: inset 0 0 5px rgba(0,0,0,.2);
     transition: .5s;
+    cursor: pointer;
 }
 input:checked[type="checkbox"]{
     background: #218380;
