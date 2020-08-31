@@ -5,6 +5,7 @@
 .CartHead {
   display: grid;
   grid-template-columns: 5% 75% repeat(3, 1fr);
+  margin: $space4 0;
   padding: $space;
   font-weight: bold;
   border-radius: $border-radius;

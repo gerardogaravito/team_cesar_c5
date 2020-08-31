@@ -3,6 +3,7 @@
 
 //------------------------------ Styles
 .CartSection {
+  margin: $space4 0;
   @extend .CardStyles;
   background-color: $background-color;
   border-radius: $border-radius;
