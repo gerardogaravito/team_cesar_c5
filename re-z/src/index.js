@@ -14,7 +14,7 @@ import Navbar from "./components/Navbar"
 import Home from "./components/page/Home"
 import Favoritos from "./components/page/Favoritos"
 import App from "./components/App"
-import Loader from "./components/Loader"
+
 
 
 
@@ -34,6 +34,6 @@ const container = document.getElementById('app');
 /* ReactDOM.render(<FooterA/>, container); */
 /* ReactDOM.render(<Search/>, container); */
 /* ReactDOM.render(<Navbar/>, container); */
-/* ReactDOM.render(<App/>, container); */
-ReactDOM.render(<Loader />, container);
+ReactDOM.render(<App/>, container);
+
 
