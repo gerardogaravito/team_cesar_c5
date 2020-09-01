@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './global.css';
 import RecipeCardSquare from './components/RecipeCardSquare'
 /* import Button from './components/Button' */
-import SwitchPerfil from "./components/SwitchPerfil"
+//import SwitchPerfil from "./components/SwitchPerfil"
 import RecipeCardHorizontalSimple from './components/RecipeCardHorizontalSimple'
 /* import FooterA from './components/FooterA' */
 /* import RecipeCardHorizontalDerecha from './components/RecipeCardHorizontalDerecha'
@@ -30,4 +30,4 @@ const container = document.getElementById('app');
 
 // ReactDOM.render(---qué queremos renderizar--,
 //--y donde lo queremos hacer--);
-ReactDOM.render(<RecipeCardCuadroInfo />,container)
+ReactDOM.render(<RecipeCardSquare />,container)
