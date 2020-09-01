@@ -1,0 +1,32 @@
+.cardcuadro {
+    padding: 0;
+    border: 0;
+    width: 350px;
+    height: 418px;
+    background-color: #8F2D56;
+    color:#FFBC42;
+    border-radius: 20px;
+  }
+  .cardcuadro:hover {
+    cursor: pointer;
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.25));
+    transform: scale(1.01);
+  }
+.cardcuadro__text{
+    text-align: left;
+    height: auto;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+}
+.cardcuadro__time{
+    display: flex;
+    justify-content: flex-end;
+}
+.cardcuadro__time--picture {
+    display: flex;
+    align-items: center;
+  }
+.cardcuadro__time--text{
+    padding-left: 10px;
+}

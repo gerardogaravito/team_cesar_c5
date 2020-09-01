@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './global.css';
-
+import RecipeCardSquare from './components/RecipeCardSquare'
 /* import Button from './components/Button' */
 import SwitchPerfil from "./components/SwitchPerfil"
 import RecipeCardHorizontalSimple from './components/RecipeCardHorizontalSimple'
@@ -16,7 +16,7 @@ import Search from './components/Search'
 
 
 
-const container = document.getElementById('app');
+//const container = document.getElementById('app');
 
 // ReactDOM.render( qué, dónde)
 // ReactDOM.render( <elemento/>, dónde)
@@ -24,4 +24,10 @@ const container = document.getElementById('app');
 /* ReactDOM.render(<SwitchPerfil/>, container); */
 /* ReactDOM.render(<Button/>, container); */
 /* ReactDOM.render(<FooterA/>, container); */
-ReactDOM.render(<Search/>, container);
+//ReactDOM.render(<Search/>, container);
+
+const container = document.getElementById('app');
+
+// ReactDOM.render(---qué queremos renderizar--,
+//--y donde lo queremos hacer--);
+ReactDOM.render(<RecipeCardCuadroInfo />,container)
