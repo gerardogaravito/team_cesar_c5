@@ -1,5 +1,6 @@
 //------------------------------ import libraries
 import React, { Fragment } from "react";
+import { Link } from "react-router-dom";
 
 //------------------------------ import components
 import { FaTwitter, FaFacebookF, FaInstagram } from "react-icons/fa";
@@ -17,7 +18,9 @@ const Footer = () => {
           <FaFacebookF className="icon--active" />
           <FaTwitter className="icon--active" />
         </div>
-        <img className="Footer__brand" src={Logo} alt="Logo de Walle" />
+        <Link to="/">
+          <img className="Footer__brand" src={Logo} alt="Logo de Walle" />
+        </Link>
       </footer>
     </Fragment>
   );

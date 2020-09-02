@@ -8,7 +8,7 @@ $text-color: #000a12;
 $main-border: 2px solid $second-color;
 $second-border: 4px solid $main-color;
 //-- Shadows
-$box-shadow: 0 4px 0 $second-color;
+$box-shadow: 0 5px 0 $second-color;
 //-- Gradients
 $gradien-title: linear-gradient(
   90deg,
@@ -33,5 +33,5 @@ $space2: 20px;
 $space3: 30px;
 $space4: 40px;
 $border-radius: 10px;
-$margin-sections: 80px;
-$main-padding: 200px;
+$margin-sections: 40px;
+$main-padding: 100px;

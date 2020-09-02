@@ -22,7 +22,7 @@
     transform: translate(-50%, -50%);
     font-size: $size-m;
     font-weight: bold;
-    -webkit-background-clip: text;
-    -webkit-text-stroke: 0.5px $background-color;
+    color: $background-color;
+    -webkit-text-stroke: 1px $second-color;
   }
 }

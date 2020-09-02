@@ -8,15 +8,19 @@ import RecipeDashboard from "../components/Com--Recipes-dashboard";
 import InstructionsSection from "../cards/Card--Instructions";
 import RecommendationCarrousel from "../components/Com--Recomendations-carrousel";
 import Footer from "../components/Com--Footer";
+import LoginModal from "../components/Com--LoginModal";
+
 //------------------------------ import styles and images
-import "./styles/Landing.scss";
+import "./styles/Layout.scss";
 
 export class LandingPage extends Component {
+  state = { isModalOpen: false };
+
   render() {
     return (
-      <div className="Landing">
+      <div className="Layout">
         <MainHero />
-        <div className="Landing__body">
+        <div className="Layout__body">
           <IngredientCarrousel />
           <RecipeDashboard />
           <InstructionsSection />
