@@ -1,0 +1,27 @@
+.Card-container{
+    position: relative;
+    display: flex;
+}
+.CardImage-food img{
+    width: 814px;
+    height: 543px;
+    border-radius: 20px;    
+}
+
+.Card-information{ 
+    position: absolute;
+}
+.Card-backgroundt{
+    background-color: #73d2de;
+    opacity: .6;
+    width: 814px;
+    height: 543px;
+    border-radius: 20px;  
+    border-radius: 20px;  
+}
+.Card-information h1{
+    color: #ffbc42;
+    font-size: 50px;
+    padding-left: 69px;
+    padding-top: 64px;
+}

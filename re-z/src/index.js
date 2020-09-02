@@ -11,12 +11,10 @@ import Switch from './components/SwitchPerfil';
  */
 import Search from './components/Search'
 // ---las librerías de abajo venían con create-react-app, aun no las sé usar entonces las comenté---
-// import App from './App';
+//import App from './components/App';
 // import * as serviceWorker from './serviceWorker';
+import RecipeCardCarruselHome from './components/RecipeCardCarruselHome'
 
-
-
-//const container = document.getElementById('app');
 
 // ReactDOM.render( qué, dónde)
 // ReactDOM.render( <elemento/>, dónde)
@@ -30,4 +28,4 @@ const container = document.getElementById('app');
 
 // ReactDOM.render(---qué queremos renderizar--,
 //--y donde lo queremos hacer--);
-ReactDOM.render(<RecipeCardSquare />,container)
+ReactDOM.render(<RecipeCardCarruselHome />,container)
