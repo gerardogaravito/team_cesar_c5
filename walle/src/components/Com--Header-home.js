@@ -1,5 +1,6 @@
 //------------------------------ import libraries
 import React, { Fragment } from "react";
+import { Link } from "react-router-dom";
 
 //------------------------------ import components
 import { FaShoppingCart, FaHome } from "react-icons/fa";
@@ -13,11 +14,19 @@ const HeaderHome = () => {
   return (
     <Fragment>
       <header className="Header">
-        <img className="Header__brand" src={Logo} alt="Logo de Walle" />
+        <Link to="/">
+          <img className="Header__brand" src={Logo} alt="Logo de Walle" />
+        </Link>
         <div className="Header__nav">
-          <FaShoppingCart className="icon--active" title="Shopping cart" />
-          <FaHome className="icon--active" title="Home" />
-          <img className="Header__img" src={UserImg} alt="User avatar" />
+          <Link to="/carrito">
+            <FaShoppingCart className="icon--active" title="Shopping cart" />
+          </Link>
+          <Link to="/">
+            <FaHome className="icon--active" title="Home" />
+          </Link>
+          <Link to="/usuario">
+            <img className="Header__img" src={UserImg} alt="User avatar" />
+          </Link>
         </div>
       </header>
     </Fragment>

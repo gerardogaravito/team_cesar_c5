@@ -8,9 +8,9 @@ const InstructionItem = (props) => {
   return (
     <Fragment>
       <div className="InstructionItem">
-        <input type="checkbox" name="" id={props.id} />
+        <input type="checkbox" id={props.id} />
         <label className="InstructionItem__label" htmlFor={props.id}>
-          <p className="InstructionItem__step">{props.id}.</p>
+          <p className="InstructionItem__step">{props.step}.</p>
           <p className="InstructionItem__description">{props.description}</p>
         </label>
       </div>

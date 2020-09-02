@@ -3,7 +3,7 @@
 
 //------------------------------ Styles
 .CartSection {
-  margin: $space4 0;
+  margin: $space 0;
   @extend .CardStyles;
   background-color: $background-color;
   border-radius: $border-radius;
@@ -15,7 +15,8 @@
   align-items: center;
   margin-bottom: $space;
   border-radius: $border-radius;
-}
-.CartIngredient p:nth-child(n + 3) {
-  text-align: center;
+
+  & p:nth-child(n + 3) {
+    text-align: center;
+  }
 }

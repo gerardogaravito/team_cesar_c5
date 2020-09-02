@@ -4,6 +4,7 @@
 //------------------------------ Styles
 .UserInfo {
   display: flex;
+  justify-content: center;
   margin: $margin-sections 0;
 
   &__nav {
@@ -11,10 +12,14 @@
     text-align: center;
   }
 
+  &__name {
+    font-size: 100px;
+  }
+
   &__img {
     display: block;
-    width: 250px;
-    height: 250px;
+    width: 350px;
+    height: 350px;
     margin-bottom: $space2;
     border-radius: 50%;
     object-fit: cover;
@@ -25,6 +30,11 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+
+    p {
+      font-size: $size-s;
+      margin-bottom: $space;
+    }
   }
 
   &__direction {

@@ -4,12 +4,10 @@
 //------------------------------ Styles
 .Dashboard {
   height: 600px;
-  width: 90%;
   display: grid;
-  margin: $margin-sections auto;
-  grid-template-columns: 26% 23% 5% 23% 23%;
-  grid-template-rows: 20% repeat(3, 25%);
-  grid-gap: $space;
+  grid-template-columns: 23% 25% 10% 20% 20%;
+  grid-template-rows: 15% 25% 45% 10%;
+  gap: $space;
 
   &__text {
     grid-column: 1 / span 3;

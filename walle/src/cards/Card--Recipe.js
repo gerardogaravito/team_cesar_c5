@@ -1,5 +1,6 @@
 //------------------------------ import libraries
 import React, { Fragment } from "react";
+import { Link } from "react-router-dom";
 
 //------------------------------ import components
 import { FaRegHeart, FaUsers, FaClock, FaPlus } from "react-icons/fa";
@@ -10,7 +11,7 @@ import "./styles/Recipecard.scss";
 const RecipeCard = (props) => {
   return (
     <Fragment>
-      <div className={`RecipeCard ${props.card}`}>
+      <Link className={`RecipeCard ${props.card}`} to="/receta">
         <img className="RecipeCard__img" src={props.image} alt={props.name} />
         <div className="RecipeCard__head">
           <p className="RecipeCard__name">{props.name}</p>
@@ -28,7 +29,7 @@ const RecipeCard = (props) => {
           </div>
           <div className="recipe-button">{props.difficult}</div>
         </div>
-      </div>
+      </Link>
     </Fragment>
   );
 };

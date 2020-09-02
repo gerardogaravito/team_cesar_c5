@@ -7,17 +7,21 @@ import UserInfo from "../components/Com--User-info";
 import RecipeCarrousel from "../components/Com--Recipe-carrousel";
 import Footer from "../components/Com--Footer";
 //------------------------------ import styles and images
-import "./styles/User.scss";
+import "./styles/Layout.scss";
 
 export class UserPage extends Component {
   render() {
     return (
-      <div className="User">
-        <div className="User__body">
+      <div className="Layout">
+        <div className="Layout__body">
           <HeaderHome />
-          <UserInfo />
-          <RecipeCarrousel />
-          <RecipeCarrousel />
+          <UserInfo
+            userName="Pepita Perez"
+            email="pepitaperez@email.com"
+            phone="+57 3004486870"
+          />
+          <RecipeCarrousel title="Favoritos" />
+          <RecipeCarrousel title="Compradas recientemente" />
         </div>
         <Footer />
       </div>

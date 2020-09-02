@@ -7,15 +7,16 @@ import CartHead from "../cards/Card--Cart-head";
 import CartIngredient from "../components/Com--Cart-section";
 import Payment from "../components/Com--Payment";
 import Footer from "../components/Com--Footer";
+
 //------------------------------ import styles and images
-import "./styles/Cart.scss";
+import "./styles/Layout.scss";
 
 export class CartPage extends Component {
   render() {
     return (
-      <div className="Cart">
+      <div className="Layout">
         <SearchHero />
-        <div className="Cart__body">
+        <div className="Layout__body">
           <CartHead />
           <CartIngredient />
           <CartIngredient />
