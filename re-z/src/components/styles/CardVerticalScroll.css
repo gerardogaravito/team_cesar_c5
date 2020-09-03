@@ -1,0 +1,6 @@
+.scrollcontainer {
+  margin: 10px;
+  height: 85vh;
+  max-width: 640px;
+  overflow: auto;
+}

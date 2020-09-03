@@ -1,0 +1,35 @@
+.Navbar{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.styles-log{
+    width: 90px;
+    height: 35px;
+}
+.styles-log img{
+    width: 90px;
+    height: 35px;
+    padding-left: 58px;
+}
+.LandingMenu{
+    margin-right: 130px;
+}
+.LandingMenu a{
+    text-decoration: none;
+    color: #8f2d56;
+    font-size: 20px;
+    padding-left: 50px;  
+    cursor: pointer;
+}
+.LandingMenu a:hover{
+    color: #ffbc42;
+    font-size: 22px;
+}
