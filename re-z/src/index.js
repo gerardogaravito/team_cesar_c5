@@ -9,7 +9,9 @@ import RecipeCardSquare from './components/RecipeCardSquare'
 //import SwitchPerfil from "./components/SwitchPerfil"
 //import RecipeCardHorizontalSimple from './components/RecipeCardHorizontalSimple'
 //import FooterA from './components/FooterA' */
-//import RecipeCardHorizontalDerecha from './components/RecipeCardHorizontalDerecha'
+import RecipeCardHorizontalDerecha from './components/RecipeCardHorizontalDerecha'
+import RecipeCardHorizontalIzquierda from './components/RecipeCardHorizontalIzquierda'
+import CardVerticalScroll from './components/CardVerticalScroll'
 //import Switch from './components/SwitchPerfil';*/
 //import Search from './components/Search'
 
@@ -27,7 +29,7 @@ const container = document.getElementById('app');
 // ReactDOM.render( <elemento/>, dónde)
 
 
-ReactDOM.render(<RecipeCardSquare />,container)
+ReactDOM.render(<CardVerticalScroll />,container)
 
 //Para cuando queramos renderizar todo el sitio con App.js
 // ReactDOM.render(<App />,container)

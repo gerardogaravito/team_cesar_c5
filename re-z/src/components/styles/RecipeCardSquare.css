@@ -6,6 +6,7 @@
     background-color: #8F2D56;
     color:#FFBC42;
     border-radius: 20px;
+    outline: none;
   }
   .cardcuadro:hover {
     cursor: pointer;
