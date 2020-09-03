@@ -5,6 +5,11 @@ import FooterA from '../FooterA';
 import Loader from '../Loader';
 import CarruselHome from '../CarruselHome'
 
+import Button from '../Button'
+import CardVerticalScroll from '../CardVerticalScroll'
+import RecipeCardHorizontalSimple from '../RecipeCardHorizontalSimple'
+import RecipeCardSquare from '../RecipeCardSquare'
+
 class Home extends React.Component{
     state = {
         loading: true,
@@ -34,6 +39,10 @@ class Home extends React.Component{
             <div className="Home-container">
                 <Navbar />
                 <CarruselHome />
+                <Button />
+                <CardVerticalScroll />
+                <RecipeCardHorizontalSimple />
+                <RecipeCardSquare />
                 <FooterA />
             </div>
         )
