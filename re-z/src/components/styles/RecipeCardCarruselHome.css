@@ -1,27 +1,50 @@
 .Card-container{
+    width: 805px;
     position: relative;
-    display: flex;
+}
+.CardImage-food{
+    width: 800px;
+    height: 543px;
+	overflow: hidden;
+	cursor: pointer;
+	background: #000;
+    margin-top:30px;
+    border-radius: 20px;
 }
 .CardImage-food img{
-    width: 814px;
-    height: 543px;
-    border-radius: 20px;    
+    opacity: 1;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
 }
-
+.CardImage-food:hover img{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-transition: all 0.8s;
+    transition: all 0.8s;
+    opacity: .66;
+}
 .Card-information{ 
     position: absolute;
-}
-.Card-backgroundt{
-    background-color: #73d2de;
-    opacity: .6;
-    width: 814px;
-    height: 543px;
-    border-radius: 20px;  
-    border-radius: 20px;  
+    width: 600px;
+    height: 200px;
+    padding: 30px;
+	bottom: -50px;
+	opacity: 0;
+	-webkit-transition: all 0.4s;
+    transition: all 0.4s;
 }
 .Card-information h1{
-    color: #ffbc42;
-    font-size: 50px;
-    padding-left: 69px;
-    padding-top: 64px;
+    margin: 0;
+	color: #ffbc42;
+	font-size: 3em;
+}
+.Card-information p{
+    margin: 0;
+	color: #ffbc42;
+	font-size: 2em;
+}
+.CardImage-food:hover .Card-information{
+    opacity: 1;
+	bottom: 10px;
 }
