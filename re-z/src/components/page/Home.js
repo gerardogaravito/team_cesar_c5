@@ -3,6 +3,7 @@ import React from 'react';
 import Navbar from '../Navbar';
 import FooterA from '../FooterA';
 import Loader from '../Loader';
+import CarruselHome from '../CarruselHome'
 
 class Home extends React.Component{
     state = {
@@ -32,6 +33,7 @@ class Home extends React.Component{
         return (
             <div className="Home-container">
                 <Navbar />
+                <CarruselHome />
                 <FooterA />
             </div>
         )

@@ -17,11 +17,11 @@ import Landing from './components/page/Landing'
 //import Search from './components/Search'
 
 //Para cuando queramos renderiar todo el sitio con App
-// import App from './App';
+import App from './components/App';
 
 // ---las librerías de abajo venían con create-react-app, aun no las sé usar entonces las comenté---
 // import * as serviceWorker from './serviceWorker';
-import RecipeCardCarruselHome from './components/RecipeCardCarruselHome'
+
 
 
 const container = document.getElementById('app');
@@ -31,7 +31,7 @@ const container = document.getElementById('app');
 // ReactDOM.render( <elemento/>, dónde)
 
 
-ReactDOM.render(<Landing />,container)
+/* ReactDOM.render(<CarruselHome />,container) */
 
 //Para cuando queramos renderizar todo el sitio con App.js
-// ReactDOM.render(<App />,container)
+ ReactDOM.render(<App />,container)
