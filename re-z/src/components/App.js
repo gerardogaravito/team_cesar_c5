@@ -13,6 +13,7 @@ function App() {
         <Route exact path="/home" component={Home} />
         <Route exact path="/home/favoritos" component={Favoritos} />
         <Route component={NotFound} />
+        <Route exact path="/home/Close" component={Landing} />
       </Switch>
     </BrowserRouter>
   );
