@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import { FaRegHeart, FaUsers, FaClock, FaPlus } from "react-icons/fa";
 
 //------------------------------ import styles and images
-import "./styles/Recipecard.scss";
+import "../assets/components-style/Recipecard.scss";
 
 const RecipeCard = (props) => {
   return (

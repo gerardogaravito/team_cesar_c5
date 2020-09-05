@@ -1,7 +1,7 @@
 //------------------------------ import libraries
 import React, { Fragment } from "react";
 //------------------------------ import styles and images
-import "./styles/Carthead.scss";
+import "../assets/components-style/CartSection.scss";
 
 const CartHead = (props) => {
   return (

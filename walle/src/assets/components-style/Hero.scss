@@ -1,5 +1,5 @@
-//------------------------------ import scss
-@import "../../global-styles/Globalstyles.scss";
+//------------------------------ Import
+@import "../global-styles/Globalstyles.scss";
 
 //------------------------------ Styles
 .Hero {
@@ -10,7 +10,7 @@
       rgba(255, 255, 255, 0.88) 100%
     ),
     linear-gradient(0deg, rgba(240, 165, 0, 0.2), rgba(240, 165, 0, 0.2)),
-    url("../../images/hero-img.jpeg");
+    url("../images/hero-img.jpeg");
   background-blend-mode: normal, lighten, normal;
   background-size: cover;
   background-position: center;
@@ -35,5 +35,28 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+}
+
+//------------------------------ Searchbar syles
+.Search-bar {
+  width: 60%;
+  height: $space4;
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-top: $space;
+
+  &__input {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: $space4;
+    padding-left: $space4;
+    color: $text-color;
+    font-size: $size-xs;
+    border: $main-border;
+    border-radius: $space4;
   }
 }

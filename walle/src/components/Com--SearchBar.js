@@ -5,7 +5,7 @@ import React, { Fragment } from "react";
 import { FaSearch } from "react-icons/fa";
 
 //------------------------------ import styles and images
-import "../global-styles/icons.scss";
+import "../assets/global-styles/icons.scss";
 
 const SearchBar = () => {
   return (

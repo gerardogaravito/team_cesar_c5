@@ -3,11 +3,11 @@ import React, { Component } from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 
 //------------------------------ import components
-import LandingPage from "./pages/Pag--Landing";
-import HomePage from "./pages/Pag--Home";
-import UserPage from "./pages/Pag--User";
-import RecipePage from "./pages/Pag--Recipe";
-import CartPage from "./pages/Pag--Cart";
+import LandingPage from "../pages/Pag--Landingg";
+import HomePage from "../pages/Pag--Home";
+import UserPage from "../pages/Pag--User";
+import RecipePage from "../pages/Pag--Recipe";
+import CartPage from "../pages/Pag--Cart";
 
 export class App extends Component {
   render() {

@@ -1,11 +1,9 @@
 //------------------------------ import libraries
 import React, { Fragment } from "react";
 
-//------------------------------ import components
-
 //------------------------------ import styles and images
-import "./styles/UserInfo.scss";
-import userPic from "../images/userpic.jpg";
+import "../assets/components-style/UserInfo.scss";
+import userPic from "../assets/images/userpic.jpg";
 
 const UserInfo = (props) => {
   return (

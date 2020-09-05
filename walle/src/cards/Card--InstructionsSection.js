@@ -12,7 +12,7 @@ import {
 } from "react-icons/fa";
 
 //------------------------------ import styles and images
-import "./styles/InstructionsSection.scss";
+import "../assets/components-style/InstructionsSection.scss";
 
 const InstructionsSection = (props) => {
   return (

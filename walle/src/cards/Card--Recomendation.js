@@ -1,10 +1,8 @@
 //------------------------------ import libraries
 import React, { Fragment } from "react";
 
-//------------------------------ import components
-
 //------------------------------ import styles and images
-import "./styles/Recommendation.scss";
+import "../assets/components-style/Recommendation.scss";
 
 const RecommendationCard = (props) => {
   return (

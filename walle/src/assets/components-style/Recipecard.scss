@@ -1,7 +1,23 @@
 //------------------------------ Import
-@import "../../global-styles/Globalstyles.scss";
+@import "../global-styles/Globalstyles.scss";
 
-//------------------------------ styles
+//------------------------------ Recipe Carrousel Container styles
+.Recipe-carrousel {
+  margin: $margin-sections 0;
+  &__cards-container {
+    height: 450px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: $space;
+  }
+}
+
+.main-card {
+  grid-row: 1 / span 2;
+}
+
+//------------------------------ Recipe Card styles
 .RecipeCard {
   @extend .CardStyles;
   position: relative;

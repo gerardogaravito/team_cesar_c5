@@ -6,8 +6,7 @@ import HeaderHome from "./Com--Header-home";
 import SearchBar from "./Com--SearchBar";
 
 //------------------------------ import styles and images
-import "./styles/Heros.scss";
-import "./styles/Searchbar.scss";
+import "../assets/components-style/Hero.scss";
 
 const SearchHero = () => {
   return (

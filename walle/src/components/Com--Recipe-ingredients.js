@@ -5,7 +5,7 @@ import React, { Fragment } from "react";
 import RecipeIngredientItem from "../cards/Card--Recipe-ingredient";
 
 //------------------------------ import styles and images
-import "./styles/RecipeIngredientList.scss";
+import "../assets/components-style/Recipe.scss";
 
 const RecipeIngredientsList = () => {
   return (

@@ -6,9 +6,9 @@ import { Link } from "react-router-dom";
 import { FaShoppingCart, FaHome } from "react-icons/fa";
 
 //------------------------------ import styles and images
-import "./styles/Headers.scss";
-import Logo from "../images/logo-walle.png";
-import UserImg from "../images/userpic.jpg";
+import "../assets/components-style/Header.scss";
+import Logo from "../assets/images/logo-walle.png";
+import UserImg from "../assets/images/userpic.jpg";
 
 const HeaderHome = () => {
   return (

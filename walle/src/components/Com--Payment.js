@@ -4,8 +4,8 @@ import React, { Fragment } from "react";
 //------------------------------ import components
 
 //------------------------------ import styles and images
-import "./styles/Payment.scss";
-import payoneerIcon from "../images/logoPayoneer.png";
+import "../assets/components-style/Payment.scss";
+import payoneerIcon from "../assets/images/logoPayoneer.png";
 
 const Payment = () => {
   return (

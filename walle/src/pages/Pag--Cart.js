@@ -9,7 +9,7 @@ import Payment from "../components/Com--Payment";
 import Footer from "../components/Com--Footer";
 
 //------------------------------ import styles and images
-import "./styles/Layout.scss";
+import "../assets/components-style/Layout.scss";
 
 export class CartPage extends Component {
   render() {
