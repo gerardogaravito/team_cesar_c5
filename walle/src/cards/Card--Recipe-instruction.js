@@ -2,7 +2,7 @@
 import React, { Fragment } from "react";
 
 //------------------------------ import styles and images
-import "./styles/Instruction.scss";
+import "../assets/components-style/Recipe.scss";
 
 const InstructionItem = (props) => {
   return (

@@ -8,8 +8,9 @@ import RecipeIngredientsList from "../components/Com--Recipe-ingredients";
 import RecipeInstructionsList from "../components/Com--Recipe-instructions";
 import RecipeCarrousel from "../components/Com--Recipe-carrousel";
 import Footer from "../components/Com--Footer";
+
 //------------------------------ import styles and images
-import "./styles/Layout.scss";
+import "../assets/components-style/Layout.scss";
 
 export class RecipePage extends Component {
   render() {

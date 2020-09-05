@@ -5,8 +5,8 @@ import React, { Fragment } from "react";
 import RecommendationCard from "../cards/Card--Recomendation";
 
 //------------------------------ import styles and images
-import "./styles/RecommendationCarrousel.scss";
-import userPicture from "../images/userpic.jpg";
+import "../assets/components-style/Recommendation.scss";
+import userPicture from "../assets/images/userpic.jpg";
 
 const RecommendationCarrousel = () => {
   return (

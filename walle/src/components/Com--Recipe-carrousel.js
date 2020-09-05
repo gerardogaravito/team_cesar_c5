@@ -2,11 +2,11 @@
 import React, { Fragment } from "react";
 
 //------------------------------ import components
-import RecipeCard from "../cards/Card--Recipe";
+import RecipeCard from "../cards/Card--Recipe-card";
 
 //------------------------------ import styles and images
-import "./styles/RecipeCarrousel.scss";
-import recipeImg from "../images/cardexample.jpeg";
+import "../assets/components-style/Recipecard.scss";
+import recipeImg from "../assets/images/cardexample.jpeg";
 
 const RecipeCarrousel = (props) => {
   return (

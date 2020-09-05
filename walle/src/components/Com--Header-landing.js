@@ -3,8 +3,8 @@ import React, { Fragment } from "react";
 import { Link } from "react-router-dom";
 
 //------------------------------ import styles and images
-import "./styles/Headers.scss";
-import Logo from "../images/logo-walle.png";
+import "../assets/components-style/Header.scss";
+import Logo from "../assets/images/logo-walle.png";
 
 const HeaderLanding = () => {
   return (

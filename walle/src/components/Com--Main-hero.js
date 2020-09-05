@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import HeaderLanding from "./Com--Header-landing";
 
 //------------------------------ import styles and images
-import "./styles/Heros.scss";
+import "../assets/components-style/Hero.scss";
 
 const MainHero = () => {
   return (

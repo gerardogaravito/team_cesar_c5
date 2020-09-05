@@ -6,8 +6,8 @@ import ReactDom from "react-dom";
 import { FaTimes, FaTwitter, FaFacebookF, FaInstagram } from "react-icons/fa";
 
 //------------------------------ import styles and images
-import "./styles/Login.scss";
-import logo from "../images/logo-walle.png";
+import "../assets/components-style/Login.scss";
+import logo from "../assets/images/logo-walle.png";
 
 const LoginModal = () => {
   return ReactDom.createPortal(

@@ -5,8 +5,8 @@ import React, { Fragment } from "react";
 import DashboardCard from "../cards/Card--Dashboard";
 
 //------------------------------ import styles and images
-import "./styles/RecipeDashboard.scss";
-import foodPicture from "../images/cardexample.jpeg";
+import "../assets/components-style/RecipeDashboard.scss";
+import foodPicture from "../assets/images/cardexample.jpeg";
 
 const RecipeDashboard = () => {
   return (

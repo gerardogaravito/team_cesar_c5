@@ -2,25 +2,24 @@
 import React, { Fragment } from "react";
 import { Link } from "react-router-dom";
 
-//------------------------------ import components
-import "./styles/Ingredient.scss";
 //------------------------------ import styles and images
+import "../assets/components-style/RecipeDashboard.scss";
 
-const IngredientCard = (props) => {
+const CategoryCard = (props) => {
   return (
     <Fragment>
       <Link to="/walle">
-        <div className="Ingredient-card">
+        <div className="Category-card">
           <img
-            className="Ingredient-card__img"
+            className="Category-card__img"
             src={props.picture}
             alt={props.name}
           />
-          <p className="Ingredient-card__name">{props.name}</p>
+          <p className="Category-card__name">{props.name}</p>
         </div>
       </Link>
     </Fragment>
   );
 };
 
-export default IngredientCard;
+export default CategoryCard;

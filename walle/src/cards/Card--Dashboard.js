@@ -3,7 +3,7 @@ import React, { Fragment } from "react";
 import { Link } from "react-router-dom";
 
 //------------------------------ import styles and images
-import "./styles/Dashboard.scss";
+import "../assets/components-style/RecipeDashboard.scss";
 
 const DashboardCard = (props) => {
   return (

@@ -6,8 +6,9 @@ import HeaderHome from "../components/Com--Header-home";
 import UserInfo from "../components/Com--User-info";
 import RecipeCarrousel from "../components/Com--Recipe-carrousel";
 import Footer from "../components/Com--Footer";
+
 //------------------------------ import styles and images
-import "./styles/Layout.scss";
+import "../assets/components-style/Layout.scss";
 
 export class UserPage extends Component {
   render() {

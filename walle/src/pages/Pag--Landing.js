@@ -3,15 +3,15 @@ import React, { Component } from "react";
 
 //------------------------------ import components
 import MainHero from "../components/Com--Main-hero";
-import IngredientCarrousel from "../components/Com--Ingredient-carrousel";
+import CategoryCarrousel from "../components/Com--Category-carrousel";
 import RecipeDashboard from "../components/Com--Recipes-dashboard";
-import InstructionsSection from "../cards/Card--Instructions";
+import InstructionsSection from "../cards/Card--InstructionsSection";
 import RecommendationCarrousel from "../components/Com--Recomendations-carrousel";
 import Footer from "../components/Com--Footer";
 import LoginModal from "../components/Com--LoginModal";
 
 //------------------------------ import styles and images
-import "./styles/Layout.scss";
+import "../assets/components-style/Layout.scss";
 
 export class LandingPage extends Component {
   state = { isModalOpen: false };
@@ -21,7 +21,7 @@ export class LandingPage extends Component {
       <div className="Layout">
         <MainHero />
         <div className="Layout__body">
-          <IngredientCarrousel />
+          <CategoryCarrousel />
           <RecipeDashboard />
           <InstructionsSection />
           <RecommendationCarrousel />
