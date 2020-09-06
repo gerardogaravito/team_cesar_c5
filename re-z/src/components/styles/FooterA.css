@@ -5,7 +5,7 @@ footer{
     height: 300px;
     display: flex;
     justify-content: space-between;
-    position: absolute;
+    position: relative;
     bottom: 0;
 }
 .text-Block{

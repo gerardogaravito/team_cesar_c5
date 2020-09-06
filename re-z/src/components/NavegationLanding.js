@@ -2,16 +2,20 @@ import React, { Component } from 'react';
 
 import './styles/NavegationLanding.css';
 import CloseIcon from "../images/Atomos/close-icon.svg";
-import Searchicon from "../images/Atomos/search-icon.svg";
+import logo from "../images/logo.png";
 
 class ModalLogin extends Component{
     render(){
         return(
           <div className="Modal">
-            <div className="Modal__container">
-            <img src={CloseIcon} alt="Close" onClick={this.props.onCloseLogin}/> 
-            <h1>Login</h1>
-        </div> 
+            <div className="Modal__container-Login">
+                <div className="styles-logo">
+                  <img src={logo} alt="Logo"/> 
+                </div>
+                <div className="close-button">
+                  <img src={CloseIcon} alt="Close" onClick={this.props.onCloseLogin}/> 
+                </div>
+            </div> 
         </div>
         )
     }
@@ -20,9 +24,13 @@ class ModalRegister extends Component{
   render(){
       return(
         <div className="Modal">
-          <div className="Modal__container">
-          <img src={CloseIcon} alt="Close" onClick={this.props.onCloseRegister}/> 
-          <h1>Registro</h1>
+          <div className="Modal__container-Register">
+            <div className="styles-logo">
+              <img src={logo} alt="Logo"/> 
+            </div>
+            <div className="close-button">
+              <img src={CloseIcon} alt="Close" onClick={this.props.onCloseRegister}/> 
+            </div>
       </div> 
       </div>
       )
