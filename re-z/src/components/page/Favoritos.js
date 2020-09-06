@@ -12,7 +12,6 @@ class Favoritos extends React.Component{
               <div className="Favoritos-container">
                 <h1 className="favoritos__title">Tus Favoritos</h1>
               </div>
-              <FooterA />
           </div>
       )
   }

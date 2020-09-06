@@ -22,7 +22,6 @@ class Landing extends React.Component {
                   <CardVerticalScroll />
                 </div>
               </div>
-              <FooterA/>
         </div>
     )
   }

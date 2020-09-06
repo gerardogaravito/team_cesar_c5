@@ -43,7 +43,6 @@ class Home extends React.Component{
                 <CardVerticalScroll />
                 <RecipeCardHorizontalSimple />
                 <RecipeCardSquare />
-                <FooterA />
             </div>
         )
     }

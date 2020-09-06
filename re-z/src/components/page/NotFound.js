@@ -21,7 +21,6 @@ class NotFound extends React.Component {
             onClick={this.handleBackClick}
             >Ir a la ruta anterior 👈</button>
         </div>
-        <Footer/>
       </React.Fragment>
     )
   }
