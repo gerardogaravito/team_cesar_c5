@@ -38,11 +38,7 @@ class Home extends React.Component{
         return (
             <div className="Home-container">
                 <Navbar />
-                <CarruselHome />
-                <Button />
-                <CardVerticalScroll />
-                <RecipeCardHorizontalSimple />
-                <RecipeCardSquare />
+                <CarruselHome /> 
             </div>
         )
     }

@@ -16,7 +16,7 @@ function App() {
         <Route exact path="/home/Close" component={Landing} />
         <Route component={NotFound} />
       </Switch>
-      <FooterA />
+      {/* <FooterA /> */}
     </BrowserRouter>
   );
 }
