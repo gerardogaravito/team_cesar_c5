@@ -43,8 +43,8 @@
             transform-style: preserve-3d;
     -webkit-transform: translateZ(-182px) rotateY(0);
             transform: translateZ(-182px) rotateY(0);
-    -webkit-animation: carrusel 10s infinite cubic-bezier(1, 0.015, 0.295, 1.225) forwards;
-            animation: carrusel 10s infinite cubic-bezier(1, 0.015, 0.295, 1.225) forwards;
+    -webkit-animation: carrusel 20s infinite cubic-bezier(1, 0.015, 0.295, 1.225) forwards;
+            animation: carrusel 20s infinite cubic-bezier(1, 0.015, 0.295, 1.225) forwards;
   }
    
   .tarjetas__elemento {
@@ -53,8 +53,10 @@
     left: 0;
     width: 190px;
     height: 210px;
-    border-radius: 6px;
-  }.tarjetas__elemento:nth-child(1) {
+    /* border-radius: 6px; */
+  }
+
+  .tarjetas__elemento:nth-child(1) {
     -webkit-transform: rotateY(0) translateZ(182px);
             transform: rotateY(0) translateZ(182px);
   }
