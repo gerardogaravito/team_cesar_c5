@@ -1,5 +1,5 @@
 //------------------------------ import libraries
-import React, { Fragment } from "react";
+import React from "react";
 
 //------------------------------ import components
 import HeaderHome from "./Com--Header-home";
@@ -7,18 +7,19 @@ import SearchBar from "./Com--SearchBar";
 
 //------------------------------ import styles and images
 import "../assets/components-style/Hero.scss";
+import heroPic from "../assets/images/hero-img.jpeg";
 
+//------------------------------------ COMPONENT ------------------------------------//
 const SearchHero = () => {
   return (
-    <Fragment>
-      <section className="Hero">
-        <HeaderHome />
-        <div className="Hero__search">
-          <h1 className="Hero__title">Walle</h1>
-          <SearchBar />
-        </div>
-      </section>
-    </Fragment>
+    <section className="Hero">
+      <img src={heroPic} alt="" className="Hero__img" />
+      <HeaderHome />
+      <div className="Hero__search">
+        <h1 className="Hero__title">Walle</h1>
+        <SearchBar />
+      </div>
+    </section>
   );
 };
 

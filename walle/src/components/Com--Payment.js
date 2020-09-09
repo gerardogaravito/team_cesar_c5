@@ -7,6 +7,7 @@ import React, { Fragment } from "react";
 import "../assets/components-style/Payment.scss";
 import payoneerIcon from "../assets/images/logoPayoneer.png";
 
+//------------------------------------ COMPONENT ------------------------------------//
 const Payment = () => {
   return (
     <Fragment>

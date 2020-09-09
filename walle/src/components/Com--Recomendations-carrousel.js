@@ -8,6 +8,7 @@ import RecommendationCard from "../cards/Card--Recomendation";
 import "../assets/components-style/Recommendation.scss";
 import userPicture from "../assets/images/userpic.jpg";
 
+//------------------------------------ COMPONENT ------------------------------------//
 const RecommendationCarrousel = () => {
   return (
     <Fragment>

@@ -7,6 +7,7 @@ import RecipeIngredientItem from "../cards/Card--Recipe-ingredient";
 //------------------------------ import styles and images
 import "../assets/components-style/Recipe.scss";
 
+//------------------------------------ COMPONENT ------------------------------------//
 const RecipeIngredientsList = () => {
   return (
     <Fragment>

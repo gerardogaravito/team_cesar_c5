@@ -2,14 +2,21 @@
 @import "../global-styles/Globalstyles.scss";
 
 //------------------------------ Styles
+.Modal-container {
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba($color: #000000, $alpha: 0.3);
+}
+
 .Modal {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100vw;
   height: 100vh;
-  background-color: rgba($color: #000000, $alpha: 0.3);
 
   &__img {
     width: 200px;
@@ -32,11 +39,8 @@
     margin: 0;
   }
 
-  &__garden {
-    margin-bottom: $space2;
-  }
-
   &__title {
     margin-bottom: $space4;
+    margin-top: $space2;
   }
 }
