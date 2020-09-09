@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 
 import './styles/NavegationLanding.css';
+import './styles/RegisterForm.css'
 import CloseIcon from "../images/Atomos/close-icon.svg";
 import logo from "../images/logo.png";
+import Button from './Button'
 
 class ModalLogin extends Component{
     render(){
@@ -31,8 +33,83 @@ class ModalRegister extends Component{
             <div className="close-button">
               <img src={CloseIcon} alt="Close" onClick={this.props.onCloseRegister}/> 
             </div>
-      </div> 
-      </div>
+            <form className='Modal__form'>
+              <div className="Modal__form--group">
+                <label className='modal__form--label'>Nombre</label>
+                <input 
+                  className='Modal__form--control' 
+                  type="text"
+                  name='name'
+                />
+              </div>
+              <div className="Modal__form--group">
+                <label className='modal__form--label'>Apellidos</label>
+                <input 
+                  className='Modal__form--control' 
+                  type="text"
+                  name='lastname'
+                />
+              </div>
+              <div className="Modal__form--group">
+                <label className='modal__form--label'>e-mail</label>
+                <input 
+                  className='Modal__form--control' 
+                  type="text"
+                  name='email'
+                />
+              </div>
+              <div className="Modal__form--group">
+                <label className='modal__form--label'>Teléfono (opcional)</label>
+                <input 
+                  className='Modal__form--control' 
+                  type="text"
+                  name='phoneNumber'
+                />
+              </div>
+              <div className="Modal__form--group">
+                <label className='modal__form--label'>Contraseña</label>
+                <input 
+                  className='Modal__form--control' 
+                  type="text"
+                  name='password'
+                />
+              </div>
+              <div className="Modal__form--group">
+                <label className='modal__form--label'>Confirmar Contraseña</label>
+                <input 
+                  className='Modal__form--control' 
+                  type="text"
+                  name='passwordConfirm'
+                />
+              </div>
+              <div className="Modal__form--group">
+                <label className='modal__form--label'>País</label>
+                <input 
+                  className='Modal__form--control' 
+                  type="text"
+                  name='country'
+                />
+              </div>
+              <div className="Modal__form--group">
+                <label className='modal__form--label'>Ciudad</label>
+                <input 
+                  className='Modal__form--control' 
+                  type="text"
+                  name='city'
+                />
+              </div>
+              <div className="Modal__form--group">
+                <label className='modal__form--label'>Dirección</label>
+                <input 
+                  className='Modal__form--control' 
+                  type="text"
+                  name='address'
+                />
+              </div>
+            <Button text='Registrarse'/>
+            </form>
+          </div> 
+        </div>
       )
   }
 }
@@ -49,11 +126,11 @@ class ModalRegister extends Component{
     render() {
       return (
         <div className="LandingMenu">
-          <button onClick={this._openLoginRegister}>Regístrate</button>
+          <button className="LandingMenu__button" onClick={this._openLoginRegister}>Regístrate</button>
           {this.state.isModalregisterOpen &&
                   <ModalRegister onCloseRegister={this._closeLoginRegister}/> 
               }
-          <button name="boton de login" onClick={this._openLoginModal}>
+          <button className="LandingMenu__button" name="boton de login" onClick={this._openLoginModal}>
             Iniciar Sesión
             </button>
               {this.state.isModalLoginOpen &&
