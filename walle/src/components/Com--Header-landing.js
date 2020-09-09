@@ -6,7 +6,8 @@ import { Link } from "react-router-dom";
 import "../assets/components-style/Header.scss";
 import Logo from "../assets/images/logo-walle.png";
 
-const HeaderLanding = () => {
+//------------------------------------ COMPONENT ------------------------------------//
+const HeaderLanding = ({ handleLogin, handleSign }) => {
   return (
     <Fragment>
       <header className="Header">
@@ -14,8 +15,12 @@ const HeaderLanding = () => {
           <img className="Header__brand" src={Logo} alt="Logo de Walle" />
         </Link>
         <div className="Header__nav">
-          <button className="second-button">Login</button>
-          <button className="main-button">Registro</button>
+          <button className="second-button" onClick={handleLogin}>
+            Login
+          </button>
+          <button className="main-button" onClick={handleSign}>
+            Registro
+          </button>
         </div>
       </header>
     </Fragment>

@@ -7,6 +7,7 @@ import InstructionItem from "../cards/Card--Recipe-instruction";
 //------------------------------ import styles and images
 import "../assets/components-style/Recipe.scss";
 
+//------------------------------------ COMPONENT ------------------------------------//
 const RecipeInstructionsList = () => {
   return (
     <Fragment>

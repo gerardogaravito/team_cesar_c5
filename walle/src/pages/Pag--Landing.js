@@ -1,5 +1,5 @@
 //------------------------------ import libraries
-import React, { Component } from "react";
+import React, { useRef } from "react";
 
 //------------------------------ import components
 import MainHero from "../components/Com--Main-hero";
@@ -13,13 +13,23 @@ import LoginModal from "../components/Com--LoginModal";
 //------------------------------ import styles and images
 import "../assets/components-style/Layout.scss";
 
-export class LandingPage extends Component {
-  state = { isModalOpen: false };
+//------------------------------------ COMPONENT ------------------------------------//
+const LandingPage = () => {
+  const modalReference = useRef();
+  const openLoginModal = () => {
+    modalReference.current.openLoginModal();
+  };
+  const openSignModal = () => {
+    modalReference.current.openSignModal();
+  };
 
-  render() {
-    return (
+  return (
+    <>
       <div className="Layout">
-        <MainHero />
+        <MainHero
+          handleLoginClick={openLoginModal}
+          handleSignClick={openSignModal}
+        />
         <div className="Layout__body">
           <CategoryCarrousel />
           <RecipeDashboard />
@@ -28,8 +38,9 @@ export class LandingPage extends Component {
         </div>
         <Footer />
       </div>
-    );
-  }
-}
+      <LoginModal ref={modalReference} />
+    </>
+  );
+};
 
 export default LandingPage;

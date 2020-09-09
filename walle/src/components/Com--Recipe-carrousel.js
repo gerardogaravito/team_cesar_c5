@@ -8,11 +8,12 @@ import RecipeCard from "../cards/Card--Recipe-card";
 import "../assets/components-style/Recipecard.scss";
 import recipeImg from "../assets/images/cardexample.jpeg";
 
-const RecipeCarrousel = (props) => {
+//------------------------------------ COMPONENT ------------------------------------//
+const RecipeCarrousel = ({ title }) => {
   return (
     <Fragment>
       <section className="Recipe-carrousel">
-        <h2 className="Recipe-carrousel__title">{props.title}</h2>
+        <h2 className="Recipe-carrousel__title">{title}</h2>
         <div className="Recipe-carrousel__cards-container">
           <RecipeCard
             card="main-card"

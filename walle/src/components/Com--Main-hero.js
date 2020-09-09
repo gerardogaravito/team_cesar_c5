@@ -1,33 +1,36 @@
 //------------------------------ import libraries
-import React, { Fragment } from "react";
-import { Link } from "react-router-dom";
+import React from "react";
 
 //------------------------------ import components
 import HeaderLanding from "./Com--Header-landing";
 
 //------------------------------ import styles and images
 import "../assets/components-style/Hero.scss";
+import heroPic from "../assets/images/hero-img.jpeg";
 
-const MainHero = () => {
+//------------------------------------ COMPONENT ------------------------------------//
+const MainHero = ({ handleLoginClick, handleSignClick }) => {
   return (
-    <Fragment>
-      <section className="Hero">
-        <HeaderLanding />
-        <div className="Hero__information">
-          <h1 className="Hero__title">Walle</h1>
-          <div className="Hero__description">
-            <p className="Hero__text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
-              iusto, officia laborum eius nihil laudantium possimus dolore modi
-              repellendus sit.
-            </p>
-            <Link className="main-button--xxl" to="/">
-              Registro
-            </Link>
-          </div>
+    <section className="Hero">
+      <img src={heroPic} alt="" className="Hero__img" />
+      <HeaderLanding
+        handleLogin={handleLoginClick}
+        handleSign={handleSignClick}
+      />
+      <div className="Hero__information">
+        <h1 className="Hero__title">Walle</h1>
+        <div className="Hero__description">
+          <p className="Hero__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
+            iusto, officia laborum eius nihil laudantium possimus dolore modi
+            repellendus sit.
+          </p>
+          <button className="main-button--xxl" onClick={handleSignClick}>
+            Registro
+          </button>
         </div>
-      </section>
-    </Fragment>
+      </div>
+    </section>
   );
 };
 

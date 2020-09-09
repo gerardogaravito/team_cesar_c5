@@ -5,7 +5,8 @@ import React, { Fragment } from "react";
 import "../assets/components-style/UserInfo.scss";
 import userPic from "../assets/images/userpic.jpg";
 
-const UserInfo = (props) => {
+//------------------------------------ COMPONENT ------------------------------------//
+const UserInfo = ({ userName, email, phone }) => {
   return (
     <Fragment>
       <div className="UserInfo">
@@ -15,9 +16,9 @@ const UserInfo = (props) => {
         </div>
         <div className="UserInfo__description">
           <div className="UserInfo__data">
-            <h2 className="UserInfo__name">{props.userName}</h2>
-            <p>{props.email}</p>
-            <p>{props.phone}</p>
+            <h2 className="UserInfo__name">{userName}</h2>
+            <p>{email}</p>
+            <p>{phone}</p>
           </div>
           <div className="UserInfo__direction">
             <div className="input">

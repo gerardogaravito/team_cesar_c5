@@ -8,6 +8,7 @@ import CategoryCard from "../cards/Card--Category";
 import "../assets/components-style/RecipeDashboard.scss";
 import foodPicture from "../assets/images/cardexample.jpeg";
 
+//------------------------------------ COMPONENT ------------------------------------//
 const CategoryCarrousel = () => {
   return (
     <Fragment>

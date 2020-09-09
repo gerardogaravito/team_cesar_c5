@@ -1,5 +1,5 @@
 //------------------------------ import libraries
-import React, { Component } from "react";
+import React from "react";
 
 //------------------------------ import components
 import MainHero from "../components/Com--Main-hero";
@@ -12,21 +12,20 @@ import Footer from "../components/Com--Footer";
 //------------------------------ import styles and images
 import "../assets/components-style/Layout.scss";
 
-export class RecipePage extends Component {
-  render() {
-    return (
-      <div className="Layout">
-        <MainHero />
-        <div className="Layout__body">
-          <Metadata />
-          <RecipeIngredientsList />
-          <RecipeInstructionsList />
-          <RecipeCarrousel />
-        </div>
-        <Footer />
+//------------------------------------ COMPONENT ------------------------------------//
+const RecipePage = () => {
+  return (
+    <div className="Layout">
+      <MainHero />
+      <div className="Layout__body">
+        <Metadata />
+        <RecipeIngredientsList />
+        <RecipeInstructionsList />
+        <RecipeCarrousel />
       </div>
-    );
-  }
-}
+      <Footer />
+    </div>
+  );
+};
 
 export default RecipePage;

@@ -10,6 +10,7 @@ import "../assets/components-style/Header.scss";
 import Logo from "../assets/images/logo-walle.png";
 import UserImg from "../assets/images/userpic.jpg";
 
+//------------------------------------ COMPONENT ------------------------------------//
 const HeaderHome = () => {
   return (
     <Fragment>

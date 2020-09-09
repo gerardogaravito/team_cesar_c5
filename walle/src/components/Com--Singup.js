@@ -8,6 +8,7 @@ import { FaTimes, FaTwitter, FaFacebookF, FaInstagram } from "react-icons/fa";
 import "../assets/components-style/Login.scss";
 import logo from "../assets/images/logo-walle.png";
 
+//------------------------------------ COMPONENT ------------------------------------//
 const SignUpModal = () => {
   return (
     <Fragment>
