@@ -29,3 +29,14 @@
   border: 2px solid #FFBC42;
   border-radius: 20px;
 }
+
+.Modal__form--forgot {
+  color: #FFBC42;
+  font-size: 14px;
+  text-decoration: none;
+  margin: 40px 0px;
+}
+
+.Modal__form--forgot:hover {
+  transform: scale(1.05);
+}

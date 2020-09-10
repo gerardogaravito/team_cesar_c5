@@ -6,8 +6,19 @@
   display: grid;
   grid-template-columns: 41% 1fr;
   position: relative;
-  overflow: auto;
+  overflow: none; /*Cambié el valor a none porque con auto se mostraba un scroll extra*/
   height: 100%; 
+}
+.landing-container-principal::-webkit-scrollbar {
+  width: 10px;
+  background: #8f2d56;
+}
+.landing-container-principal::-webkit-scrollbar-thumb {
+  background: #ffbc42;
+  border-radius: 5px;
+}
+.landing-container-principal::-webkit-scrollbar-thumb:hover {
+  background: #b9892e;
 }
 .landing__spot {
   grid-column: 1 / 2;
@@ -20,11 +31,11 @@
   grid-column: 2 / 3;
   justify-self: center;
   margin-top: 100px;
-  height: 100%; 
+  max-height: 90%; 
 }
 .landing__container-secundary{ /*Estos estilos solo son rellenos deben de ser sustituidos*/
   height: 500px;
-  width: 100%;
+  max-width: 100%;
   margin-top: 200px;
   margin-left: 20%;
 }

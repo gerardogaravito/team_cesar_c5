@@ -18,7 +18,7 @@ class RegisterForm extends React.Component {
 
   handleSubmit = e => {
     e.preventDefault();
-    console.log('Form was sumbitted');
+    console.log('Form was submitted');
     console.log(this.state);
   }
 
