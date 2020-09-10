@@ -42,7 +42,7 @@ const InstructionsSection = (props) => {
           </div>
           <div className="InstructionsSection__icon">
             <FaShoppingBasket className="icon--xl" />
-            <p>Los ingredientes de las recetas llegará a tu</p>
+            <p>Los ingredientes de las recetas llegará a ti</p>
           </div>
         </div>
       </section>

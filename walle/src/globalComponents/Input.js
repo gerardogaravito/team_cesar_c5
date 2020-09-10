@@ -1,18 +1,26 @@
 import React from "react";
 
 //------------------------------------ COMPONENT ------------------------------------//
-const Input = ({ name, type, placeholder, label }) => {
+const Input = ({
+  name,
+  type,
+  placeholder,
+  lable,
+  getInputValue,
+  classmodifier,
+}) => {
   return (
-    <div className="input--centered">
+    <div className={`input${classmodifier}`}>
       <label className="input-label" htmlFor={name}>
-        {label}
+        {lable}
       </label>
       <input
-        className="input-text--centered"
+        className={`input-text${classmodifier}`}
         name={name}
         type={type}
         placeholder={placeholder}
         id={name}
+        onChange={getInputValue}
       />
     </div>
   );

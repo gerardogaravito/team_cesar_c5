@@ -1,6 +1,5 @@
 //------------------------------ import libraries
-import React, { Fragment } from "react";
-import { Link } from "react-router-dom";
+import React from "react";
 
 //------------------------------ import components
 import SocialGarden from "../globalComponents/SocialGarden";
@@ -12,14 +11,10 @@ import Logo from "../assets/images/logo-walle.png";
 //------------------------------------ COMPONENT ------------------------------------//
 const Footer = () => {
   return (
-    <Fragment>
-      <footer className="Footer">
-        <SocialGarden />
-        <Link to="/">
-          <img className="Footer__brand" src={Logo} alt="Logo de Walle" />
-        </Link>
-      </footer>
-    </Fragment>
+    <footer className="Footer">
+      <SocialGarden />
+      <img className="Footer__brand" src={Logo} alt="Logo de Walle" />
+    </footer>
   );
 };
 

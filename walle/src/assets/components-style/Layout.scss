@@ -3,6 +3,9 @@
 
 //------------------------------ Styles
 .Layout {
+  &__container {
+    padding: $space4;
+  }
   &__body {
     padding: 0 $main-padding;
   }
