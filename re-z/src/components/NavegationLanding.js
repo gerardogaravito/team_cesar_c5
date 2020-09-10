@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
 
 import './styles/NavegationLanding.css';
+import './styles/RegisterForm.css'
 import CloseIcon from "../images/Atomos/close-icon.svg";
 import logo from "../images/logo.png";
+import Button from './Button'
+import RegisterForm from './RegisterForm';
 
 
 class ModalLogin extends Component{
@@ -32,8 +35,9 @@ class ModalRegister extends Component{
             <div className="close-button">
               <img src={CloseIcon} alt="Close" onClick={this.props.onCloseRegister}/> 
             </div>
-      </div> 
-      </div>
+            <RegisterForm />
+          </div> 
+        </div>
       )
   }
 }
@@ -50,11 +54,11 @@ class ModalRegister extends Component{
     render() {
       return (
         <div className="LandingMenu">
-          <button onClick={this._openLoginRegister}>Regístrate</button>
+          <button className="LandingMenu__button" onClick={this._openLoginRegister}>Regístrate</button>
           {this.state.isModalregisterOpen &&
                   <ModalRegister onCloseRegister={this._closeLoginRegister}/> 
               }
-          <button name="boton de login" onClick={this._openLoginModal}>
+          <button className="LandingMenu__button" name="boton de login" onClick={this._openLoginModal}>
             Iniciar Sesión
             </button>
               {this.state.isModalLoginOpen &&
