@@ -1,5 +1,7 @@
 const initial_state = {
   user: {},
+  favorites: {},
+  recentlyBought: {},
 };
 
 const userReducer = (state = initial_state, action) => {

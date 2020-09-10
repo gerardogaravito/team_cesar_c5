@@ -2,7 +2,7 @@
 import React from "react";
 
 //------------------------------ import components
-import HeaderHome from "./Com--Header-home";
+import Header from "./Com--Header";
 import SearchBar from "./Com--SearchBar";
 
 //------------------------------ import styles and images
@@ -14,7 +14,7 @@ const SearchHero = () => {
   return (
     <section className="Hero">
       <img src={heroPic} alt="" className="Hero__img" />
-      <HeaderHome />
+      <Header />
       <div className="Hero__search">
         <h1 className="Hero__title">Walle</h1>
         <SearchBar />

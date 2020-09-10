@@ -2,7 +2,7 @@
 import React from "react";
 
 //------------------------------ import components
-import HeaderHome from "../components/Com--Header-home";
+import Header from "../components/Com--Header";
 import UserInfo from "../components/Com--User-info";
 import RecipeCarrousel from "../components/Com--Recipe-carrousel";
 import Footer from "../components/Com--Footer";
@@ -14,8 +14,10 @@ import "../assets/components-style/Layout.scss";
 const UserPage = () => {
   return (
     <div className="Layout">
+      <div className="Layout__container">
+        <Header />
+      </div>
       <div className="Layout__body">
-        <HeaderHome />
         <UserInfo
           userName="Pepita Perez"
           email="pepitaperez@email.com"

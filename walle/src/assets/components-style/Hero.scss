@@ -70,5 +70,11 @@
     font-size: $size-xs;
     border: $main-border;
     border-radius: $space4;
+    outline: none;
+
+    &:focus {
+      background-color: rgba($color: #fff, $alpha: 0.8);
+      border: 2px solid $main-color;
+    }
   }
 }

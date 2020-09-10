@@ -1,5 +1,6 @@
 //------------------------------ import libraries
 import React, { useRef } from "react";
+import { useSelector } from "react-redux";
 
 //------------------------------ import components
 import MainHero from "../components/Com--Main-hero";
@@ -14,7 +15,9 @@ import LoginModal from "../components/Com--LoginModal";
 import "../assets/components-style/Layout.scss";
 
 //------------------------------------ COMPONENT ------------------------------------//
-const LandingPage = () => {
+const LandingPage = (props) => {
+  const userState = useSelector((state) => state.userReducer);
+
   const modalReference = useRef();
   const openLoginModal = () => {
     modalReference.current.openLoginModal();
@@ -22,6 +25,10 @@ const LandingPage = () => {
   const openSignModal = () => {
     modalReference.current.openSignModal();
   };
+
+  if (Object.keys(userState.user).length > 0) {
+    props.history.push("/walle");
+  }
 
   return (
     <>

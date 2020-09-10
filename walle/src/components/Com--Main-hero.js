@@ -2,7 +2,7 @@
 import React from "react";
 
 //------------------------------ import components
-import HeaderLanding from "./Com--Header-landing";
+import Header from "./Com--Header";
 
 //------------------------------ import styles and images
 import "../assets/components-style/Hero.scss";
@@ -13,10 +13,7 @@ const MainHero = ({ handleLoginClick, handleSignClick }) => {
   return (
     <section className="Hero">
       <img src={heroPic} alt="" className="Hero__img" />
-      <HeaderLanding
-        handleLogin={handleLoginClick}
-        handleSign={handleSignClick}
-      />
+      <Header handleLogin={handleLoginClick} handleSign={handleSignClick} />
       <div className="Hero__information">
         <h1 className="Hero__title">Walle</h1>
         <div className="Hero__description">
