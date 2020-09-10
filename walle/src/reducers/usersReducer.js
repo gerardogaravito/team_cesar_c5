@@ -4,8 +4,8 @@ const initial_state = {
 
 const userReducer = (state = initial_state, action) => {
   switch (action.type) {
-    case "replace":
-      return state;
+    case "LOGIN_REQUEST":
+      return { ...state, user: action.payload };
 
     default:
       return state;

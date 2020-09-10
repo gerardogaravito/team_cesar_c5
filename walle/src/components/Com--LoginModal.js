@@ -1,11 +1,13 @@
 //------------------------------ import libraries
 import React, { useState, forwardRef, useImperativeHandle } from "react";
 import ReactDom from "react-dom";
+import { connect } from "react-redux";
 
 //------------------------------ import components
 import { FaTimes } from "react-icons/fa";
 import SocialGarden from "../globalComponents/SocialGarden";
 import Input from "../globalComponents/Input";
+import { loginRequest } from "../actions/usersActions";
 
 //------------------------------ import styles and images
 import "../assets/components-style/Login.scss";
@@ -55,12 +57,23 @@ const LoginModal = forwardRef((props, ref) => {
             ) : (
               <h3 className="Modal__title">Soy nuevo Walle</h3>
             )}
-            <Input name="email" type="text" placeholder="Fulanito@email.com" />
-            <Input name="password" type="password" placeholder="Password" />
+            <Input
+              lable="Correo:"
+              name="email"
+              type="text"
+              placeholder="Fulanito@email.com"
+            />
+            <Input
+              lable="Contraseña:"
+              name="password"
+              type="password"
+              placeholder="Password"
+            />
 
             {/* validate if sign to display the third input */}
             {display.sign ? (
               <Input
+                lable="Confirmar Contraseña:"
                 name="confirmPassword"
                 type="password"
                 placeholder="confirm Password"
@@ -77,4 +90,8 @@ const LoginModal = forwardRef((props, ref) => {
   return null;
 });
 
-export default LoginModal;
+const mapDispatchToProps = {
+  loginRequest,
+};
+
+export default connect(null, mapDispatchToProps)(LoginModal);

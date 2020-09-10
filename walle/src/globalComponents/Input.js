@@ -1,11 +1,11 @@
 import React from "react";
 
 //------------------------------------ COMPONENT ------------------------------------//
-const Input = ({ name, type, placeholder }) => {
+const Input = ({ name, type, placeholder, label }) => {
   return (
     <div className="input--centered">
       <label className="input-label" htmlFor={name}>
-        Correo:
+        {label}
       </label>
       <input
         className="input-text--centered"
