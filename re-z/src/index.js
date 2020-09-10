@@ -39,4 +39,4 @@ const container = document.getElementById('app');
 /* ReactDOM.render(<CarruselHome />,container) */
 
 //Para cuando queramos renderizar todo el sitio con App.js
- ReactDOM.render(<RecipeGarden />,container)
+ ReactDOM.render(<App />,container)
