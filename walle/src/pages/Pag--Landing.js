@@ -26,14 +26,20 @@ const LandingPage = (props) => {
     modalReference.current.openSignModal();
   };
 
-  if (Object.keys(userState.user).length > 0) {
-    props.history.push("/walle");
-  }
+  setTimeout(() => {
+    if (Object.keys(userState.user).length > 0) {
+      props.history.push("/walle");
+    }
+  }, 0.5);
 
   return (
     <>
       <div className="Layout">
         <MainHero
+          title="Walle"
+          description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
+            iusto, officia laborum eius nihil laudantium possimus dolore modi
+            repellendus sit."
           handleLoginClick={openLoginModal}
           handleSignClick={openSignModal}
         />

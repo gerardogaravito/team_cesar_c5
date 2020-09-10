@@ -16,7 +16,7 @@ import "../assets/components-style/Layout.scss";
 const RecipePage = () => {
   return (
     <div className="Layout">
-      <MainHero />
+      <MainHero title="Recipe Name" />
       <div className="Layout__body">
         <Metadata />
         <RecipeIngredientsList />

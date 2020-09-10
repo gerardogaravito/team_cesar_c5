@@ -1,31 +1,40 @@
 //------------------------------ import libraries
 import React from "react";
+import { useSelector } from "react-redux";
 
 //------------------------------ import components
 import Header from "./Com--Header";
+import { FaPlus } from "react-icons/fa";
 
 //------------------------------ import styles and images
 import "../assets/components-style/Hero.scss";
 import heroPic from "../assets/images/hero-img.jpeg";
 
 //------------------------------------ COMPONENT ------------------------------------//
-const MainHero = ({ handleLoginClick, handleSignClick }) => {
+const MainHero = ({
+  title,
+  description,
+  handleLoginClick,
+  handleSignClick,
+}) => {
+  const userState = useSelector((state) => state.userReducer.user);
+
   return (
     <section className="Hero">
       <img src={heroPic} alt="" className="Hero__img" />
       <Header handleLogin={handleLoginClick} handleSign={handleSignClick} />
       <div className="Hero__information">
-        <h1 className="Hero__title">Walle</h1>
         <div className="Hero__description">
-          <p className="Hero__text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
-            iusto, officia laborum eius nihil laudantium possimus dolore modi
-            repellendus sit.
-          </p>
+          <h1 className="Hero__title">{title}</h1>
+          <p className="Hero__text">{description}</p>
+        </div>
+        {Object.keys(userState).length > 0 ? (
+          <FaPlus className="icon--add-xxl" />
+        ) : (
           <button className="main-button--xxl" onClick={handleSignClick}>
             Registro
           </button>
-        </div>
+        )}
       </div>
     </section>
   );

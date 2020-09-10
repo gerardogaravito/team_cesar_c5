@@ -11,9 +11,6 @@
       rgba(255, 255, 255, 0.88) 100%
     ),
     linear-gradient(0deg, rgba(240, 165, 0, 0.1), rgba(240, 165, 0, 0.1));
-  background-blend-mode: normal, lighten, normal;
-  background-size: cover;
-  background-position: center;
 
   &__img {
     position: absolute;
@@ -40,6 +37,9 @@
   //------------------------------ This styles apply to the main hero component
   &__information {
     margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
   //------------------------------ This styles apply to the search hero component
