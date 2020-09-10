@@ -22,3 +22,9 @@ h3 {
 p {
   font-size: $size-xs;
 }
+
+.error-title {
+  color: $background-color;
+  margin-bottom: $space4;
+  font-size: $size-xl;
+}

@@ -8,6 +8,7 @@ import HomePage from "../pages/Pag--Home";
 import UserPage from "../pages/Pag--User";
 import RecipePage from "../pages/Pag--Recipe";
 import CartPage from "../pages/Pag--Cart";
+import NotFound from "../pages/pag--404";
 
 //------------------------------------ COMPONENT ------------------------------------//
 const App = () => {
@@ -19,6 +20,7 @@ const App = () => {
         <Route exact path="/usuario" component={UserPage}></Route>
         <Route exact path="/receta" component={RecipePage}></Route>
         <Route exact path="/carrito" component={CartPage}></Route>
+        <Route component={NotFound}></Route>
       </Switch>
     </BrowserRouter>
   );
