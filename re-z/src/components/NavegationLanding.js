@@ -4,8 +4,8 @@ import './styles/NavegationLanding.css';
 import './styles/RegisterForm.css'
 import CloseIcon from "../images/Atomos/close-icon.svg";
 import logo from "../images/logo.png";
-import Button from './Button'
 import RegisterForm from './RegisterForm';
+import LoginForm from './LoginForm';
 
 
 class ModalLogin extends Component{
@@ -13,12 +13,13 @@ class ModalLogin extends Component{
         return(
           <div className="Modal">
             <div className="Modal__container-Login">
-                <div className="styles-logo">
-                  <img src={logo} alt="Logo"/> 
-                </div>
-                <div className="close-button">
-                  <img src={CloseIcon} alt="Close" onClick={this.props.onCloseLogin}/> 
-                </div>
+              <div className="styles-logo">
+                <img src={logo} alt="Logo"/> 
+              </div>
+              <div className="close-button">
+                <img src={CloseIcon} alt="Close" onClick={this.props.onCloseLogin}/> 
+              </div>
+              <LoginForm />
             </div> 
         </div>
         )
@@ -41,7 +42,7 @@ class ModalRegister extends Component{
       )
   }
 }
- class NavegationLanding extends React.Component {
+class NavegationLanding extends React.Component {
     state = {isModalLoginOpen: false}
     state = {isModalregisterOpen: false}
 

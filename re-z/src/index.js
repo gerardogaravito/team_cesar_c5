@@ -13,6 +13,7 @@ import RecipeCardHorizontalDerecha from './components/RecipeCardHorizontalDerech
 import RecipeCardHorizontalIzquierda from './components/RecipeCardHorizontalIzquierda'
 import CardVerticalScroll from './components/CardVerticalScroll'
 import Landing from './components/page/Landing'
+import RecipeGarden from './components/RecipeGarden'
 //import Switch from './components/SwitchPerfil';*/
 //import Search from './components/Search'
 
