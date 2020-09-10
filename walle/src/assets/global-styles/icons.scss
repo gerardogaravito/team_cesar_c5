@@ -70,11 +70,11 @@
   }
 
   &--add-xxl {
-    padding: $space;
+    padding: $space2;
     color: $second-color;
-    font-size: $size-xxl;
+    font-size: 150px;
     border-radius: 50%;
-    border: $main-border;
+    border: 5px solid $second-color;
     margin-right: 4%;
     background-color: $background-color;
     cursor: pointer;
