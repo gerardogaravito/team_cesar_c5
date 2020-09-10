@@ -59,22 +59,6 @@
     padding-right: $space;
   }
 }
-.icon--add {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  padding: $space;
-  color: $second-color;
-  font-size: $size-xl;
-  border-radius: 50%;
-  border: $main-border;
-  background-color: $background-color;
-  cursor: pointer;
-  opacity: 0;
-  transition: 0.2s;
-  will-change: opacity;
-}
 
 //------------------------------ animations
 .RecipeCard:hover .icon--add {
