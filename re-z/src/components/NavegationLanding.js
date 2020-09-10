@@ -41,7 +41,7 @@ class ModalRegister extends Component{
       )
   }
 }
- class NavegationLanding extends React.Component {
+class NavegationLanding extends React.Component {
     state = {isModalLoginOpen: false}
     state = {isModalregisterOpen: false}
 
