@@ -19,6 +19,7 @@ import Landing from './components/page/Landing'
 import RecipeCardVerticalSimple from './components/RecipeCardVerticalSimple'
 //Para cuando queramos renderiar todo el sitio con App
 import App from './components/App';
+import Button from './components/Button';
 /* import NavegationLanding from './components/NavegationLanding'; */
 
 
@@ -37,4 +38,4 @@ const container = document.getElementById('app');
 /* ReactDOM.render(<CarruselHome />,container) */
 
 //Para cuando queramos renderizar todo el sitio con App.js
- ReactDOM.render(<RecipeCardVerticalSimple />,container)
+ ReactDOM.render(<App />,container)

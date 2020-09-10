@@ -2,7 +2,7 @@ import React from 'react';
 
 import '../styles/NotFound.css'
 import Navbar from '../Navbar'
-
+import Button from '../Button'
 
 class NotFound extends React.Component {
   handleBackClick = () => {
@@ -16,10 +16,10 @@ class NotFound extends React.Component {
         <div className='notfound'>
           <h1 className='notfound__h1'>Error 404</h1>
           <h2 className='notfound__h2'>No pudimos encontrar lo que buscabas 😕</h2>
-          <button 
-            className='button'
+          <Button 
+            text='Ir a la ruta anterior 👈'
             onClick={this.handleBackClick}
-            >Ir a la ruta anterior 👈</button>
+            />
         </div>
       </React.Fragment>
     )

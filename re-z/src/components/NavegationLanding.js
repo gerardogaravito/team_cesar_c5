@@ -4,6 +4,7 @@ import './styles/NavegationLanding.css';
 import CloseIcon from "../images/Atomos/close-icon.svg";
 import logo from "../images/logo.png";
 
+
 class ModalLogin extends Component{
     render(){
         return(
