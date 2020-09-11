@@ -1,7 +1,7 @@
 import React from 'react';
 
 import './styles/CarruselHome.css';
-import RecipeCardCarruselHome  from './RecipeCardCarruselHome'
+import PhotoFood from '../images/Photo-food.png'
 
 
 class CarruselHome extends React.Component {
@@ -10,24 +10,41 @@ class CarruselHome extends React.Component {
 
       return (
         <section className="Principal-container">
-        <div className="Triangle">
-
-        </div>
-        <div className="Card-container">
-          <div className="tarjetas">
-            <div className="tarjetas__contenido">
-              <div className="tarjetas__elemento">
-                <RecipeCardCarruselHome />
+        <div className="Triangle"></div>
+          <section className="carousel">
+            <div className="carousel__container">
+              <div className="carousel-item">
+                <img src={PhotoFood} alt="" className="carousel-item__img"/>
+                <div class="carousel-item__details">
+                <div className="like-box">
+                  <div className="like" id="like"></div>
+                </div>
+                  <p class="carousel-item__details--title">Recip name</p>
+                </div>
               </div>
-              <div className="tarjetas__elemento">
-                <RecipeCardCarruselHome />
+              <div className="carousel-item">
+                <img src={PhotoFood} alt="" className="carousel-item__img"/>
+                <div class="carousel-item__details">
+                <div className="like-box">
+                  <div className="like" id="like"></div>
+                </div>
+                  <p class="carousel-item__details--title">Recip name</p>
+                </div>
               </div>
-              <div className="tarjetas__elemento">
-                <RecipeCardCarruselHome />
+              <div className="carousel-item">
+                <img src={PhotoFood} alt="" className="carousel-item__img"/>
+                <div class="carousel-item__details">
+                <div className="like-box">
+                  <div className="like" id="like"></div>
+                </div>
+                  <p class="carousel-item__details--title">Recip name</p>
+                </div>
               </div>
+              
+              
             </div>
-          </div> 
-        </div> 
+          </section>
+      
         </section>
       );
     }

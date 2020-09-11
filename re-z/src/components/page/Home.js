@@ -39,6 +39,7 @@ class Home extends React.Component{
             <div className="Home-container">
                 <Navbar />
                 <CarruselHome /> 
+                
             </div>
         )
     }
