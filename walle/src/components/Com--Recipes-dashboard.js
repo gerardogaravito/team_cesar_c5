@@ -1,32 +1,31 @@
 //------------------------------ import libraries
-import React, { Fragment } from "react";
+import React from "react";
 
 //------------------------------ import components
-import DashboardCard from "../cards/Card--Dashboard";
+// import DashboardCard from "../cards/Card--Dashboard";
 
 //------------------------------ import styles and images
 import "../assets/components-style/RecipeDashboard.scss";
-import foodPicture from "../assets/images/cardexample.jpeg";
+// import foodPicture from "../assets/images/cardexample.jpeg";
 
 //------------------------------------ COMPONENT ------------------------------------//
-const RecipeDashboard = () => {
+const RecipeDashboard = (props) => {
   return (
-    <Fragment>
-      <section className="Dashboard">
-        <p className="Dashboard__text">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio sunt
-          commodi, deleniti quidem porro veritatis maxime vero nesciunt magni
-          delectus, debitis est aliquid quibusdam distinctio laborum veniam
-          aliquam sit fugit.
-        </p>
-        <DashboardCard name="Nombre receta" image={foodPicture} id="1" />
+    <section className="Dashboard">
+      <p className="Dashboard__text">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio sunt
+        commodi, deleniti quidem porro veritatis maxime vero nesciunt magni
+        delectus, debitis est aliquid quibusdam distinctio laborum veniam
+        aliquam sit fugit.
+      </p>
+      {props.children}
+      {/* <DashboardCard name="Nombre receta" image={foodPicture} id="1" />
         <DashboardCard name="Nombre receta" image={foodPicture} id="2" />
         <DashboardCard name="Nombre receta" image={foodPicture} id="3" />
         <DashboardCard name="Nombre receta" image={foodPicture} id="4" />
         <DashboardCard name="Nombre receta" image={foodPicture} id="5" />
-        <DashboardCard name="Nombre receta" image={foodPicture} id="6" />
-      </section>
-    </Fragment>
+        <DashboardCard name="Nombre receta" image={foodPicture} id="6" /> */}
+    </section>
   );
 };
 

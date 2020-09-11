@@ -4,8 +4,9 @@ import thunk from "redux-thunk";
 
 //------------------------------ import and combine reducers
 import userReducer from "../reducers/usersReducer";
+import recipeReducer from "../reducers/recipeReducer";
 
-const rootReducer = combineReducers({ userReducer });
+const rootReducer = combineReducers({ userReducer, recipeReducer });
 
 //------------------------------ get the enhancer to redux devtools
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
