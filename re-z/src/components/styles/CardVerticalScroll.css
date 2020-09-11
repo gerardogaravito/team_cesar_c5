@@ -1,6 +1,19 @@
 .scrollcontainer {
-  margin: 10px;
-  height: 85vh;
+  margin: 0px;
+  height: 80vh;
   max-width: 640px;
+  padding: 5px;
   overflow: auto;
+}
+
+.scrollcontainer::-webkit-scrollbar {
+  width: 10px;
+  background: #8f2d56;
+}
+.scrollcontainer::-webkit-scrollbar-thumb {
+  background: #ffbc42;
+  border-radius: 5px;
+}
+.scrollcontainer::-webkit-scrollbar-thumb:hover {
+  background: #b9892e;
 }

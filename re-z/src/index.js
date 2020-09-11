@@ -13,12 +13,14 @@ import RecipeCardHorizontalDerecha from './components/RecipeCardHorizontalDerech
 import RecipeCardHorizontalIzquierda from './components/RecipeCardHorizontalIzquierda'
 import CardVerticalScroll from './components/CardVerticalScroll'
 import Landing from './components/page/Landing'
+import RecipeGarden from './components/RecipeGarden'
 //import Switch from './components/SwitchPerfil';*/
 //import Search from './components/Search'
 
 import RecipeCardVerticalSimple from './components/RecipeCardVerticalSimple'
 //Para cuando queramos renderiar todo el sitio con App
 import App from './components/App';
+import Button from './components/Button';
 /* import NavegationLanding from './components/NavegationLanding'; */
 
 

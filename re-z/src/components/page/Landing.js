@@ -31,6 +31,8 @@ class Landing extends React.Component {
               <div className="landing__container-secundary">
                 {/* Dentro de este div debe de ir el contenido que sigue al video y al escroll de las tarjetas el llamado de la siguiente tarjeta es solo contenido de relleno*/}
                 <RecipeCardSquare />
+                <RecipeCardSquare />
+                <RecipeCardSquare />
               </div>
               <FooterA/>
         </div>

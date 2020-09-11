@@ -1,4 +1,4 @@
-.LandingMenu button{
+.LandingMenu__button {
   background: none;
   border: none;
   padding: 0;
@@ -10,7 +10,7 @@
   font-size: 20px;
   padding-left: 50px; 
 }
-.LandingMenu button:hover{
+.LandingMenu__button:hover{
   color: #ffbc42;
 }
 /*Style for Modals*/
@@ -92,6 +92,18 @@
   height: 500px;
   border-radius: 20px;
   animation: modalIn .8s forwards;
+  overflow: auto;
+}
+.Modal__container-Register::-webkit-scrollbar {
+  width: 10px;
+  background: #8f2d56;
+}
+.Modal__container-Register::-webkit-scrollbar-thumb {
+  background: #ffbc42;
+  border-radius: 5px;
+}
+.Modal__container-Register::-webkit-scrollbar-thumb:hover {
+  background: #b9892e;
 }
 .LandingMenu{
     margin-right: 130px;

@@ -1,20 +1,24 @@
 import React, { Component } from 'react';
 
 import './styles/NavegationLanding.css';
+import './styles/RegisterForm.css'
 import CloseIcon from "../images/Atomos/close-icon.svg";
 import logo from "../images/logo.png";
+import RegisterForm from './RegisterForm';
+import LoginForm from './LoginForm';
 
 class ModalLogin extends Component{
     render(){
         return(
           <div className="Modal">
             <div className="Modal__container-Login">
-                <div className="styles-logo">
-                  <img src={logo} alt="Logo"/> 
-                </div>
-                <div className="close-button">
-                  <img src={CloseIcon} alt="Close" onClick={this.props.onCloseLogin}/> 
-                </div>
+              <div className="styles-logo">
+                <img src={logo} alt="Logo"/> 
+              </div>
+              <div className="close-button">
+                <img src={CloseIcon} alt="Close" onClick={this.props.onCloseLogin}/> 
+              </div>
+              <LoginForm />
             </div> 
         </div>
         )
@@ -31,12 +35,13 @@ class ModalRegister extends Component{
             <div className="close-button">
               <img src={CloseIcon} alt="Close" onClick={this.props.onCloseRegister}/> 
             </div>
-      </div> 
-      </div>
+            <RegisterForm />
+          </div> 
+        </div>
       )
   }
 }
- class NavegationLanding extends React.Component {
+class NavegationLanding extends React.Component {
     state = {isModalLoginOpen: false}
     state = {isModalregisterOpen: false}
 
@@ -49,11 +54,11 @@ class ModalRegister extends Component{
     render() {
       return (
         <div className="LandingMenu">
-          <button onClick={this._openLoginRegister}>Regístrate</button>
+          <button className="LandingMenu__button" onClick={this._openLoginRegister}>Regístrate</button>
           {this.state.isModalregisterOpen &&
                   <ModalRegister onCloseRegister={this._closeLoginRegister}/> 
               }
-          <button name="boton de login" onClick={this._openLoginModal}>
+          <button className="LandingMenu__button" name="boton de login" onClick={this._openLoginModal}>
             Iniciar Sesión
             </button>
               {this.state.isModalLoginOpen &&
