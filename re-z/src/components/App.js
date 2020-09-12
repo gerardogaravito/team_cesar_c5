@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
+import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
 
 import Home from "./page/Home";
 import Favoritos from "./page/Favoritos";
@@ -20,5 +20,4 @@ function App() {
     </BrowserRouter>
   );
 }
-
 export default App;
