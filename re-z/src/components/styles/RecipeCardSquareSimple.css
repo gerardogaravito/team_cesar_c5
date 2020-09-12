@@ -1,42 +1,26 @@
-.cardsimpleSquare {
-  background-color: #FFBC42;
-  color: #8f2d56;
-  width: 306px;
-  height: 306px;
-  border-radius: 20px;
-  overflow: hidden;
-  display: grid;
-  grid-template-rows: 66% 33%;
-  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.25));
-  border: none;
-  padding: 0;
-  cursor: pointer;
-  outline: inherit;
+*{
+    text-decoration: none;
 }
+.cardSquareSimple{
+    padding: 0;
+    border: 0;
+    width: 367px;
+    height: 373px;
+    background-color:#FFBC42 ;
+    color:#8F2D56;
+    border-radius: 20px;
+    outline: none;
+  }
 
-.cardsimpleSquare:hover {  
-  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.25));
-  transform: scale(1.01);
-}
+  .cardSquareSimple:hover{
+        cursor: pointer;
+        filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.25));
+        transform: scale(1.01);
+  }
 
-.cardsimpleSquare__image {
-  grid-row: 1 / 2;
-  width: 100%;
-  height: 100%;
-}
-
-.cardsimpleSquare__info {
-  grid-row: 2 / 3;
-  display: flex;
-  text-align: start;
-  width: inherit; /*propiedad para '...'*/
-}
-
-.cardsimpleSquare__info--title {
-  width: calc( 100% - 90px );
-  font-size: 36px;
-  margin: 28px 45px;
-  white-space: nowrap; /*propiedad para '...'*/
-  overflow: hidden; /*propiedad para '...'*/
-  text-overflow: ellipsis; /*propiedad para '...'*/
+.cardSquareSimple__title{
+    padding:10px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
 }
