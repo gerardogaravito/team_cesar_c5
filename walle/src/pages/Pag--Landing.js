@@ -23,7 +23,6 @@ const LandingPage = (props) => {
   const userState = useSelector((state) => state.userReducer);
   const recipeState = useSelector((state) => state.recipeReducer.recipes);
   const dispatch = useDispatch();
-  // let sliced = [];
 
   // this are the functions to open and close the modal
   const modalReference = useRef();
@@ -35,24 +34,17 @@ const LandingPage = (props) => {
   };
 
   useEffect(() => {
+    dispatch(getRecipes());
     if (Object.keys(userState.user).length > 0) {
       props.history.push("/walle");
     }
-    const getData = async () => {
-      await dispatch(getRecipes());
-    };
-    getData();
   }, []);
-
-  console.log(recipeState);
-
-  // const sliced = recipeState.map((recipe) => console.log(recipe));
 
   return (
     <>
       <div className="Layout">
         <MainHero
-          title="Walle"
+          title="Walee"
           description="En Walle puedes encontrar recetas para todos los gustos. Puedes comprar los ingredientes para cocinar. Nos encanta cocinar."
           handleLoginClick={openLoginModal}
           handleSignClick={openSignModal}
@@ -60,15 +52,16 @@ const LandingPage = (props) => {
         <div className="Layout__body">
           <CategoryCarrousel />
           <RecipeDashboard>
-            {/* {recipeState.map((recipe) => {
+            {recipeState.slice(0, 6).map((recipe) => {
               return (
                 <DashboardCard
+                  key={recipe.id}
                   name={recipe.name}
                   image={recipe.picture}
                   id={recipe.id}
                 />
               );
-            })} */}
+            })}
           </RecipeDashboard>
           <InstructionsSection />
           <RecommendationCarrousel />

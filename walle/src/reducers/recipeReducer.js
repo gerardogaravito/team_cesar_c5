@@ -1,5 +1,5 @@
 const initial_state = {
-  recipes: {},
+  recipes: [],
 };
 
 const recipeReducer = (state = initial_state, action) => {
