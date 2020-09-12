@@ -1,25 +1,20 @@
 //------------------------------ import libraries
-import React, { Fragment } from "react";
+import React from "react";
 
 //------------------------------ import components
-import { FaTwitter, FaFacebookF, FaInstagram } from "react-icons/fa";
+import SocialGarden from "../globalComponents/SocialGarden";
 
 //------------------------------ import styles and images
-import "./styles/Footer.scss";
-import Logo from "../images/logo-walle.png";
+import "../assets/components-style/Footer.scss";
+import Logo from "../assets/images/logo-walle.png";
 
+//------------------------------------ COMPONENT ------------------------------------//
 const Footer = () => {
   return (
-    <Fragment>
-      <footer className="Footer">
-        <div className="Footer__nav">
-          <FaInstagram className="icon--active" />
-          <FaFacebookF className="icon--active" />
-          <FaTwitter className="icon--active" />
-        </div>
-        <img className="Footer__brand" src={Logo} alt="Logo de Walle" />
-      </footer>
-    </Fragment>
+    <footer className="Footer">
+      <SocialGarden />
+      <img className="Footer__brand" src={Logo} alt="Logo de Walle" />
+    </footer>
   );
 };
 

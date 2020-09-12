@@ -5,7 +5,7 @@ import React, { Fragment } from "react";
 import { FaClock, FaUsers, FaFire } from "react-icons/fa";
 
 //------------------------------ import styles and images
-import "./styles/Metadata.scss";
+import "../assets/components-style/Recipe.scss";
 
 const Metadata = (props) => {
   return (

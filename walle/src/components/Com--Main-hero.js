@@ -1,33 +1,43 @@
 //------------------------------ import libraries
-import React, { Component, Fragment } from "react";
+import React from "react";
+import { useSelector } from "react-redux";
 
 //------------------------------ import components
-import HeaderLanding from "./Com--Header-landing";
+import Header from "./Com--Header";
+import { FaPlus } from "react-icons/fa";
 
 //------------------------------ import styles and images
-import "./styles/Heros.scss";
+import "../assets/components-style/Hero.scss";
+import heroPic from "../assets/images/hero-img.jpeg";
 
-class MainHero extends Component {
-  render() {
-    return (
-      <Fragment>
-        <section className="Hero">
-          <HeaderLanding />
-          <div className="Hero__information">
-            <h1 className="Hero__title">Walle</h1>
-            <div className="Hero__description">
-              <p className="Hero__text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
-                iusto, officia laborum eius nihil laudantium possimus dolore
-                modi repellendus sit.
-              </p>
-              <div className="main-button--xxl">Registro</div>
-            </div>
-          </div>
-        </section>
-      </Fragment>
-    );
-  }
-}
+//------------------------------------ COMPONENT ------------------------------------//
+const MainHero = ({
+  title,
+  description,
+  handleLoginClick,
+  handleSignClick,
+}) => {
+  const userState = useSelector((state) => state.userReducer.user);
+
+  return (
+    <section className="Hero">
+      <img src={heroPic} alt="" className="Hero__img" />
+      <Header handleLogin={handleLoginClick} handleSign={handleSignClick} />
+      <div className="Hero__information">
+        <div className="Hero__description">
+          <h1 className="Hero__title">{title}</h1>
+          <p className="Hero__text">{description}</p>
+        </div>
+        {Object.keys(userState).length > 0 ? (
+          <FaPlus className="icon--add-xxl" />
+        ) : (
+          <button className="main-button--xxl" onClick={handleSignClick}>
+            Registro
+          </button>
+        )}
+      </div>
+    </section>
+  );
+};
 
 export default MainHero;

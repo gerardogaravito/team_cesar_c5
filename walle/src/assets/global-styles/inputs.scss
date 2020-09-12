@@ -1,0 +1,43 @@
+//------------------------------ import scss
+@import "./tokens.scss";
+
+//------------------------------ import styles
+.input {
+  display: flex;
+  flex-direction: column;
+  margin-right: $space;
+  flex-grow: 1;
+
+  &--centered {
+    @extend .input;
+    align-items: center;
+    margin-bottom: $space2;
+  }
+
+  &-text {
+    width: 100%;
+    margin-bottom: $space;
+    padding: 5px;
+    font-size: $size-xs;
+    border-radius: $border-radius;
+    border: $main-border;
+    background-color: $background-color;
+    outline: none;
+
+    &--centered {
+      @extend .input-text;
+      text-align: center;
+    }
+
+    &:focus {
+      background-color: rgba($color: #fff, $alpha: 0.8);
+      border: 2px solid $main-color;
+    }
+  }
+
+  &-label {
+    color: $second-color;
+    font-weight: bold;
+    margin-bottom: $space;
+  }
+}

@@ -5,9 +5,10 @@ import React, { Fragment } from "react";
 import CartIngredient from "../cards/Card--Cart-ingredient";
 
 //------------------------------ import styles and images
-import "../cards/styles/CartSection.scss";
+import "../assets/components-style/CartSection.scss";
 
-const CartSection = (props) => {
+//------------------------------------ COMPONENT ------------------------------------//
+const CartSection = () => {
   return (
     <Fragment>
       <div className="CartSection">

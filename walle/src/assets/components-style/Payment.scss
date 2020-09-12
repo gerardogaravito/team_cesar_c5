@@ -1,0 +1,53 @@
+//------------------------------ Import
+@import "../global-styles/Globalstyles.scss";
+
+//------------------------------ Styles
+.Payment {
+  margin: $margin-sections 0;
+  &__description {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__shipment {
+    width: 60%;
+  }
+
+  &__shipping-time {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+
+  &__total {
+    @extend .CardStyles;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: $size-xl;
+    font-weight: bold;
+    margin: $space2 0;
+    background-color: $background-color;
+  }
+
+  &__pay-button {
+    @extend .CardStyles;
+    position: relative;
+    margin-top: $space4;
+    padding: $space2;
+    font-size: $size-m;
+    font-weight: bold;
+    text-align: center;
+    background-color: $main-lighter-color;
+    cursor: pointer;
+
+    img {
+      position: absolute;
+      right: $space4;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 150px;
+    }
+  }
+}

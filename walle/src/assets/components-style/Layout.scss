@@ -1,0 +1,25 @@
+//------------------------------ Import
+@import "../global-styles/Globalstyles.scss";
+
+//------------------------------ Styles
+.Layout {
+  &__container {
+    padding: $space4;
+  }
+
+  &__body {
+    padding: 0 $main-padding;
+  }
+
+  &__404 {
+    place-self: center;
+    text-align: center;
+  }
+
+  &--error {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    background-color: #4f5b62;
+  }
+}

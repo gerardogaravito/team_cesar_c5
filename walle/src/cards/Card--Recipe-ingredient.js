@@ -1,10 +1,8 @@
 //------------------------------ import libraries
 import React, { Fragment } from "react";
 
-//------------------------------ import components
-
 //------------------------------ import styles and images
-import "../cards/styles/RecipeIngredient.scss";
+import "../assets/components-style/Recipe.scss";
 
 const RecipeIngredientItem = (props) => {
   return (

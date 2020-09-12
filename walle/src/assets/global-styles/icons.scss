@@ -1,0 +1,91 @@
+//------------------------------ import scss
+@import "./tokens.scss";
+
+//------------------------------ Styles
+.icon {
+  margin: 0 $space;
+  padding: $space;
+  border-radius: 50%;
+  border: $main-border;
+  color: $second-color;
+  font-size: $size-icons;
+  cursor: pointer;
+  transition: 0.2s;
+
+  &--active {
+    @extend .icon;
+    background-color: $main-color;
+    box-shadow: $box-shadow;
+  }
+
+  &--inactive {
+    @extend .icon;
+    background-color: $background-color;
+  }
+
+  &--search {
+    @extend .icon;
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    height: $space4;
+    width: $space4;
+    margin: 0;
+    box-shadow: none;
+    background-color: $main-color;
+  }
+
+  &--list {
+    justify-self: center;
+    padding: $space;
+    font-size: $size-m;
+    color: $second-color;
+    border: $main-border;
+    border-radius: 50%;
+    background-color: $main-color;
+    box-shadow: $box-shadow;
+    cursor: pointer;
+  }
+
+  &--xl {
+    font-size: $size-m;
+    color: $second-color;
+  }
+
+  &--add {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: $space;
+    color: $second-color;
+    font-size: $size-xl;
+    border-radius: 50%;
+    border: $main-border;
+    background-color: $background-color;
+    cursor: pointer;
+    opacity: 0;
+    transition: 0.2s;
+    will-change: opacity;
+  }
+
+  &--add-xxl {
+    padding: $space2;
+    color: $second-color;
+    font-size: 150px;
+    border-radius: 50%;
+    border: 5px solid $second-color;
+    margin-right: 4%;
+    background-color: $background-color;
+    cursor: pointer;
+    transition: 0.2s;
+    &:hover {
+      box-shadow: $box-shadow;
+    }
+  }
+}
+
+//------------------------------ animations
+.icon--inactive:hover {
+  box-shadow: $box-shadow;
+}

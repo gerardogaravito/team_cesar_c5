@@ -5,7 +5,7 @@ import React, { Fragment } from "react";
 import { FaTrashAlt } from "react-icons/fa";
 
 //------------------------------ import styles and images
-import "./styles/CartSection.scss";
+import "../assets/components-style/CartSection.scss";
 
 const CartIngredient = (props) => {
   return (

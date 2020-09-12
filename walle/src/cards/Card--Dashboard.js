@@ -1,19 +1,21 @@
 //------------------------------ import libraries
 import React, { Fragment } from "react";
+import { Link } from "react-router-dom";
+
 //------------------------------ import styles and images
-import "./styles/Dashboard.scss";
+import "../assets/components-style/RecipeDashboard.scss";
 
 const DashboardCard = (props) => {
   return (
     <Fragment>
-      <div className={`CardDashboard card${props.id}`}>
+      <Link className={`CardDashboard card${props.id}`} to="/receta">
         <img
           className="CardDashboard__img"
           src={props.image}
           alt={props.name}
         />
         <p className="CardDashboard__name">{props.name}</p>
-      </div>
+      </Link>
     </Fragment>
   );
 };

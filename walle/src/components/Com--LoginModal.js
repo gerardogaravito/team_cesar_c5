@@ -1,55 +1,52 @@
 //------------------------------ import libraries
-import React, { Component, Fragment } from "react";
+import React, { useState, forwardRef, useImperativeHandle } from "react";
+import ReactDom from "react-dom";
 
 //------------------------------ import components
-import { FaTimes, FaTwitter, FaFacebookF, FaInstagram } from "react-icons/fa";
+import Formlog from "../globalComponents/Formlog";
 
 //------------------------------ import styles and images
-import "./styles/Login.scss";
-import logo from "../images/logo-walle.png";
+import "../assets/components-style/Login.scss";
+import logo from "../assets/images/logo-walle.png";
 
-class LoginModal extends Component {
-  render() {
-    return (
-      <Fragment>
-        <section className="Modal">
+//------------------------------------ COMPONENT ------------------------------------//
+const LoginModal = forwardRef((props, ref) => {
+  const [display, setDisplay] = useState({ login: false, sign: false });
+
+  // these are the functions referenced to landing
+  useImperativeHandle(ref, () => {
+    return {
+      openLoginModal: () => openLoginModal(),
+      openSignModal: () => openSignModal(),
+    };
+  });
+
+  //---------- functions to open and close the modal
+  // this open the login version
+  const openLoginModal = () => {
+    setDisplay({ ...display, login: true });
+  };
+  // this open the sign version
+  const openSignModal = () => {
+    setDisplay({ ...display, sign: true });
+  };
+  const closeModal = () =>
+    setDisplay({ ...display, login: false, sign: false });
+
+  //---------- validate if login or sign is true
+  if (display.login || display.sign) {
+    return ReactDom.createPortal(
+      <section className="Modal-container">
+        <div className="Modal">
           <img src={logo} alt="" className="Modal__img" />
-          <form className="Modal__form">
-            <FaTimes className="icon--inactive Modal__exit"></FaTimes>
-            <div className="Modal__garden">
-              <FaInstagram className="icon--active" />
-              <FaFacebookF className="icon--active" />
-              <FaTwitter className="icon--active" />
-            </div>
-            <h3 className="Modal__title">Ya estoy contigo Walle</h3>
-            <div className="input--centered">
-              <label className="input-label" htmlFor="email">
-                Correo:
-              </label>
-              <input
-                className="input-text--centered"
-                type="text"
-                placeholder="Fulanito@email.com"
-                id="email"
-              />
-            </div>
-            <div className="input--centered">
-              <label className="input-label" htmlFor="password">
-                Contraseña:
-              </label>
-              <input
-                className="input-text--centered"
-                type="password"
-                placeholder="Password"
-                id="password"
-              />
-            </div>
-            <button className="main-button">Entrar</button>
-          </form>
-        </section>
-      </Fragment>
+          <Formlog closeModal={closeModal} display={display} />
+        </div>
+      </section>,
+
+      document.getElementById("modal")
     );
   }
-}
+  return null;
+});
 
 export default LoginModal;
