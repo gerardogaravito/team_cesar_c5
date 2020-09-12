@@ -1,7 +1,7 @@
 const initial_state = {
   user: {},
-  favorites: {},
-  recentlyBought: {},
+  favorites: [],
+  recentlyBought: [],
 };
 
 const userReducer = (state = initial_state, action) => {
