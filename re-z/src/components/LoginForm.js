@@ -31,7 +31,7 @@ class LoginForm extends React.Component {
           <input 
             className='Modal__form--control' 
             onChange={this.handleChange}
-            type="text"
+            type="email"
             name='email'
             value={this.state.name}
             />

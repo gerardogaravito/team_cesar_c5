@@ -4,7 +4,6 @@ import ReactPlayer from 'react-player'
 import '../styles/Landing.css';
 import NavBarLanding from '../NavBarLanding'
 import CardVerticalScroll from '../CardVerticalScroll';
-import FooterA from '../FooterA'
 import RecipeCardSquare from '../RecipeCardSquare';
 
 class Landing extends React.Component {
@@ -34,7 +33,6 @@ class Landing extends React.Component {
                 <RecipeCardSquare />
                 <RecipeCardSquare />
               </div>
-              <FooterA/>
         </div>
     )
   }

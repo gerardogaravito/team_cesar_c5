@@ -50,7 +50,7 @@ class RegisterForm extends React.Component {
           <input 
             className='Modal__form--control' 
             onChange={this.handleChange}
-            type="text"
+            type="email"
             name='email'
             value={this.state.email}
           />
@@ -60,7 +60,7 @@ class RegisterForm extends React.Component {
           <input 
             className='Modal__form--control' 
             onChange={this.handleChange}
-            type="text"
+            type="number"
             name='phoneNumber'
             value={this.state.phoneNumber}
           />
