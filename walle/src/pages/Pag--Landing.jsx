@@ -12,7 +12,7 @@ import RecommendationCarrousel from '../components/Com--Recomendations-carrousel
 import Footer from '../components/Com--Footer';
 import LoginModal from '../components/Com--LoginModal';
 
-import { getRecipes } from '../actions/recipeActions';
+import { getRecipes, setCurrentCategory } from '../actions/recipeActions';
 
 //------------------------------ import styles and images
 import '../assets/components-style/Layout.scss';
@@ -20,7 +20,6 @@ import '../assets/components-style/Layout.scss';
 //------------------------------------ COMPONENT ------------------------------------//
 const LandingPage = (props) => {
 	const userState = useSelector((state) => state.userReducer);
-	const recipeState = useSelector((state) => state.recipeReducer.recipes);
 	const dispatch = useDispatch();
 
 	// this are the functions to open and close the modal
@@ -34,6 +33,7 @@ const LandingPage = (props) => {
 
 	useEffect(() => {
 		dispatch(getRecipes());
+		dispatch(setCurrentCategory(1));
 		if (Object.keys(userState.user).length > 0) {
 			props.history.push('/walle');
 		}
@@ -50,18 +50,7 @@ const LandingPage = (props) => {
 				/>
 				<div className="Layout__body">
 					<CategoryCarrousel />
-					<RecipeDashboard>
-						{recipeState.slice(0, 6).map((recipe) => {
-							return (
-								<DashboardCard
-									key={recipe.id}
-									name={recipe.name}
-									image={recipe.picture}
-									id={recipe.id}
-								/>
-							);
-						})}
-					</RecipeDashboard>
+					<RecipeDashboard />
 					<InstructionsSection />
 					<RecommendationCarrousel />
 				</div>
