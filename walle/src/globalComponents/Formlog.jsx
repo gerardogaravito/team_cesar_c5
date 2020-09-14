@@ -4,8 +4,8 @@ import { useDispatch } from "react-redux";
 
 //------------------------------ import components
 import { FaTimes } from "react-icons/fa";
-import SocialGarden from "../globalComponents/SocialGarden";
-import Input from "../globalComponents/Input";
+import SocialGarden from "./SocialGarden";
+import Input from "./Input";
 import { loginRequest } from "../actions/usersActions";
 
 //------------------------------------ COMPONENT ------------------------------------//
