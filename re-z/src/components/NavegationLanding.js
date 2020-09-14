@@ -7,6 +7,7 @@ import logo from "../images/logo.png";
 import RegisterForm from './RegisterForm';
 import LoginForm from './LoginForm';
 
+
 class ModalLogin extends Component{
     render(){
         return(

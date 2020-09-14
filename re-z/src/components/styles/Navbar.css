@@ -8,6 +8,7 @@
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 10;
 }
 .styles-log{
     width: 90px;

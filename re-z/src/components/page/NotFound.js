@@ -2,7 +2,6 @@ import React from 'react';
 
 import '../styles/NotFound.css'
 import Navbar from '../Navbar'
-import FooterA from '../FooterA'
 import Button from '../Button'
 
 class NotFound extends React.Component {
@@ -22,7 +21,6 @@ class NotFound extends React.Component {
             onClick={this.handleBackClick}
             />
         </div>
-        <FooterA />
       </React.Fragment>
     )
   }
