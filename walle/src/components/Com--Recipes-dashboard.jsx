@@ -19,7 +19,7 @@ const RecipeDashboard = () => {
 			<p className="Dashboard__text">
 				{currentRecipeState.categoryDescription}
 			</p>
-			{currentRecipeState.recipes?.map((recipe, i = 0) => {
+			{currentRecipeState.recipes?.slice(0, 6).map((recipe, i = 0) => {
 				i++;
 				return (
 					<DashboardCard

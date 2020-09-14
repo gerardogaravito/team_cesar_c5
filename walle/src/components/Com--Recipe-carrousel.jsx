@@ -1,74 +1,17 @@
 //------------------------------ import libraries
-import React, { Fragment } from "react";
-
-//------------------------------ import components
-import RecipeCard from "../cards/Card--Recipe-card";
+import React from 'react';
 
 //------------------------------ import styles and images
-import "../assets/components-style/Recipecard.scss";
-import recipeImg from "../assets/images/cardexample.jpeg";
+import '../assets/components-style/Recipecard.scss';
 
 //------------------------------------ COMPONENT ------------------------------------//
-const RecipeCarrousel = ({ title }) => {
-  return (
-    <Fragment>
-      <section className="Recipe-carrousel">
-        <h2 className="Recipe-carrousel__title">{title}</h2>
-        <div className="Recipe-carrousel__cards-container">
-          <RecipeCard
-            card="main-card"
-            image={recipeImg}
-            name="Nombre receta"
-            portions="4"
-            time="40"
-            difficult="Medio"
-          />
-          <RecipeCard
-            image={recipeImg}
-            name="Nombre receta"
-            portions="4"
-            time="40"
-            difficult="Medio"
-          />
-          <RecipeCard
-            image={recipeImg}
-            name="Nombre receta"
-            portions="4"
-            time="40"
-            difficult="Medio"
-          />
-          <RecipeCard
-            image={recipeImg}
-            name="Nombre receta"
-            portions="4"
-            time="40"
-            difficult="Medio"
-          />
-          <RecipeCard
-            image={recipeImg}
-            name="Nombre receta"
-            portions="4"
-            time="40"
-            difficult="Medio"
-          />
-          <RecipeCard
-            image={recipeImg}
-            name="Nombre receta"
-            portions="4"
-            time="40"
-            difficult="Medio"
-          />
-          <RecipeCard
-            image={recipeImg}
-            name="Nombre receta"
-            portions="4"
-            time="40"
-            difficult="Medio"
-          />
-        </div>
-      </section>
-    </Fragment>
-  );
+const RecipeCarrousel = ({ title, children }) => {
+	return (
+		<section className="Recipe-carrousel">
+			<h2 className="Recipe-carrousel__title">{title}</h2>
+			<div className="Recipe-carrousel__cards-container">{children}</div>
+		</section>
+	);
 };
 
 export default RecipeCarrousel;
