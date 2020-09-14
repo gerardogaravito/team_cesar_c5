@@ -1,5 +1,5 @@
 //------------------------------ import libraries
-import React, { Fragment, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 
 //------------------------------ import components
@@ -20,23 +20,21 @@ const CategoryCarrousel = () => {
 	};
 
 	return (
-		<Fragment>
-			<section className="Ingredient-carrousel">
-				<h2 className="Ingredient-carrousel__title">Nuestras recetas</h2>
-				<div className="Ingredient-carrousel__cards">
-					{categories.map((category) => {
-						return (
-							<CategoryCard
-								key={category.id}
-								picture={foodPicture}
-								name={category.name}
-								handleClick={() => setCurrentCategoryId(category.id)}
-							/>
-						);
-					})}
-				</div>
-			</section>
-		</Fragment>
+		<section className="Ingredient-carrousel">
+			<h2 className="Ingredient-carrousel__title">Nuestras recetas</h2>
+			<div className="Ingredient-carrousel__cards">
+				{categories.map((category) => {
+					return (
+						<CategoryCard
+							key={category.id}
+							picture={foodPicture}
+							name={category.name}
+							handleClick={() => setCurrentCategoryId(category.id)}
+						/>
+					);
+				})}
+			</div>
+		</section>
 	);
 };
 

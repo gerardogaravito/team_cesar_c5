@@ -1,69 +1,69 @@
 //------------------------------ Import
-@import "../global-styles/Globalstyles.scss";
+@import '../global-styles/Globalstyles.scss';
 
 //------------------------------ Recipe Carrousel Container styles
 .Recipe-carrousel {
-  margin: $margin-sections 0;
-  &__cards-container {
-    height: 450px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-gap: $space;
-  }
+	margin: $margin-sections 0;
+	&__cards-container {
+		height: 450px;
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+		grid-gap: $space;
+	}
 }
 
-.main-card {
-  grid-row: 1 / span 2;
+.recipe-card1 {
+	grid-row: 1 / span 2;
 }
 
 //------------------------------ Recipe Card styles
 .RecipeCard {
-  @extend .CardStyles;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  overflow: hidden;
-  background: linear-gradient(
-    180deg,
-    #ffffff 0%,
-    rgba(255, 255, 255, 0) 40.06%
-  );
+	@extend .CardStyles;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	overflow: hidden;
+	background: linear-gradient(
+		180deg,
+		#ffffff 0%,
+		rgba(255, 255, 255, 0) 40.06%
+	);
 
-  &__img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    z-index: -1;
-  }
+	&__img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		position: absolute;
+		z-index: -1;
+	}
 
-  &__head {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: $space2;
-  }
+	&__head {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: $space2;
+	}
 
-  &__name {
-    color: $text-color;
-    font-size: $size-s;
-    font-weight: bold;
-  }
+	&__name {
+		color: $text-color;
+		font-size: $size-s;
+		font-weight: bold;
+	}
 
-  &__foot {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: $space;
-    padding-right: $space;
-  }
+	&__foot {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: $space;
+		padding-right: $space;
+	}
 }
 
 //------------------------------ animations
 .RecipeCard:hover .icon--add {
-  opacity: 1;
+	opacity: 1;
 }
 .icon--add:hover {
-  box-shadow: $box-shadow;
+	box-shadow: $box-shadow;
 }
