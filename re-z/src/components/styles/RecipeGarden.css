@@ -1,0 +1,40 @@
+.gardenContainer {
+  background-color: #8f2d56;
+  display: grid;
+  grid-template-rows: 15% 42% 42%;
+  grid-template-columns: 30% 35% 35%;
+}
+
+.gardenContainer__head {
+  color: #ffbc42;
+  grid-row: 1 / 2;
+  grid-column: 1 / 4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 30px;
+}
+.gardenContainer__head--title {
+  font-size: 50px;
+}
+
+.gardenContainer__vertical {
+  grid-row: 2 /4;
+  grid-column: 1 / 2;
+}
+.gardenContainer__square1 {
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
+  display: flex;
+  justify-content: center;
+}
+.gardenContainer__square1 {
+  grid-row: 2 / 3;
+  grid-column: 3 / 4;
+  display: flex;
+  justify-content: center;
+}
+.gardenContainer__horizontal {
+  grid-row: 3 / 4;
+  grid-column: 2 / 4;
+}

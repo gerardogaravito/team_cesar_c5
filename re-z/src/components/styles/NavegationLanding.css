@@ -1,0 +1,111 @@
+.LandingMenu__button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  outline: inherit; 
+  top: 18px; 
+  align-self: center;
+  color: #8f2d56;
+  font-size: 20px;
+  padding-left: 50px; 
+}
+.LandingMenu__button:hover{
+  color: #ffbc42;
+}
+/*Style for Modals*/
+.Modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(115,210,222, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  /*Start style for Modals-Login*/
+  .Modal__container-Login {
+    position: relative;
+    top: 10rem;
+    background-color: rgb(33,131,128);
+    padding: 1rem;
+    width: 700px;
+    height: 500px;
+    border-radius: 20px;
+    animation: modalIn .8s forwards;
+  }
+  @keyframes modalIn {
+    0%{
+        transform: translateY(-3000px);
+    }
+    60%{
+        transform: translateY(25px);
+    }
+    75%{
+        transform: translateY(-10px);
+    }
+    90%{
+        transform: translateY(5px);
+    }
+}
+@keyframes modalOut{
+    0%{
+        transform: translateY(5px);
+    }
+    60%{
+        transform: translateY(-10px);
+    }
+    75%{
+        transform: translateY(25px);
+    }
+    90%{
+        transform: translateY(-3000px);
+    }
+}
+.styles-logo img{
+  width: 90px;
+  height: 35px;
+  padding-left: 50px;
+  padding-top: 20px;
+  position: absolute;
+}
+.close-button img{
+  height: 30px;
+  cursor: pointer;
+  position: absolute; 
+  top: 30px;
+  right: 50px;
+}
+.close-button img:hover{
+    height: 35px;   
+    transform: rotate(45deg);
+}
+/*Start style for Modals-Register*/
+.Modal__container-Register {
+  position: relative;
+  top: 10rem;
+  background-color: rgb(33,131,128);
+  padding: 1rem;
+  width: 700px;
+  height: 500px;
+  border-radius: 20px;
+  animation: modalIn .8s forwards;
+  overflow: auto;
+}
+.Modal__container-Register::-webkit-scrollbar {
+  width: 10px;
+  background: #8f2d56;
+}
+.Modal__container-Register::-webkit-scrollbar-thumb {
+  background: #ffbc42;
+  border-radius: 5px;
+}
+.Modal__container-Register::-webkit-scrollbar-thumb:hover {
+  background: #b9892e;
+}
+.LandingMenu{
+    margin-right: 130px;
+    position: relative;
+}

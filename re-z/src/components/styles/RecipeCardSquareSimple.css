@@ -1,0 +1,26 @@
+*{
+    text-decoration: none;
+}
+.cardSquareSimple{
+    padding: 0;
+    border: 0;
+    width: 367px;
+    height: 373px;
+    background-color:#FFBC42 ;
+    color:#8F2D56;
+    border-radius: 20px;
+    outline: none;
+  }
+
+  .cardSquareSimple:hover{
+        cursor: pointer;
+        filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.25));
+        transform: scale(1.01);
+  }
+
+.cardSquareSimple__title{
+    padding:10px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+}
