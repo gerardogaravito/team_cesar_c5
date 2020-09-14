@@ -14,7 +14,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'js/[name].[hash].js',
-    publicPath: 'http://localhost:3001/',
+    publicPath: 'http://localhost:9000',
     chunkFilename: 'js/[id].[chunkhash].js'
   },
   optimization: {
@@ -44,7 +44,7 @@ module.exports = {
         use: {
           loader: 'url-loader',
           options: {
-            limit: 9000,
+            limit: 90000,
             name: '[hash].[ext]',
             outputPath:'assets'
           }
@@ -67,7 +67,7 @@ module.exports = {
     new AddAssetHtmlPlugin({
         filepath: path.resolve(__dirname, 'dist/js/*.dll.js'),
         outputPath: 'js',
-        publicPath: 'http://localhost:3001/js'
+        publicPath: 'http://localhost:9000/js'
     }),
     new CleanWebpackPlugin({
         cleanOnceBeforeBuildPatterns: ['**/app.*'],

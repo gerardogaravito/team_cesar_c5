@@ -15,7 +15,7 @@
     "react-scripts": "3.4.3"
   },
   "scripts": {
-    "server": "json-server --port 3001 --wath server/db.json --static ./dist",
+    "server": "json-server --port 9000 --wath server/db.json --static ./dist",
     "build:dev": "webpack-dev-server --config ./webpack.dev.config.js",
     "build:dll": "webpack --config ./webpack.dll.config.js --mode production",
     "build": "webpack --config ./webpack.config.js --mode production"
