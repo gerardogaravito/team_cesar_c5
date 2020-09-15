@@ -8,6 +8,7 @@ import Metadata from '../cards/Card--Metadata';
 import RecipeIngredientsList from '../components/Com--Recipe-ingredients';
 import RecipeInstructionsList from '../components/Com--Recipe-instructions';
 import RecipeCarrousel from '../components/Com--Recipe-carrousel';
+import RecipeCard from '../cards/Card--Recipe-card';
 import Footer from '../components/Com--Footer';
 import { getRecipeData } from '../actions/recipeActions';
 
@@ -21,6 +22,10 @@ const RecipePage = (props) => {
 		(state) => state.recipeReducer.currentRecipe
 	);
 	const dispatch = useDispatch();
+
+	const recipes = useSelector(
+		(state) => state.recipeReducer.recipes[0].recipes
+	);
 
 	useLayoutEffect(() => {
 		dispatch(getRecipeData(id));
@@ -37,7 +42,22 @@ const RecipePage = (props) => {
 				/>
 				<RecipeIngredientsList />
 				<RecipeInstructionsList />
-				<RecipeCarrousel />
+				<RecipeCarrousel title="Recomendados">
+					{recipes?.map((recipe, i = 0) => {
+						i++;
+						return (
+							<RecipeCard
+								cardId={i}
+								key={recipe.id}
+								image={recipe.picture}
+								name={recipe.name}
+								portions={recipe.portions}
+								time={recipe.preparationTime}
+								difficult={recipe.dificult}
+							/>
+						);
+					})}
+				</RecipeCarrousel>
 			</div>
 			<Footer />
 		</div>

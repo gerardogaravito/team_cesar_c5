@@ -16,7 +16,7 @@ const SearchHero = ({ name }) => {
 			<img src={heroPic} alt="" className="Hero__img" />
 			<Header />
 			<div className="Hero__search">
-				<h1 className="Hero__title">{name}</h1>
+				<h1>{name}</h1>
 				<SearchBar />
 			</div>
 		</section>
