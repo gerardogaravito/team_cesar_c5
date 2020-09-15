@@ -17,7 +17,7 @@ const HomePage = () => {
 
 	return (
 		<div className="Layout">
-			<SearchHero />
+			<SearchHero name="Walle" />
 			<div className="Layout__body">
 				{recipesCategories.map((recipeList) => {
 					return (
