@@ -26,8 +26,6 @@ const RecipePage = (props) => {
 		dispatch(getRecipeData(id));
 	}, []);
 
-	console.log(currentRecipe);
-
 	return (
 		<div className="Layout">
 			<MainHero title={currentRecipe.name} picture={currentRecipe.picture} />
