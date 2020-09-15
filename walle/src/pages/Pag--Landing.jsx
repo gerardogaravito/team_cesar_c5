@@ -16,6 +16,7 @@ import { getRecipes, setCurrentCategory } from '../actions/recipeActions';
 
 //------------------------------ import styles and images
 import '../assets/components-style/Layout.scss';
+import heroPic from '../assets/images/hero-img.jpeg';
 
 //------------------------------------ COMPONENT ------------------------------------//
 const LandingPage = (props) => {
@@ -43,7 +44,8 @@ const LandingPage = (props) => {
 		<>
 			<div className="Layout">
 				<MainHero
-					title="Walee"
+					picture={heroPic}
+					title="Walle"
 					description="En Walle puedes encontrar recetas para todos los gustos. Puedes comprar los ingredientes para cocinar. Nos encanta cocinar."
 					handleLoginClick={openLoginModal}
 					handleSignClick={openSignModal}
