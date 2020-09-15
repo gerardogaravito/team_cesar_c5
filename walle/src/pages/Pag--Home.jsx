@@ -27,6 +27,7 @@ const HomePage = () => {
 								return (
 									<RecipeCard
 										cardId={i}
+										id={recipe.id}
 										key={recipe.id}
 										image={recipe.picture}
 										name={recipe.name}

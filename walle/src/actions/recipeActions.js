@@ -13,3 +13,15 @@ export const setCurrentCategory = (categoryId) => (dispatch) => {
 		payload: data.categories.filter((category) => category.id === categoryId),
 	});
 };
+
+export const getRecipeData = (recipeId) => (dispatch) => {
+	const listOfRecipes = data.categories.map((list) => list.recipes).flat();
+	const recipe = listOfRecipes.filter(
+		(recipe) => recipe.id === Number(recipeId)
+	);
+
+	return dispatch({
+		type: 'GET_RECIPE',
+		payload: recipe,
+	});
+};

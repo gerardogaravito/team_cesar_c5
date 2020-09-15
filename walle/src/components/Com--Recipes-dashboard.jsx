@@ -23,10 +23,11 @@ const RecipeDashboard = () => {
 				i++;
 				return (
 					<DashboardCard
+						id={recipe.id}
 						key={recipe.id}
 						name={recipe.name}
 						image={recipe.picture}
-						id={i}
+						cardPosition={i}
 					/>
 				);
 			})}

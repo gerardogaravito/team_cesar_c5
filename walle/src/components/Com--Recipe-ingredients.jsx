@@ -1,35 +1,37 @@
 //------------------------------ import libraries
-import React, { Fragment } from "react";
+import React from 'react';
+import { useSelector } from 'react-redux';
 
 //------------------------------ import components
-import RecipeIngredientItem from "../cards/Card--Recipe-ingredient";
+import RecipeIngredientItem from '../cards/Card--Recipe-ingredient';
 
 //------------------------------ import styles and images
-import "../assets/components-style/Recipe.scss";
+import '../assets/components-style/Recipe.scss';
 
 //------------------------------------ COMPONENT ------------------------------------//
 const RecipeIngredientsList = () => {
-  return (
-    <Fragment>
-      <div className="Recipe-ingredients">
-        <h2>Ingredientes</h2>
-        <div className="Recipe-ingredients__container-list">
-          <RecipeIngredientItem name="Ingrediente" cant="1/2" id="1" />
-          <RecipeIngredientItem name="Ingrediente" cant="1/2" id="2" />
-          <RecipeIngredientItem name="Ingrediente" cant="1/2" id="3" />
-          <RecipeIngredientItem name="Ingrediente" cant="1/2" id="4" />
-          <RecipeIngredientItem name="Ingrediente" cant="1/2" id="5" />
-          <RecipeIngredientItem name="Ingrediente" cant="1/2" id="6" />
-          <RecipeIngredientItem name="Ingrediente" cant="1/2" id="7" />
-          <RecipeIngredientItem name="Ingrediente" cant="1/2" id="8" />
-          <RecipeIngredientItem name="Ingrediente" cant="1/2" id="9" />
-          <RecipeIngredientItem name="Ingrediente" cant="1/2" id="10" />
-          <RecipeIngredientItem name="Ingrediente" cant="1/2" id="11" />
-          <RecipeIngredientItem name="Ingrediente" cant="1/2" id="12" />
-        </div>
-      </div>
-    </Fragment>
-  );
+	const currentRecipe = useSelector(
+		(state) => state.recipeReducer.currentRecipe
+	);
+
+	return (
+		<div className="Recipe-ingredients">
+			<h2>Ingredientes</h2>
+			<div className="Recipe-ingredients__container-list">
+				{currentRecipe.ingredients?.map((ingredient) => {
+					return (
+						<RecipeIngredientItem
+							key={ingredient.id}
+							name={ingredient.name}
+							cant={ingredient.cant}
+							und={ingredient.und}
+							id={ingredient.id}
+						/>
+					);
+				})}
+			</div>
+		</div>
+	);
 };
 
 export default RecipeIngredientsList;
