@@ -1,24 +1,41 @@
 //------------------------------ import libraries
-import React, { Fragment } from "react";
+import React from 'react';
+import { useDispatch } from 'react-redux';
 
 //------------------------------ import components
-import { FaTrashAlt } from "react-icons/fa";
+import { FaTrashAlt } from 'react-icons/fa';
+import { deleteIngredients } from '../actions/recipeActions';
 
 //------------------------------ import styles and images
-import "../assets/components-style/CartSection.scss";
+import '../assets/components-style/CartSection.scss';
 
-const CartIngredient = (props) => {
-  return (
-    <Fragment>
-      <div className="CartIngredient">
-        <FaTrashAlt className="icon--list" />
-        <p>{props.ingredientName}</p>
-        <p>{props.ingredientUnit}</p>
-        <p>{props.ingredientCant}</p>
-        <p>{props.ingredientPrice}</p>
-      </div>
-    </Fragment>
-  );
+const CartIngredient = ({
+	id,
+	ingredientName,
+	ingredientUnit,
+	ingredientCant,
+	ingredientPrice,
+}) => {
+	const dispatch = useDispatch();
+
+	const deleteIngredientById = (id) => {
+		dispatch(deleteIngredients(id));
+	};
+
+	return (
+		<div className="CartIngredient">
+			<FaTrashAlt
+				className="icon--list"
+				onClick={() => deleteIngredientById(id)}
+			/>
+			<strong>
+				<p>{ingredientName}</p>
+			</strong>
+			<p>{ingredientUnit}</p>
+			<p>{ingredientCant}</p>
+			<p>$ {ingredientPrice}</p>
+		</div>
+	);
 };
 
 export default CartIngredient;

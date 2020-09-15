@@ -4,8 +4,9 @@ import { Link } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 
 //------------------------------ import components
-import { FaRegHeart, FaUsers, FaClock, FaPlus, FaTimes } from 'react-icons/fa';
-import { setFavoriteRecipe } from '../actions/usersActions';
+import { FaRegHeart, FaUsers, FaClock, FaPlus } from 'react-icons/fa';
+import { addFavoriteRecipe } from '../actions/usersActions';
+import { getCartIngredients } from '../actions/recipeActions';
 
 //------------------------------ import styles and images
 import '../assets/components-style/Recipecard.scss';
@@ -14,7 +15,11 @@ const RecipeCard = ({ id, cardId, name, image, portions, time, difficult }) => {
 	const dispatch = useDispatch();
 
 	const addFavorite = () => {
-		dispatch(setFavoriteRecipe({ id, name, image, portions, time, difficult }));
+		dispatch(addFavoriteRecipe({ id, name, image, portions, time, difficult }));
+	};
+
+	const addCart = () => {
+		dispatch(getCartIngredients(id));
 	};
 
 	return (
@@ -40,7 +45,7 @@ const RecipeCard = ({ id, cardId, name, image, portions, time, difficult }) => {
 				className="icon--inactive RecipeCard__fav"
 				onClick={addFavorite}
 			/>
-			<FaPlus className="icon--add" />
+			<FaPlus className="icon--add" onClick={addCart} />
 		</div>
 	);
 };

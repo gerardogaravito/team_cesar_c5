@@ -3,7 +3,7 @@ export const loginRequest = (payload) => ({
 	payload,
 });
 
-export const setFavoriteRecipe = (payload) => ({
-	type: 'SET_FAVORITE',
+export const addFavoriteRecipe = (payload) => ({
+	type: 'ADD_FAVORITE',
 	payload,
 });
