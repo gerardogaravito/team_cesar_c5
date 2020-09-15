@@ -7,6 +7,7 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
+    "json-server": "^0.16.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-player": "^2.6.1",
@@ -15,7 +16,7 @@
     "react-scripts": "3.4.3"
   },
   "scripts": {
-    "server": "json-server --port 9000 --wath server/db.json --static ./dist",
+    "start": "http-server dist",
     "build:dev": "webpack-dev-server --config ./webpack.dev.config.js",
     "build:dll": "webpack --config ./webpack.dll.config.js --mode production",
     "build": "webpack --config ./webpack.config.js --mode production"
@@ -48,6 +49,7 @@
     "css-loader": "4.3.0",
     "file-loader": "6.1.0",
     "html-webpack-plugin": "^4.4.1",
+    "http-server": "0.12.3",
     "mini-css-extract-plugin": "^0.11.2",
     "optimize-css-assets-webpack-plugin": "^5.0.4",
     "style-loader": "1.2.1",
