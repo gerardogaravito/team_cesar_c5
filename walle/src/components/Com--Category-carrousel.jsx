@@ -8,7 +8,6 @@ import { setCurrentCategory } from '../actions/recipeActions';
 
 //------------------------------ import styles and images
 import '../assets/components-style/RecipeDashboard.scss';
-import foodPicture from '../assets/images/cardexample.jpeg';
 
 //------------------------------------ COMPONENT ------------------------------------//
 const CategoryCarrousel = () => {
@@ -27,7 +26,7 @@ const CategoryCarrousel = () => {
 					return (
 						<CategoryCard
 							key={category.id}
-							picture={foodPicture}
+							picture={category.categoryPicture}
 							name={category.name}
 							handleClick={() => setCurrentCategoryId(category.id)}
 						/>
