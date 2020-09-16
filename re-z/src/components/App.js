@@ -13,8 +13,8 @@ function App() {
       <Switch>
         <Route exact path="/home" component={Home} />
         <Route exact path="/home/favoritos" component={Favoritos} />
-        <Route exact path="/home/close" component={Landing} />
-        <Redirect from="/" to="home/close" />
+        <Route exact path="/home/landing" component={Landing} />
+        <Redirect from="/" to="home/landing" />
         <Route component={NotFound} /> {/* Dejar esta línea del NotFound siempre en el último renglon que vaya dentro del Switch*/}
       </Switch>
       <FooterA />
