@@ -13,7 +13,7 @@ function App() {
       <Switch>
         <Route exact path="/home" component={Home} />
         <Route exact path="/home/favoritos" component={Favoritos} />
-        <Route exact path="/home/Close" component={Landing} />
+        <Route exact path="/home/Close" component={Landing} /> {/*agregar entrypoint aqui*/}
         <Route component={NotFound} />
       </Switch>
       <FooterA />

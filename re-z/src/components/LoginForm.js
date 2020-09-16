@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import { Redirect } from 'react-router';
 
 import './styles/RegisterForm.css';
 import Button from './Button';
@@ -14,6 +16,7 @@ class LoginForm extends React.Component {
 
   handleClick = e => {
     console.log('Button was clicked');
+    this.setState({redirect: true}); //para llevar la home usando el button iniciar sesion
   };
 
   handleSubmit = e => {
@@ -23,6 +26,11 @@ class LoginForm extends React.Component {
   }
 
   render () {
+
+      if (this.state.redirect) { // para llevar al home usando el button iniciar sesion
+        return <Redirect push to="/home" />;
+      }
+
     return (
       <React.Fragment> 
       <form className='Modal__form' onSubmit={this.handleSubmit}>
