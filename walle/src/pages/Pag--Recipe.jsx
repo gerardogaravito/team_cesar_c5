@@ -10,7 +10,7 @@ import RecipeInstructionsList from '../components/Com--Recipe-instructions';
 import RecipeCarrousel from '../components/Com--Recipe-carrousel';
 import RecipeCard from '../cards/Card--Recipe-card';
 import Footer from '../components/Com--Footer';
-import { getRecipeData } from '../actions/recipeActions';
+import { getRecipeData, getRecommendedRecipes } from '../actions/recipeActions';
 
 //------------------------------ import styles and images
 import '../assets/components-style/Layout.scss';
@@ -23,11 +23,10 @@ const RecipePage = (props) => {
 	);
 	const dispatch = useDispatch();
 
-	const recipes = useSelector(
-		(state) => state.recipeReducer.recipes[0].recipes
-	);
+	const recipes = useSelector((state) => state.recipeReducer.recommended);
 
 	useLayoutEffect(() => {
+		dispatch(getRecommendedRecipes());
 		dispatch(getRecipeData(id));
 	}, []);
 
