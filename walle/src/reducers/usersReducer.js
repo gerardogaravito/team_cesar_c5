@@ -1,6 +1,7 @@
 const initial_state = {
 	user: {},
 	favorites: [],
+	cartTotal: 0,
 	recentlyBought: [],
 };
 
@@ -13,6 +14,8 @@ const userReducer = (state = initial_state, action) => {
 				...state,
 				favorites: [...state.favorites, action.payload],
 			};
+		case 'SET_TOTAL':
+			return { ...state, cartTotal: action.payload };
 
 		default:
 			return state;

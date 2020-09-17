@@ -17,10 +17,19 @@ const recipeReducer = (state = initial_state, action) => {
 		case 'GET_CART_INGREDIENTS':
 			return {
 				...state,
-				cartIngredients: [
-					...state.cartIngredients,
-					action.payload.ingredients,
-				].flat(),
+				cartIngredients: [...state.cartIngredients, action.payload]
+					.flat()
+					.reduce((accumulator, current) => {
+						let id = current.id;
+						let found = accumulator.find((item) => item.id === id);
+						if (found) {
+							found.cant += current.cant;
+							found.price += current.price;
+						} else {
+							accumulator.push(current);
+						}
+						return accumulator;
+					}, []),
 			};
 		case 'DELETE_INGREDIENTS':
 			return {

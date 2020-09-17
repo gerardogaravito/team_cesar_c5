@@ -21,7 +21,7 @@
 						{
 							"id": 11,
 							"name": "guacamole",
-							"cant": 235,
+							"cant": 2,
 							"und": "cup",
 							"price": 5
 						},
@@ -423,7 +423,7 @@
 						{
 							"id": 36,
 							"name": "flour",
-							"cant": 155,
+							"cant": 3,
 							"und": "cup",
 							"price": 5
 						},

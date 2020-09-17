@@ -25,11 +25,13 @@ export const getRecipeData = (recipeId) => (dispatch) => {
 };
 
 export const getCartIngredients = (recipeId) => (dispatch) => {
-	const recipe = listOfRecipes.find((recipe) => recipe.id === Number(recipeId));
+	const ingredients = listOfRecipes.find(
+		(recipe) => recipe.id === Number(recipeId)
+	).ingredients;
 
 	return dispatch({
 		type: 'GET_CART_INGREDIENTS',
-		payload: recipe,
+		payload: ingredients,
 	});
 };
 
@@ -39,7 +41,6 @@ export const deleteIngredients = (payload) => ({
 });
 
 export const getRecommendedRecipes = () => (dispatch) => {
-	console.log(listOfRecipes);
 	const recommendedRecipes = new Array(7)
 		.fill({})
 		.map(
