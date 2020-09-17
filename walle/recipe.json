@@ -1,0 +1,1782 @@
+{
+	"categories": [
+		{
+			"id": 1,
+			"name": "Bacon",
+			"categoryPicture": "https://images.pexels.com/photos/1927377/pexels-photo-1927377.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+			"categoryDescription": "La panceta o tocineta es un producto cárnico que comprende la piel y las capas que se encuentran bajo la piel del cerdo o puerco, específicamente de los músculos ventrales (de ahí el nombre de «panceta»). Está compuesta de la piel, tocino (grasa o lardo) entreverado de carne magra (de ahí que también se denomine «tocino entreverado» o «tocino de veta»).",
+			"recipes": [
+				{
+					"id": 1,
+					"name": "Turkey Bacon Guacamole Cucumber Sub",
+					"picture": "https://images.pexels.com/photos/842571/pexels-photo-842571.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+					"ingredients": [
+						{
+							"id": 10,
+							"name": "cucumbers",
+							"cant": 4,
+							"und": "und",
+							"price": 5
+						},
+						{
+							"id": 11,
+							"name": "guacamole",
+							"cant": 2,
+							"und": "cup",
+							"price": 5
+						},
+						{
+							"id": 12,
+							"name": "turkey",
+							"cant": 4,
+							"und": "slice",
+							"price": 5
+						},
+						{ "id": 13, "name": "bacon", "cant": 8, "und": "slice", "price": 5 }
+					],
+					"instructions": [
+						"Use a vegetable peeler to peel the cucumbers.",
+						"On a cutting board, cut off the ends and cut the cucumbers in half. Scoop out the seeds and discard.",
+						"Spread guacamole on both sides of the prepared cucumber.",
+						"Layer the turkey on one half of the cucumber and bacon on the other half, and close the sandwich.",
+						"Enjoy!"
+					],
+					"preparationTime": 30,
+					"portions": 6,
+					"dificult": "Easy"
+				},
+
+				{
+					"id": 2,
+					"name": "Bacon Syrup For Cocktails",
+					"picture": "https://images.pexels.com/photos/1410236/pexels-photo-1410236.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+					"ingredients": [
+						{ "id": 14, "name": "sugar", "cant": 1, "und": "cup", "price": 5 },
+						{ "id": 15, "name": "water", "cant": 1, "und": "cup", "price": 5 },
+						{ "id": 13, "name": "bacon", "cant": 3, "und": "slice", "price": 1 }
+					],
+					"instructions": [
+						"Combine sugar and water in a medium saucepan. Stir sugar and water over low heat until sugar dissolves.",
+						"Increase heat to bring water to a boil and add pre-cooked bacon, stirring thoroughly. Reduce heat and let simmer for three minutes.",
+						"Remove from heat and remove bacon pieces. Pour syrup through a mesh strainer into a bowl to filter out grease and any remaining bacon pieces. You can store the syrup in a bowl or funnel into a bottle. Store in the refrigerator.",
+						"(Note: Small grease deposits may solidify at the top of the bottle after refrigeration. You can leave it as is or fish them out.)",
+						"Enjoy!"
+					],
+					"preparationTime": 30,
+					"portions": 6,
+					"dificult": "Easy"
+				},
+
+				{
+					"id": 3,
+					"name": "Jalapeño Poppers",
+					"picture": "https://images.pexels.com/photos/286283/pexels-photo-286283.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+					"ingredients": [
+						{
+							"id": 17,
+							"name": "jalapeños",
+							"cant": 4,
+							"und": "und",
+							"price": 5
+						},
+						{
+							"id": 13,
+							"name": "bacon",
+							"cant": 8,
+							"und": "slice",
+							"price": 5
+						},
+						{
+							"id": 18,
+							"name": "cream cheese",
+							"cant": 8,
+							"und": "oz",
+							"price": 5
+						}
+					],
+					"instructions": [
+						"Combine sugar and water in a medium saucepan. Stir sugar and water over low heat until sugar dissolves.",
+						"Increase heat to bring water to a boil and add pre-cooked bacon, stirring thoroughly. Reduce heat and let simmer for three minutes.",
+						"Remove from heat and remove bacon pieces. Pour syrup through a mesh strainer into a bowl to filter out grease and any remaining bacon pieces. You can store the syrup in a bowl or funnel into a bottle. Store in the refrigerator.",
+						"(Note: Small grease deposits may solidify at the top of the bottle after refrigeration. You can leave it as is or fish them out.)",
+						"Enjoy!"
+					],
+					"preparationTime": 30,
+					"portions": 8,
+					"dificult": "Easy"
+				},
+
+				{
+					"id": 4,
+					"name": "BBQ Bacon Onion Rings",
+					"picture": "https://images.pexels.com/photos/3535383/pexels-photo-3535383.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+					"ingredients": [
+						{ "id": 19, "name": "onions", "cant": 2, "und": "und", "price": 5 },
+						{
+							"id": 13,
+							"name": "bacon",
+							"cant": 20,
+							"und": "slice",
+							"price": 25
+						},
+						{
+							"id": 20,
+							"name": "BBQ sauce",
+							"cant": 145,
+							"und": "gr",
+							"price": 5
+						},
+						{ "id": 21, "name": "honey", "cant": 85, "und": "gr", "price": 5 }
+					],
+					"instructions": [
+						"Preheat oven to 400˚F (200˚C).",
+						"Peel and cut onions into ½-inch (1 cm) rings. Separate the rings.",
+						"Wrap a piece of bacon around one onion ring. Repeat with remaining onion rings and place on a parchment paper-lined baking sheet.",
+						"Combine the BBQ sauce and honey in a bowl, and brush onto rings.",
+						"Bake for 20 minutes, or until golden brown.",
+						"Enjoy!"
+					],
+					"preparationTime": 30,
+					"portions": 12,
+					"dificult": "Medium"
+				},
+
+				{
+					"id": 5,
+					"name": "Bacon-Wrapped Mozzarella Sticks",
+					"picture": "https://images.pexels.com/photos/1092730/pexels-photo-1092730.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+					"ingredients": [
+						{
+							"id": 13,
+							"name": "bacon",
+							"cant": 4,
+							"und": "slice",
+							"price": 5
+						},
+						{
+							"id": 24,
+							"name": "string cheese",
+							"cant": 4,
+							"und": "und",
+							"price": 5
+						},
+						{
+							"id": 25,
+							"name": "frozen oil",
+							"cant": 4,
+							"und": "gr",
+							"price": 5
+						}
+					],
+					"instructions": [
+						"Freeze the string cheese (for at least a few hours)",
+						"Once frozen, place the string cheese on top of a slice of bacon, and fold the edges over to cover the cheese.",
+						"Once folded wrap/roll the cheese in a second slice of bacon. Make sure to use toothpicks for support.",
+						"Pour oil into a pan and heat to 350°F (177°C), then place your Bacon Mozzarella stick into it.",
+						"Fry until the bacon appears to be cooked in it’s golden brown state then let dry on a paper towel.",
+						"Once dried, serve with a dipping sauce of your choice!",
+						"Enjoy!"
+					],
+					"preparationTime": 20,
+					"portions": 4,
+					"dificult": "Hard"
+				},
+
+				{
+					"id": 6,
+					"name": "Bacon-wrapped Brussels Sprouts",
+					"picture": "https://images.pexels.com/photos/3662136/pexels-photo-3662136.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+					"ingredients": [
+						{
+							"id": 13,
+							"name": "bacon",
+							"cant": 4,
+							"und": "slice",
+							"price": 5
+						},
+						{
+							"id": 22,
+							"name": "brussels sprouts",
+							"cant": 120,
+							"und": "gr",
+							"price": 5
+						},
+						{
+							"id": 23,
+							"name": "black pepper",
+							"cant": 2,
+							"und": "tablespoon",
+							"price": 5
+						}
+					],
+					"instructions": [
+						"Lay out stips of bacon on a clean cutting board or other clean flat surface.",
+						"Lightly brush each strip of bacon with maple syrup making sure to coat the entire surface of the meat. Lightly sprinkle with black pepper.",
+						"Take a brussels sprouts and starting from the bottom, roll up each piece of bacon so that it evenly wraps the vegetable.",
+						"Lightly brush the tops of each wrapped brussels sprout with more maple syrup and sprinkle on additional pepper. Transfer the pieces to a baking sheet making sure to place each piece of rolled-up bacon with the seam side down.",
+						"Bake at 350˚F (180˚C) for 20-25 minutes or until bacon is done and thoroughly cooked.",
+						"Remove from baking tray and place on paper towels to remove excess bacon fat.",
+						"Enjoy!"
+					],
+					"preparationTime": 35,
+					"portions": 4,
+					"dificult": "Medium"
+				},
+
+				{
+					"id": 7,
+					"name": "Bacon Asparagus Pastry Twists",
+					"picture": "https://images.pexels.com/photos/3662136/pexels-photo-3662136.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+					"ingredients": [
+						{
+							"id": 13,
+							"name": "bacon",
+							"cant": 6,
+							"und": "slice",
+							"price": 2
+						},
+						{
+							"id": 63,
+							"name": "puff pastry",
+							"cant": 1,
+							"und": "sheet",
+							"price": 1
+						},
+						{
+							"id": 64,
+							"name": "asparagus",
+							"cant": 12,
+							"und": "spear",
+							"price": 2
+						},
+						{
+							"id": 65,
+							"name": "egg",
+							"cant": 1,
+							"und": "und",
+							"price": 2
+						}
+					],
+					"instructions": [
+						"Preheat oven to 400°F (200°C)",
+						"Slice the puff pastry into ½-inch (1-centimeter) strips.",
+						"Slice the bacon in half lengthwise into thin strips.",
+						"Wrap a strip of bacon around an asparagus spear in a spiral.",
+						"Wrap a strip of puff pastry around the asparagus, looping it in between the bacon spiral.",
+						"Repeat with the rest of the asparagus.",
+						"Place the wrapped spears on a baking tray lined with parchment paper.",
+						"Brush them with egg wash, then sprinkle a pinch of salt & pepper on top.",
+						"Bake for 18 minutes, until golden brown and puffed.",
+						"Enjoy!"
+					],
+					"preparationTime": 30,
+					"portions": 2,
+					"dificult": "Easy"
+				}
+			]
+		},
+
+		{
+			"id": 2,
+			"name": "Apple",
+			"categoryPicture": "https://images.pexels.com/photos/2950434/pexels-photo-2950434.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+			"categoryDescription": "La manzana es el fruto comestible de la especie Malus domestica, llamada comúnmente manzano. Es una fruta pomácea de forma redonda y sabor más o menos dulce, dependiendo de la variedad.",
+			"recipes": [
+				{
+					"id": 8,
+					"name": "Sour Apple Concoction",
+					"picture": "https://images.pexels.com/photos/3662130/pexels-photo-3662130.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+					"ingredients": [
+						{
+							"id": 24,
+							"name": "ice",
+							"cant": 300,
+							"und": "gr",
+							"price": 5
+						},
+						{
+							"id": 25,
+							"name": "sour apple liqueur",
+							"cant": 4,
+							"und": "cup",
+							"price": 5
+						},
+						{
+							"id": 26,
+							"name": "apple flavored vodka",
+							"cant": 3,
+							"und": "cup",
+							"price": 5
+						},
+						{
+							"id": 27,
+							"name": "lemon juice",
+							"cant": 1,
+							"und": "teaspoon",
+							"price": 1
+						},
+						{
+							"id": 28,
+							"name": "green apple gatorade",
+							"cant": 2,
+							"und": "cup",
+							"price": 5
+						},
+						{
+							"id": 29,
+							"name": "sour apple rings",
+							"cant": 2,
+							"und": "und",
+							"price": 5
+						}
+					],
+					"instructions": [
+						"Add 1 cup (150 g) ice to a cocktail shaker. Pour in the sour apple liqueur, apple vodka, green apple sports drink and lemon juice. Shake well.",
+						"Add ½ cup (75 g) of ice to each of 2 serving glasses. Pour the cocktail over the ice.",
+						"Insert a straw into each glass and garnish with sour apple rings.",
+						"Enjoy!"
+					],
+					"preparationTime": 15,
+					"portions": 2,
+					"dificult": "Easy"
+				},
+
+				{
+					"id": 9,
+					"name": "Apple Peel Chips",
+					"picture": "https://images.pexels.com/photos/1860204/pexels-photo-1860204.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+					"ingredients": [
+						{
+							"id": 30,
+							"name": "large apples",
+							"cant": 8,
+							"und": "und",
+							"price": 5
+						},
+						{
+							"id": 31,
+							"name": "sugar",
+							"cant": 3,
+							"und": "tablespoons",
+							"price": 5
+						},
+						{
+							"id": 32,
+							"name": "cinnamon",
+							"cant": 1,
+							"und": "teaspoon",
+							"price": 5
+						}
+					],
+					"instructions": [
+						"Preheat the oven to 300°F (150°C).",
+						"Place the apple peels on a baking sheet lined with parchment paper.",
+						"Mix the sugar and cinnamon in a small bowl and sprinkle it over the peels.",
+						"Toss the peels with your hands until evenly coated with the sugar mixture.",
+						"Bake for about 30 minutes, tossing the peels halfway through with a pair of tongs.",
+						"Let cool before eating.",
+						"Enjoy!"
+					],
+					"preparationTime": 20,
+					"portions": 4,
+					"dificult": "Hard"
+				},
+
+				{
+					"id": 10,
+					"name": "Baked Cinnamon Apple Chips",
+					"picture": "https://images.pexels.com/photos/239581/pexels-photo-239581.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+					"ingredients": [
+						{
+							"id": 33,
+							"name": "golden delicious apple",
+							"cant": 1,
+							"und": "und",
+							"price": 5
+						},
+						{
+							"id": 34,
+							"name": "ground cinnamon",
+							"cant": 250,
+							"und": "gr",
+							"price": 5
+						},
+						{ "id": 35, "name": "salt", "cant": 1, "und": "gr", "price": 5 }
+					],
+					"instructions": [
+						"Preheat oven to 250˚F (120˚C).",
+						"Place apple slices on a parchment paper-lined baking sheet and sprinkle with cinnamon and salt.",
+						"Bake for 40 minutes, until the apples are slightly browned.",
+						"Cool completely before serving.",
+						"Enjoy!"
+					],
+					"preparationTime": 10,
+					"portions": 1,
+					"dificult": "Easy"
+				},
+
+				{
+					"id": 11,
+					"name": "Beer Batter Apple Rings",
+					"picture": "https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+					"ingredients": [
+						{
+							"id": 36,
+							"name": "flour",
+							"cant": 3,
+							"und": "cup",
+							"price": 5
+						},
+						{
+							"id": 32,
+							"name": "cinnamon",
+							"cant": 0.5,
+							"und": "teaspoon",
+							"price": 5
+						},
+						{
+							"id": 37,
+							"name": "redd's apple ale",
+							"cant": 355,
+							"und": "gr",
+							"price": 5
+						},
+						{
+							"id": 38,
+							"name": "red apples",
+							"cant": 3,
+							"und": "und",
+							"price": 5
+						},
+						{
+							"id": 39,
+							"name": "powdered sugar",
+							"cant": 2,
+							"und": "cup",
+							"price": 5
+						},
+						{
+							"id": 25,
+							"name": "frozen oil",
+							"cant": 4,
+							"und": "gr",
+							"price": 5
+						}
+					],
+					"instructions": [
+						"Heat oil in a large pot so it’s at least 4 inches (10 cm) deep. If you have a thermometer, be sure the oil reaches at least 360ºF (185ºC) for frying.",
+						"In a bowl, whisk together flour, cinnamon, and Redd’s Apple Ale until smooth.",
+						"Slice off the top and bottom of the apples, and slice each apple into ½-inch (1 cm) thick rounds.",
+						"With a teaspoon or large piping tip, cut out a circle in the center of the apple ring to make it look like a donut.",
+						"With a paper towel, pat down the apple slices.",
+						"Dip the apple slices in the batter.",
+						"Fry them two to three at a time. Flip each apple slice once during frying and fry until both sides are golden brown.",
+						"Carefully remove from the oil and place onto paper towels or a drying rack.",
+						"Cool, then sprinkle with powdered sugar.",
+						"Enjoy!"
+					],
+					"preparationTime": 15,
+					"portions": 12,
+					"dificult": "Easy"
+				},
+
+				{
+					"id": 12,
+					"name": "Carrot-mango Tango Baby Food",
+					"picture": "https://images.pexels.com/photos/2097090/pexels-photo-2097090.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+					"ingredients": [
+						{
+							"id": 30,
+							"name": "large apples",
+							"cant": 2,
+							"und": "und",
+							"price": 5
+						},
+						{
+							"id": 40,
+							"name": "large carrots",
+							"cant": 3,
+							"und": "und",
+							"price": 5
+						},
+						{ "id": 41, "name": "mango", "cant": 1, "und": "und", "price": 5 }
+					],
+					"instructions": [
+						"Add apples, carrots, mango, and water, breast milk, or formula to a blender or food processor. Blend very well.",
+						"Add more liquid as needed.",
+						"Refrigerate up to 3 days or freeze up to 1 month.",
+						"NOTE: Check with your pediatrician before introducing new foods to children under 12 months.",
+						"Enjoy!"
+					],
+					"preparationTime": 25,
+					"portions": 8,
+					"dificult": "Hard"
+				},
+
+				{
+					"id": 13,
+					"name": "Apple Fruit Rollers",
+					"picture": "https://images.pexels.com/photos/3662136/pexels-photo-3662136.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+					"ingredients": [
+						{
+							"id": 42,
+							"name": "stalks celery",
+							"cant": 3,
+							"und": "und",
+							"price": 5
+						},
+						{
+							"id": 43,
+							"name": "gala apple",
+							"cant": 1,
+							"und": "und",
+							"price": 5
+						},
+						{ "id": 44, "name": "beet", "cant": 400, "und": "gr", "price": 5 },
+						{
+							"id": 45,
+							"name": "spinach",
+							"cant": 120,
+							"und": "gr",
+							"price": 5
+						}
+					],
+					"instructions": [
+						"Add the celery, apple, beets, and spinach to a blender, and blend until smooth.",
+						"Using a mesh strainer, strain the juice over a large liquid measuring cup to remove the pulp. Use a spoon to help stir the pulp and press out the liquid. Reserve the pulp to make pulp muffins.",
+						"Chill the juice for at least 30 minutes (and keep up to 3 days).",
+						"Enjoy!"
+					],
+					"preparationTime": 35,
+					"portions": 1,
+					"dificult": "Easy"
+				},
+
+				{
+					"id": 14,
+					"name": "Sweet/Savory Pull-Apart Bread: Granny Style",
+					"picture": "https://images.pexels.com/photos/3662136/pexels-photo-3662136.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+					"ingredients": [
+						{
+							"id": 66,
+							"name": "biscuit dough",
+							"cant": 2,
+							"und": "can",
+							"price": 15
+						},
+						{
+							"id": 67,
+							"name": "apple slices",
+							"cant": 360,
+							"und": "gr",
+							"price": 5
+						},
+						{
+							"id": 68,
+							"name": "brie cheese",
+							"cant": 200,
+							"und": "gr",
+							"price": 5
+						},
+						{
+							"id": 32,
+							"name": "cinnamon",
+							"cant": 1,
+							"und": "teaspoon",
+							"price": 0.5
+						}
+					],
+					"instructions": [
+						"Preheat oven to 350°F (175°C).",
+						"Grease loaf pan and line with parchment paper.",
+						"Separate biscuit dough and flatten slightly.",
+						"Divide the Brie evenly on biscuit dough.",
+						"Add fresh apple slices and sprinkle cinnamon on each piece.",
+						"Place each biscuit in loaf pan until pan is full.",
+						"Bake for 45 minutes or until golden brown (internal temperature should be 140°F (60°C)).",
+						"Enjoy!"
+					],
+					"preparationTime": 50,
+					"portions": 1,
+					"dificult": "Hard"
+				}
+			]
+		},
+
+		{
+			"id": 3,
+			"name": "Avocado",
+			"categoryPicture": "https://images.pexels.com/photos/4117606/pexels-photo-4117606.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+			"categoryDescription": "The avocado (Persea americana), a tree likely originating from south-central Mexico,[2][3][4] is classified as a member of the flowering plant family Lauraceae.[2] The fruit of the plant, also called an avocado (or avocado pear or alligator pear), is botanically a large berry containing a single large seed.",
+			"recipes": [
+				{
+					"id": 15,
+					"name": "Avocado Rose Avocado Toast",
+					"picture": "https://images.pexels.com/photos/1049626/pexels-photo-1049626.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+					"ingredients": [
+						{
+							"id": 46,
+							"name": "bread",
+							"cant": 1,
+							"und": "und",
+							"price": 5
+						},
+						{
+							"id": 47,
+							"name": "avocado",
+							"cant": 0.5,
+							"und": "und",
+							"price": 5
+						},
+						{
+							"id": 48,
+							"name": "strawberry",
+							"cant": 1,
+							"und": "und",
+							"price": 5
+						}
+					],
+					"instructions": [
+						"Thinly slice half of an avocado. Keep slices together and start molding them into a line.",
+						"Start folding one end inside and wrapping other end around in a circle.",
+						"Place rose-shaped avocado on toast and add sliced strawberries at each corner of the toast.",
+						"Enjoy!"
+					],
+					"preparationTime": 15,
+					"portions": 1,
+					"dificult": "Easy"
+				},
+
+				{
+					"id": 16,
+					"name": "Avocado And Roasted Chickpea Toast",
+					"picture": "https://images.pexels.com/photos/1351238/pexels-photo-1351238.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+					"ingredients": [
+						{
+							"id": 46,
+							"name": "bread",
+							"cant": 1,
+							"und": "und",
+							"price": 5
+						},
+						{
+							"id": 47,
+							"name": "avocado",
+							"cant": 0.5,
+							"und": "und",
+							"price": 5
+						},
+						{
+							"id": 49,
+							"name": "chickpeas",
+							"cant": 0.25,
+							"und": "cup",
+							"price": 1
+						},
+						{
+							"id": 50,
+							"name": "hot sauce",
+							"cant": 0.5,
+							"und": "cup",
+							"price": 5
+						}
+					],
+					"instructions": [
+						"Spread mashed avocado over toast, and top with roasted chickpeas and a dash of hot sauce.",
+						"Enjoy!"
+					],
+					"preparationTime": 15,
+					"portions": 1,
+					"dificult": "Easy"
+				},
+
+				{
+					"id": 17,
+					"name": "Caprese Avocado Toast",
+					"picture": "https://images.pexels.com/photos/1580466/pexels-photo-1580466.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+					"ingredients": [
+						{
+							"id": 46,
+							"name": "bread",
+							"cant": 1,
+							"und": "und",
+							"price": 5
+						},
+						{
+							"id": 47,
+							"name": "avocado",
+							"cant": 0.5,
+							"und": "und",
+							"price": 5
+						},
+						{
+							"id": 51,
+							"name": "heirloom tomatoes",
+							"cant": 2,
+							"und": "und",
+							"price": 5
+						},
+						{
+							"id": 52,
+							"name": "mozzarella ball",
+							"cant": 1,
+							"und": "und",
+							"price": 5
+						},
+						{
+							"id": 53,
+							"name": "basil",
+							"cant": 100,
+							"und": "gr",
+							"price": 5
+						}
+					],
+					"instructions": [
+						"Mash half of an avocado. Add salt and pepper, to taste. Mix until well combined.",
+						"Spread the mashed avocado evenly across toast, and top with heirloom tomatoes, mozzarella, and chopped basil.",
+						"Enjoy!"
+					],
+					"preparationTime": 15,
+					"portions": 2,
+					"dificult": "Easy"
+				},
+
+				{
+					"id": 18,
+					"name": "Creamy Cilantro Lime Dressing",
+					"picture": "https://images.pexels.com/photos/1484522/pexels-photo-1484522.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+					"ingredients": [
+						{
+							"id": 54,
+							"name": "cilantro",
+							"cant": 10,
+							"und": "cup",
+							"price": 5
+						},
+						{
+							"id": 55,
+							"name": "coconut milk",
+							"cant": 120,
+							"und": "gr",
+							"price": 5
+						},
+						{
+							"id": 56,
+							"name": "lime juice",
+							"cant": 60,
+							"und": "gr",
+							"price": 5
+						},
+						{
+							"id": 57,
+							"name": "avocado oil",
+							"cant": 240,
+							"und": "gr",
+							"price": 5
+						}
+					],
+					"instructions": [
+						"Add cilantro, salt, pepper, coconut milk, lime juice and avocado oil into a mason jar and secure lid tightly.",
+						"Shake vigorously until ingredients are mixed thoroughly.",
+						"Store dressing in the fridge and use within 1-2 weeks. You may need to shake up the ingredients again before each use.",
+						"Enjoy!"
+					],
+					"preparationTime": 15,
+					"portions": 16,
+					"dificult": "Medium"
+				},
+
+				{
+					"id": 19,
+					"name": "Hummus, Radish, Cucumber, And Paprika–Stuffed Avocado",
+					"picture": "https://images.pexels.com/photos/1580464/pexels-photo-1580464.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+					"ingredients": [
+						{
+							"id": 58,
+							"name": "ripe avocado",
+							"cant": 1,
+							"und": "und",
+							"price": 1
+						},
+						{
+							"id": 59,
+							"name": "hummus",
+							"cant": 1.5,
+							"und": "tablespoon",
+							"price": 0.5
+						},
+						{ "id": 60, "name": "radish", "cant": 1, "und": "und", "price": 2 },
+						{
+							"id": 10,
+							"name": "cucumbers",
+							"cant": 0.25,
+							"und": "und",
+							"price": 0.2
+						}
+					],
+					"instructions": [
+						"Preheat gas grill on high heat.",
+						"Using a sharp knife, slice the avocados in half by cutting in a straight line around the pit.",
+						"Place the avocado half containing the pit in your hand and face it away from you. Gently stick the tip of the knife into the side of the pit and carefully pry it out of the avocado. For a ripe avocado, the pit will pop out with little effort. You can hold a kitchen towel in your hand and place the avocado in the towel for added protection from the edge of your knife.",
+						"Enjoy!"
+					],
+					"preparationTime": 15,
+					"portions": 1,
+					"dificult": "Easy"
+				},
+
+				{
+					"id": 20,
+					"name": "Precise Avocado Toast (Capricorn)",
+					"picture": "https://images.pexels.com/photos/1484518/pexels-photo-1484518.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+					"ingredients": [
+						{
+							"id": 58,
+							"name": "ripe avocado",
+							"cant": 0.5,
+							"und": "und",
+							"price": 1
+						},
+						{
+							"id": 27,
+							"name": "lemon juice",
+							"cant": 1,
+							"und": "teaspoon",
+							"price": 0.05
+						},
+						{
+							"id": 61,
+							"name": "rye toast",
+							"cant": 1,
+							"und": "slice",
+							"price": 2
+						},
+						{
+							"id": 49,
+							"name": "chickpeas",
+							"cant": 0.25,
+							"und": "cup",
+							"price": 1
+						},
+						{
+							"id": 62,
+							"name": "edamames",
+							"cant": 12,
+							"und": "und",
+							"price": 5
+						}
+					],
+					"instructions": [
+						"Scoop the avocado into a medium bowl. Season with salt and add the lemon juice. Mash until smooth.",
+						"Spread the avocado on the slice of toast. Line 8 chickpeas at the top of the toast, then 6 edamame underneath, then repeat with the remaining chickpeas and edamame.",
+						"Enjoy!"
+					],
+					"preparationTime": 15,
+					"portions": 1,
+					"dificult": "Easy"
+				},
+
+				{
+					"id": 21,
+					"name": "Mango Avocado Taco Cups",
+					"picture": "https://images.pexels.com/photos/4281818/pexels-photo-4281818.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+					"ingredients": [
+						{
+							"id": 70,
+							"name": "flour tortillas",
+							"cant": 3,
+							"und": "und",
+							"price": 10
+						},
+						{
+							"id": 58,
+							"name": "ripe avocado",
+							"cant": 0.75,
+							"und": "und",
+							"price": 1
+						},
+						{
+							"id": 41,
+							"name": "mango",
+							"cant": 0.75,
+							"und": "und",
+							"price": 1
+						},
+						{
+							"id": 71,
+							"name": "salsa verde",
+							"cant": 65,
+							"und": "gr",
+							"price": 1
+						}
+					],
+					"instructions": [
+						"Preheat the oven to 375ºF (190ºC). Generously coat a 12-cup muffin tin with nonstick spray.",
+						"Stack the tortillas and cut off the edges so the tortillas are square. Then, quarter the squares so you have 12 small tortilla pieces.",
+						"Press a tortilla square into each cup of the prepared muffin tin.",
+						"Bake for about 10 minutes, until the edges of the tortillas are golden brown. Let cool for 5 minutes.",
+						"Fill each cup with 1 tablespoon of avocado and 1 tablespoon of mango and top with 1 teaspoon of salsa verde. Garnish with cilantro",
+						"Enjoy!"
+					],
+					"preparationTime": 30,
+					"portions": 12,
+					"dificult": "Medium"
+				}
+			]
+		},
+
+		{
+			"id": 4,
+			"name": "Chicken",
+			"categoryPicture": "https://images.pexels.com/photos/2338407/pexels-photo-2338407.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+			"categoryDescription": "The chicken (Gallus gallus domesticus) is a type of domesticated fowl, a subspecies of the red junglefowl (Gallus gallus). Chickens are one of the most common and widespread domestic animals, with a total population of 23.7 billion as of 2018.[1] up from more than 19 billion in 2011.[2] There are more chickens in the world than any other bird or domesticated fowl.",
+			"recipes": [
+				{
+					"id": 22,
+					"name": "BBQ Chicken Bake",
+					"picture": "https://images.pexels.com/photos/2232433/pexels-photo-2232433.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+					"ingredients": [
+						{
+							"id": 72,
+							"name": "chicken breasts",
+							"cant": 3,
+							"und": "und",
+							"price": 10
+						},
+						{
+							"id": 73,
+							"name": "BBQ sauce",
+							"cant": 6,
+							"und": "tablespoons",
+							"price": 2
+						},
+						{
+							"id": 19,
+							"name": "onions",
+							"cant": 0.5,
+							"und": "und",
+							"price": 5
+						}
+					],
+					"instructions": [
+						"Preheat oven to 400˚F (200˚C).",
+						"Place chicken breast in a baking dish. Season chicken with salt and pepper, to taste.",
+						"Spread BBQ sauce on each chicken breast.",
+						"Layer onions on top of the chicken.",
+						"Bake for 40 minutes.",
+						"Enjoy!"
+					],
+					"preparationTime": 35,
+					"portions": 4,
+					"dificult": "Medium"
+				},
+
+				{
+					"id": 23,
+					"name": "Avocado And Roasted Chickpea Toast",
+					"picture": "https://images.pexels.com/photos/2689419/pexels-photo-2689419.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+					"ingredients": [
+						{
+							"id": 74,
+							"name": "shredded chicken",
+							"cant": 125,
+							"und": "gr",
+							"price": 5
+						},
+						{
+							"id": 75,
+							"name": "teriyaki sauce",
+							"cant": 120,
+							"und": "ml",
+							"price": 8
+						},
+						{
+							"id": 76,
+							"name": "romaine lettuce",
+							"cant": 120,
+							"und": "gr",
+							"price": 8
+						}
+					],
+					"instructions": [
+						"In a bow,l mix the chicken and teriyaki sauce.",
+						"Place the mixture over the romaine leaves.",
+						"Top with scallions.",
+						"Enjoy!"
+					],
+					"preparationTime": 20,
+					"portions": 2,
+					"dificult": "Easy"
+				},
+
+				{
+					"id": 24,
+					"name": "Garlic Brown Sugar Chicken",
+					"picture": "https://images.pexels.com/photos/323682/pexels-photo-323682.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+					"ingredients": [
+						{
+							"id": 77,
+							"name": "chicken thighs",
+							"cant": 4,
+							"und": "und",
+							"price": 12
+						},
+						{
+							"id": 78,
+							"name": "cloves garlic",
+							"cant": 6,
+							"und": "und",
+							"price": 2
+						},
+						{
+							"id": 19,
+							"name": "onions",
+							"cant": 1,
+							"und": "und",
+							"price": 5
+						},
+						{
+							"id": 79,
+							"name": "brown sugar",
+							"cant": 110,
+							"und": "gr",
+							"price": 1
+						},
+						{
+							"id": 80,
+							"name": "chicken broth",
+							"cant": 120,
+							"und": "ml",
+							"price": 1
+						},
+						{
+							"id": 81,
+							"name": "thyme",
+							"cant": 1,
+							"und": "tablespoon",
+							"price": 1
+						},
+						{
+							"id": 82,
+							"name": "parsley",
+							"cant": 1,
+							"und": "tablespoon",
+							"price": 1
+						}
+					],
+					"instructions": [
+						"Season the chicken thighs with salt and pepper.",
+						"Heat a cast-iron skillet or pan over medium-high heat, and add the chicken skin side down.",
+						"Cook the chicken until it has a dark brown and crispy skin. Flip the chicken and cook until the chicken is cooked through, about 5 more minutes. Remove the chicken from the pan and set aside.",
+						"Add the garlic and onion to the remaining chicken fat and cook, stirring frequently until the onions are softened and caramelized.",
+						"Add the brown sugar, chicken broth, thyme, and parsley and stir to combine. Bring the sauce to a boil and and cook for 1-2 minutes, until slightly reduced.",
+						"Add the chicken back to the pan and coat it in the garlic brown sugar sauce.",
+						"Enjoy!"
+					],
+					"preparationTime": 25,
+					"portions": 3,
+					"dificult": "Easy"
+				},
+
+				{
+					"id": 25,
+					"name": "Creamy Lemon Garlic Chicken",
+					"picture": "https://images.pexels.com/photos/764925/pexels-photo-764925.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+					"ingredients": [
+						{
+							"id": 72,
+							"name": "chicken breasts",
+							"cant": 4,
+							"und": "und",
+							"price": 10
+						},
+						{
+							"id": 83,
+							"name": "coconut oil",
+							"cant": 2,
+							"und": "tablespoon",
+							"price": 2
+						},
+						{
+							"id": 80,
+							"name": "chicken broth",
+							"cant": 235,
+							"und": "ml",
+							"price": 2
+						},
+						{
+							"id": 84,
+							"name": "greek yogurt",
+							"cant": 120,
+							"und": "gr",
+							"price": 10
+						},
+						{
+							"id": 78,
+							"name": "cloves garlic",
+							"cant": 3,
+							"und": "und",
+							"price": 5
+						},
+						{
+							"id": 85,
+							"name": "oregano",
+							"cant": 2,
+							"und": "teaspoon",
+							"price": 1
+						},
+						{
+							"id": 45,
+							"name": "spinach",
+							"cant": 170,
+							"und": "gr",
+							"price": 5.2
+						}
+					],
+					"instructions": [
+						"Preheat oven to 400°F (200°C).",
+						"Heat 1 tablespoon of coconut oil in a large ovenproof skillet over high heat.",
+						"Liberally season both sides of the chicken breasts with salt and pepper before transferring to the hot skillet.",
+						"Sear the chicken 2-3 minutes per side, just until it develops a golden-brown color.",
+						"Remove the chicken from the pan and set aside. Allow the pan to cool slightly before heating the remaining 1 tablespoon of oil over medium heat.",
+						"Toss in the garlic and sautée until fragrant, about 30 seconds.",
+						"Pour in the chicken broth, yogurt, lemon juice, and oregano and stir until the mixture is smooth.",
+						"Let the mixture reduce for a few minutes until it has thickened.",
+						"Pour in the spinach and sprinkle over another pinch of salt. Let the greens wilt down, stirring occasionally.",
+						"Place the chicken breasts back into the pan and transfer the pan to the oven.",
+						"Bake for 15 minutes or until the chicken is fully cooked.",
+						"Serve chicken on a bed of the wilted spinach and top with a drizzle of the creamy sauce.",
+						"Enjoy!"
+					],
+					"preparationTime": 35,
+					"portions": 4,
+					"dificult": "Hard"
+				},
+
+				{
+					"id": 26,
+					"name": "One-Pot Chicken, Bacon, And Goat Cheese Pasta",
+					"picture": "https://images.pexels.com/photos/144432/pexels-photo-144432.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+					"ingredients": [
+						{
+							"id": 77,
+							"name": "chicken thighs",
+							"cant": 6,
+							"und": "und",
+							"price": 20
+						},
+						{
+							"id": 13,
+							"name": "bacon",
+							"cant": 3,
+							"und": "slice",
+							"price": 1.5
+						},
+						{
+							"id": 64,
+							"name": "asparagus",
+							"cant": 10,
+							"und": "spear",
+							"price": 1.5
+						},
+						{
+							"id": 86,
+							"name": "red onion",
+							"cant": 1,
+							"und": "und",
+							"price": 1.5
+						},
+						{
+							"id": 78,
+							"name": "cloves garlic",
+							"cant": 4,
+							"und": "und",
+							"price": 1.2
+						},
+						{
+							"id": 87,
+							"name": "milk",
+							"cant": 240,
+							"und": "ml",
+							"price": 3
+						},
+						{
+							"id": 88,
+							"name": "fusilli pasta",
+							"cant": 255,
+							"und": "gr",
+							"price": 10
+						},
+						{
+							"id": 89,
+							"name": "goat cheese",
+							"cant": 255,
+							"und": "gr",
+							"price": 18.5
+						},
+						{
+							"id": 90,
+							"name": "sun-dried tomato",
+							"cant": 25,
+							"und": "gr",
+							"price": 12.2
+						}
+					],
+					"instructions": [
+						"In a large pot on medium-high heat, add bacon. Cook until the fat has rendered and the bacon is crispy. Remove bacon from pot and set aside. Leave bacon fat in pan.",
+						"Season chicken with salt and pepper and place skin-side down in the pot. Cook until the chicken gets a dark golden crispy skin. Flip and cook on the other side until the chicken is cooked through. Remove from pot and set aside.",
+						"Add the red onion, asparagus, and garlic to the pot and until the asparagus is almost tender. Remove from pot.",
+						"Add the pasta and chicken broth to the pot.",
+						"Bring to a boil, and cook for 9-12 minutes or until the pasta is al dente. Stir occasionally.",
+						"When the pasta is almost tender. Lower the heat and add in the milk, goat cheese, cooked vegetables, cooked bacon, and sun-dried tomatoes. Stir to incorporate.",
+						"Add the chicken back to the pot. Sprinkle with chopped parsley and bring to the table to serve.",
+						"Enjoy!"
+					],
+					"preparationTime": 30,
+					"portions": 6,
+					"dificult": "Hard"
+				},
+
+				{
+					"id": 27,
+					"name": "Easy Chicken Miso Ramen",
+					"picture": "https://images.pexels.com/photos/5916/food-salad-healthy-colorful.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+					"ingredients": [
+						{
+							"id": 91,
+							"name": "butter",
+							"cant": 1,
+							"und": "tablespoon",
+							"price": 0.2
+						},
+						{
+							"id": 92,
+							"name": "corn",
+							"cant": 175,
+							"und": "gr",
+							"price": 0.8
+						},
+						{
+							"id": 65,
+							"name": "egg",
+							"cant": 2,
+							"und": "und",
+							"price": 4
+						},
+						{
+							"id": 45,
+							"name": "spinach",
+							"cant": 80,
+							"und": "gr",
+							"price": 2.3
+						},
+						{
+							"id": 80,
+							"name": "chicken broth",
+							"cant": 960,
+							"und": "ml",
+							"price": 4.7
+						},
+						{
+							"id": 93,
+							"name": "ginger",
+							"cant": 25,
+							"und": "gr",
+							"price": 0.4
+						},
+						{
+							"id": 72,
+							"name": "chicken breasts",
+							"cant": 2,
+							"und": "und",
+							"price": 7.4
+						},
+						{
+							"id": 94,
+							"name": "miso paste",
+							"cant": 2,
+							"und": "tablespoon",
+							"price": 0.5
+						},
+						{
+							"id": 95,
+							"name": "ramen noodle",
+							"cant": 2,
+							"und": "servings",
+							"price": 10.4
+						}
+					],
+					"instructions": [
+						"Heat butter in a saucepan, fry corn until warm. Set aside.",
+						"Soft-boil 2 eggs and set aside. Blanch the spinach and set aside.",
+						"Bring chicken stock, garlic, ginger and scallions to a boil. Boil for 30 minutes.",
+						"Add the chicken, simmer for 20 minutes. Remove, and set aside.",
+						"Dissolve the miso paste in the chicken broth.",
+						"Shred the chicken.",
+						"Put everything together. Divide noodles between two bowls. Pour over chicken broth. Add the spinach, corn, shredded chicken, chopped scallions, soft-boiled egg and nori.",
+						"Enjoy!"
+					],
+					"preparationTime": 30,
+					"portions": 6,
+					"dificult": "Hard"
+				}
+			]
+		},
+
+		{
+			"id": 5,
+			"name": "Pork",
+			"categoryPicture": "https://images.pexels.com/photos/236887/pexels-photo-236887.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+			"categoryDescription": "Pork is the culinary name for the meat of a domestic pig (Sus scrofa domesticus). It is the most commonly consumed meat worldwide,[1] with evidence of pig husbandry dating back to 5000 BC.",
+			"recipes": [
+				{
+					"id": 28,
+					"name": "Malaysian-style Barbecue Pork Belly",
+					"picture": "https://images.pexels.com/photos/533325/pexels-photo-533325.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+					"ingredients": [
+						{
+							"id": 96,
+							"name": "pork belly",
+							"cant": 500,
+							"und": "gr",
+							"price": 12.4
+						},
+						{
+							"id": 78,
+							"name": "cloves garlic",
+							"cant": 1,
+							"und": "und",
+							"price": 0.2
+						},
+						{
+							"id": 21,
+							"name": "honey",
+							"cant": 20,
+							"und": "gr",
+							"price": 1
+						},
+						{
+							"id": 97,
+							"name": "cooking wine",
+							"cant": 1,
+							"und": "tablespoon",
+							"price": 0.7
+						},
+						{
+							"id": 98,
+							"name": "soy sauce",
+							"cant": 2,
+							"und": "tablespoon",
+							"price": 1.2
+						},
+						{
+							"id": 99,
+							"name": "oyster sauce",
+							"cant": 1,
+							"und": "tablespoon",
+							"price": 1.2
+						},
+						{
+							"id": 100,
+							"name": "five spice",
+							"cant": 1,
+							"und": "tablespoon",
+							"price": 1.2
+						},
+						{
+							"id": 23,
+							"name": "black pepper",
+							"cant": 0.5,
+							"und": "tablespoon",
+							"price": 2
+						},
+						{
+							"id": 39,
+							"name": "powdered sugar",
+							"cant": 0.5,
+							"und": "cup",
+							"price": 1.2
+						}
+					],
+					"instructions": [
+						"Place the pork in a bowl along with all the marinade ingredients. Combine and leave to marinade for 6-8 hours.",
+						"Preheat the oven to 190°C (375°F).",
+						"Place the pork belly on a grill tray.",
+						"Roast the pork belly in the oven for 20 minutes, turning halfway through.",
+						"Nutrition Calories: 1599 Fat: 136 grams Carbs: 54 grams Fiber: 2 grams Sugars: 47 grams Protein: 42 grams.",
+						"Enjoy!"
+					],
+					"preparationTime": 35,
+					"portions": 2,
+					"dificult": "Hard"
+				},
+
+				{
+					"id": 29,
+					"name": "Red Wine Dragon Ribs",
+					"picture": "https://images.pexels.com/photos/1651166/pexels-photo-1651166.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+					"ingredients": [
+						{
+							"id": 101,
+							"name": "pork rib",
+							"cant": 4,
+							"und": "lb",
+							"price": 13.4
+						},
+						{
+							"id": 102,
+							"name": "red wine",
+							"cant": 240,
+							"und": "ml",
+							"price": 10.2
+						},
+						{
+							"id": 79,
+							"name": "brown sugar",
+							"cant": 220,
+							"und": "gr",
+							"price": 2.2
+						},
+						{
+							"id": 103,
+							"name": "apple cider vinegar",
+							"cant": 60,
+							"und": "ml",
+							"price": 4.2
+						},
+						{
+							"id": 104,
+							"name": "ground allspice",
+							"cant": 0.25,
+							"und": "teaspoon",
+							"price": 1.2
+						},
+						{
+							"id": 105,
+							"name": "tomato sauce",
+							"cant": 1,
+							"und": "can",
+							"price": 4.6
+						}
+					],
+					"instructions": [
+						"Preheat oven to 250˚F (125˚C).",
+						"Clean the ribs (remove membrane or score) and pat dry.",
+						"Place the ribs in a foil-lined roasting pan, and season both sides with salt and pepper.",
+						"Add about ¼ inch (6mm) of water (about ½ cup (120 ml)) to the pan.",
+						"Seal the top of the roasting pan with foil and bake for 2 hours or until ribs are very tender.",
+						"Place wine, brown sugar, vinegar, tomato sauce, tomato paste, and allspice in a saucepan.",
+						"Simmer the sauce for at least 45 minutes and season to taste. The sauce should be rich and thick.",
+						"Raise oven to 350˚F (180˚C).",
+						"Remove ribs from roasting pan. Pour off all fat and water, and baste ribs with sauce.",
+						"Bake an additional 20-30 minutes. (You can stop and re-baste halfway through.)",
+						"Cut ribs and serve with additional sauce.",
+						"Enjoy!"
+					],
+					"preparationTime": 35,
+					"portions": 4,
+					"dificult": "Easy"
+				},
+
+				{
+					"id": 30,
+					"name": "Simple Spaghetti And Meatballs",
+					"picture": "https://images.pexels.com/photos/262897/pexels-photo-262897.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+					"ingredients": [
+						{
+							"id": 19,
+							"name": "onions",
+							"cant": 1,
+							"und": "und",
+							"price": 2.2
+						},
+						{
+							"id": 106,
+							"name": "crushed tomato",
+							"cant": 795,
+							"und": "gr",
+							"price": 4.2
+						},
+						{
+							"id": 107,
+							"name": "ground pork",
+							"cant": 455,
+							"und": "gr",
+							"price": 9.4
+						},
+						{
+							"id": 108,
+							"name": "ground beef",
+							"cant": 455,
+							"und": "gr",
+							"price": 13.4
+						},
+						{
+							"id": 78,
+							"name": "cloves garlic",
+							"cant": 2,
+							"und": "und",
+							"price": 1.2
+						},
+						{
+							"id": 109,
+							"name": "parmesan cheese",
+							"cant": 100,
+							"und": "gr",
+							"price": 3.2
+						},
+						{
+							"id": 110,
+							"name": "panko breadcrumbs",
+							"cant": 50,
+							"und": "gr",
+							"price": 1.2
+						},
+						{
+							"id": 111,
+							"name": "spaghetti",
+							"cant": 455,
+							"und": "gr",
+							"price": 9.2
+						}
+					],
+					"instructions": [
+						"Preheat the oven to 400˚F (200˚C).",
+						"Add the crushed tomatoes, butter, onion, and salt to a pot and bring to a simmer over medium heat.",
+						"Lower the heat and cook for 45 minutes, until the onions are soft and starting to break apart. Remove onion.",
+						"In a bowl, mix the ground beef, ground pork, panko, Parmesan, egg, garlic, onion, Worcestershire, salt, pepper, and parsley until fully combined.",
+						"Take a golf ball-sized handful of the meat mixture and roll it into a ball. Transfer to a baking sheet. Repeat with the remaining meat.",
+						"Bake the meatballs for 16 minutes.",
+						"Bring a pot of water to a boil, and cook the spaghetti according to the packaging instructions.",
+						"Drain pasta and toss lightly in about a tablespoon of oil (optional).",
+						"Pour the sauce over the pasta. Transfer the cooked meatballs and top with Parmesan.",
+						"Enjoy!"
+					],
+					"preparationTime": 35,
+					"portions": 4,
+					"dificult": "Medium"
+				},
+
+				{
+					"id": 31,
+					"name": "Slow Cooker Ribs",
+					"picture": "https://images.pexels.com/photos/4223921/pexels-photo-4223921.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+					"ingredients": [
+						{
+							"id": 20,
+							"name": "BBQ sauce",
+							"cant": 580,
+							"und": "gr",
+							"price": 10.5
+						},
+						{
+							"id": 79,
+							"name": "brown sugar",
+							"cant": 55,
+							"und": "gr",
+							"price": 0.4
+						},
+						{
+							"id": 103,
+							"name": "apple cider vinegar",
+							"cant": 34,
+							"und": "ml",
+							"price": 3.2
+						},
+						{
+							"id": 85,
+							"name": "oregano",
+							"cant": 3,
+							"und": "teaspoon",
+							"price": 1.2
+						},
+						{
+							"id": 112,
+							"name": "worcestershire sauce",
+							"cant": 1,
+							"und": "teaspoon",
+							"price": 1.2
+						},
+						{
+							"id": 113,
+							"name": "chili powder",
+							"cant": 1,
+							"und": "teaspoon",
+							"price": 2.2
+						},
+						{
+							"id": 114,
+							"name": "baby back pork rib",
+							"cant": 3,
+							"und": "lb",
+							"price": 20.2
+						}
+					],
+					"instructions": [
+						"Combine bbq sauce, brown sugar, cider vinegar, oregano, Worcestershire sauce, cayenne pepper, and chili powder in a small bowl.",
+						"Salt and pepper the ribs. Place ribs in slow cooker, and cover in sauce.",
+						"Cook low and slow for eight hours or high for four hours.",
+						"After the ribs are done, spoon the bbq sauce in the slow cooker over the ribs before removing.",
+						"Cut the ribs, serve with bbq sauce.",
+						"Enjoy!"
+					],
+					"preparationTime": 60,
+					"portions": 4,
+					"dificult": "Hard"
+				},
+
+				{
+					"id": 32,
+					"name": "BBQ Pulled Pork Fries",
+					"picture": "https://images.pexels.com/photos/3821688/pexels-photo-3821688.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+					"ingredients": [
+						{
+							"id": 115,
+							"name": "russet potatoes",
+							"cant": 8,
+							"und": "und",
+							"price": 10.5
+						},
+						{
+							"id": 116,
+							"name": "pork shoulder",
+							"cant": 2,
+							"und": "lb",
+							"price": 6.5
+						},
+						{
+							"id": 117,
+							"name": "olive oil",
+							"cant": 3,
+							"und": "tablespoon",
+							"price": 1.5
+						},
+						{
+							"id": 20,
+							"name": "BBQ sauce",
+							"cant": 580,
+							"und": "gr",
+							"price": 9
+						},
+						{
+							"id": 86,
+							"name": "red onion",
+							"cant": 0.5,
+							"und": "und",
+							"price": 0.7
+						},
+						{
+							"id": 118,
+							"name": "sour cream",
+							"cant": 115,
+							"und": "gr",
+							"price": 2.7
+						}
+					],
+					"instructions": [
+						"Preheat oven to 425°F (220°C).",
+						"Slice the potatoes into ½-inch (1cm) slices, then cut the slices into ½-inch (1cm) strips.",
+						"Place the sliced potatoes on a baking sheet along with the pork shoulder. Make sure that the potatoes are not touching the pork.",
+						"Drizzle the olive oil over the potatoes, then sprinkle the pork and the potatoes with the salt and pepper, rubbing them in so that they are all coated evenly. Cover the pork with one cup (286g) of the barbecue sauce, then rub it evenly on all sides. Bake for 45 minutes.",
+						"Remove the fries, then place the pork in the center of the tray. Bake for another two hours at 350°F (175°C).",
+						"Transfer the pork to a large bowl, and using two forks, shred the pork. Combine the pulled pork with the remaining one cup (286g) of barbecue sauce.",
+						"In a skillet or a baking tray, layer half of the fries, half of the bbq pork, half of the red onion, the pepper jack, half of the scallions, then repeat with the remaining fries, pork, red onion, cheddar, and scallions. Bake for 15 minutes, until cheese is melted.",
+						"Serve with sour cream.",
+						"Enjoy!"
+					],
+					"preparationTime": 70,
+					"portions": 4,
+					"dificult": "Hard"
+				},
+
+				{
+					"id": 33,
+					"name": "Instant Pot Root Beer Pulled Pork",
+					"picture": "https://images.pexels.com/photos/3742373/pexels-photo-3742373.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+					"ingredients": [
+						{
+							"id": 119,
+							"name": "garlic powder",
+							"cant": 2.5,
+							"und": "teaspoon",
+							"price": 6.5
+						},
+						{
+							"id": 120,
+							"name": "onion powder",
+							"cant": 2,
+							"und": "teaspoon",
+							"price": 2.1
+						},
+						{
+							"id": 121,
+							"name": "kosher salt",
+							"cant": 1,
+							"und": "teaspoon",
+							"price": 0.2
+						},
+						{
+							"id": 122,
+							"name": "smoked paprika",
+							"cant": 1,
+							"und": "teaspoon",
+							"price": 0.2
+						},
+						{
+							"id": 116,
+							"name": "pork shoulder",
+							"cant": 3,
+							"und": "lb",
+							"price": 9.5
+						},
+						{
+							"id": 117,
+							"name": "canola oil",
+							"cant": 1,
+							"und": "tablespoon",
+							"price": 1.5
+						},
+						{
+							"id": 118,
+							"name": "root beer",
+							"cant": 1,
+							"und": "can",
+							"price": 6.5
+						},
+						{
+							"id": 119,
+							"name": "white vinegar",
+							"cant": 3,
+							"und": "tablespoon",
+							"price": 1.5
+						},
+						{
+							"id": 20,
+							"name": "BBQ sauce",
+							"cant": 130,
+							"und": "gr",
+							"price": 8.2
+						}
+					],
+					"instructions": [
+						"Make the pulled pork: In a small bowl, combine the garlic powder, onion powder, salt, pepper, coriander, and paprika.",
+						"Add the pork to a large bowl and sprinkle with the spice mixture, tossing to coat evenly.",
+						"Turn an Instant Pot to the sauté setting. Add the canola oil and heat on medium heat. Working in batches, add the pork to the pot in batches and brown all over, 2–3 minutes per side. Transfer to a cutting board.",
+						"Add the onion to the pot and cook for 3–5 minutes, scraping up any browned bits from the bottom of the pot, until the onion is soft and translucent. Add the root beer, vinegar, and barbecue sauce to the pot and stir to combine.",
+						"Return the pork to the pot, nestling the pieces in together so they fit in a single layer and are sitting evenly in the cooking liquid. Put on the lid and seal the pressure valve.",
+						"Cook on normal pressure for 60 minutes. Once the timer has stopped, let the valve naturally release for 15 minutes before manually opening the valve.",
+						"While the pork is cooking, make the pickled onion slaw: In a medium bowl, combine the cabbage, pickled onions, carrot, vinegar, mayonnaise, salt, and pepper. Toss well to coat. Chill in the refrigerator until ready to serve.",
+						"Using tongs, transfer the pork from the Instant Pot to a large bowl. Turn Instant Pot to the sauté setting and reduce the braising liquid by half, 10–12 minutes.",
+						"Meanwhile, use 2 forks to shred the pork into small pieces, discarding any large pieces of fat or sinew.",
+						"Starting with ½ cup (120 ml), gradually add the reduced braising liquid back to the pork until juicy and well-coated.",
+						"To serve, spread barbecue sauce on both sides of each roll. Place a generous scoop of pork on each bottom bun and top with a small scoop of pickled onion slaw. Top with the top bun and serve.",
+						"Enjoy!"
+					],
+					"preparationTime": 105,
+					"portions": 6,
+					"dificult": "Hard"
+				}
+			]
+		}
+	]
+}
