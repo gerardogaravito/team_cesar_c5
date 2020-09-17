@@ -11,8 +11,8 @@
     margin: auto;
     border-right: 50vw solid transparent;
     border-top: 100vh solid #FFBC42;
-    z-index: 1;
     position: absolute;
+    z-index: 2;
 }
 .carousel {
   margin-left: 25%; 
@@ -22,6 +22,7 @@
   padding-left: 30px;
   width: 100%;
   position: relative;
+  z-index: 1;
 }
 .carousel__container {
   transition: 450ms -webkit-transform;
