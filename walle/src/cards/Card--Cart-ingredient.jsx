@@ -10,6 +10,7 @@ import { formatterDolar } from '../utils/formatterDolar';
 //------------------------------ import styles and images
 import '../assets/components-style/CartSection.scss';
 
+//------------------------------------ COMPONENT ------------------------------------//
 const CartIngredient = ({
 	id,
 	ingredientName,
