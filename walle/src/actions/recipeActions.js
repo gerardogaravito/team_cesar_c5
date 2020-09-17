@@ -37,3 +37,17 @@ export const deleteIngredients = (payload) => ({
 	type: 'DELETE_INGREDIENTS',
 	payload,
 });
+
+export const getRecommendedRecipes = () => (dispatch) => {
+	console.log(listOfRecipes);
+	const recommendedRecipes = new Array(7)
+		.fill({})
+		.map(
+			(item) => listOfRecipes[Math.floor(Math.random() * listOfRecipes.length)]
+		);
+
+	return dispatch({
+		type: 'SET_RECOMMENDED_RECIPES',
+		payload: recommendedRecipes,
+	});
+};

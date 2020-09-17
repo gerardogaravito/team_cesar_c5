@@ -3,6 +3,7 @@ const initial_state = {
 	currentCategory: [],
 	currentRecipe: {},
 	cartIngredients: [],
+	recommended: [],
 };
 
 const recipeReducer = (state = initial_state, action) => {
@@ -28,6 +29,8 @@ const recipeReducer = (state = initial_state, action) => {
 					(ingredient) => ingredient.id !== action.payload
 				),
 			};
+		case 'SET_RECOMMENDED_RECIPES':
+			return { ...state, recommended: action.payload };
 
 		default:
 			return state;
