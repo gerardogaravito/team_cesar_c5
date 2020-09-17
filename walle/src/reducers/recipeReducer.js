@@ -10,15 +10,15 @@ const recipeReducer = (state = initial_state, action) => {
 		case 'GET_RECIPES':
 			return { ...state, recipes: action.payload };
 		case 'SET_CATEGORY':
-			return { ...state, currentCategory: action.payload[0] };
+			return { ...state, currentCategory: action.payload };
 		case 'GET_CURRENT_RECIPE':
-			return { ...state, currentRecipe: action.payload[0] };
+			return { ...state, currentRecipe: action.payload };
 		case 'GET_CART_INGREDIENTS':
 			return {
 				...state,
 				cartIngredients: [
 					...state.cartIngredients,
-					action.payload[0].ingredients,
+					action.payload.ingredients,
 				].flat(),
 			};
 		case 'DELETE_INGREDIENTS':

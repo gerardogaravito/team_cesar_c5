@@ -47,13 +47,14 @@ const RecipePage = (props) => {
 						i++;
 						return (
 							<RecipeCard
+								id={recipe.id}
 								cardId={i}
 								key={recipe.id}
-								image={recipe.picture}
+								picture={recipe.picture}
 								name={recipe.name}
 								portions={recipe.portions}
-								time={recipe.preparationTime}
-								difficult={recipe.dificult}
+								preparationTime={recipe.preparationTime}
+								dificult={recipe.dificult}
 							/>
 						);
 					})}

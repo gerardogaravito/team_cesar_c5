@@ -32,13 +32,14 @@ const UserPage = () => {
 						i++;
 						return (
 							<RecipeCard
+								id={recipe.id}
 								cardId={i}
 								key={recipe.id}
-								image={recipe.image}
+								picture={recipe.picture}
 								name={recipe.name}
 								portions={recipe.portions}
-								time={recipe.time}
-								difficult={recipe.difficult}
+								preparationTime={recipe.preparationTime}
+								dificult={recipe.dificult}
 							/>
 						);
 					})}
