@@ -37,7 +37,6 @@ const RecipeCard = ({
 
 	const addCart = (id) => {
 		dispatch(getCartIngredients(id));
-		console.log(id);
 	};
 
 	return (

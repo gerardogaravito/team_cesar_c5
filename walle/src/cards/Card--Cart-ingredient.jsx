@@ -5,6 +5,7 @@ import { useDispatch } from 'react-redux';
 //------------------------------ import components
 import { FaTrashAlt } from 'react-icons/fa';
 import { deleteIngredients } from '../actions/recipeActions';
+import { formatterDolar } from '../utils/formatterDolar';
 
 //------------------------------ import styles and images
 import '../assets/components-style/CartSection.scss';
@@ -33,7 +34,7 @@ const CartIngredient = ({
 			</strong>
 			<p>{ingredientUnit}</p>
 			<p>{ingredientCant}</p>
-			<p>$ {ingredientPrice}</p>
+			<p> {formatterDolar.format(ingredientPrice)}</p>
 		</div>
 	);
 };
