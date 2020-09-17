@@ -11,14 +11,12 @@ export const getRecipes = () => (dispatch) => {
 export const setCurrentCategory = (categoryId) => (dispatch) => {
 	return dispatch({
 		type: 'SET_CATEGORY',
-		payload: data.categories.filter((category) => category.id === categoryId),
+		payload: data.categories.find((category) => category.id === categoryId),
 	});
 };
 
 export const getRecipeData = (recipeId) => (dispatch) => {
-	const recipe = listOfRecipes.filter(
-		(recipe) => recipe.id === Number(recipeId)
-	);
+	const recipe = listOfRecipes.find((recipe) => recipe.id === Number(recipeId));
 
 	return dispatch({
 		type: 'GET_CURRENT_RECIPE',
@@ -27,9 +25,7 @@ export const getRecipeData = (recipeId) => (dispatch) => {
 };
 
 export const getCartIngredients = (recipeId) => (dispatch) => {
-	const recipe = listOfRecipes.filter(
-		(recipe) => recipe.id === Number(recipeId)
-	);
+	const recipe = listOfRecipes.find((recipe) => recipe.id === Number(recipeId));
 
 	return dispatch({
 		type: 'GET_CART_INGREDIENTS',

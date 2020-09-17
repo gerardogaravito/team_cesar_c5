@@ -29,11 +29,11 @@ const HomePage = () => {
 										cardId={i}
 										id={recipe.id}
 										key={recipe.id}
-										image={recipe.picture}
+										picture={recipe.picture}
 										name={recipe.name}
 										portions={recipe.portions}
-										time={recipe.preparationTime}
-										difficult={recipe.dificult}
+										preparationTime={recipe.preparationTime}
+										dificult={recipe.dificult}
 									/>
 								);
 							})}
