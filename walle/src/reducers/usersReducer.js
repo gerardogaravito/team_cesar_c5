@@ -16,6 +16,10 @@ const userReducer = (state = initial_state, action) => {
 			};
 		case 'SET_TOTAL':
 			return { ...state, cartTotal: action.payload };
+		case 'EDIT_PROFILE':
+			return { ...state, user: { ...state.user, editing: action.payload } };
+		case 'END_EDIT_PROFILE':
+			return { ...state, user: action.payload };
 
 		default:
 			return state;

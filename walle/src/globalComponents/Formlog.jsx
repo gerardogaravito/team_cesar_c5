@@ -43,7 +43,7 @@ const Formlog = (props) => {
 			)}
 			<Input
 				classmodifier="--centered"
-				lable="Correo:"
+				label="Correo:"
 				name="email"
 				type="email"
 				placeholder="Fulanito@email.com"
@@ -51,7 +51,7 @@ const Formlog = (props) => {
 			/>
 			<Input
 				classmodifier="--centered"
-				lable="Contraseña:"
+				label="Contraseña:"
 				name="password"
 				type="password"
 				placeholder="Password"
@@ -62,7 +62,7 @@ const Formlog = (props) => {
 			{display.sign && (
 				<Input
 					classmodifier="--centered"
-					lable="Confirmar Contraseña:"
+					label="Confirmar Contraseña:"
 					name="confirmPassword"
 					type="password"
 					placeholder="confirm Password"

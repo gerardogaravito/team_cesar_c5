@@ -1,43 +1,55 @@
 //------------------------------ import scss
-@import "./tokens.scss";
+@import './tokens.scss';
 
 //------------------------------ import styles
 .input {
-  display: flex;
-  flex-direction: column;
-  margin-right: $space;
-  flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+	margin-right: $space;
+	flex-grow: 1;
 
-  &--centered {
-    @extend .input;
-    align-items: center;
-    margin-bottom: $space2;
-  }
+	&--centered {
+		@extend .input;
+		align-items: center;
+		margin-bottom: $space2;
+	}
 
-  &-text {
-    width: 100%;
-    margin-bottom: $space;
-    padding: 5px;
-    font-size: $size-xs;
-    border-radius: $border-radius;
-    border: $main-border;
-    background-color: $background-color;
-    outline: none;
+	&-text {
+		width: 100%;
+		margin-bottom: $space;
+		padding: 5px;
+		font-size: $size-xs;
+		border-radius: $border-radius;
+		border: $main-border;
+		background-color: $background-color;
+		outline: none;
 
-    &--centered {
-      @extend .input-text;
-      text-align: center;
-    }
+		&--centered {
+			@extend .input-text;
+			text-align: center;
+		}
 
-    &:focus {
-      background-color: rgba($color: #fff, $alpha: 0.8);
-      border: 2px solid $main-color;
-    }
-  }
+		&:focus {
+			background-color: rgba($color: #fff, $alpha: 0.8);
+			border: 2px solid $main-color;
+		}
+	}
 
-  &-label {
-    color: $second-color;
-    font-weight: bold;
-    margin-bottom: $space;
-  }
+	&-label {
+		color: $second-color;
+		font-weight: bold;
+		margin-bottom: $space;
+	}
+}
+
+.data-title {
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.data-direction {
+	background-color: $background-color;
+	padding: 5px 100px 5px 5px;
+	border: $main-border;
+	border-radius: $border-radius;
 }
