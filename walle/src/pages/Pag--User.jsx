@@ -22,11 +22,7 @@ const UserPage = () => {
 				<Header />
 			</div>
 			<div className="Layout__body">
-				<UserInfo
-					userName="Pepita Perez"
-					email="pepitaperez@email.com"
-					phone="+57 3004486870"
-				/>
+				<UserInfo />
 				<RecipeCarrousel title="Favoritos">
 					{favorites.map((recipe, i = 0) => {
 						i++;

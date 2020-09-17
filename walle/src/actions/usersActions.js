@@ -19,3 +19,17 @@ export const calculateTotal = (ingredients) => (dispatch) => {
 		payload: total,
 	});
 };
+
+export const editProfile = () => (dispatch) => {
+	dispatch({
+		type: 'EDIT_PROFILE',
+		payload: true,
+	});
+};
+
+export const confirmUserData = (userData) => (dispatch) => {
+	dispatch({
+		type: 'END_EDIT_PROFILE',
+		payload: { ...userData, editing: false },
+	});
+};

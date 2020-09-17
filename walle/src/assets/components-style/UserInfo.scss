@@ -1,43 +1,49 @@
 //------------------------------ Import
-@import "../global-styles/Globalstyles.scss";
+@import '../global-styles/Globalstyles.scss';
 
 //------------------------------ Styles
 .UserInfo {
-  display: flex;
-  justify-content: center;
-  margin: $margin-sections 0;
+	display: flex;
+	justify-content: center;
+	margin: $margin-sections 0;
 
-  &__nav {
-    margin-right: $space4;
-    text-align: center;
-  }
+	&__nav {
+		margin-right: $space4;
+		text-align: center;
+	}
 
-  &__name {
-    font-size: 100px;
-  }
+	&__name {
+		font-size: 100px;
+		margin-bottom: $space2;
+	}
 
-  &__img {
-    display: block;
-    width: 350px;
-    height: 350px;
-    margin-bottom: $space2;
-    border-radius: 50%;
-    object-fit: cover;
-    border: $second-border;
-  }
+	&__img {
+		display: block;
+		width: 350px;
+		height: 350px;
+		margin-bottom: $space2;
+		border-radius: 50%;
+		object-fit: cover;
+		border: $second-border;
+	}
 
-  &__description {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+	&__description {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+	}
 
-    p {
-      font-size: $size-s;
-      margin-bottom: $space;
-    }
-  }
+	&__direction {
+		display: flex;
+	}
 
-  &__direction {
-    display: flex;
-  }
+	&__direction-data {
+		margin-right: $space2;
+		flex: 1;
+	}
+
+	&__contact {
+		font-size: $size-s;
+		margin-bottom: $space;
+	}
 }

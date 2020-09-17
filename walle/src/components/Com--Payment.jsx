@@ -15,6 +15,7 @@ const Payment = () => {
 	const ingredients = useSelector(
 		(state) => state.recipeReducer.cartIngredients
 	);
+	const user = useSelector((state) => state.userReducer.user);
 	const total = useSelector((state) => state.userReducer.cartTotal);
 	const dispatch = useDispatch();
 
@@ -32,10 +33,8 @@ const Payment = () => {
 						<h3>45 Mins</h3>
 					</div>
 					<div className="input">
-						<label className="input-label" htmlFor="">
-							Dirección:
-						</label>
-						<input className="input-text" type="text" />
+						<p className="input-label">Dirección:</p>
+						<p className="data-direction">{user.adress}</p>
 					</div>
 				</div>
 				<div className="Payment__total">{formatterDolar.format(total)}</div>
