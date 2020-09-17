@@ -5,10 +5,10 @@ import { useSelector, useDispatch } from 'react-redux';
 //------------------------------ import components
 import { editProfile } from '../actions/usersActions';
 import FormUser from '../globalComponents/FormUser';
+import { gravatar } from '../utils/gravatar';
 
 //------------------------------ import styles and images
 import '../assets/components-style/UserInfo.scss';
-import userPic from '../assets/images/userpic.jpg';
 
 //------------------------------------ COMPONENT ------------------------------------//
 const UserInfo = () => {
@@ -27,9 +27,10 @@ const UserInfo = () => {
 				<div className="UserInfo__nav">
 					<img
 						className="UserInfo__img"
-						src={userPic}
-						alt="User profile picture"
+						src={gravatar(user.email)}
+						alt={user.name}
 					/>
+
 					<button className="main-button" onClick={editUserData}>
 						Editar
 					</button>

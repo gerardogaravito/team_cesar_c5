@@ -1,15 +1,16 @@
 //------------------------------ import libraries
 import React, { useState } from 'react';
-import { useDispatch } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 
 //------------------------------ import components
 import Input from '../globalComponents/Input';
-import userPic from '../assets/images/userpic.jpg';
 import { confirmUserData } from '../actions/usersActions';
+import { gravatar } from '../utils/gravatar';
 
 //------------------------------ import styles and images
 
 const FormUser = () => {
+	const user = useSelector((state) => state.userReducer.user);
 	const [userData, setData] = useState({});
 	const dispatch = useDispatch();
 
@@ -25,7 +26,11 @@ const FormUser = () => {
 	return (
 		<div className="UserInfo">
 			<div className="UserInfo__nav">
-				<img className="UserInfo__img" src={userPic} alt="" />
+				<img
+					className="UserInfo__img"
+					src={gravatar(user.email)}
+					alt={user.name}
+				/>
 				<button type="submit" className="main-button" onClick={handleSubmit}>
 					Aceptar
 				</button>
