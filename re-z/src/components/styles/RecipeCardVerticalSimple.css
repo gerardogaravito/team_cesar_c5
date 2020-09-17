@@ -1,0 +1,23 @@
+.cardVertical{
+    padding: 0;
+    border: 0;
+    width: 415px;
+    height: 686px;
+    background-color:#FFBC42 ;
+    color:#8F2D56;
+    border-radius: 20px;
+    outline: none;
+  }
+
+  .cardVertical:hover{
+        cursor: pointer;
+        filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.25));
+        transform: scale(1.01);
+  }
+
+.cardVertical__title{
+    padding:20px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+}

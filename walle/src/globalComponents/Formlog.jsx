@@ -1,6 +1,7 @@
 //------------------------------ import libraries
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
+import { withRouter } from 'react-router';
 
 //------------------------------ import components
 import { FaTimes } from 'react-icons/fa';
@@ -9,7 +10,8 @@ import Input from './Input';
 import { loginRequest } from '../actions/usersActions';
 
 //------------------------------------ COMPONENT ------------------------------------//
-const Formlog = ({ closeModal, display }) => {
+const Formlog = (props) => {
+	const { closeModal, display } = props;
 	const [form, setForm] = useState({ email: '' });
 	const dispatch = useDispatch();
 
@@ -25,6 +27,7 @@ const Formlog = ({ closeModal, display }) => {
 	const handleSubmit = (event) => {
 		event.preventDefault();
 		dispatch(loginRequest(form));
+		props.history.push('/walle');
 	};
 
 	return (
@@ -56,7 +59,7 @@ const Formlog = ({ closeModal, display }) => {
 			/>
 
 			{/* validate if sign to display the third input */}
-			{display.sign ? (
+			{display.sign && (
 				<Input
 					classmodifier="--centered"
 					lable="Confirmar Contraseña:"
@@ -65,7 +68,7 @@ const Formlog = ({ closeModal, display }) => {
 					placeholder="confirm Password"
 					getInputValue={handleInput}
 				/>
-			) : null}
+			)}
 			<button type="submit" className="main-button">
 				Entrar
 			</button>
@@ -73,4 +76,4 @@ const Formlog = ({ closeModal, display }) => {
 	);
 };
 
-export default Formlog;
+export default withRouter(Formlog);

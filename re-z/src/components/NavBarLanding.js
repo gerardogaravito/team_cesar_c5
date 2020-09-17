@@ -1,12 +1,16 @@
 import React from 'react';
 
-import './styles/Navbar.css';
+
+import './styles/NavBarLanding.css';
 import Logo from '../images/logo.png';
 import Search from '../components/Search';
-import SwitchPerfil from '../components/SwitchPerfil'
-/* import { Link } from 'react-router-dom'; */
+import NavegationLanding from './NavegationLanding';
+import { Link } from 'react-router-dom';
 
-class Navbar extends React.Component{
+
+class NavBarLanding extends React.Component{
+    
+
     render(){
         return (
             <div className="Navbar">
@@ -14,10 +18,11 @@ class Navbar extends React.Component{
                     <img src={Logo} alt="Logo_Re-z"/>
                 </div>
                 <Search />
-                <SwitchPerfil />
+                <NavegationLanding />
+                
             </div>
         )
     }
 }
 
-export default Navbar; 
+export default NavBarLanding; 

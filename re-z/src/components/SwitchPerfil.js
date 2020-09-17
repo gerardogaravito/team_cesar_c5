@@ -11,7 +11,7 @@ class Modal extends Component{
                   <a href="">Configuración</a>
                   <Link to="/home/favoritos">Tus Favoritas</Link>
                   <a href="">Ver carrito de compra</a>
-                  <a href="">Cerrar sesión</a>
+                  <Link to="/home/Close">Cerrar Sesión</Link>
               </div>
           </section>
         )

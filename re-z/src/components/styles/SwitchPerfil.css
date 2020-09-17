@@ -22,6 +22,7 @@ input[type="checkbox"]{
     border-radius: 20px;
     box-shadow: inset 0 0 5px rgba(0,0,0,.2);
     transition: .5s;
+    cursor: pointer;
 }
 input:checked[type="checkbox"]{
     background: #218380;
@@ -36,7 +37,6 @@ input[type="checkbox"]:before{
     left: 0;
     background-image: url(https://bit.ly/32Au0sJ);
     background-size: 100% 100%;
-    /* background: #FFBC42; */
     transform: translate(2px, 2px);
     transition: .2s;
 }

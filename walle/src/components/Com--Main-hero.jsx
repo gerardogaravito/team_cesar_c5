@@ -2,6 +2,7 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import { useDispatch } from 'react-redux';
+import { withRouter } from 'react-router';
 
 //------------------------------ import components
 import Header from './Com--Header';
@@ -12,13 +13,14 @@ import { getCartIngredients } from '../actions/recipeActions';
 import '../assets/components-style/Hero.scss';
 
 //------------------------------------ COMPONENT ------------------------------------//
-const MainHero = ({
-	title,
-	description,
-	handleLoginClick,
-	handleSignClick,
-	picture,
-}) => {
+const MainHero = (props) => {
+	const {
+		title,
+		description,
+		handleLoginClick,
+		handleSignClick,
+		picture,
+	} = props;
 	const userState = useSelector((state) => state.userReducer.user);
 	const currentRecipe = useSelector(
 		(state) => state.recipeReducer.currentRecipe
@@ -35,7 +37,7 @@ const MainHero = ({
 			<Header handleLogin={handleLoginClick} handleSign={handleSignClick} />
 			<div className="Hero__information">
 				<div className="Hero__description">
-					{Object.keys(currentRecipe).length > 0 ? (
+					{props.match.path !== '/' ? (
 						<h1 className="Hero__title">{title}</h1>
 					) : (
 						<h1>{title}</h1>
@@ -54,4 +56,4 @@ const MainHero = ({
 	);
 };
 
-export default MainHero;
+export default withRouter(MainHero);
