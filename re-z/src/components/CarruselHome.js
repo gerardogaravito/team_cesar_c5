@@ -1,23 +1,27 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 
 import './styles/CarruselHome.css';
 import CarruselItems from './CarruselItems'
+import data from '../../recipe.json';
 
 
-class CarruselHome extends Component {
+function CarruselHome () {
+  const [recipeList, setRecipeList] = useState(data.recipes)
 
-  render() {
       return (
         <section className="Principal-container">
         <div className="Triangle"></div>
           <section className="carousel">
             <div className="carousel__container">
-              <CarruselItems />
+              {
+                recipeList.map((item) => (
+                  <CarruselItems data={item} key={item.id} />
+                ))
+              }
             </div>
           </section>
         </section>
       );
-}
 }
    
 export default CarruselHome;
