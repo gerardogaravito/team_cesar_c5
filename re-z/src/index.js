@@ -2,6 +2,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+import { createStore } from 'redux';
+import { Provider } from 'react-redux';
+
+import reducers from './reducer'
+
+const store = createStore(
+    reducers, //todos los reducer
+    {} //estado inicial
+);
+
 //COMPONENTES
 import './global.css';
 //Para cuando queramos renderiar todo el sitio con App
@@ -17,4 +27,8 @@ const container = document.getElementById('app');
 // ReactDOM.render( <elemento/>, dónde)
 
 //Para cuando queramos renderizar todo el sitio con App.js
- ReactDOM.render(<App />,container)
+ ReactDOM.render(
+    <Provider store={ store }>
+        <App />
+    </Provider> 
+    ,container)
