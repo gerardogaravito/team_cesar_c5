@@ -1,4 +1,4 @@
-import { Switch } from "react-router";
+/* import { Switch } from "react-router";
 
 const INITIAL_STATE = {
     usuarios: []
@@ -10,5 +10,6 @@ export default (state = INITIAL_STATE, action ) => {
             return { ...state, usuarios: action.payload }
 
             default: return state;
+
     }
-}
+} */

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import './styles/CarruselItems.css';
 
@@ -11,7 +12,7 @@ const CarruselItems = ({ name, picture }) => (
             <div className="like-box">
             <div className="like" id="like"></div>
             </div>
-            <p class="carousel-item__details--title">{name}</p>
+            <Link to="/home/Page-Recipe" class="carousel-item__details--title">{name}</Link>
             </div>
         </div>
     );
