@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Navbar from '../Navbar';
-import FooterA from '../FooterA';
+import RecipeInfoPage from '../RecipeInfoPage';
 import "../styles/Favoritos.css"
 
 class Favoritos extends React.Component{
@@ -11,7 +11,9 @@ class Favoritos extends React.Component{
               <Navbar />
               <div className="Favoritos-container">
                 <h1 className="favoritos__title">Tus Favoritos</h1>
+                
               </div>
+              <RecipeInfoPage/>
           </div>
       )
   }
