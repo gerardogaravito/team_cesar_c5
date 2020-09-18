@@ -7,9 +7,10 @@ import data from '../../recipe.json';
 
 function CardVerticalScroll() {
 
-  const [recipeList, setRecipeList] = useState([])
 
-  setRecipeList(data.recipes)
+  const [recipeList, setRecipeList] = useState(data.recipes)
+
+  // setRecipeList(data.recipes)
 
     return (
     <div className='scrollcontainer' >
