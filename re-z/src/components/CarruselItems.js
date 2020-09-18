@@ -1,6 +1,7 @@
 import React from 'react';
 
 import './styles/CarruselItems.css';
+import TimeIcon from '../images/Atomos/time-icon-yellow.svg';
 
 
 function CarruselItems(props){
@@ -12,6 +13,10 @@ function CarruselItems(props){
             <div className="like" id="like"></div>
             </div>
             <p class="carousel-item__details--title">{props.data.name}</p>
+            <div className="time-icon">
+                <img src={TimeIcon} alt="Icon" />
+                <p>{props.data.preparationTime}</p>
+            </div>
             </div>
         </div>   
     )

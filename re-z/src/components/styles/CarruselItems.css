@@ -46,8 +46,21 @@
   }
   .carousel-item__details--title {
     color: #ffbc42;
-    margin: 5px 0px 20px 20px;
+    margin: 5px 0px 10px 20px;
     font-size: 20px;
+  }
+  .time-icon{
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    display: flex;
+  }
+  .time-icon img{
+    width: 20px;
+    margin-right: 5px;
+  }
+  .time-icon p{
+    color: #ffbc42;
   }
   .like{
     cursor: pointer;
