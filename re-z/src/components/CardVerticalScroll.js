@@ -1,4 +1,5 @@
 import React , {useState} from 'react';
+import { useFetchRecipe } from '../hooks/useFetchRecipe';
 
 import './styles/CardVerticalScroll.css';
 import RecipeCardHorizontalDerecha from './RecipeCardHorizontalDerecha';
@@ -7,8 +8,8 @@ import data from '../../recipe.json';
 
 function CardVerticalScroll() {
 
-
-  const [recipeList, setRecipeList] = useState(data.recipes)
+  const [recipeList] = useFetchRecipe(data.recipes)
+  // const [recipeList, setRecipeList] = useState(data.recipes)
 
   // setRecipeList(data.recipes)
 
@@ -16,9 +17,9 @@ function CardVerticalScroll() {
     <div className='scrollcontainer' >
       <ul>
         {
-          recipeList.map((item) => (
+          recipeList.slice(0, 6).map((item) => (
             <React.Fragment>
-              <RecipeCardHorizontalDerecha data={item} key={item.id}/>
+              <RecipeCardHorizontalDerecha data={item} key={item.id}/> {/*Falta modificar para que no se repita la receta dos veces*/}
               <RecipeCardHorizontalIzquierda data={item} key={item.id} />
             </React.Fragment>
           ))
