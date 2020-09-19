@@ -2,10 +2,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-//COMPONENTES
+import { createStore } from 'redux';
+import { Provider } from 'react-redux';
+
 import './global.css';
-//Para cuando queramos renderiar todo el sitio con App
+import reducers from './reducer'
 import App from './components/App';
+
+const store = createStore(
+    reducers, //todos los reducer
+    {} //estado inicial
+);
+
+//COMPONENTES
+
+//Para cuando queramos renderiar todo el sitio con App
+
 
 /* import NavegationLanding from './components/NavegationLanding'; */
 // ---las librerías de abajo venían con create-react-app, aun no las sé usar entonces las comenté---
@@ -17,4 +29,8 @@ const container = document.getElementById('app');
 // ReactDOM.render( <elemento/>, dónde)
 
 //Para cuando queramos renderizar todo el sitio con App.js
- ReactDOM.render(<App />,container)
+ ReactDOM.render(
+    <Provider store={ store }>
+        <App />
+    </Provider> 
+    ,container)
