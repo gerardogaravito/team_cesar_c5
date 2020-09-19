@@ -15,7 +15,7 @@ function App() {
         <Route exact path="/home/favoritos" component={Favoritos} />
         <Route exact path="/home/landing" component={Landing} />
         <Redirect from="/" to="home/landing" />
-        <Route component={NotFound} /> {/* Dejar esta línea del NotFound siempre en el último renglon que vaya dentro del Switch*/}
+        <Route component={NotFound} />
       </Switch>
       <FooterA />
     </BrowserRouter>
