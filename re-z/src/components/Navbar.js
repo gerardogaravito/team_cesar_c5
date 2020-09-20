@@ -10,9 +10,9 @@ class Navbar extends React.Component{
     render(){
         return (
             <div className="Navbar">
-                <div className="styles-log">
-                    <img src={Logo} alt="Logo_Re-z"/>
-                </div>
+                    <div className="styles-log">
+                        <img src={Logo} alt="Logo_Re-z"/>
+                    </div>
                 <Search />
                 <SwitchPerfil />
             </div>

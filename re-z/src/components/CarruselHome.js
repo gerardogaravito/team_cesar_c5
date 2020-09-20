@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { useFetchRecipe } from '../hooks/useFetchRecipe';
 
 import './styles/CarruselHome.css';
 import CarruselItems from './CarruselItems'
@@ -6,7 +7,7 @@ import data from '../../recipe.json';
 
 
 function CarruselHome () {
-  const [recipeList, setRecipeList] = useState(data.recipes)
+  const [recipeList] = useFetchRecipe(data.recipes)
 
       return (
         <section className="Principal-container">

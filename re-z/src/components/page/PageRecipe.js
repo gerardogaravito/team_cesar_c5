@@ -1,18 +1,23 @@
 import React from 'react';
+import { useFetchRecipe } from '../../hooks/useFetchRecipe';
 
 import Navbar from '../Navbar';
-import RecipeInfoPage from '../RecipeInfoPage';
+import RecipeInfo from '../RecipeInfo';
+import data from '../../../recipe.json';
 
 
-class PageRecipe extends React.Component{
-  render(){
+function PageRecipe (){
+  const [recipeList] = useFetchRecipe(data.recipes)
       return (
             <div>
                 <Navbar />
-                <RecipeInfoPage/>
+                {
+                recipeList.map((item) => (
+                <RecipeInfo data={item} key={item.id} />
+                ))
+              }
             </div>
       )
   }
-}
 
 export default PageRecipe; 

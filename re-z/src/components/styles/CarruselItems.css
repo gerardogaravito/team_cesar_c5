@@ -7,11 +7,12 @@
     height: 350px;
     margin-right: 10px;
     font-size: 20px;
-    cursor: pointer;
+    /* cursor: pointer; */
     transition: 450ms all;
     -webkit-transform-origin: center left;
             transform-origin: center left;
   }
+  
   .carousel-item:hover ~ .carousel-item {
     -webkit-transform: translate3d(300px, 0, 0);
             transform: translate3d(300px, 0, 0);
@@ -48,6 +49,10 @@
     color: #ffbc42;
     margin: 5px 0px 10px 20px;
     font-size: 20px;
+    cursor: pointer;
+  }
+  .carousel-item__details--title:hover{
+    color: white;
   }
   .time-icon{
     position: relative;
