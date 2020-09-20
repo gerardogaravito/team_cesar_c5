@@ -8,9 +8,9 @@ class Modal extends Component{
         return(
             <section>
               <div className="perfilMenu">
-                  <a href="">Configuración</a>
+                  <a href="/">Configuración</a>
                   <Link to="/home/favoritos">Tus Favoritas</Link>
-                  <a href="">Ver carrito de compra</a>
+                  <a href="/">Ver carrito de compra</a>
                   <Link to="/home/landing">Cerrar Sesión</Link>
               </div>
           </section>
@@ -30,10 +30,10 @@ class SwitchPerfil extends React.Component {
     }
     render() {
       return (
-        <level className="SwtchContainer">
+        <section className="SwtchContainer">
         <input type="checkbox" name="" onClick={this.handleClick}></input>
         {this.state.isToggleOn ? '' : <Modal onClose={this._closeModal}/>}
-        </level> 
+        </section> 
       );
     }
   }

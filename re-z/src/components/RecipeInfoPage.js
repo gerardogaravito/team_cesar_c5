@@ -4,18 +4,13 @@ import './styles/RecipeInformationStyles.css';
 import Button from './Button';
 import RecipeImage from '../images/Photo-food.png';
 
-class RecipeInfoPage extends React.Component{
-    handleClick = e => {
-        console.log('Button was clicked');
-        this.setState({redirect: true}); // agregar aquí la dirección correcta al carrito
-      };
 
-    
-    render(){
+function RecipeInfoPage (){
+  
         return(
             <div className="Recipe__Information">
                 <div className="Recipe__Information-container">
-                    <h1>Recipe Name</h1>
+                    <h1>nombre de la receta</h1>
                     <div className="Recipe-info">
                         <div className="Recipe-info-Time">
                             <p>Tiempo estimado de preparación</p>
@@ -43,7 +38,7 @@ class RecipeInfoPage extends React.Component{
                         <img src={RecipeImage} alt="food"/>
                     </div>
                     <div className="Recipe__Information-button">
-                        <Button text='Agregar al carrito' onClick={this.handleClick}/>
+                        <Button text='Agregar al carrito'/>
                     </div>
                 </div>
                 <div className="Recipe__Information-description">
@@ -53,6 +48,6 @@ class RecipeInfoPage extends React.Component{
             </div>
         )
     }
-}
+
 
 export default RecipeInfoPage;
