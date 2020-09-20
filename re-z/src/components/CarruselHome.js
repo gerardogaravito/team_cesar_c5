@@ -16,9 +16,12 @@ function CarruselHome () {
             <div className="carousel__container">
               {
                 recipeList.map((item) => (
-                  <CarruselItems data={item} key={item.id} />
+                  <CarruselItems data={item} key={item.id} {...item}/>
                 ))
               }
+              {/* {recipeList.favoritos.length > 0 &&
+                 <CarruselItems />
+              } */}
             </div>
           </section>
         </section>

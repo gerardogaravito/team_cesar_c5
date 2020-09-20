@@ -1,31 +1,51 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
+import { setFavorite } from '../actions';
 
 import './styles/CarruselItems.css';
 import TimeIcon from '../images/Atomos/time-icon-yellow.svg';
 
 
-function CarruselItems(props){
+const CarruselItems = (props) => {
+    const { picture, name, preparationTime } = props;
+    const handleSetFavorite = () => {
+        props.setFavorite({
+            picture, name, preparationTime
+            })
+        }
     return(
         <div className="carousel-item">
-            <img src={props.data.picture} alt={props.data.name} className="carousel-item__img"/>
+            <img src={picture} alt={name} className="carousel-item__img"/>
             <div className="carousel-item__details">
             <div className="like-box">
-            <div className="like" id="like"></div>
+            <div onClick={handleSetFavorite} className="like" id="like"></div>
             </div>
             <Link to="/home/Page-Recipe" style={{ textDecoration: 'none' }}>
-            <p className="carousel-item__details--title">{props.data.name}</p>
+            <p className="carousel-item__details--title">{name}</p>
             </Link>
             <div className="time-icon">
                 <img src={TimeIcon} alt="Icon" />
-                <p>{props.data.preparationTime}</p>
+                <p>{preparationTime}</p>
             </div>
             </div>
         </div>   
         )
     }
 
-export default CarruselItems;
+    CarruselItems.propTypes = {
+        picture: PropTypes.string,
+        name: PropTypes.string,
+        preparationTime: PropTypes.number,
+         
+    }
+
+const mapDispatchToProps = {
+        setFavorite,
+}
+
+export default connect(null, mapDispatchToProps)(CarruselItems);
 
   
 
