@@ -31,16 +31,7 @@ const UserPage = () => {
 						{favorites.map((recipe, i = 0) => {
 							i++;
 							return (
-								<RecipeCard
-									id={recipe.id}
-									cardId={i}
-									key={recipe.id}
-									picture={recipe.picture}
-									name={recipe.name}
-									portions={recipe.portions}
-									preparationTime={recipe.preparationTime}
-									dificult={recipe.dificult}
-								/>
+								<RecipeCard key={recipe.id} cardId={i} {...recipe} isFavorite />
 							);
 						})}
 					</RecipeCarrousel>
