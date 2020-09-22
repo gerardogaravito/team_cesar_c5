@@ -4,8 +4,11 @@ import { Link } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 
 //------------------------------ import components
-import { FaRegHeart, FaUsers, FaClock, FaPlus } from 'react-icons/fa';
-import { addFavoriteRecipe } from '../actions/usersActions';
+import { FaRegHeart, FaUsers, FaClock, FaPlus, FaTimes } from 'react-icons/fa';
+import {
+	addFavoriteRecipe,
+	deleteFavoriteRecipe,
+} from '../actions/usersActions';
 import { getCartIngredients } from '../actions/recipeActions';
 
 //------------------------------ import styles and images
@@ -19,6 +22,7 @@ const RecipeCard = ({
 	portions,
 	preparationTime,
 	dificult,
+	isFavorite,
 }) => {
 	const dispatch = useDispatch();
 
@@ -33,6 +37,10 @@ const RecipeCard = ({
 				dificult,
 			})
 		);
+	};
+
+	const deleteFavorite = (recipeId) => {
+		dispatch(deleteFavoriteRecipe(id));
 	};
 
 	const addCart = (id) => {
@@ -58,10 +66,17 @@ const RecipeCard = ({
 					<div className="recipe-button">{dificult}</div>
 				</div>
 			</Link>
-			<FaRegHeart
-				className="icon--inactive RecipeCard__fav"
-				onClick={addFavorite}
-			/>
+			{isFavorite ? (
+				<FaTimes
+					className="icon--inactive RecipeCard__fav"
+					onClick={() => deleteFavorite(id)}
+				/>
+			) : (
+				<FaRegHeart
+					className="icon--inactive RecipeCard__fav"
+					onClick={addFavorite}
+				/>
+			)}
 			<FaPlus className="icon--add" onClick={() => addCart(id)} />
 		</div>
 	);

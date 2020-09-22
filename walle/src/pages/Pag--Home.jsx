@@ -24,18 +24,7 @@ const HomePage = () => {
 						<RecipeCarrousel title={recipeList.name} key={recipeList.id}>
 							{recipeList.recipes.map((recipe, i = 0) => {
 								i++;
-								return (
-									<RecipeCard
-										cardId={i}
-										id={recipe.id}
-										key={recipe.id}
-										picture={recipe.picture}
-										name={recipe.name}
-										portions={recipe.portions}
-										preparationTime={recipe.preparationTime}
-										dificult={recipe.dificult}
-									/>
-								);
+								return <RecipeCard cardId={i} key={recipe.id} {...recipe} />;
 							})}
 						</RecipeCarrousel>
 					);

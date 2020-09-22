@@ -8,6 +8,11 @@ export const addFavoriteRecipe = (payload) => ({
 	payload,
 });
 
+export const deleteFavoriteRecipe = (payload) => ({
+	type: 'DELETE_FAVORITE',
+	payload,
+});
+
 export const calculateTotal = (ingredients) => (dispatch) => {
 	const total = ingredients.reduce(
 		(accumulator, current) => accumulator + current.price,

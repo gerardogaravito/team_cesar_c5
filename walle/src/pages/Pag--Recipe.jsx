@@ -44,18 +44,7 @@ const RecipePage = (props) => {
 				<RecipeCarrousel title="Recomendados">
 					{recipes?.map((recipe, i = 0) => {
 						i++;
-						return (
-							<RecipeCard
-								id={recipe.id}
-								cardId={i}
-								key={recipe.id}
-								picture={recipe.picture}
-								name={recipe.name}
-								portions={recipe.portions}
-								preparationTime={recipe.preparationTime}
-								dificult={recipe.dificult}
-							/>
-						);
+						return <RecipeCard key={recipe.id} cardId={i} {...recipe} />;
 					})}
 				</RecipeCarrousel>
 			</div>
