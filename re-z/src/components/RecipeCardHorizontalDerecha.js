@@ -11,11 +11,11 @@ function RecipeCardHorizontalDerecha(props) {
   <button className='cardright'>
     <div className='cardright__info'>
       <div className='cardright__info--title'>{props.data.name}</div>
-      <div className='cardright__info--text'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium pariatur quia reprehenderit, distinctio quidem aut sed officia? Omnis qui voluptates eaque quia sequi? Quasi sit molestias minima nihil autem repellat.</div>
+      <div className='cardright__info--text'>{props.data.instructions}</div>
     </div>
     <div className='cardright__time'>
       <img src={timeIcon} alt="tiempo de preparación"/>
-      <div className='cardright__time--text'>70 min</div>
+      <div className='cardright__time--text'>{props.data.preparationTime} min</div>
     </div>
     <div className='cardright_image'>
       <img src={props.data.picture} alt="foto de comida"/>

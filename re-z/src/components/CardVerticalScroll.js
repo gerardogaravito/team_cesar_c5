@@ -15,11 +15,45 @@ function CardVerticalScroll() {
 
     return (
     <div className='scrollcontainer' >
-      <ul>
+      <ul className='scrollcontainer__list'>
         {
-          recipeList.slice(0, 6).map((item) => (
+          recipeList.slice(0, 1).map((item) => (
             <React.Fragment>
-              <RecipeCardHorizontalDerecha data={item} key={item.id}/> {/*Falta modificar para que no se repita la receta dos veces*/}
+              <RecipeCardHorizontalDerecha data={item} key={item.id}/>
+            </React.Fragment>
+          ))
+        }
+        {
+          recipeList.slice(1, 2).map((item) => (
+            <React.Fragment>
+              <RecipeCardHorizontalIzquierda data={item} key={item.id} />
+            </React.Fragment>
+          ))
+        }
+        {
+          recipeList.slice(2, 3).map((item) => (
+            <React.Fragment>
+              <RecipeCardHorizontalDerecha data={item} key={item.id}/>
+            </React.Fragment>
+          ))
+        }
+        {
+          recipeList.slice(3, 4).map((item) => (
+            <React.Fragment>
+              <RecipeCardHorizontalIzquierda data={item} key={item.id} />
+            </React.Fragment>
+          ))
+        }
+        {
+          recipeList.slice(5, 6).map((item) => (
+            <React.Fragment>
+              <RecipeCardHorizontalDerecha data={item} key={item.id}/>
+            </React.Fragment>
+          ))
+        }
+        {
+          recipeList.slice(6, 7).map((item) => (
+            <React.Fragment>
               <RecipeCardHorizontalIzquierda data={item} key={item.id} />
             </React.Fragment>
           ))

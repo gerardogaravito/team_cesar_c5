@@ -28,6 +28,8 @@
   padding: 25px;
   display: flex;
   flex-direction: column;
+  z-index: 2;
+  background-color: #FFBC42;
 }
 
 .cardleft__info--title {
@@ -50,6 +52,9 @@
   grid-column: 2 / 3;
   align-items: center;
   padding: 0px 25px;
+  z-index: 2;
+  background-color: #FFBC42;
+  height: 100%;
 }
 
 .cardleft__time--text {
