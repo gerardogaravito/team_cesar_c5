@@ -27,6 +27,7 @@ const Formlog = (props) => {
 	const handleSubmit = (event) => {
 		event.preventDefault();
 		dispatch(loginRequest(form));
+		sessionStorage.setItem('user', form.email);
 		props.history.push('/walle');
 	};
 

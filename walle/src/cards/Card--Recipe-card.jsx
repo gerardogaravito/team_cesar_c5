@@ -39,7 +39,7 @@ const RecipeCard = ({
 		);
 	};
 
-	const deleteFavorite = (recipeId) => {
+	const deleteFavorite = (id) => {
 		dispatch(deleteFavoriteRecipe(id));
 	};
 

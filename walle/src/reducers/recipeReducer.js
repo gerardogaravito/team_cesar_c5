@@ -1,5 +1,7 @@
 const initial_state = {
-	recipes: [],
+	recipes: localStorage.getItem('recipes')
+		? JSON.parse(localStorage.getItem('recipes'))
+		: [],
 	currentCategory: [],
 	currentRecipe: {},
 	cartIngredients: [],
@@ -9,11 +11,15 @@ const initial_state = {
 const recipeReducer = (state = initial_state, action) => {
 	switch (action.type) {
 		case 'GET_RECIPES':
+			localStorage.setItem('recipes', JSON.stringify(action.payload));
 			return { ...state, recipes: action.payload };
+
 		case 'SET_CATEGORY':
 			return { ...state, currentCategory: action.payload };
+
 		case 'GET_CURRENT_RECIPE':
 			return { ...state, currentRecipe: action.payload };
+
 		case 'GET_CART_INGREDIENTS':
 			return {
 				...state,
@@ -31,6 +37,7 @@ const recipeReducer = (state = initial_state, action) => {
 						return accumulator;
 					}, []),
 			};
+
 		case 'DELETE_INGREDIENTS':
 			return {
 				...state,
@@ -38,6 +45,7 @@ const recipeReducer = (state = initial_state, action) => {
 					(ingredient) => ingredient.id !== action.payload
 				),
 			};
+
 		case 'SET_RECOMMENDED_RECIPES':
 			return { ...state, recommended: action.payload };
 
