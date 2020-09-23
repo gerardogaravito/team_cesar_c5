@@ -1,5 +1,7 @@
 const initial_state = {
-	user: {},
+	user: sessionStorage.getItem('user')
+		? { email: sessionStorage.getItem('user') }
+		: {},
 	favorites: [],
 	cartTotal: 0,
 	recentlyBought: [],
@@ -35,7 +37,14 @@ const userReducer = (state = initial_state, action) => {
 			return { ...state, user: { ...state.user, editing: action.payload } };
 
 		case 'END_EDIT_PROFILE':
-			return { ...state, user: action.payload };
+			return {
+				...state,
+				user: {
+					...state.user,
+					...action.payload,
+					email: sessionStorage.getItem('user'),
+				},
+			};
 
 		default:
 			return state;

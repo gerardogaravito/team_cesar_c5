@@ -47,14 +47,6 @@ const FormUser = () => {
 					/>
 					<Input
 						classmodifier=""
-						label="Correo:"
-						name="email"
-						type="email"
-						placeholder="pepitoperez@email.com"
-						getInputValue={handleInput}
-					/>
-					<Input
-						classmodifier=""
 						label="Telefono:"
 						name="phone"
 						type="text"
