@@ -6,8 +6,8 @@ import Search from '../components/Search';
 import SwitchPerfil from '../components/SwitchPerfil'
 /* import { Link } from 'react-router-dom'; */
 
-class Navbar extends React.Component{
-    render(){
+const Navbar = () => {
+    
         return (
             <div className="Navbar">
                     <div className="styles-log">
@@ -18,6 +18,5 @@ class Navbar extends React.Component{
             </div>
         )
     }
-}
 
 export default Navbar; 

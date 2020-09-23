@@ -7,7 +7,6 @@
     height: 350px;
     margin-right: 10px;
     font-size: 20px;
-    /* cursor: pointer; */
     transition: 450ms all;
     -webkit-transform-origin: center left;
             transform-origin: center left;
@@ -79,6 +78,7 @@
     animation-duration: .8s;
     animation-timing-function: steps(28);
     animation-fill-mode: forwards;
+   /*  animation-iteration-count: infinite; */
   }
   @keyframes like{
     0%{
@@ -88,3 +88,24 @@
         background-position: right;
     }
   }
+
+
+  
+  
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    

@@ -8,13 +8,22 @@ import './styles/CarruselItems.css';
 import TimeIcon from '../images/Atomos/time-icon-yellow.svg';
 
 
+
 const CarruselItems = (props) => {
-    const { picture, name, preparationTime } = props;
+    const { id, picture, name, preparationTime } = props;
     const handleSetFavorite = () => {
+        console.log(handleSetFavorite);
         props.setFavorite({
-            picture, name, preparationTime
+            id, picture, name, preparationTime
             })
         }
+   
+        /*  const like = document.getElementById('like');
+        like.addEventListener('onClick', (event) => {
+            console.log(event);
+            like.classList.toggle('is-liked');
+        }) */
+        
     return(
         <div className="carousel-item">
             <img src={picture} alt={name} className="carousel-item__img"/>
@@ -22,8 +31,10 @@ const CarruselItems = (props) => {
             <div className="like-box">
             <div onClick={handleSetFavorite} className="like" id="like"></div>
             </div>
-            <Link to="/home/Page-Recipe" style={{ textDecoration: 'none' }}>
-            <p className="carousel-item__details--title">{name}</p>
+            <Link to={`/home/page-recipe/${id}`} 
+                style={{ textDecoration: 'none' }}
+            >
+                <p className="carousel-item__details--title">{name}</p>
             </Link>
             <div className="time-icon">
                 <img src={TimeIcon} alt="Icon" />
@@ -37,8 +48,7 @@ const CarruselItems = (props) => {
     CarruselItems.propTypes = {
         picture: PropTypes.string,
         name: PropTypes.string,
-        preparationTime: PropTypes.number,
-         
+        preparationTime: PropTypes.number,      
     }
 
 const mapDispatchToProps = {

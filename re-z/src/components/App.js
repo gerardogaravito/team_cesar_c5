@@ -15,7 +15,7 @@ function App() {
         <Route exact path="/home" component={Home} />
         <Route exact path="/home/favoritos" component={Favoritos} />
         <Route exact path="/home/landing" component={Landing} />
-        <Route exact path="/home/Page-Recipe" component={PageRecipe} />
+        <Route exact path="/home/page-recipe/:myId" component={PageRecipe} />
         <Redirect from="/" to="home/landing" />
         <Route component={NotFound} />
       </Switch>

@@ -1,5 +1,5 @@
-/* import { combineReducers } from 'redux';
-import userReducer from './userReducer' */
+/* import { combineReducers } from 'redux'; */
+/* import userReducer from './userReducer' */
 
 const reducer = (state, action) => {
     
@@ -7,7 +7,7 @@ const reducer = (state, action) => {
         case 'SET_FAVORITE':
             return{
                 ...state,
-                myList: [...state.myList, action.payload]
+                favoritos: [...state.favoritos, action.payload]
             }
         default:
             return state;
