@@ -1,23 +1,44 @@
 .cardVertical{
-    padding: 0;
-    border: 0;
-    width: 415px;
-    height: 686px;
-    background-color:#FFBC42 ;
-    color:#8F2D56;
-    border-radius: 20px;
-    outline: none;
-  }
+  padding: 0;
+  border: 0;
+  width: 415px;
+  height: 686px;
+  background-color:#FFBC42 ;
+  color:#8F2D56;
+  border-radius: 20px;
+  outline: none;
+  display: grid;
+  grid-template-rows: 80% 20%;
+  overflow: hidden;
+}
 
-  .cardVertical:hover{
-        cursor: pointer;
-        filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.25));
-        transform: scale(1.01);
-  }
+.cardVertical:hover{
+  cursor: pointer;
+  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.25));
+  transform: scale(1.01);
+}
+
+.cardVerticalImage {
+  grid-row: 1 / 2;
+  width: inherit;
+}
+
+.cardVerticalTitle {
+  background-color:#FFBC42 ;
+  z-index: 2;
+  grid-row: 2 / 3;
+  width: inherit; /*propiedad para '...'*/
+  display: flex;
+  align-items: center;
+}
 
 .cardVertical__title{
-    padding:20px;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 36px;
+  padding:20px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  z-index: 2;
+  white-space: nowrap; /*propiedad para '...'*/
+  overflow: hidden; /*propiedad para '...'*/
+  text-overflow: ellipsis; /*propiedad para '...'*/
 }

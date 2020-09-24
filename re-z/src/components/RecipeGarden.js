@@ -1,10 +1,8 @@
 import React from 'react';
 
 import './styles/RecipeGarden.css'
-import RecipeCardHorizontalSimple from './RecipeCardHorizontalSimple';
-import RecipeCardVerticalSimple from './RecipeCardVerticalSimple';
-import RecipeCardSquareSimple from './RecipeCardSquareSimple';
 import Button from './Button';
+import GridRecipe from './GridRecipe'
 
 class RecipeGarden extends React.Component {
   render () {
@@ -14,18 +12,7 @@ class RecipeGarden extends React.Component {
           <div className="gardenContainer__head--title">Lorem Ipsum 50</div>
           <Button text='Ver más' />
         </div>
-        <div className="gardenContainer__vertical">
-          <RecipeCardVerticalSimple/>
-        </div>
-        <div className="gardenContainer__square1">
-          <RecipeCardSquareSimple/>
-        </div>
-        <div className="gardenContainer__square2">
-          <RecipeCardSquareSimple/>
-        </div>
-        <div className="gardenContainer__horizontal">
-          <RecipeCardHorizontalSimple/>
-        </div>
+        <GridRecipe />
       </div>
       )
     }
