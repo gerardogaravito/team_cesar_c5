@@ -10,17 +10,35 @@
     color:#8F2D56;
     border-radius: 20px;
     outline: none;
-  }
+    overflow: hidden;
+    display: grid;
+    grid-template-rows: 75% 25%;
+}
 
-  .cardSquareSimple:hover{
-        cursor: pointer;
-        filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.25));
-        transform: scale(1.01);
-  }
+.cardSquareSimple:hover{
+    cursor: pointer;
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.25));
+    transform: scale(1.01);
+}
+
+.cardSquareSimple__image {
+    grid-row: 1 / 2;
+}
 
 .cardSquareSimple__title{
+    grid-row: 2 / 3;
+    background-color:#FFBC42 ;
+    z-index: 1;
+    width: inherit; /*propiedad para '...'*/
+}
+
+.cardSquareSimple__title--text{
     padding:10px;
     font-style: normal;
     font-weight: bold;
     font-size: 36px;
+    z-index: 2;
+    white-space: nowrap; /*propiedad para '...'*/
+    overflow: hidden; /*propiedad para '...'*/
+    text-overflow: ellipsis; /*propiedad para '...'*/
 }

@@ -3,6 +3,7 @@
     height: 100%;
     position: relative;
     display: flex;
+    margin-bottom: 300px;
 }
 .Triangle{
     width: 0px;

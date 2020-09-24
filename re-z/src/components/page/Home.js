@@ -2,7 +2,9 @@ import React from 'react';
 
 import Navbar from '../Navbar';
 import Loader from '../Loader';
-import CarruselHome from '../CarruselHome'
+import CarruselHome from '../CarruselHome';
+import GridRecipe from '../GridRecipe';
+import GridRecipeInvert from '../GridRecipeInvert';
 
 
 class Home extends React.Component{
@@ -34,6 +36,9 @@ class Home extends React.Component{
             <div className="Home-container">
                 <Navbar />
                 <CarruselHome /> 
+                <GridRecipe />
+                <GridRecipeInvert />
+
                 
             </div>
         )
