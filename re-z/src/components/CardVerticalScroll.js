@@ -64,10 +64,3 @@ function CardVerticalScroll() {
   }
   
 export default CardVerticalScroll;
-  
-        // <RecipeCardHorizontalDerecha recipe={recipe} key={recipe.id}/>
-        // <RecipeCardHorizontalIzquierda />
-        // <RecipeCardHorizontalDerecha />
-        // <RecipeCardHorizontalIzquierda />
-        // <RecipeCardHorizontalDerecha/>
-        // <RecipeCardHorizontalIzquierda /> 
