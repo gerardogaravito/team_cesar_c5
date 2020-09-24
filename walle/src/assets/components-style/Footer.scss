@@ -1,15 +1,16 @@
-//------------------------------ Import
-@import "../global-styles/Globalstyles.scss";
+// ------------------------------ Import global styles specially varibles
+@import '../global-styles/Globalstyles.scss';
 
-//------------------------------ Styles
+// ------------------------------ Styles
+// this file has the footer styles. it has the container and the logo.
 .Footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: $space2 $space4;
-  background-color: $second-color;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: $space2 $space4;
+	background-color: $second-color;
 
-  &__brand {
-    width: 150px;
-  }
+	&__brand {
+		width: 150px;
+	}
 }

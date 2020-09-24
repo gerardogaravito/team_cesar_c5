@@ -1,24 +1,28 @@
-//------------------------------ Import
-@import "../global-styles/Globalstyles.scss";
+// ------------------------------ Import global styles specially varibles
+@import '../global-styles/Globalstyles.scss';
 
-//------------------------------ Styles
+// ------------------------------ Styles
+// this files has the header styles. it has two containers, brand and nav. brand has the logo and nav has the buttons and user info
 .Header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  &__brand {
-    width: 150px;
-  }
-  &__nav {
-    display: flex;
-    align-items: center;
-  }
-  &__img {
-    width: 100px;
-    height: 100px;
-    margin-left: $space;
-    border-radius: 50%;
-    border: $second-border;
-    object-fit: cover;
-  }
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	&__brand {
+		width: 150px;
+	}
+
+	&__nav {
+		display: flex;
+		align-items: center;
+	}
+
+	&__img {
+		width: 100px;
+		height: 100px;
+		margin-left: $space;
+		border-radius: 50%;
+		border: $second-border;
+		object-fit: cover;
+	}
 }
