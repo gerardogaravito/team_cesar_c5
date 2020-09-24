@@ -6,14 +6,15 @@ import GridRecipeInvert from '../GridRecipeInvert'
 
 import "../styles/Favoritos.css"
 
-class Favoritos extends React.Component{
-  render(){
+
+function Favoritos () {
+  
       return (
         <React.Fragment >
           <div className="Home-container">
               <Navbar />
               <div className="Favoritos-container">
-                <h1 className="favoritos__title">Tus Favoritos</h1>
+                <h1 className="favoritos__title">Tus Favoritos</h1> 
               </div>
           </div>
           <GridRecipe />
@@ -22,6 +23,5 @@ class Favoritos extends React.Component{
         </React.Fragment>
       )
   }
-}
 
 export default Favoritos; 

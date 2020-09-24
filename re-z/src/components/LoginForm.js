@@ -55,7 +55,7 @@ class LoginForm extends React.Component {
             />
         </div>
       <Button text='Iniciar Sesión' onClick={this.handleClick}/>
-      <a className='Modal__form--forgot' href="">Olvidé mi contraseña</a>
+      <a className='Modal__form--forgot' href="/">Olvidé mi contraseña</a>
       </form>
       </React.Fragment>
     )

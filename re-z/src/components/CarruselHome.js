@@ -1,52 +1,41 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useFetchRecipe } from '../hooks/useFetchRecipe';
 
 import './styles/CarruselHome.css';
-import PhotoFood from '../images/Photo-food.png'
+import CarruselItems from './CarruselItems'
+import data from '../../recipe.json';
 
 
-class CarruselHome extends React.Component {
+const CarruselHome = () => {
+  const [recipeList] = useFetchRecipe(data.recipes)
 
-    render() {
 
       return (
         <section className="Principal-container">
         <div className="Triangle"></div>
           <section className="carousel">
             <div className="carousel__container">
-              <div className="carousel-item">
-                <img src={PhotoFood} alt="" className="carousel-item__img"/>
-                <div class="carousel-item__details">
-                <div className="like-box">
-                  <div className="like" id="like"></div>
-                </div>
-                  <p class="carousel-item__details--title">Recip name</p>
-                </div>
-              </div>
-              <div className="carousel-item">
-                <img src={PhotoFood} alt="" className="carousel-item__img"/>
-                <div class="carousel-item__details">
-                <div className="like-box">
-                  <div className="like" id="like"></div>
-                </div>
-                  <p class="carousel-item__details--title">Recip name</p>
-                </div>
-              </div>
-              <div className="carousel-item">
-                <img src={PhotoFood} alt="" className="carousel-item__img"/>
-                <div class="carousel-item__details">
-                <div className="like-box">
-                  <div className="like" id="like"></div>
-                </div>
-                  <p class="carousel-item__details--title">Recip name</p>
-                </div>
-              </div>
-              
-              
+              {
+                recipeList.map((item) => (
+                  <CarruselItems data={item} key={item.id} {...item}/>
+                ))
+              }
             </div>
           </section>
-      
+              {/* {favoritos.length > 0 &&
+                <section className="carousel">
+                  <div className="carousel__container">
+                      {favoritos.map((item) =>
+                      <CarruselItems 
+                        key={item.id} 
+                        {...item}/>
+                      )}
+                  </div>
+                </section>
+              } */}
         </section>
       );
-    }
-  }
+}
+
+   
 export default CarruselHome;
