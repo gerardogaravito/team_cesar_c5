@@ -1,5 +1,6 @@
 import React from 'react';
 import { useFetchRecipe } from '../hooks/useFetchRecipe';
+import { useParams } from 'react-router-dom';
 
 import './styles/GridRecipe.css';
 
@@ -11,7 +12,12 @@ import data from '../../recipe.json';
 
 function GridRecipe () {
 
+  //FETCH DE LAS RECETAS
   const [recipeList] = useFetchRecipe(data.recipes)
+
+  //NAVEGACION AL DAR CLICK EN LAS CARDS
+  const {myId} = useParams();
+  const recipe = recipeList.find(item => item.id === parseInt(myId));
 
   return(
     <div className='favoritesContainer'>
