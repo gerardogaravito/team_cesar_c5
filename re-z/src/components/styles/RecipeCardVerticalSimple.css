@@ -21,6 +21,8 @@
 .cardVerticalImage {
   grid-row: 1 / 2;
   width: inherit;
+  height: 548.8px;
+  object-fit: cover;
 }
 
 .cardVerticalTitle {

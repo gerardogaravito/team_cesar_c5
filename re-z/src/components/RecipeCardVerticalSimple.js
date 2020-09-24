@@ -5,11 +5,9 @@ import './styles/RecipeCardVerticalSimple.css'
 
 const RecipeCardVerticalSimple = (props) => {
   return(
-    <Link to="/">
+    <Link to={`/home/page-recipe/${props.data.id}`}>
       <div className="cardVertical">
-        <div className="cardVerticalImage">
-          <img src={props.data.picture} alt="foto de comida"/>
-        </div>
+        <img className="cardVerticalImage" src={props.data.picture} alt="foto de comida"/>
         <div className="cardVerticalTitle">
           <h3 className="cardVertical__title">{props.data.name}</h3>
         </div>

@@ -23,6 +23,9 @@
 
 .cardSquareSimple__image {
     grid-row: 1 / 2;
+    width: 367px;
+    height: 279.75px;
+    object-fit: cover;
 }
 
 .cardSquareSimple__title{
