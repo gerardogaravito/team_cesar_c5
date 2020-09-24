@@ -5,7 +5,7 @@ import './styles/RecipeCardSquareSimple.css'
 
 const RecipeCardSquareSimple=(props) => {
     return (
-        <Link to="/">
+        <Link to={`/home/page-recipe/${props.data.id}`}>
         <div className='cardSquareSimple'>
             <img className='cardSquareSimple__image' src={props.data.picture} alt="foto de comida"/>
             <div className="cardSquareSimple__title">

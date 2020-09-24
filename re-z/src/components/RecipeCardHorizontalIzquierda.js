@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 import './styles/RecipeCardHorizontalIzquierda.css'
 import timeIcon from '../images/Atomos/time-icon.svg'
-import fotoComida2 from '../images/fotoComida4.png'
+
 
 const RecipeCardHorizontalIzquierda = (props) => {
   const { id, picture, name, preparationTime, instructions } = props;

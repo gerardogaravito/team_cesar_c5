@@ -1,12 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { useParams } from 'react-router-dom';
 
 import './styles/RecipeCardVerticalSimple.css'
 
 const RecipeCardVerticalSimple = (props) => {
   return(
-    <Link to='{/home/page-recipe/${id}}'>
+    <Link to={`/home/page-recipe/${props.data.id}`}>
       <div className="cardVertical">
         <img className="cardVerticalImage" src={props.data.picture} alt="foto de comida"/>
         <div className="cardVerticalTitle">
