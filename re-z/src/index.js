@@ -5,10 +5,12 @@ import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import reducers from './reducer';
+import data from '../../../recipe.json';
 
 import './global.css';
 import App from './components/App';
 
+//Esto corresponde a webpack y esta en este archicvo probicionalmente.
 const initialState = {
     "user": {},
     "favoritos": {},

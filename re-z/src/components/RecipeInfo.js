@@ -31,7 +31,7 @@ function RecipeInfo (props){
                              <p>{props.data.portions}</p>
                         </div>
                         <div className="Recipe-info-ingredient">
-                            <p>Ingredientes:</p>   
+                            <p>Ingredientes:</p> 
                         </div>
                     </div>
                     <div className="Recipe__Information-image">
