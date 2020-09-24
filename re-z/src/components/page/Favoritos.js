@@ -1,8 +1,8 @@
 import React from 'react';
 
 import Navbar from '../Navbar';
-import GridRecipe from '../GridRecipe'
-import GridRecipeInvert from '../GridRecipeInvert'
+import GridRecipe from '../GridRecipe';
+import GridRecipeInvert from '../GridRecipeInvert';
 
 import "../styles/Favoritos.css"
 

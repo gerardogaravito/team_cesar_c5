@@ -38,8 +38,6 @@ class Home extends React.Component{
                 <CarruselHome /> 
                 <GridRecipe />
                 <GridRecipeInvert />
-
-                
             </div>
         )
     }
