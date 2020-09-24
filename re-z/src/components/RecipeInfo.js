@@ -5,7 +5,7 @@ import { useSelector } from 'react-redux';
 import './styles/RecipeInfo.css';
 import Button from './Button';
 import TimeIcon from '../images/Atomos/time-icon-yellow.svg';
-
+import RecipeIngredientsList from '../components/Ingredient/RecipeIngredientList';
 
 
 function RecipeInfo (props){
@@ -31,7 +31,8 @@ function RecipeInfo (props){
                              <p>{props.data.portions}</p>
                         </div>
                         <div className="Recipe-info-ingredient">
-                            <p>Ingredientes:</p> 
+                            <p>Ingredientes:</p>
+                            <RecipeIngredientsList />
                         </div>
                     </div>
                     <div className="Recipe__Information-image">

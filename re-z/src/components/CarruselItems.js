@@ -31,7 +31,7 @@ const CarruselItems = (props) => {
             <div className="like-box">
             <div onClick={handleSetFavorite} className="like" id="like"></div>
             </div>
-            <Link to={`/home/page-recipe/${id}`} 
+            <Link to={`/home/page-recipe/${id}`}
                 style={{ textDecoration: 'none' }}
             >
                 <p className="carousel-item__details--title">{name}</p>
