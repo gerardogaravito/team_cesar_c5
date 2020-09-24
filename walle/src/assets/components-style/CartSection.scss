@@ -1,42 +1,44 @@
-//------------------------------ Import
-@import "../global-styles/Globalstyles.scss";
+// ------------------------------ Import global styles specially varibles
+@import '../global-styles/Globalstyles.scss';
 
-//------------------------------ Cart Head style
+// ------------------------------ Cart Head style
+// this file has the shopping cart styles. it has the 'table' head, the container of the ingredients and the ingredient item of the shopping list
 .CartHead {
-  display: grid;
-  grid-template-columns: 5% 75% repeat(3, 1fr);
-  margin: $space 0;
-  padding: $space;
-  font-weight: bold;
-  border-radius: $border-radius;
-  background-color: $background-color;
+	display: grid;
+	grid-template-columns: 5% 75% repeat(3, 1fr);
+	margin: $space 0;
+	padding: $space;
+	font-weight: bold;
+	border-radius: $border-radius;
+	background-color: $background-color;
 
-  & p:nth-child(n + 2) {
-    text-align: center;
-  }
-  & p:first-child {
-    grid-column: 2 / span 1;
-  }
+	& p:nth-child(n + 2) {
+		text-align: center;
+	}
+
+	& p:first-child {
+		grid-column: 2 / span 1;
+	}
 }
 
-//------------------------------ Cart section
+// ------------------------------ Cart section
 .CartSection {
-  margin: $space 0;
-  @extend .CardStyles;
-  background-color: $background-color;
-  border-radius: $border-radius;
-  padding: $space;
+	margin: $space 0;
+	@extend .CardStyles;
+	background-color: $background-color;
+	border-radius: $border-radius;
+	padding: $space;
 }
 
-//------------------------------ Cart ingredient Item
+// ------------------------------ Cart ingredient Item
 .CartIngredient {
-  display: grid;
-  grid-template-columns: 5% 75% repeat(3, 1fr);
-  align-items: center;
-  margin-bottom: $space;
-  border-radius: $border-radius;
+	display: grid;
+	grid-template-columns: 5% 75% repeat(3, 1fr);
+	align-items: center;
+	margin-bottom: $space;
+	border-radius: $border-radius;
 
-  & p:nth-child(n + 3) {
-    text-align: center;
-  }
+	& p:nth-child(n + 3) {
+		text-align: center;
+	}
 }
