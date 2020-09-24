@@ -21,6 +21,8 @@
 .cardsimple__image {
   grid-row: 1 / 2;
   width: inherit;
+  height: 208.08px;
+  object-fit: cover;
 }
 
 .cardsimple__info {
