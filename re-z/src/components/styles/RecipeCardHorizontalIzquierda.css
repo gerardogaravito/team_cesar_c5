@@ -65,7 +65,7 @@
 .cardleft__image{
   grid-column: 1 / 2;
   grid-row: 1 / 4;
-  object-fit: cover;
   width: 310px;
   height: 300px;
+  object-fit: cover;
 }

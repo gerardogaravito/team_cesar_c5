@@ -26,7 +26,7 @@ function CardVerticalScroll() {
         {
           recipeList.slice(1, 2).map((item) => (
             <React.Fragment>
-              <RecipeCardHorizontalIzquierda data={item} key={item.id} />
+              <RecipeCardHorizontalIzquierda data={item} key={item.id} {...item}/>
             </React.Fragment>
           ))
         }
@@ -40,7 +40,7 @@ function CardVerticalScroll() {
         {
           recipeList.slice(3, 4).map((item) => (
             <React.Fragment>
-              <RecipeCardHorizontalIzquierda data={item} key={item.id} />
+              <RecipeCardHorizontalIzquierda data={item} key={item.id} {...item}/>
             </React.Fragment>
           ))
         }
@@ -54,7 +54,7 @@ function CardVerticalScroll() {
         {
           recipeList.slice(6, 7).map((item) => (
             <React.Fragment>
-              <RecipeCardHorizontalIzquierda data={item} key={item.id} />
+              <RecipeCardHorizontalIzquierda data={item} key={item.id} {...item}/>
             </React.Fragment>
           ))
         }
