@@ -1,7 +1,7 @@
-//------------------------------ Import
+// ------------------------------ Import global styles specially varibles
 @import '../global-styles/Globalstyles.scss';
 
-//------------------------------ Container Styles
+// ------------------------------ Container Styles
 .Dashboard {
 	height: 600px;
 	display: grid;
@@ -15,7 +15,8 @@
 	}
 }
 
-//------------------------------ Layout placement
+// ------------------------------ Layout placement
+// this classes place each card in and specific position of the dashboad grid
 .card1 {
 	grid-column: 4 / span 1;
 	grid-row: 1 / span 2;
@@ -76,7 +77,6 @@
 	}
 }
 
-//------------------------------ Category container styles
 .Ingredient-carrousel {
 	margin: $margin-sections 0;
 	&__cards {

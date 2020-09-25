@@ -1,19 +1,24 @@
-//------------------------------ import libraries
-import React, { useEffect } from 'react';
+// ------------------------------ import libraries
+import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 
-//------------------------------ import components
+// ------------------------------ import components
 import CategoryCard from '../cards/Card--Category';
+
+// -------- import redux actions
 import { setCurrentCategory } from '../actions/recipeActions';
 
-//------------------------------ import styles and images
+// ------------------------------ import styles and images
 import '../assets/components-style/RecipeDashboard.scss';
 
-//------------------------------------ COMPONENT ------------------------------------//
+// ------------------------------------ COMPONENT ------------------------------------//
+// this component render the caterogies in landing page.
 const CategoryCarrousel = () => {
+	// get the categories from recipeReducer
 	const categories = useSelector((state) => state.recipeReducer.recipes);
 	const dispatch = useDispatch();
 
+	// get the category id and send to setCurrentCategory action to show in dashboard the recipes inside the specific category
 	const setCurrentCategoryId = (categoryId) => {
 		dispatch(setCurrentCategory(categoryId));
 	};

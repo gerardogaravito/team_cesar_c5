@@ -4,20 +4,25 @@ import { useSelector, useDispatch } from 'react-redux';
 
 //------------------------------ import components
 import Input from '../globalComponents/Input';
-import { confirmUserData } from '../actions/usersActions';
 import { gravatar } from '../utils/gravatar';
 
-//------------------------------ import styles and images
+// -------- import redux actions
+import { confirmUserData } from '../actions/usersActions';
 
+// ------------------------------------ COMPONENT ------------------------------------ //
+// this component is the form to edit the user info
 const FormUser = () => {
+	// get user data
 	const user = useSelector((state) => state.userReducer.user);
 	const [userData, setData] = useState({});
 	const dispatch = useDispatch();
 
+	// get the inputs data
 	const handleInput = (event) => {
 		setData({ ...userData, [event.target.name]: event.target.value });
 	};
 
+	// on submit send user data to userReducer using confirmUserData action
 	const handleSubmit = (event) => {
 		event.preventDefault();
 		dispatch(confirmUserData(userData));

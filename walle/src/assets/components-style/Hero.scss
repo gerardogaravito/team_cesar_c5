@@ -1,7 +1,8 @@
-//------------------------------ Import
+// ------------------------------ Import global styles specially varibles
 @import '../global-styles/Globalstyles.scss';
 
-//------------------------------ Styles
+// ------------------------------ Styles
+// this file has the styles of the two heros, main hero and search hero
 .Hero {
 	position: relative;
 	padding: $space4;
@@ -40,7 +41,7 @@
 		font-size: $size-s;
 	}
 
-	//------------------------------ This styles apply to the main hero component
+	// ------------------------------ This styles apply to the main hero component
 	&__information {
 		margin-top: 100px;
 		display: flex;
@@ -48,7 +49,7 @@
 		align-items: center;
 	}
 
-	//------------------------------ This styles apply to the search hero component
+	// ------------------------------ This styles apply to the search hero component
 	&__search {
 		display: flex;
 		flex-direction: column;
@@ -56,7 +57,7 @@
 	}
 }
 
-//------------------------------ Searchbar syles
+// ------------------------------ Searchbar syles
 .Search-bar {
 	width: 60%;
 	height: $space4;

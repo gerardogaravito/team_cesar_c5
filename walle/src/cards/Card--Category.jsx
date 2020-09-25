@@ -1,9 +1,11 @@
-//------------------------------ import libraries
+// ------------------------------ import libraries
 import React from 'react';
 
-//------------------------------ import styles and images
+// ------------------------------ import styles and images
 import '../assets/components-style/RecipeDashboard.scss';
 
+// ------------------------------------ COMPONENT ------------------------------------ //
+// this component return the category card in landing page. it inherit a function from props.handleClick
 const CategoryCard = ({ handleClick, picture, name }) => {
 	return (
 		<div onClick={handleClick}>

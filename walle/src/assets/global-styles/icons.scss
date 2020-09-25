@@ -1,7 +1,8 @@
-//------------------------------ import scss
+// ------------------------------ Import global styles specially varibles
 @import './tokens.scss';
 
-//------------------------------ Styles
+// this files has the icons styles
+// ------------------------------ Styles
 .icon {
 	margin: 0 $space;
 	padding: $space;
@@ -85,7 +86,7 @@
 	}
 }
 
-//------------------------------ animations
+// ------------------------------ animations
 .icon--inactive:hover {
 	box-shadow: $box-shadow;
 }

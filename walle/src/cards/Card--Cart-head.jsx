@@ -1,19 +1,20 @@
 //------------------------------ import libraries
-import React, { Fragment } from "react";
-//------------------------------ import styles and images
-import "../assets/components-style/CartSection.scss";
+import React from 'react';
 
-const CartHead = (props) => {
-  return (
-    <Fragment>
-      <div className="CartHead">
-        <p>Nombre</p>
-        <p>unidad</p>
-        <p>Cantidad</p>
-        <p>Precio</p>
-      </div>
-    </Fragment>
-  );
+//------------------------------ import styles and images
+import '../assets/components-style/CartSection.scss';
+
+//------------------------------------ COMPONENT ------------------------------------//
+// this component only return the head of cart list table
+const CartHead = () => {
+	return (
+		<div className="CartHead">
+			<p>Nombre</p>
+			<p>unidad</p>
+			<p>Cantidad</p>
+			<p>Precio</p>
+		</div>
+	);
 };
 
 export default CartHead;

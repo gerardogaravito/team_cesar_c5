@@ -1,30 +1,31 @@
-//------------------------------ import scss
-@import "./tokens.scss";
+// ------------------------------ Import varibles
+@import './tokens.scss';
 
-//------------------------------ Styles
+// this file has the typography styles
+// ------------------------------ Styles
 h1 {
-  font-size: $size-xxl;
-  background: $gradien-title;
-  color: transparent;
-  -webkit-background-clip: text;
-  -webkit-text-stroke: 5px $second-color;
+	font-size: $size-xxl;
+	background: $gradien-title;
+	color: transparent;
+	-webkit-background-clip: text;
+	-webkit-text-stroke: 5px $second-color;
 }
 
 h2 {
-  font-size: $size-m;
-  margin-bottom: $space2;
+	font-size: $size-m;
+	margin-bottom: $space2;
 }
 
 h3 {
-  font-size: $size-m;
+	font-size: $size-m;
 }
 
 p {
-  font-size: $size-xs;
+	font-size: $size-xs;
 }
 
 .error-title {
-  color: $background-color;
-  margin-bottom: $space4;
-  font-size: $size-xl;
+	color: $background-color;
+	margin-bottom: $space4;
+	font-size: $size-xl;
 }

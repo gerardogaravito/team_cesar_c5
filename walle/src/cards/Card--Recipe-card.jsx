@@ -1,19 +1,24 @@
-//------------------------------ import libraries
+// ------------------------------ import libraries
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 
-//------------------------------ import components
+// ------------------------------ import components
 import { FaRegHeart, FaUsers, FaClock, FaPlus, FaTimes } from 'react-icons/fa';
+
+// -------- import redux actions
 import {
 	addFavoriteRecipe,
 	deleteFavoriteRecipe,
 } from '../actions/usersActions';
 import { getCartIngredients } from '../actions/recipeActions';
 
-//------------------------------ import styles and images
+// ------------------------------ import styles and images
 import '../assets/components-style/Recipecard.scss';
 
+// ------------------------------------ COMPONENT ------------------------------------ //
+// this is the recipe card component. it is used in recipe carrousel.
+// here are the actions and functions to add, delete favorite and add ingredients to cart
 const RecipeCard = ({
 	id,
 	cardId,
@@ -26,6 +31,7 @@ const RecipeCard = ({
 }) => {
 	const dispatch = useDispatch();
 
+	// this function get the addFavoriteRecipe action and send the data needed to render this card as payload. this action save this object in userReducer.
 	const addFavorite = () => {
 		dispatch(
 			addFavoriteRecipe({
@@ -39,10 +45,12 @@ const RecipeCard = ({
 		);
 	};
 
+	// this function get the id of the selected card and send it to the action deleteFavoriteRecipe and filter from the favorite key in userReducer
 	const deleteFavorite = (id) => {
 		dispatch(deleteFavoriteRecipe(id));
 	};
 
+	// this function get the id of the selected card and send it to the action getCartIngredients. this action will get the ingredients in the recipe and stored them in cartIngredients key of recipeReducer.
 	const addCart = (id) => {
 		dispatch(getCartIngredients(id));
 	};
@@ -66,6 +74,7 @@ const RecipeCard = ({
 					<div className="recipe-button">{dificult}</div>
 				</div>
 			</Link>
+			{/* this validate if is in favorite list, show the 'X' button to delete from favorite, if not show the heart button */}
 			{isFavorite ? (
 				<FaTimes
 					className="icon--inactive RecipeCard__fav"

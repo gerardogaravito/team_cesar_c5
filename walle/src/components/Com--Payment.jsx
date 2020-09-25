@@ -1,24 +1,32 @@
-//------------------------------ import libraries
+// ------------------------------ import libraries
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 
-//------------------------------ import components
-import { calculateTotal } from '../actions/usersActions';
+// ------------------------------ import components
 import { formatterDolar } from '../utils/formatterDolar';
 
-//------------------------------ import styles and images
+// -------- import redux actions
+import { calculateTotal } from '../actions/usersActions';
+
+// ------------------------------ import styles and images
 import '../assets/components-style/Payment.scss';
 import payoneerIcon from '../assets/images/logoPayoneer.png';
 
-//------------------------------------ COMPONENT ------------------------------------//
+// ------------------------------------ COMPONENT ------------------------------------ //
+// this is the payment component. it is in cart page.
+// it is related to the shopping list items, it is listenting the changes in shopping list to update the total price
 const Payment = () => {
+	// get the cartIngredients in recipeReducer
 	const ingredients = useSelector(
 		(state) => state.recipeReducer.cartIngredients
 	);
+	// get the user data to set the direction
 	const user = useSelector((state) => state.userReducer.user);
+	// get the total of the shopping list
 	const total = useSelector((state) => state.userReducer.cartTotal);
 	const dispatch = useDispatch();
 
+	// send the action calculateTotal with the ingredients in the shopping list. it recalculate when an ingredient change
 	useEffect(() => {
 		dispatch(calculateTotal(ingredients));
 	}, [ingredients]);

@@ -1,14 +1,14 @@
-//------------------------------ import libraries
+// ------------------------------ import libraries
 import React from 'react';
 
-//------------------------------ import components
+// ------------------------------ import components
 import PlaceholderCard from './Placeholder-card';
 
-//------------------------------ import styles and images
+// ------------------------------ import styles and images
 import '../assets/components-style/Recipecard.scss';
 
-//------------------------------------ COMPONENT ------------------------------------//
-
+// ------------------------------------ COMPONENT ------------------------------------//
+// this is the carrousel to show it instead of recipeCarrousel
 const PlaceholderCarrousel = ({ title }) => {
 	return (
 		<div className="Recipe-carrousel">

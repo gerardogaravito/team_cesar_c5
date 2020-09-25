@@ -1,25 +1,23 @@
-//------------------------------ import libraries
+// ------------------------------ import libraries
 import React from 'react';
 import { useDispatch } from 'react-redux';
 
-//------------------------------ import components
+// ------------------------------ import components
 import { FaTrashAlt } from 'react-icons/fa';
-import { deleteIngredients } from '../actions/recipeActions';
 import { formatterDolar } from '../utils/formatterDolar';
 
-//------------------------------ import styles and images
+// -------- import redux actions
+import { deleteIngredients } from '../actions/recipeActions';
+
+// ------------------------------ import styles and images
 import '../assets/components-style/CartSection.scss';
 
-//------------------------------------ COMPONENT ------------------------------------//
-const CartIngredient = ({
-	id,
-	ingredientName,
-	ingredientUnit,
-	ingredientCant,
-	ingredientPrice,
-}) => {
+// ------------------------------------ COMPONENT ------------------------------------//
+//this is th item of the list of ingredients in the shopping cart
+const CartIngredient = ({ id, name, und, cant, price }) => {
 	const dispatch = useDispatch();
 
+	//this function delete the ingredients from the cart. it is an action from recipe actions. this action get the ID of the ingredient from the component
 	const deleteIngredientById = (id) => {
 		dispatch(deleteIngredients(id));
 	};
@@ -28,14 +26,15 @@ const CartIngredient = ({
 		<div className="CartIngredient">
 			<FaTrashAlt
 				className="icon--list"
+				// dispatch the id to the action on click
 				onClick={() => deleteIngredientById(id)}
 			/>
 			<strong>
-				<p>{ingredientName}</p>
+				<p>{name}</p>
 			</strong>
-			<p>{ingredientUnit}</p>
-			<p>{ingredientCant}</p>
-			<p> {formatterDolar.format(ingredientPrice)}</p>
+			<p>{und}</p>
+			<p>{cant}</p>
+			<p> {formatterDolar.format(price)}</p>
 		</div>
 	);
 };

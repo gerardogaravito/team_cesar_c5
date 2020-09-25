@@ -1,18 +1,20 @@
-//------------------------------ import libraries
+// ------------------------------ import libraries
 import React from 'react';
 import { useSelector } from 'react-redux';
 
-//------------------------------ import components
+// ------------------------------ import components
 import SearchHero from '../components/Com--Search-hero';
 import RecipeCarrousel from '../components/Com--Recipe-carrousel';
 import Footer from '../components/Com--Footer';
 import RecipeCard from '../cards/Card--Recipe-card';
 
-//------------------------------ import styles and images
+// ------------------------------ import styles and images
 import '../assets/components-style/Layout.scss';
 
-//------------------------------------ COMPONENT ------------------------------------//
+// ------------------------------------ COMPONENT ------------------------------------//
+// this is the home page. it is shown only after login
 const HomePage = () => {
+	// get recipe from recipeReducers
 	const recipesCategories = useSelector((state) => state.recipeReducer.recipes);
 
 	return (

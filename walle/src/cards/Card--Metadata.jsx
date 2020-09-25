@@ -1,12 +1,14 @@
-//------------------------------ import libraries
+// ------------------------------ import libraries
 import React, { Fragment } from 'react';
 
-//------------------------------ import components
+// ------------------------------ import icons
 import { FaClock, FaUsers, FaFire } from 'react-icons/fa';
 
-//------------------------------ import styles and images
+// ------------------------------ import styles and images
 import '../assets/components-style/Recipe.scss';
 
+// ------------------------------------ COMPONENT ------------------------------------ //
+// this is the component that shows recipe preparatino time, difficult and portions inside recipe page
 const Metadata = ({ time, portions, difficult }) => {
 	return (
 		<Fragment>

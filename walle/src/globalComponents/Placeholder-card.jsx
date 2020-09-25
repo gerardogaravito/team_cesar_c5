@@ -1,13 +1,14 @@
-//------------------------------ import libraries
+// ------------------------------ import libraries
 import React from 'react';
 
-//------------------------------ import components
+// ------------------------------ import components
 import { FaInbox } from 'react-icons/fa';
 
-//------------------------------ import styles and images
+// ------------------------------ import styles and images
 import '../assets/components-style/Recipecard.scss';
 
-//------------------------------------ COMPONENT ------------------------------------//
+// ------------------------------------ COMPONENT ------------------------------------//
+// this is a placeholder card to show when there is no recipe card
 const PlaceholderCard = ({ cardId }) => {
 	return (
 		<div className={`Placeholder-card recipe-card${cardId}`}>

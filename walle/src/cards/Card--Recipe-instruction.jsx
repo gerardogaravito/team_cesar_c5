@@ -1,21 +1,21 @@
-//------------------------------ import libraries
-import React, { Fragment } from "react";
+// ------------------------------ import libraries
+import React from 'react';
 
-//------------------------------ import styles and images
-import "../assets/components-style/Recipe.scss";
+// ------------------------------ import styles and images
+import '../assets/components-style/Recipe.scss';
 
-const InstructionItem = (props) => {
-  return (
-    <Fragment>
-      <div className="InstructionItem">
-        <input type="checkbox" id={props.id} />
-        <label className="InstructionItem__label" htmlFor={props.id}>
-          <p className="InstructionItem__step">{props.step}.</p>
-          <p className="InstructionItem__description">{props.description}</p>
-        </label>
-      </div>
-    </Fragment>
-  );
+// ------------------------------------ COMPONENT ------------------------------------ //
+// this is the instruction item in recipe page.
+const InstructionItem = ({ id, step, description }) => {
+	return (
+		<div className="InstructionItem">
+			<input type="checkbox" id={id} />
+			<label className="InstructionItem__label" htmlFor={id}>
+				<p className="InstructionItem__step">{step}.</p>
+				<p className="InstructionItem__description">{description}</p>
+			</label>
+		</div>
+	);
 };
 
 export default InstructionItem;

@@ -1,7 +1,8 @@
-//------------------------------ Import
+// ------------------------------ Import global styles specially varibles
 @import '../global-styles/Globalstyles.scss';
 
-//------------------------------ Recipe Carrousel Container styles
+// this file has the recipe carrousel and card components styles
+// ------------------------------ Recipe Carrousel Container styles
 .Recipe-carrousel {
 	margin: $margin-sections 0;
 	&__cards-container {
@@ -17,7 +18,7 @@
 	grid-row: 1 / span 2;
 }
 
-//------------------------------ Recipe Card styles
+// ------------------------------ Recipe Card styles
 .RecipeCard {
 	@extend .CardStyles;
 	position: relative;
@@ -71,7 +72,7 @@
 	}
 }
 
-//------------------------------ animations
+// ------------------------------ button add to cart shows when hover on card
 .RecipeCard:hover .icon--add {
 	opacity: 1;
 }
@@ -84,7 +85,7 @@
 	animation-fill-mode: forwards;
 }
 
-//------------------------------ Placeholder card
+// ------------------------------ Placeholder card used when there is no recipe data
 .Placeholder-card {
 	color: $main-color;
 	display: grid;

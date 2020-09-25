@@ -1,7 +1,8 @@
-//------------------------------ Import
+// ------------------------------ Import global styles specially varibles
 @import '../global-styles/Globalstyles.scss';
 
-//------------------------------ Styles
+// this file has the user info component styles
+// ------------------------------ Styles
 .UserInfo {
 	display: flex;
 	justify-content: center;

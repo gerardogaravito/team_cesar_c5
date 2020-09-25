@@ -1,18 +1,19 @@
-//------------------------------ import libraries
+// ------------------------------ import libraries
 import React from 'react';
 import { useSelector } from 'react-redux';
 import { useDispatch } from 'react-redux';
 import { withRouter } from 'react-router';
 
-//------------------------------ import components
+// ------------------------------ import components
 import Header from './Com--Header';
 import { FaPlus } from 'react-icons/fa';
 import { getCartIngredients } from '../actions/recipeActions';
 
-//------------------------------ import styles and images
+// ------------------------------ import styles and images
 import '../assets/components-style/Hero.scss';
 
-//------------------------------------ COMPONENT ------------------------------------//
+// ------------------------------------ COMPONENT ------------------------------------//
+// this is the main hero of the app. it is shown in landing and recipe pages.
 const MainHero = (props) => {
 	const {
 		title,
@@ -21,6 +22,8 @@ const MainHero = (props) => {
 		handleSignClick,
 		picture,
 	} = props;
+
+	// get user state from userReducer
 	const userState = useSelector((state) => state.userReducer.user);
 	const currentRecipe = useSelector(
 		(state) => state.recipeReducer.currentRecipe

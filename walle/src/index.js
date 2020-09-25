@@ -21,6 +21,8 @@ function render() {
 	);
 }
 render();
+
+// this function get the hot module replacement from webpack and prevent the browser reload
 if (module.hot) {
 	module.hot.accept('./router/app', () => render());
 }

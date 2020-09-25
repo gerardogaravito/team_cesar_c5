@@ -1,28 +1,29 @@
-//------------------------------ Import
-@import "../global-styles/Globalstyles.scss";
+// ------------------------------ Import global styles specially varibles
+@import '../global-styles/Globalstyles.scss';
 
-//------------------------------ Styles
+// ------------------------------ Styles
+// this file has the landing instruction sections styles.
 .InstructionsSection {
-  @extend .CardStyles;
-  margin: $margin-sections 0;
-  padding: $space2;
-  background-color: $main-lighter-color;
+	@extend .CardStyles;
+	margin: $margin-sections 0;
+	padding: $space2;
+	background-color: $main-lighter-color;
 
-  &__icons {
-    height: 250px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    align-items: center;
-    justify-items: center;
-  }
+	&__icons {
+		height: 250px;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		align-items: center;
+		justify-items: center;
+	}
 
-  &__icon {
-    width: 200px;
-    font-weight: bold;
-    color: $second-color;
-    text-align: center;
-    & > p {
-      margin-top: $space;
-    }
-  }
+	&__icon {
+		width: 200px;
+		font-weight: bold;
+		color: $second-color;
+		text-align: center;
+		& > p {
+			margin-top: $space;
+		}
+	}
 }

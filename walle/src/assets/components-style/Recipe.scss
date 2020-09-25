@@ -1,7 +1,8 @@
-//------------------------------ Import
+// ------------------------------ Import global styles specially varibles
 @import '../global-styles/Globalstyles.scss';
 
-//------------------------------ Instruction item styles
+// this file has the recipe styles.
+// ------------------------------ Recipe instruction item styles
 .InstructionItem {
 	display: flex;
 
@@ -35,7 +36,7 @@
 	}
 }
 
-//------------------------------ Animations
+// ------------------------------ Recipe instruction checkbox Animations
 [type='checkbox'] {
 	display: none;
 }
@@ -52,7 +53,7 @@
 	text-decoration: line-through;
 }
 
-//------------------------------ Metadata component Styles
+// ------------------------------ Recipe metadata component Styles
 .Metadata {
 	display: flex;
 	justify-content: flex-end;
@@ -75,7 +76,7 @@
 	}
 }
 
-//------------------------------ Recipe ingredient list container
+// ------------------------------ Recipe ingredient list container
 .Recipe-ingredients {
 	margin: $margin-sections 0;
 	&__container-list {
@@ -89,7 +90,7 @@
 	}
 }
 
-//------------------------------ Recipe ingredient item style
+// ------------------------------ Recipe ingredient item style
 .RecipeIngredientItem {
 	display: flex;
 	align-items: center;
@@ -136,7 +137,7 @@
 	}
 }
 
-//------------------------------ checkbox animation on click
+// ------------------------------ Recipe ingredient checkbox animation
 [type='checkbox'] {
 	display: none;
 }
