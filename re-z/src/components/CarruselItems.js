@@ -6,6 +6,7 @@ import { setFavorite } from '../actions';
 
 import './styles/CarruselItems.css';
 import TimeIcon from '../images/Atomos/time-icon-yellow.svg';
+import CookTime from '../Animation/CookTime'
 
 
 
@@ -37,8 +38,8 @@ const CarruselItems = (props) => {
                 <p className="carousel-item__details--title">{name}</p>
             </Link>
             <div className="time-icon">
-                <img src={TimeIcon} alt="Icon" />
-                <p>{preparationTime}</p>
+                <CookTime />
+                <p>{preparationTime} min</p>
             </div>
             </div>
         </div>   

@@ -64,6 +64,7 @@
   }
   .time-icon p{
     color: #ffbc42;
+    font-size: 15px;
   }
   .like{
     cursor: pointer;

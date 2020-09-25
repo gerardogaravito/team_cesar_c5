@@ -8,7 +8,7 @@ class Modal extends Component{
         return(
             <section>
               <div className="perfilMenu">
-                  <a href="/">Configuración</a>
+                  <Link to="/home/configuration">Configuración</Link>
                   <Link to="/home/favoritos">Tus Favoritas</Link>
                   <a href="/">Ver carrito de compra</a>
                   <Link to="/home/landing">Cerrar Sesión</Link>
