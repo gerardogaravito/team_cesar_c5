@@ -1,24 +1,30 @@
-//------------------------------ import libraries
+// ------------------------------ import libraries
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 
-//------------------------------ import components
-import { editProfile } from '../actions/usersActions';
+// ------------------------------ import components
 import FormUser from '../globalComponents/FormUser';
 import { gravatar } from '../utils/gravatar';
 
-//------------------------------ import styles and images
+// -------- import redux actions
+import { editProfile } from '../actions/usersActions';
+
+// ------------------------------ import styles and images
 import '../assets/components-style/UserInfo.scss';
 
-//------------------------------------ COMPONENT ------------------------------------//
+// ------------------------------------ COMPONENT ------------------------------------ //
+// this component has the form to change user data.
 const UserInfo = () => {
+	// get user data
 	const user = useSelector((state) => state.userReducer.user);
 	const dispatch = useDispatch();
 
+	// this function allow to edit profile. change the estate to editing
 	const editUserData = () => {
 		dispatch(editProfile());
 	};
 
+	// if the state is editing show the form, if not show the data
 	if (user.editing) {
 		return <FormUser />;
 	} else {
@@ -36,6 +42,7 @@ const UserInfo = () => {
 					</button>
 				</div>
 				<div className="UserInfo__description">
+					{/* this component has validation for every item. if user set the data show it if not show a mockup data */}
 					<div className="UserInfo__data">
 						{user.name ? (
 							<h2 className="UserInfo__name">{user.name}</h2>

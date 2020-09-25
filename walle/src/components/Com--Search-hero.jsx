@@ -1,15 +1,16 @@
-//------------------------------ import libraries
+// ------------------------------ import libraries
 import React from 'react';
 
-//------------------------------ import components
+// ------------------------------ import components
 import Header from './Com--Header';
 import SearchBar from './Com--SearchBar';
 
-//------------------------------ import styles and images
+// ------------------------------ import styles and images
 import '../assets/components-style/Hero.scss';
 import heroPic from '../assets/images/hero-img.jpeg';
 
-//------------------------------------ COMPONENT ------------------------------------//
+// ------------------------------------ COMPONENT ------------------------------------ //
+// this is the hero with the searchbar. is in home and cart pages.
 const SearchHero = ({ name }) => {
 	return (
 		<section className="Hero">

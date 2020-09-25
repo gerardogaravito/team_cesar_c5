@@ -1,23 +1,25 @@
-//------------------------------ import libraries
+// ------------------------------ import libraries
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 
-//------------------------------ import components
+// ------------------------------ import components
 import { FaShoppingCart, FaHome } from 'react-icons/fa';
 import { gravatar } from '../utils/gravatar';
 
-//------------------------------ import styles and images
+// ------------------------------ import styles and images
 import '../assets/components-style/Header.scss';
 import Logo from '../assets/images/logo-walle.png';
 
-//------------------------------------ COMPONENT ------------------------------------//
+// ------------------------------------ COMPONENT ------------------------------------//
+// this is the header component it is shown in every page
 const Header = ({ handleLogin, handleSign }) => {
 	const userState = useSelector((state) => state.userReducer.user);
 
 	return (
 		<header className="Header">
 			<img className="Header__brand" src={Logo} alt="Logo de Walle" />
+			{/* evaluate if is data in user show user data, if not show the buttons to login or signup */}
 			{Object.keys(userState).length > 0 ? (
 				<div className="Header__nav">
 					<Link to="/carrito">

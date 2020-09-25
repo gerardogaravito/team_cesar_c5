@@ -1,15 +1,17 @@
-//------------------------------ import libraries
+// ------------------------------ import libraries
 import React from 'react';
 import { useSelector } from 'react-redux';
 
-//------------------------------ import components
+// ------------------------------ import components
 import RecipeIngredientItem from '../cards/Card--Recipe-ingredient';
 
-//------------------------------ import styles and images
+// ------------------------------ import styles and images
 import '../assets/components-style/Recipe.scss';
 
-//------------------------------------ COMPONENT ------------------------------------//
+// ------------------------------------ COMPONENT ------------------------------------//
+// this component render the list of ingredients in recipe page.
 const RecipeIngredientsList = () => {
+	// get the current data of the recipe page
 	const currentRecipe = useSelector(
 		(state) => state.recipeReducer.currentRecipe
 	);
@@ -19,15 +21,7 @@ const RecipeIngredientsList = () => {
 			<h2>Ingredientes</h2>
 			<div className="Recipe-ingredients__container-list">
 				{currentRecipe.ingredients?.map((ingredient) => {
-					return (
-						<RecipeIngredientItem
-							key={ingredient.id}
-							name={ingredient.name}
-							cant={ingredient.cant}
-							und={ingredient.und}
-							id={ingredient.id}
-						/>
-					);
+					return <RecipeIngredientItem key={ingredient.id} {...ingredient} />;
 				})}
 			</div>
 		</div>

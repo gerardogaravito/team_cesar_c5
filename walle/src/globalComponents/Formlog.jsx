@@ -1,15 +1,18 @@
-//------------------------------ import libraries
+// ------------------------------ import libraries
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { withRouter } from 'react-router';
 
-//------------------------------ import components
+// ------------------------------ import components
 import { FaTimes } from 'react-icons/fa';
 import SocialGarden from './SocialGarden';
 import Input from './Input';
+
+// -------- import redux actions
 import { loginRequest } from '../actions/usersActions';
 
-//------------------------------------ COMPONENT ------------------------------------//
+// ------------------------------------ COMPONENT ------------------------------------ //
+// this is the form to login or singup
 const Formlog = (props) => {
 	const { closeModal, display } = props;
 	const [form, setForm] = useState({ email: '' });
@@ -23,11 +26,13 @@ const Formlog = (props) => {
 		});
 	};
 
-	//---------- send form data to store
+	// send form data to store with loginRequest action
 	const handleSubmit = (event) => {
 		event.preventDefault();
 		dispatch(loginRequest(form));
+		// when submit set email in session storage to get this data easier for validations
 		sessionStorage.setItem('user', form.email);
+		// when submit go to home page
 		props.history.push('/walle');
 	};
 

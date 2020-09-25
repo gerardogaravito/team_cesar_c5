@@ -1,6 +1,7 @@
-//------------------------------ import scss
+// ------------------------------ Import global styles specially varibles
 @import './tokens.scss';
 
+// this file has the inputs styles
 //------------------------------ import styles
 .input {
 	display: flex;

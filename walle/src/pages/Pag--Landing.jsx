@@ -1,8 +1,8 @@
-//------------------------------ import libraries
+// ------------------------------ import libraries
 import React, { useRef, useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 
-//------------------------------ import components
+// ------------------------------ import components
 import MainHero from '../components/Com--Main-hero';
 import CategoryCarrousel from '../components/Com--Category-carrousel';
 import RecipeDashboard from '../components/Com--Recipes-dashboard';
@@ -11,13 +11,15 @@ import RecommendationCarrousel from '../components/Com--Recomendations-carrousel
 import Footer from '../components/Com--Footer';
 import LoginModal from '../components/Com--LoginModal';
 
+// -------- import redux actions
 import { getRecipes, setCurrentCategory } from '../actions/recipeActions';
 
-//------------------------------ import styles and images
+// ------------------------------ import styles and images
 import '../assets/components-style/Layout.scss';
 import heroPic from '../assets/images/hero-img.jpeg';
 
-//------------------------------------ COMPONENT ------------------------------------//
+// ------------------------------------ COMPONENT ------------------------------------//
+// this is the landing page. has the reference to show the modal
 const LandingPage = (props) => {
 	const dispatch = useDispatch();
 
@@ -30,6 +32,8 @@ const LandingPage = (props) => {
 		modalReference.current.openSignModal();
 	};
 
+	// get the recipes from the database.
+	// set current category to display the recipes in dashbord according to the click in the category card
 	useEffect(() => {
 		dispatch(getRecipes());
 		dispatch(setCurrentCategory(1));

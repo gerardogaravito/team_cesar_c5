@@ -1,25 +1,28 @@
-//------------------------------ Import
-@import "../global-styles/Globalstyles.scss";
+// ------------------------------ Import global styles specially varibles
+@import '../global-styles/Globalstyles.scss';
 
-//------------------------------ Styles
+// ------------------------------ Styles
+// this file has the page layout styles.
 .Layout {
-  &__container {
-    padding: $space4;
-  }
+	&__container {
+		padding: $space4;
+	}
 
-  &__body {
-    padding: 0 $main-padding;
-  }
+	&__body {
+		padding: 0 $main-padding;
+	}
 
-  &__404 {
-    place-self: center;
-    text-align: center;
-  }
+	// layout styles to error page
+	&__404 {
+		place-self: center;
+		text-align: center;
+	}
 
-  &--error {
-    height: 100vh;
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    background-color: #4f5b62;
-  }
+	// layout styles to error page message container
+	&--error {
+		height: 100vh;
+		display: grid;
+		grid-template-rows: auto 1fr auto;
+		background-color: #4f5b62;
+	}
 }

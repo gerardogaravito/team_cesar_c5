@@ -1,8 +1,8 @@
-//------------------------------ import libraries
+// ------------------------------ import libraries
 import React from 'react';
 import { useSelector } from 'react-redux';
 
-//------------------------------ import components
+// ------------------------------ import components
 import Header from '../components/Com--Header';
 import UserInfo from '../components/Com--User-info';
 import RecipeCarrousel from '../components/Com--Recipe-carrousel';
@@ -10,11 +10,13 @@ import Footer from '../components/Com--Footer';
 import RecipeCard from '../cards/Card--Recipe-card';
 import PlaceholderCarrousel from '../globalComponents/Placeholder-carrousel';
 
-//------------------------------ import styles and images
+// ------------------------------ import styles and images
 import '../assets/components-style/Layout.scss';
 
-//------------------------------------ COMPONENT ------------------------------------//
+// ------------------------------------ COMPONENT ------------------------------------//
+// this is the user page.
 const UserPage = () => {
+	// get favorite recipes
 	const favorites = useSelector((state) => state.userReducer.favorites);
 
 	return (
@@ -24,6 +26,7 @@ const UserPage = () => {
 			</div>
 			<div className="Layout__body">
 				<UserInfo />
+				{/* show the mockup recipe carrousel if there is no favorites recipes */}
 				{Object.keys(favorites) <= 0 ? (
 					<PlaceholderCarrousel title="Favoritos" />
 				) : (
@@ -37,7 +40,6 @@ const UserPage = () => {
 					</RecipeCarrousel>
 				)}
 				<PlaceholderCarrousel title="Compradas recientemente" />
-				{/* <RecipeCarrousel title="Compradas recientemente" /> */}
 			</div>
 			<Footer />
 		</div>

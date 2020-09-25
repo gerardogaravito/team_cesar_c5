@@ -1,10 +1,12 @@
-//------------------------------ import libraries
+// ------------------------------ import libraries
 import React from 'react';
 
-//------------------------------ import styles and images
+// ------------------------------ import styles and images
 import '../assets/global-styles/inputs.scss';
 
-//------------------------------------ COMPONENT ------------------------------------//
+// ------------------------------------ COMPONENT ------------------------------------//
+// this is the input and label component
+// it has a class modifier to center the label if needed
 const Input = ({
 	name,
 	type,
