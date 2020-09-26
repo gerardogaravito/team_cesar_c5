@@ -6,7 +6,6 @@ import NavBarLanding from '../NavBarLanding'
 import CardVerticalScroll from '../CardVerticalScroll';
 import RecipeCardSquare from '../RecipeCardSquare';
 import RecipeGarden from '../RecipeGarden';
-
 class Landing extends React.Component {
   render () {
     return (
@@ -34,9 +33,7 @@ class Landing extends React.Component {
                 <RecipeCardSquare />
                 <RecipeCardSquare />
               </div>
-              <section>
-                <RecipeGarden />
-              </section>
+              <RecipeGarden title="Titulo RecipeGarden" name='nombre button' />
         </div>
     )
   }
