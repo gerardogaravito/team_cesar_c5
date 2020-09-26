@@ -4,8 +4,8 @@ import { useSelector } from 'react-redux';
 
 import './styles/RecipeInfo.css';
 import Button from './Button';
-import TimeIcon from '../images/Atomos/time-icon-yellow.svg';
 import RecipeIngredientsList from '../components/Ingredient/RecipeIngredientList';
+import CookTime from '../Animation/CookTime';
 
 
 function RecipeInfo (props){
@@ -18,8 +18,8 @@ function RecipeInfo (props){
                         <div className="Recipe-info-Time">
                             <p>Tiempo estimado de preparación:</p>
                             <div className="Time-icon">
-                                <img src={TimeIcon} alt="Icon" />
-                                <p>{props.data.preparationTime}</p>
+                                <CookTime />
+                                <p>{props.data.preparationTime} min</p>
                             </div>
                         </div>
                         <div className="Recipe-info-complexity">

@@ -46,10 +46,6 @@
         margin: 10px 0px 20px 0px;
         display: flex;
       }
-      .Time-icon img{
-        width: 20px;
-        margin-right: 5px;
-      }
       .Time-icon p{
         color: #ffbc42;
       }

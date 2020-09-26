@@ -58,10 +58,6 @@
     margin-bottom: 10px;
     display: flex;
   }
-  .time-icon img{
-    width: 20px;
-    margin-right: 5px;
-  }
   .time-icon p{
     color: #ffbc42;
     font-size: 15px;
