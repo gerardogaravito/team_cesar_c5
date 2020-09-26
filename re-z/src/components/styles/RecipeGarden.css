@@ -2,7 +2,8 @@
   background-color: #8f2d56;
   display: grid;
   grid-template-rows: 15% 42% 42%;
-  grid-template-columns: 30% 35% 35%;
+  justify-content: center;
+  height: 78em;
 }
 
 .gardenContainer__head {

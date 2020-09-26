@@ -12,7 +12,10 @@ class RecipeGarden extends React.Component {
           <div className="gardenContainer__head--title">Lorem Ipsum 50</div>
           <Button text='Ver más' />
         </div>
-        <GridRecipe />
+        <div>
+          <GridRecipe />
+        </div>
+        
       </div>
       )
     }
