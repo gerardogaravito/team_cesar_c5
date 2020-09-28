@@ -1,0 +1,31 @@
+.PaymentPageCard {
+  display: flex;
+  flex-direction: column;
+  padding: 90px 50px 200px 80px;
+  height: 700px;
+  border-radius: 20px;
+  background-color: #218380;
+  margin-bottom: 60px;
+  justify-content: space-between;
+}
+
+.PaymentPageCard__title{
+  font-size: 50px;
+}
+
+.PaymentPageCard__DetailAmount{
+  display: flex;
+  justify-content: space-between;
+  margin-right: 8em;
+}
+
+.PaymentPageCard__DetailAmount--RecipeName {
+  font-size: 30px;
+}
+.PaymentPageCard__DetailAmount--Amount{
+  font-size: 50px;
+}
+
+.PaymentPageCard__Username,.PaymentPageCard__Address {
+  font-size: 20px;
+}
