@@ -12,11 +12,12 @@ const PaymentPage=(props) => {
     <a className='PaymentPage__GoToPay--detail' href='https://www.payoneer.com/es/solutions/'  target="_blank" >Conocer más</a>
     <img className='PaymentPage__GoToPay--img' src="https://www.payoneer.com/wp-content/uploads/payoneer-dark-logo.svg" alt="logo_Payonner" />
   </section>;
+  const Addresexample = "Avenida siempre viva 123 12300 NW 29TH PL SUNRISE FLORIDA SUNRISE, FL 123123-1231   Estados Unidos Teléfono: +1 9546557580";
   return (
       <div>
         <Navbar />
         <div className='PaymentPage'>
-          <ShoppingCar RecipeName={"Cup Guacamole"} Amount={"$ 5"} UserName={"Homero J. S"} Address ={"Avenida siempre viva 123"}/>
+          <ShoppingCar RecipeName={"Cup Guacamole"} Amount={"US $ 5.13"} UserName={"Homero J. Simpson"} Address ={Addresexample}/>
           {GoToPlay}
         </div>
       </div>
