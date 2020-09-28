@@ -4,6 +4,7 @@
   grid-template-rows: 15% 42% 42%;
   justify-content: center;
   height: 78em;
+  position: relative;
 }
 
 .gardenContainer__head {
