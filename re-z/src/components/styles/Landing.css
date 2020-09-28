@@ -42,3 +42,7 @@
   display: flex;
   justify-content: space-around;
 }
+
+.landing__gridSection {
+  margin: 200px 0px;
+}

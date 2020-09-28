@@ -6,6 +6,8 @@ import NavBarLanding from '../NavBarLanding'
 import CardVerticalScroll from '../CardVerticalScroll';
 import RecipeCardSquare from '../RecipeCardSquare';
 import RecipeGarden from '../RecipeGarden';
+import GridRecipe from '../GridRecipe';
+import GridRecipeInvert from '../GridRecipeInvert';
 import {recipes} from '../../../recipe.json'
 
 class Landing extends React.Component {
@@ -42,6 +44,11 @@ class Landing extends React.Component {
                 }
               </div>
               <RecipeGarden title="Recetas Recomendadas" name='Ver más' />
+              <section className='landing__gridSection'>
+                <GridRecipe />
+                <GridRecipeInvert />
+                <GridRecipe />
+              </section>
         </div>
     )
   }
