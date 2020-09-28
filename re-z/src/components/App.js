@@ -8,11 +8,13 @@ import NotFound from './page/NotFound';
 import FooterA from './FooterA';
 import PageRecipe from './page/PageRecipe';
 import Configuration from './page/Configuration';
+import PaymentPage from './page/PaymentPage';
 
 function App() {
   return (
     <BrowserRouter>
       <Switch>
+        <Route exact path="/home/PaymentPage/" component={PaymentPage} />
         <Route exact path="/home" component={Home} />
         <Route exact path="/home/favoritos" component={Favoritos} />
         <Route exact path="/home/landing" component={Landing} />
