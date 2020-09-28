@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import './styles/RecipeCardHorizontalIzquierda.css'
-import timeIcon from '../images/Atomos/time-icon.svg'
+import CookTimeBlack from '../Animation/CookTimeBlack';
 
 
 const RecipeCardHorizontalIzquierda = (props) => {
@@ -16,7 +16,7 @@ const RecipeCardHorizontalIzquierda = (props) => {
         <div className='cardleft__info--text'>{instructions}</div>
       </div>
       <div className='cardleft__time'>
-        <img src={timeIcon} alt="tiempo de preparación"/>
+        <CookTimeBlack />
         <div className='cardleft__time--text'>{preparationTime} min</div>
       </div>
       <img src={picture} alt="foto de comida" className="cardleft__image"/>

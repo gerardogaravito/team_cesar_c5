@@ -9,6 +9,7 @@ import FooterA from './FooterA';
 import PageRecipe from './page/PageRecipe';
 import Configuration from './page/Configuration';
 import PaymentPage from './page/PaymentPage';
+import Category from './page/Category';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route exact path="/home/favoritos" component={Favoritos} />
         <Route exact path="/home/landing" component={Landing} />
         <Route exact path="/home/page-recipe/:myId" component={PageRecipe} />
+        <Route exact path="/home/category" component={Category} />
         <Route exact path="/home/configuration" component={Configuration} />
         <Redirect from="/" to="home/landing" />
         <Route component={NotFound} />
