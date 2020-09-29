@@ -2,7 +2,7 @@
 import React from 'react';
 
 // ------------------------------ import components
-import { FaSearch } from 'react-icons/fa';
+import { FaRegHeart, FaPlus, FaSearch } from 'react-icons/fa';
 
 // ------------------------------------ COMPONENT ------------------------------------ //
 // this is the searchbar. is in the searchbar hero.

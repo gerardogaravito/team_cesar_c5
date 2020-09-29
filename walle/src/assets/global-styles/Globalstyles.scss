@@ -24,14 +24,3 @@
 a {
 	text-decoration: none;
 }
-
-@keyframes buttonRecipeCards {
-  0% {
-    background-color: $background-color;
-    transform: translateY(0px);
-  }
-  100% {
-    background-color: tomato;
-    transform: translateY(3px);
-  }
-}
