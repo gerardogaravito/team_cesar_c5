@@ -55,9 +55,8 @@
 
 	&--add {
 		position: absolute;
-		left: 50%;
-		top: 50%;
-		transform: translate(-50%, -50%);
+		left: 40%;
+		top: 40%;
 		padding: $space;
 		color: $second-color;
 		font-size: $size-xl;
@@ -83,8 +82,24 @@
 		&:hover {
 			box-shadow: $box-shadow;
 		}
+		&:active {
+			animation-name: buttonRecipeCards;
+	    animation-duration: 0.1s;
+	    animation-fill-mode: forwards;
+		}
 	}
 }
+@keyframes buttonRecipeCards {
+  0% {
+    background-color: $background-color;
+    transform: translateY(0px);
+  }
+  100% {
+    background-color: #f0a500;
+    transform: translateY(2px);
+  }
+}
+
 
 // ------------------------------ animations
 .icon--inactive:hover {

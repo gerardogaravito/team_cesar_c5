@@ -18,7 +18,15 @@ const Header = ({ handleLogin, handleSign }) => {
 
 	return (
 		<header className="Header">
-			<img className="Header__brand" src={Logo} alt="Logo de Walle" />
+			{Object.keys(userState).length > 0 ? (
+				<a href="/walle">
+					<img className="Header__brand" src={Logo} alt="Logo de Walle" />				
+				</a>
+				) : (
+				<a href="/">
+					<img className="Header__brand" src={Logo} alt="Logo de Walle" />				
+				</a>
+			)}
 			{/* evaluate if is data in user show user data, if not show the buttons to login or signup */}
 			{Object.keys(userState).length > 0 ? (
 				<div className="Header__nav">
