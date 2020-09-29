@@ -1,0 +1,22 @@
+.buttonCategory {
+  background-color: #218380;
+  margin: 100px 15%;
+  padding: 30px 30px;
+  border-radius: 25px;
+  overflow: auto;
+}
+
+.buttonCategory__buttons {
+  display: flex;
+  justify-content: space-around;
+  margin: 50px 0px 0px 0px;
+}
+
+.buttonCategory__title {
+  /* position: absolute;
+  margin: 20px 0px 50px 80px; */
+  display: flex;
+  justify-content: center;
+  color: #ffbc42;
+  font-size: 36px;
+}

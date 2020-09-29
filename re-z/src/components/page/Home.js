@@ -1,14 +1,12 @@
-import React from 'react';
+import React,{ useEffect } from 'react';
 
 import Navbar from '../Navbar';
-import FooterA from '../FooterA';
 import Loader from '../Loader';
-import CarruselHome from '../CarruselHome'
+import CarruselHome from '../CarruselHome';
+import GridRecipe from '../GridRecipe';
+import GridRecipeInvert from '../GridRecipeInvert';
+import ButtonCategory from '../ButtonCategory';
 
-import Button from '../Button'
-import CardVerticalScroll from '../CardVerticalScroll'
-import RecipeCardHorizontalSimple from '../RecipeCardHorizontalSimple'
-import RecipeCardSquare from '../RecipeCardSquare'
 
 class Home extends React.Component{
     state = {
@@ -19,6 +17,7 @@ class Home extends React.Component{
 
     componentDidMount(){
         this.fetchData();
+        window.scrollTo(0, 0); //esta linea sirve para que cuando se renderice la pagina envíe al usuario hasta arriba de la pagina
     }
     fetchData = async () => {
         this.setState({loading: true, error:null });
@@ -39,7 +38,9 @@ class Home extends React.Component{
             <div className="Home-container">
                 <Navbar />
                 <CarruselHome /> 
-                
+                <ButtonCategory/>
+                <GridRecipe />
+                <GridRecipeInvert />
             </div>
         )
     }

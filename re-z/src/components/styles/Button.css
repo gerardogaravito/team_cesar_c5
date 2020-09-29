@@ -9,6 +9,8 @@
   height: 63px;
   border-radius: 20px;
   outline: inherit;
+  overflow: hidden;
+  margin: 5px;
 }
 
 .button:hover {

@@ -2,29 +2,18 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import './styles/RecipeCardVerticalSimple.css'
-import fotoComida5 from '../images/fotoComida5.png';
 
-/* class RecipeCardVerticalSimple extends React.Component {
-    render() {
-      return (
-        <Link to="/">
-          <div className='cardVertical'>
-            <img src={fotoComida5} alt="foto de comida"/>
-            <h3 className="cardVertical__title">Lorem Ipsum 36</h3>
-         </div>
-        </Link>
-      )
-    }
-  } */
-const RecipeCardVerticalSimple=({name})=>{
+const RecipeCardVerticalSimple = (props) => {
   return(
-    <Link to="/">
+    <Link to={`/home/page-recipe/${props.data.id}`}>
       <div className="cardVertical">
-        <img src={fotoComida5} alt="foto de comida"/>
-        <h3 className="cardVertical__title">{name}</h3>
+        <img className="cardVerticalImage" src={props.data.picture} alt="foto de comida"/>
+        <div className="cardVerticalTitle">
+          <h3 className="cardVertical__title">{props.data.name}</h3>
+        </div>
       </div>
     </Link>
   )
-
 }
-  export default RecipeCardVerticalSimple;
+
+export default RecipeCardVerticalSimple;

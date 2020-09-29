@@ -17,3 +17,8 @@
 .scrollcontainer::-webkit-scrollbar-thumb:hover {
   background: #b9892e;
 }
+
+.scrollcontainer__list {
+  padding: 0px;
+  margin: 0px;
+}

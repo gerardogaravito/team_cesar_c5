@@ -24,7 +24,7 @@
 }
 .search-input{
     position: absolute;
-    background-color: #8F2D56;
+    background-color: #8f2d56;
     width: 30vw;
     height: 40px;
     border-radius: 20px;
@@ -34,6 +34,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    z-index: 10;
 }
 .search-input img{
     position: relative;
@@ -45,7 +46,7 @@
     height: 35px;   
 }
 .search-input input{
-    background-color: #8F2D56;
+    background-color: #8f2d56;
     width: 22vw;
     height: 35px;
     margin-left: 5%;
@@ -55,6 +56,6 @@
 }
 .search-input input::placeholder{
     font-size: 14px;
-    color: #FFBC42;
+    color: #ffbc42;
     padding-left: 2%;
 }

@@ -1,31 +1,26 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import './styles/RecipeCardSquare.css'
-import timeIcon from '../images/Atomos/time-icon-yellow.svg'
-import fotoComida3 from '../images/fotoComida3.png'
+import CookTime from '../Animation/CookTime';
+// import fotoComida3 from '../images/fotoComida3.png'
 
-class RecipeCardCuadradoInfo extends React.Component{
-    render(){
-        return <button className="cardcuadro">
-        <div className="cardcuadro__image">
-            <img src={fotoComida3}  alt="RecipentCardFood"/>
-        </div>
-        <div className="cardcuadro__text">
-            <div className="cardcuadro__text--title">
-                <div>Lorem Ipsum 20</div>
-                <div className='cardcuadro__text_paragraph'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                Accusantium pariatur quia reprehenderit, distinctio quidem aut sed officia? Omnis qui voluptates 
-                eaque quia sequi? Quasi sit molestias minima nihil autem repellat.</div>
-            </div>
-            <div className="cardcuadro__time">
-                <div className="cardcuadro__time--picture">
-                    <img src={timeIcon} alt="tiempo preparación"/>
-                    <div className='cardcuadro__time--text'>70 min</div>
+const RecipeCardSquare =({name,picture, preparationTime, id, instructions})=>{
+    return (
+        <Link to={`/home/page-recipe/${id}`}>
+            <button className="CardSquare">
+            <img className="CardSquare__image" src={picture}  alt="RecipentCardFood"/>
+            <div className="CardSquare__text">
+                <h1>{name}</h1>
+                <p className='CardSquare__text_paragraph'>{instructions}</p>
+                <div className="CardSquare__time">
+                    <CookTime />
+                    <div className='CardSquare__time--text'>{preparationTime} min</div>
                 </div>
             </div>
-        </div>
-        </button>;
-    }
+            </button>
+        </Link>
+    )
 }
 
-export default RecipeCardCuadradoInfo;
+export default RecipeCardSquare;

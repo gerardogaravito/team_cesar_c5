@@ -1,0 +1,55 @@
+.time-cook{
+    position: relative;
+    display: flex;
+  }
+  .time-cook img{
+    width: 30px;
+    margin-right: 5px;
+  }
+  .hand2{
+    width: 9px;
+    height: 9px;
+    margin-left: 15px;
+    margin-top: 5.5px;
+    border-left: 1px solid black;
+    position: absolute;
+    z-index: 3;
+    transform: rotateY(180deg);
+    animation: TimeSecond;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+    transform-origin:left bottom;
+    animation-timing-function: linear;
+}
+.hand{
+    width: 9px;
+    height: 9px;
+    margin-left: 15px;
+    margin-top: 4.5px;
+    border-bottom: 1px solid black;
+    position: absolute;
+    z-index: 1;
+    transform: rotateY(180deg);
+    animation: Time;
+    animation-iteration-count: infinite;
+    animation-duration: 30s;
+    transform-origin:left bottom;
+    animation-timing-function: linear;
+}
+@keyframes Time {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+  }
+  @keyframes TimeSecond {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+  }
+  

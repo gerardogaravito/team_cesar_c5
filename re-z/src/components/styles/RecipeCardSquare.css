@@ -1,33 +1,43 @@
-.cardcuadro {
+.CardSquare {
     padding: 0;
     border: 0;
     width: 350px;
-    height: 418px;
     background-color: #8F2D56;
     color:#FFBC42;
     border-radius: 20px;
     outline: none;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
-  .cardcuadro:hover {
+  .CardSquare:hover {
     cursor: pointer;
     filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.25));
     transform: scale(1.01);
   }
-.cardcuadro__text{
+.CardSquare__text{
     text-align: left;
-    height: auto;
     padding: 25px;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
 }
-.cardcuadro__time{
+
+.CardSquare__text h1{
+  font-size: 20px;
+}
+.CardSquare__time{
     display: flex;
     justify-content: flex-end;
 }
-.cardcuadro__time--picture {
-    display: flex;
-    align-items: center;
-  }
-.cardcuadro__time--text{
+
+.CardSquare__time--text{
     padding-left: 10px;
+}
+.CardSquare__image{
+  height: 245px;
+  width: 100%;
+  object-fit: cover;
 }

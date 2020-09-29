@@ -1,0 +1,98 @@
+.Recipe__Information{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Recipe__Information-container{
+    width: 70vw;
+    height: 20%;
+    padding: 35px;
+    background-color: #8f2d56;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 30% 1fr;
+    grid-template-rows: 60px 1fr 60px;
+    grid-gap: 2rem;
+}
+.Recipe__Information-container h1{
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+    font-size: 50px;
+    color: #ffbc42;
+}
+.Recipe-info{
+    grid-row: 2 / -1;
+    grid-column: 1 / 2;
+    display: grid;
+    grid-template-rows: 12% 12% 12% 1fr;
+    grid-gap: 5px;
+    padding-top: 20px;
+    border-top: 1px solid #ffbc42;
+}
+.Recipe-info p{
+    color: #ffbc42;
+    font-size: 15px;
+    font-weight: bold;
+}
+    .Recipe-info-Time{
+        grid-row: 1 / 2;
+    }
+    .Time-icon{
+        position: relative;
+        margin: 10px 0px 20px 0px;
+        display: flex;
+      }
+      .Time-icon p{
+        color: #ffbc42;
+      }
+    .Recipe-info-complexity{
+        grid-row: 2 / 3;
+    }
+    .Recipe-info-Portion{
+        grid-row: 3 / 4;
+    }
+    .Recipe-info-ingredient{
+        grid-row: 4 / 5;
+    }
+    .Recipe-info-ingredient ul li{
+        color: #ffbc42;
+        font-size: 15px;
+        list-style: none;
+        padding-top: 10px;
+    }
+.Recipe__Information-image{
+    grid-column: 2 / -1;
+    grid-row: 2 / 3;
+}
+.Recipe__Information-image img{
+    border-radius: 20px;
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+.Recipe__Information-button{
+    grid-column: 2 / -1;
+    grid-row: 3 / -1;
+    display: grid;
+    justify-items: end;
+    align-items: end;
+}
+.Recipe__Information-description{
+    width: 70vw;
+    margin-top: 50px;
+    border-bottom: 2px solid #8f2d56;
+}
+.Recipe__Information-description h1{
+    font-size: 30px;
+    padding: 30px;
+    color: #8f2d56;
+}
+.Recipe__Information-description p{
+    color: #8f2d56;
+    font-size: 20px;
+    padding-bottom: 50px;
+}

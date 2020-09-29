@@ -6,8 +6,7 @@
   border-radius: 20px;
   overflow: hidden;
   display: grid;
-  grid-template-rows: 66% 33%;
-  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.25));
+  grid-template-rows: 68% 32%;
   border: none;
   padding: 0;
   cursor: pointer;
@@ -22,12 +21,15 @@
 .cardsimple__image {
   grid-row: 1 / 2;
   width: inherit;
+  height: 208.08px;
+  object-fit: cover;
 }
 
 .cardsimple__info {
   grid-row: 2 / 3;
   display: flex;
   text-align: start;
+  background-color: #FFBC42;
   width: inherit; /*propiedad para '...'*/
 }
 
