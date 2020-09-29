@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Button from '../Button';
 import Navbar from '../Navbar';
 import ShoppingCar from '../ShoppingCar';
@@ -12,7 +12,13 @@ const PaymentPage=(props) => {
     <a className='PaymentPage__GoToPay--detail' href='https://www.payoneer.com/es/solutions/'  target="_blank" >Conocer más</a>
     <img className='PaymentPage__GoToPay--img' src="https://www.payoneer.com/wp-content/uploads/payoneer-dark-logo.svg" alt="logo_Payonner" />
   </section>;
+
   const Addresexample = "Avenida siempre viva 123 12300 NW 29TH PL SUNRISE FLORIDA SUNRISE, FL 123123-1231   Estados Unidos Teléfono: +1 9546557580";
+
+  useEffect(() => {
+    window.scroll(0, 0) //esta linea sirve para que cuando se renderice la pagina envíe al usuario hasta arriba de la pagina
+  }, []);
+
   return (
       <div>
         <Navbar />

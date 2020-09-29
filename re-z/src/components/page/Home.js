@@ -1,10 +1,11 @@
-import React from 'react';
+import React,{ useEffect } from 'react';
 
 import Navbar from '../Navbar';
 import Loader from '../Loader';
 import CarruselHome from '../CarruselHome';
 import GridRecipe from '../GridRecipe';
 import GridRecipeInvert from '../GridRecipeInvert';
+import ButtonCategory from '../ButtonCategory';
 
 
 class Home extends React.Component{
@@ -16,6 +17,7 @@ class Home extends React.Component{
 
     componentDidMount(){
         this.fetchData();
+        window.scrollTo(0, 0); //esta linea sirve para que cuando se renderice la pagina envíe al usuario hasta arriba de la pagina
     }
     fetchData = async () => {
         this.setState({loading: true, error:null });
@@ -36,6 +38,7 @@ class Home extends React.Component{
             <div className="Home-container">
                 <Navbar />
                 <CarruselHome /> 
+                <ButtonCategory/>
                 <GridRecipe />
                 <GridRecipeInvert />
             </div>

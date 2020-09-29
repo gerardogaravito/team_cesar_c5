@@ -11,6 +11,11 @@ import GridRecipeInvert from '../GridRecipeInvert';
 import {recipes} from '../../../recipe.json'
 
 class Landing extends React.Component {
+
+  componentDidMount() {
+    window.scroll(0, 0);//esta linea sirve para que cuando se renderice la pagina envíe al usuario hasta arriba de la pagina
+  }
+
   render () {
     return (
         <div className="landing">
@@ -37,8 +42,10 @@ class Landing extends React.Component {
                     <RecipeCardSquare
                     key={recipe.id}
                     name={recipe.name}
+                    id={recipe.id}
                     picture={recipe.picture}
                     preparationTime={recipe.preparationTime}
+                    instructions={recipe.instructions}
                     />
                   ))
                 }

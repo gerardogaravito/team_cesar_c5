@@ -20,7 +20,7 @@ function App() {
         <Route exact path="/home/favoritos" component={Favoritos} />
         <Route exact path="/home/landing" component={Landing} />
         <Route exact path="/home/page-recipe/:myId" component={PageRecipe} />
-        <Route exact path="/home/category" component={Category} />
+        <Route exact path="/home/category/:myCategory" component={Category} />
         <Route exact path="/home/configuration" component={Configuration} />
         <Redirect from="/" to="home/landing" />
         <Route component={NotFound} />

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 import Navbar from '../Navbar';
 import GridRecipe from '../GridRecipe';
@@ -8,6 +8,10 @@ import "../styles/Favoritos.css"
 
 
 function Favoritos () {
+
+  useEffect(() => { //esta linea sirve para que cuando se renderice la pagina envíe al usuario hasta arriba de la pagina
+    window.scrollTo(0, 0)
+  }, [])
   
       return (
         <React.Fragment >

@@ -1,0 +1,8 @@
+.category__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 2000px;
+  overflow: auto;
+}
