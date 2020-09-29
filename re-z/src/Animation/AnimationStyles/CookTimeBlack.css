@@ -13,7 +13,7 @@
     margin-top: 5.5px;
     border-left: 1px solid black;
     position: absolute;
-    z-index: 3;
+    z-index: 1;
     transform: rotateY(180deg);
     animation: TimeSecond;
     animation-iteration-count: infinite;

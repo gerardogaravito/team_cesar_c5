@@ -5,7 +5,6 @@ import PropTypes from 'prop-types';
 import { setFavorite } from '../actions';
 
 import './styles/CarruselItems.css';
-import TimeIcon from '../images/Atomos/time-icon-yellow.svg';
 import CookTime from '../Animation/CookTime'
 
 
