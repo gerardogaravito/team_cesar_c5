@@ -6,6 +6,7 @@ import './styles/RecipeInfo.css';
 import Button from './Button';
 import RecipeIngredientsList from '../components/Ingredient/RecipeIngredientList';
 import CookTime from '../Animation/CookTime';
+import { Link } from 'react-router-dom';
 
 
 function RecipeInfo (props){
@@ -39,7 +40,9 @@ function RecipeInfo (props){
                         <img src={props.data.picture} alt="food"/>
                     </div>
                     <div className="Recipe__Information-button">
-                        <Button text='Agregar al carrito'/>
+                        <Link to="/home/PaymentPage/">
+                             <Button text='Agregar al carrito'/>
+                        </Link>
                     </div>
                 </div>
                 <div className="Recipe__Information-description">
