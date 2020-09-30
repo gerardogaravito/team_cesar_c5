@@ -6,6 +6,7 @@ import CarruselHome from '../CarruselHome';
 import GridRecipe from '../GridRecipe';
 import GridRecipeInvert from '../GridRecipeInvert';
 import ButtonCategory from '../ButtonCategory';
+import RecipeGarden from '../RecipeGarden';
 
 
 class Home extends React.Component{
@@ -38,6 +39,7 @@ class Home extends React.Component{
             <div className="Home-container">
                 <Navbar />
                 <CarruselHome /> 
+                <RecipeGarden title="Recetas Recomendadas" name='Ver más'/>
                 <ButtonCategory/>
                 <GridRecipe />
                 <GridRecipeInvert />
