@@ -14,8 +14,14 @@
     width: 90px;
     height: 35px;
 }
-.styles-log img{
+.styles-log-img{
     width: 90px;
     height: 35px;
     padding-left: 58px;
+    z-index: 5;
+    position: absolute;
+}
+
+.styles-log:hover {
+    cursor: pointer;
 }
