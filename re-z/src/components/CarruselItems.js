@@ -7,7 +7,6 @@ import CookTime from '../Animation/CookTime';
 import HeartLike from '../Animation/HeartLike';
 
 
-
 const CarruselItems = (props) => {
     const { id, picture, name, preparationTime } = props;
         

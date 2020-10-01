@@ -9,7 +9,6 @@ import data from '../../recipe.json';
 const CarruselHome = () => {
   const [recipeList] = useFetchRecipe(data.recipes)
 
-
       return (
         <section className="Principal-container">
         <div className="Triangle"></div>
