@@ -3,9 +3,14 @@ import { useState, useEffect } from 'react';
 import data from '../../recipe.json';
 
 export function useFetchRecipe (url) {
+
+  // ------ PARA USAR EL CUSTOM HOOK CONSUMIENDO INFO DEL JSON
   const [recipe, setRecipe] = useState(url);
 
-  // async function fetchRecipe (url) { // ESTAS LINEAS COMENTADAS SON LAS QUE SE USARAN CUANDO YA TENGAMOS LA URL DE LA API 
+  // ------- PARA USAR EL CUSTOM HOOK Y CONSUMIR DE LA API
+  // const [recipe, setRecipe] = useState([]);
+
+  // async function fetchRecipe (url) {
   //   const response = await fetch(url);
   //   const data = await response.json();
   //   setRecipe(data)
@@ -15,6 +20,8 @@ export function useFetchRecipe (url) {
   //   fetchRecipe(url);
   // }, [])
 
+
+  // -----ESTA LINEA NUNCA SE DEBE DE COMENTAR -----
   return [recipe]
 }
 

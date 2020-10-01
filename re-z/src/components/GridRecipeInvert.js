@@ -19,8 +19,8 @@ function GridRecipeInvert () {
       <div className="gridContainerInv__vertical">
       {
         recipeList.slice(4, 5).map((item) => (
-          <React.Fragment>
-            <RecipeCardVerticalSimple data={item} key={item.id}/>
+          <React.Fragment key={item.id}>
+            <RecipeCardVerticalSimple data={item}/>
           </React.Fragment>
         ))
       }
@@ -28,8 +28,8 @@ function GridRecipeInvert () {
       <div className="gridContainerInv__square1">
       {
         recipeList.slice(5, 6).map((item) => (
-          <React.Fragment>
-            <RecipeCardSquareSimple data={item} key={item.id}/>
+          <React.Fragment key={item.id}>
+            <RecipeCardSquareSimple data={item}/>
           </React.Fragment>
         ))
       }
@@ -37,8 +37,8 @@ function GridRecipeInvert () {
       <div className="gridContainerInv__square2">
       {
         recipeList.slice(6, 7).map((item) => (
-          <React.Fragment>
-            <RecipeCardSquareSimple data={item} key={item.id}/>
+          <React.Fragment key={item.id}>
+            <RecipeCardSquareSimple data={item}/>
           </React.Fragment>
         ))
       }
@@ -46,8 +46,8 @@ function GridRecipeInvert () {
       <div className="gridContainerInv__horizontal">
       {
         recipeList.slice(7, 8).map((item) => (
-          <React.Fragment>
-            <RecipeCardHorizontalSimple data={item} key={item.id}/>
+          <React.Fragment key={item.id}>
+            <RecipeCardHorizontalSimple data={item}/>
           </React.Fragment>
         ))
       }

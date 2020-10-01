@@ -1,6 +1,6 @@
 .buttonCategory {
-  background-color: #218380;
-  margin: 100px 15%;
+  background-color: #ffbc42;
+  margin: 300px 15%;
   padding: 30px 30px;
   border-radius: 25px;
   overflow: auto;
@@ -17,6 +17,6 @@
   margin: 20px 0px 50px 80px; */
   display: flex;
   justify-content: center;
-  color: #ffbc42;
+  color: #8F2D56;
   font-size: 36px;
 }

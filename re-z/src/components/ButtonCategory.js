@@ -5,6 +5,7 @@ import { useFetchRecipe } from '../hooks/useFetchRecipe';
 import './styles/ButtonCategory.css';
 
 import Button from './Button'
+import CategoryCard from './CategoryCard'
 import data from '../../recipe.json'
 
 const ButtonCategory = () => {
@@ -27,18 +28,20 @@ const ButtonCategory = () => {
     return item.category === "Avocado"
   }))
 
+  console.log(recipeList[baconIndex].category)
+
   return (
     <section className="buttonCategory">
       <h3 className="buttonCategory__title">Categorías</h3>
       <div className="buttonCategory__buttons">
         <Link to={`/home/category/${recipeList[baconIndex].category}`}>
-          <Button text='Bacon'/>
+          <CategoryCard {...recipeList[baconIndex]}/>
         </Link>
         <Link to={`/home/category/${recipeList[appleIndex].category}`}>
-          <Button text='Apple'/>
+          <CategoryCard {...recipeList[appleIndex]}/>
         </Link>
         <Link to={`/home/category/${recipeList[avocadoIndex].category}`}>
-          <Button text='Avocado'/>
+          <CategoryCard {...recipeList[avocadoIndex]}/>
         </Link>
       </div>
     </section>
