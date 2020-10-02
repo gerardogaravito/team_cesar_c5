@@ -49,7 +49,7 @@ class LoginForm extends React.Component {
           <input 
             className='Modal__form--control'
             onChange={this.handleChange}
-            type="text"
+            type="password"
             name='password'
             value={this.state.lastname}
             />
