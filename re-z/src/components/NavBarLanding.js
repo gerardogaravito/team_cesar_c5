@@ -13,7 +13,7 @@ class NavBarLanding extends React.Component{
 
     render(){
         return (
-            <div className="Navbar">
+            <div className="NavbarLanding">
                 <div className="styles-log">
                     <img src={Logo} alt="Logo_Re-z"/>
                 </div>
