@@ -1,14 +1,30 @@
 .NavbarLanding{
     display: flex;
     justify-content: space-between;
-    position: relative;
+    justify-items: center;
+    position: absolute;
     width: 100%;
     padding-top: 18px;
     padding-bottom: 18px;
-    position: fixed;
     top: 0;
     left: 0;
     z-index: 3;
+    position: fixed;
+}
+.fixedLanding{
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    position: absolute;
+    width: 100%;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    position: fixed;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    background: #fff;
 }
 .styles-log{
     width: 90px;

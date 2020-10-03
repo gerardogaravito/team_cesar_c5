@@ -52,7 +52,7 @@ input:checked[type="checkbox"]:before{
     position: absolute;
     margin-right: 58px;
     align-items: flex-end;
-    top: 60px;
+    top: 65px;
     right: 1px;
     filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.25));
     animation: modalIn .8s forwards;
