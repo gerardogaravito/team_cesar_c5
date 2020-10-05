@@ -1,15 +1,21 @@
-import React from 'react';
+import React,{ useState } from 'react';
 import { useSelector } from 'react-redux';
-
 
 import './styles/RecipeInfo.css';
 import Button from './Button';
 import RecipeIngredientsList from '../components/Ingredient/RecipeIngredientList';
+import PaymentPage from './page/PaymentPage'
 import CookTime from '../Animation/CookTime';
 import { Link } from 'react-router-dom';
 
 
 function RecipeInfo (props){
+    const [ingredients, setIngredients] = useState(props.data.ingredients)
+
+    // const handleClick = (props) => { recordar agregar el onClick en caso de que se quiera usar este metodo para el boton del carrito
+    //     console.log(ingredients)
+    //     return <PaymentPage data={ingredients} />
+    // }
 
         return(
             <div className="Recipe__Information">
@@ -25,11 +31,11 @@ function RecipeInfo (props){
                         </div>
                         <div className="Recipe-info-complexity">
                             <p>Nivel de complejidad:</p>
-                             <p>{props.data.dificult}</p>
+                            <p>{props.data.dificult}</p>
                         </div>
                         <div className="Recipe-info-Portion">
                             <p>Porciones:</p>
-                             <p>{props.data.portions}</p>
+                            <p>{props.data.portions}</p>
                         </div>
                         <div className="Recipe-info-ingredient">
                             <p>Ingredientes:</p>
@@ -40,8 +46,8 @@ function RecipeInfo (props){
                         <img src={props.data.picture} alt="food"/>
                     </div>
                     <div className="Recipe__Information-button">
-                        <Link to="/home/PaymentPage/">
-                             <Button text='Agregar al carrito'/>
+                        <Link to={`/home/PaymentPage/${props.data.id}`}>
+                            <Button text='Agregar al carrito' />
                         </Link>
                     </div>
                 </div>

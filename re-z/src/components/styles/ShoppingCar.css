@@ -20,7 +20,11 @@
 }
 
 .PaymentPageCard__DetailAmount--RecipeName {
-  font-size: 30px;
+  font-size: 60px;
+  color: #8f2d56;
+  background-color: #ffbc42;
+  border-radius: 25px;
+  padding: 20px;
 }
 .PaymentPageCard__DetailAmount--Amount{
   font-size: 50px;

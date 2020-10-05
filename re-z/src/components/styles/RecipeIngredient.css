@@ -1,0 +1,35 @@
+.RecipeIngredientItem {
+  background-color: #d81159;
+  width: 40%;
+  border-radius: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  margin: 10px;
+}
+
+.RecipeIngredientItem__label {
+  display: flex;
+  align-items: center;
+}
+
+.RecipeIngredientItem__cant {
+  margin: 0px 0px 0px 30px;
+  font-size: 30px;
+}
+
+.RecipeIngredientItem__cant--name {
+  font-size: 30px;
+}
+
+.RecipeIngredientItem__name {
+  margin: 0px 50px;
+  font-size: 30px;
+}
+
+.RecipeIngredientItem__price {
+  font-size: 30px;
+  color: #72d2de;
+  margin: 0px 50px;
+}

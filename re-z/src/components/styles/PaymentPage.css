@@ -21,3 +21,15 @@
   height: 40px;
 }
 
+.PaymentPage__ingredients {
+  background-color: #8f2d56;
+  border-radius: 25px;
+  max-width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 50px;
+  overflow: auto;
+  font-size: 30px;
+}
