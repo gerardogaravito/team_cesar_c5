@@ -6,14 +6,14 @@
     width: 30px;
     margin-right: 5px;
   }
-  .hand2{
+  .handyellow2{
     width: 9px;
     height: 9px;
     margin-left: 15px;
     margin-top: 5.5px;
     border-left: 1px solid #ffbc42;
     position: absolute;
-    z-index: 3;
+    z-index: 1;
     transform: rotateY(180deg);
     animation: TimeSecond;
     animation-iteration-count: infinite;
@@ -21,7 +21,7 @@
     transform-origin:left bottom;
     animation-timing-function: linear;
 }
-.hand{
+.handyellow{
     width: 9px;
     height: 9px;
     margin-left: 15px;

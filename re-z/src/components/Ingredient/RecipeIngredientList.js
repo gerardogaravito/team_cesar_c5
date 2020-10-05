@@ -10,7 +10,7 @@ const RecipeIngredientsList = () => {
 		(state) => state.recipeReducer.currentRecipe
 	); */
     const [recipeList] = useFetchRecipe(data.recipes)
-    console.log(recipeList);
+    // console.log(recipeList);
 	return (
         <div className="Recipe-ingredients">
 			<div className="Recipe-ingredients__container-list">

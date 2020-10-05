@@ -15,7 +15,7 @@ function App() {
   return (
     <BrowserRouter>
       <Switch>
-        <Route exact path="/home/PaymentPage/" component={PaymentPage} />
+        <Route exact path="/home/PaymentPage/:myId" component={PaymentPage} />
         <Route exact path="/home" component={Home} />
         <Route exact path="/home/favoritos" component={Favoritos} />
         <Route exact path="/home/landing" component={Landing} />

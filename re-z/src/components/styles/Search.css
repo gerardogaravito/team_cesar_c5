@@ -1,5 +1,5 @@
 .Search-icon{
-    position: absolute;
+    position: relative;
     display: flex;
     justify-content: center;
     width: 100%;
@@ -23,13 +23,12 @@
     -webkit-transform: rotate(90deg);
 }
 .search-input{
-    position: absolute;
+    position: relative;
     background-color: #8f2d56;
     width: 30vw;
     height: 40px;
     border-radius: 20px;
-    top: 70px;
-    left: 35vw;
+    margin-left: 5px;
     box-shadow: inset 0 0 5px rgba(0,0,0,.2);
     display: flex;
     align-items: center;
@@ -43,7 +42,7 @@
     cursor: pointer;
 }
 .search-input img:hover{
-    height: 35px;   
+    height: 35px;  
 }
 .search-input input{
     background-color: #8f2d56;
@@ -54,8 +53,13 @@
     border: 0;
     outline: none;
 }
+.search-input input:focus{
+    font-size: 14px;
+    color: #ffbc42;
+}
 .search-input input::placeholder{
     font-size: 14px;
     color: #ffbc42;
     padding-left: 2%;
+    opacity: .7;
 }

@@ -1,3 +1,6 @@
+.Menu__container{
+  display: flex;
+}
 .LandingMenu__button {
   background: none;
   border: none;
@@ -8,7 +11,7 @@
   align-self: center;
   color: #8f2d56;
   font-size: 20px;
-  padding-left: 50px; 
+  padding-right: 58px; 
 }
 .LandingMenu__button:hover{
   color: #ffbc42;
@@ -30,6 +33,7 @@
     position: relative;
     top: 10rem;
     background-color: rgb(33,131,128);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
     padding: 1rem;
     width: 700px;
     height: 500px;
@@ -87,6 +91,7 @@
   position: relative;
   top: 10rem;
   background-color: rgb(33,131,128);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
   padding: 1rem;
   width: 700px;
   height: 500px;

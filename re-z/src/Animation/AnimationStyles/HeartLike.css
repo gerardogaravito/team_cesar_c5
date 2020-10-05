@@ -1,0 +1,26 @@
+.like{
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    background-image: url(https://bit.ly/31RxDv3); 
+    background-size: 1450px 50px;   
+}
+.liked{
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    background-image: url(https://bit.ly/31RxDv3); 
+    background-size: 1450px 50px;  
+    animation-name: like;
+    animation-duration: .8s;
+    animation-timing-function: steps(28);
+    animation-fill-mode: forwards;
+}
+@keyframes like{
+    0%{
+        background-position: 0 0;
+    }
+    100%{
+        background-position: right;
+    }
+}

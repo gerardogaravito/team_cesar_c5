@@ -5,8 +5,8 @@ import './AnimationStyles/CookTime.css';
 
 const CookTime = () => (
     <div className="time-cook">
-        <div className="hand"></div>
-        <div className="hand2"></div>
+        <div className="handyellow"></div>
+        <div className="handyellow2"></div>
          <img src={Clock} alt="Icon" />          
     </div>
 )

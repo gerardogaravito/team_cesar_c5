@@ -54,13 +54,13 @@ class NavegationLanding extends React.Component {
 
     render() {
       return (
-        <div className="LandingMenu">
+        <div className="Menu__container">
           <button className="LandingMenu__button" onClick={this._openLoginRegister}>Regístrate</button>
           {this.state.isModalregisterOpen &&
                   <ModalRegister onCloseRegister={this._closeLoginRegister}/> 
               }
           <button className="LandingMenu__button" name="boton de login" onClick={this._openLoginModal}>
-            Iniciar Sesión
+            Login
             </button>
               {this.state.isModalLoginOpen &&
                   <ModalLogin onCloseLogin={this._closeLoginModal}/> 
