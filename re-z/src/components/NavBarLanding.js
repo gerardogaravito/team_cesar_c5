@@ -1,28 +1,39 @@
-import React from 'react';
+import React, { Fragment, useEffect, useState } from 'react';
 
 
 import './styles/NavBarLanding.css';
 import Logo from '../images/logo.png';
 import Search from '../components/Search';
 import NavegationLanding from './NavegationLanding';
-import { Link } from 'react-router-dom';
 
 
-class NavBarLanding extends React.Component{
-    
+const NavBarLanding = () => {
+    const [showFixed, setShowFixed] = useState(false)
 
-    render(){
-        return (
-            <div className="Navbar">
+    useEffect(function () {
+        const onScroll = e => {
+            const newShowFixed = window.scrollY > 200
+            showFixed !== newShowFixed &&
+            setShowFixed(newShowFixed)
+        }
+        document.addEventListener('scroll', onScroll)
+    })
+
+    const NavBarLandinAnimate = (fixed) => (
+        <div className={fixed ? 'fixedLanding' : 'NavbarLanding'}>
                 <div className="styles-log">
                     <img src={Logo} alt="Logo_Re-z"/>
                 </div>
                 <Search />
-                <NavegationLanding />
-                
-            </div>
+                <NavegationLanding />   
+            </div>       
+    )
+        return (
+            <Fragment>
+                {NavBarLandinAnimate()}
+                {showFixed && NavBarLandinAnimate(true)}
+            </Fragment>
         )
     }
-}
 
 export default NavBarLanding; 
