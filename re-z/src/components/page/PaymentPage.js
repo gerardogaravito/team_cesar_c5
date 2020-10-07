@@ -1,17 +1,19 @@
 import React, { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { useFetchRecipe } from '../../hooks/useFetchRecipe';
+import { useSelector } from 'react-redux'
 
 import Button from '../Button';
 import Navbar from '../Navbar';
 import ShoppingCar from '../ShoppingCar';
-import RecipeCardHorizontalSimple from '../RecipeCardHorizontalSimple';
 import RecipeIngredient from '../Ingredient/RecipeIngredient'
 import '../styles/PaymentPage.css';
 
 import data from '../../../recipe.json';
 
 const PaymentPage = (props) => {
+  const ingredientes = useSelector(state => state.cart)
+
   const GoToPlay = <section className='PaymentPage__GoToPay'>
     <Button text="Comprar" />
     <p className='PaymentPage__GoToPay--detail'>Usamos Payonner como metodo de pago</p>
@@ -29,27 +31,26 @@ const PaymentPage = (props) => {
   const {myId} = useParams();
   const [recipeList] = useFetchRecipe(data.recipes);
   const recipe = recipeList.find(item => item.id === parseInt(myId));
-
-  console.log(recipe.ingredients)
-
+  const Totalprice = ingredientes.reduce((accumulator,current) => {
+    return accumulator += current.price
+  },0
+  )
   return (
-      <div>
+      <>
         <Navbar />
         <div className='PaymentPage'>
-          <ShoppingCar RecipeName={recipe.name} Amount={"US $ 5.13"} UserName={"Homero J. Simpson"} Address ={Addresexample}/>
+          <ShoppingCar RecipeName={recipe.name} Amount= {`US $ ${Totalprice}`} UserName={"Homero J. Simpson"} Address ={Addresexample}/>
           <div className="PaymentPage__ingredients">
             Ingredientes
             {
-              recipe.ingredients.map((item) => (
-                <React.Fragment key={item.id}>
-                  <RecipeIngredient data={item} />
-                </React.Fragment>
+              ingredientes.map((item) => (
+                  <RecipeIngredient key={item.id} data={item} />
               ))
             }
           </div>
           {GoToPlay}
         </div>
-      </div>
+      </>
 
   )
 }
