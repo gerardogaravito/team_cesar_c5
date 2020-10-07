@@ -25,7 +25,7 @@ const PaymentPage = (props) => {
     window.scroll(0, 0) //esta linea sirve para que cuando se renderice la pagina envíe al usuario hasta arriba de la pagina
   }, []);
 
-  //-----PARA MOSTRAR INGREDIENTES-----
+  //-----PARA MOSTRAR INGREDIENTES----- (metodo sin usar redux)
   const {myId} = useParams();
   const [recipeList] = useFetchRecipe(data.recipes);
   const recipe = recipeList.find(item => item.id === parseInt(myId));

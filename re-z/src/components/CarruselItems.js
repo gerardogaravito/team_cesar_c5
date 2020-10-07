@@ -8,11 +8,11 @@ import HeartLike from '../Animation/HeartLike';
 
 
 const CarruselItems = (props) => {
-    const { id, picture, name, preparationTime } = props;
+    const { id, img_url, name, preparationTime } = props;
         
     return(
         <div className="carousel-item">
-            <img src={picture} alt={name} className="carousel-item__img"/>
+            <img src={img_url} alt={name} className="carousel-item__img"/>
             <div className="carousel-item__details">
             <HeartLike />
             <Link to={`/home/page-recipe/${id}`}

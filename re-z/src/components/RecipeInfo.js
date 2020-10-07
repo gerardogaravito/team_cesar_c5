@@ -10,12 +10,8 @@ import { Link } from 'react-router-dom';
 
 
 function RecipeInfo (props){
-    const [ingredients, setIngredients] = useState(props.data.ingredients)
 
-    // const handleClick = (props) => { recordar agregar el onClick en caso de que se quiera usar este metodo para el boton del carrito
-    //     console.log(ingredients)
-    //     return <PaymentPage data={ingredients} />
-    // }
+
 
         return(
             <div className="Recipe__Information">
@@ -46,7 +42,7 @@ function RecipeInfo (props){
                         <img src={props.data.picture} alt="food"/>
                     </div>
                     <div className="Recipe__Information-button">
-                        <Link to={`/home/PaymentPage/${props.data.id}`}>
+                        <Link to={`/home/PaymentPage/${props.data.id}`}> {/*para enviar ingredientes (METODO SIN USAR REDUX)} */}
                             <Button text='Agregar al carrito' />
                         </Link>
                     </div>

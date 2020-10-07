@@ -9,7 +9,7 @@ function RecipeCardHorizontalSimple (props){
   return (
     <Link to={`/home/page-recipe/${props.data.id}`}>
       <button className='cardsimple'>
-        <img className='cardsimple__image' src={props.data.picture} alt="Foto de Comida"/>
+        <img className='cardsimple__image' src={props.data.img_url} alt="Foto de Comida"/>
         <div className='cardsimple__info'>
           <h1 className='cardsimple__info--title'>{props.data.name}</h1>
         </div>

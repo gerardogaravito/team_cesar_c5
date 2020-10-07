@@ -1,13 +1,20 @@
-import React, { useEffect } from 'react';
-import { useFetchRecipe } from '../hooks/useFetchRecipe';
+import React from 'react';
+// import { useFetchRecipe } from '../hooks/useFetchRecipe';
 
 import './styles/CarruselHome.css';
 import CarruselItems from './CarruselItems'
-import data from '../../recipe.json';
+
 
 
 const CarruselHome = () => {
-  const [recipeList] = useFetchRecipe(data.recipes)
+    //FETCH DE LAS RECETAS (usando el json mockup)
+  // const [recipeList] = useFetchRecipe(data.recipes)
+
+  //FETCH DE LAS RECETAS (usando llamadas a la API)
+  // const [recipeList] = useFetchRecipe('https://apidjango.azurewebsites.net/api/Recipe-list/')
+
+  // se obtenien las recetas del local storage y se almacenan en una variable
+  const recipesLocalStorage = JSON.parse( localStorage.getItem("recipes"))
 
       return (
         <section className="Principal-container">
@@ -15,7 +22,7 @@ const CarruselHome = () => {
           <section className="carousel">
             <div className="carousel__container">
               {
-                recipeList.map((item) => (
+                recipesLocalStorage.map((item) => (
                   <CarruselItems data={item} key={item.id} {...item}/>
                 ))
               }
@@ -36,5 +43,4 @@ const CarruselHome = () => {
       );
 }
 
-   
 export default CarruselHome;

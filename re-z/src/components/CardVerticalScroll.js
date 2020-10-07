@@ -1,10 +1,10 @@
-import React , {useState} from 'react';
-import { useFetchRecipe } from '../hooks/useFetchRecipe';
+import React from 'react';
+// import { useFetchRecipe } from '../hooks/useFetchRecipe';
 
 import './styles/CardVerticalScroll.css';
 import RecipeCardHorizontalDerecha from './RecipeCardHorizontalDerecha';
 import RecipeCardHorizontalIzquierda from './RecipeCardHorizontalIzquierda';
-import data from '../../recipe.json';
+// import data from '../../recipe.json';
 
 function CardVerticalScroll() {
   
@@ -14,53 +14,54 @@ function CardVerticalScroll() {
   // setRecipeList(data.recipes)
   
   // ----- CUSTOM HOOK PERO USANDO EL JSON ------
-  const [recipeList] = useFetchRecipe(data.recipes)
+  // const [recipeList] = useFetchRecipe(data.recipes)
 
   // ----- USANDO CUSTOM HOOK Y LA API ----------
   // const [recipeList] = useFetchRecipe('https://apidjango.azurewebsites.net/api/Recipe-list/')
 
-  console.log(recipeList)
+  // se obtenien las recetas del local storage y se almacenan en una variable
+  const recipesLocalStorage = JSON.parse( localStorage.getItem("recipes"))
 
     return (
     <div className='scrollcontainer' >
       <ul className='scrollcontainer__list'>
         {
-          recipeList.slice(0, 1).map((item) => (
+          recipesLocalStorage.slice(0, 1).map((item) => (
             <React.Fragment key={item.id}>
               <RecipeCardHorizontalDerecha data={item} />
             </React.Fragment>
           ))
         }
         {
-          recipeList.slice(1, 2).map((item) => (
+          recipesLocalStorage.slice(1, 2).map((item) => (
             <React.Fragment key={item.id}>
               <RecipeCardHorizontalIzquierda data={item} {...item}/>
             </React.Fragment>
           ))
         }
         {
-          recipeList.slice(2, 3).map((item) => (
+          recipesLocalStorage.slice(2, 3).map((item) => (
             <React.Fragment key={item.id}>
               <RecipeCardHorizontalDerecha data={item} />
             </React.Fragment>
           ))
         }
         {
-          recipeList.slice(3, 4).map((item) => (
+          recipesLocalStorage.slice(3, 4).map((item) => (
             <React.Fragment key={item.id}>
               <RecipeCardHorizontalIzquierda data={item}  {...item}/>
             </React.Fragment>
           ))
         }
         {
-          recipeList.slice(5, 6).map((item) => (
+          recipesLocalStorage.slice(7, 8).map((item) => (
             <React.Fragment key={item.id}>
               <RecipeCardHorizontalDerecha data={item} />
             </React.Fragment>
           ))
         }
         {
-          recipeList.slice(6, 7).map((item) => (
+          recipesLocalStorage.slice(6, 7).map((item) => (
             <React.Fragment key={item.id}>
               <RecipeCardHorizontalIzquierda data={item}  {...item}/>
             </React.Fragment>
