@@ -24,4 +24,4 @@ function PageRecipe (){
       )
   }
 
-export default PageRecipe; 
+export default PageRecipe;

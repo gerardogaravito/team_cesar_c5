@@ -3,8 +3,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import { Provider } from 'react-redux';
-import { createStore } from 'redux';
-import reducers from './reducer';
+import { createStore, compose } from 'redux';
+import reducer from './reducer';
 import data from '../recipe.json';
 
 import './global.css';
@@ -12,9 +12,10 @@ import App from './components/App';
 
 //Esto corresponde a webpack y esta en este archicvo probicionalmente.
 const initialState = {
-    "user": {},
-    "favoritos": {},
-        "recipes": [
+    user: {},
+    cart:[],
+    favoritos: {},
+    recipes: [
             {
                 "id": 1,
                 "name": "Turkey Bacon Guacamole Cucumber Sub",
@@ -616,12 +617,14 @@ const initialState = {
             }
         ]
     };
-    
-    const store = createStore(
-        reducers, 
-        initialState
-        );
 
+const composeEnhancer = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+
+const store = createStore(
+    reducer,
+    initialState,
+    composeEnhancer()
+);
 
 const container = document.getElementById('app');
 
@@ -629,5 +632,5 @@ const container = document.getElementById('app');
  ReactDOM.render(
     <Provider store={ store }>
         <App />
-    </Provider> 
+    </Provider>
     ,container)
