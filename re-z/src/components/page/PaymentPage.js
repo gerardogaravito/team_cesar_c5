@@ -31,6 +31,11 @@ const PaymentPage = (props) => {
   // se obtenien las recetas del local storage y se almacenan en una variable
   const recipesLocalStorage = JSON.parse( localStorage.getItem("recipes"))
   const recipe = recipesLocalStorage.find(item => item.id === parseInt(myId));
+
+  // se obtenien los ingredientes del local storage y se almacenan en una variable
+  const ingredientsLocalStorage = JSON.parse( localStorage.getItem("ingredients"))
+
+
   const Totalprice = ingredientes.reduce((accumulator,current) => {
     return accumulator += current.price
   },0

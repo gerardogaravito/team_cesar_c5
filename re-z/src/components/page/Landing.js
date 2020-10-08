@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import ReactPlayer from 'react-player'
 import { useFetchRecipe } from '../../hooks/useFetchRecipe';
+import { useFetchIngredients } from '../../hooks/useFetchIngredients';
 
 import '../styles/Landing.css';
 import NavBarLanding from '../NavBarLanding'
@@ -16,15 +17,26 @@ function Landing (){
     window.scroll(0, 0)//esta linea sirve para que cuando se renderice la pagina envíe al usuario hasta arriba de la pagina
   }, []);
   
+
   //FETCH DE LAS RECETAS (usando llamadas a la API)
   const [recipeList] = useFetchRecipe('https://apidjango.azurewebsites.net/api/Recipe-list/')
+
+  //FETCH DE LOS INGREDIENTES (usando llamadas a la API)
+  const [ingredientsList] = useFetchIngredients('https://apidjango.azurewebsites.net/api/ingredients-list/')
   
-  // LOCAL STORAGE
+
+  // __________________LOCAL STORAGE_____________________
   // se guarda la llamada de las recetas en el local storage para usarse en toda la app
   localStorage.setItem( "recipes", JSON.stringify( recipeList ))
 
+  // se guarda la llamada de los ingredientes en el local storage para usarse en la app
+  localStorage.setItem ( "ingredients", JSON.stringify ( ingredientsList ))
+
   // se obtenien las recetas del local storage y se almacenan en una variable
   const recipesLocalStorage = JSON.parse( localStorage.getItem("recipes"))
+  
+  // se obtenien los ingredientes del local storage y se almacenan en una variable
+  const ingredientsLocalStorage = JSON.parse( localStorage.getItem("ingredients"))
 
   return (
       <div className="landing">

@@ -1,8 +1,8 @@
 .buttonCategory {
   background-color: #ffbc42;
-  margin: 300px 15%;
+  margin: 300px 0px;
   padding: 30px 30px;
-  border-radius: 25px;
+  /* border-radius: 25px; */
   overflow: auto;
 }
 
