@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import { useFetchRecipe } from '../../hooks/useFetchRecipe';
 import { useSelector } from 'react-redux'
 
 import Button from '../Button';
@@ -9,7 +8,7 @@ import ShoppingCar from '../ShoppingCar';
 import RecipeIngredient from '../Ingredient/RecipeIngredient'
 import '../styles/PaymentPage.css';
 
-import data from '../../../recipe.json';
+
 
 const PaymentPage = (props) => {
   const ingredientes = useSelector(state => state.cart)
@@ -29,8 +28,9 @@ const PaymentPage = (props) => {
 
   //-----PARA MOSTRAR INGREDIENTES----- (metodo sin usar redux)
   const {myId} = useParams();
-  const [recipeList] = useFetchRecipe(data.recipes);
-  const recipe = recipeList.find(item => item.id === parseInt(myId));
+  // se obtenien las recetas del local storage y se almacenan en una variable
+  const recipesLocalStorage = JSON.parse( localStorage.getItem("recipes"))
+  const recipe = recipesLocalStorage.find(item => item.id === parseInt(myId));
   const Totalprice = ingredientes.reduce((accumulator,current) => {
     return accumulator += current.price
   },0

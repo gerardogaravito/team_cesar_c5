@@ -19,6 +19,7 @@ function Landing (){
   //FETCH DE LAS RECETAS (usando llamadas a la API)
   const [recipeList] = useFetchRecipe('https://apidjango.azurewebsites.net/api/Recipe-list/')
   
+  // LOCAL STORAGE
   // se guarda la llamada de las recetas en el local storage para usarse en toda la app
   localStorage.setItem( "recipes", JSON.stringify( recipeList ))
 

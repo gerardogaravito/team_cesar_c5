@@ -27,6 +27,10 @@ const ButtonCategory = () => {
     return item.category === "Meat"
   }))
 
+  const pastaIndex = recipesLocalStorage.indexOf(recipesLocalStorage.find( (item) => {
+    return item.category === "pasta"
+  }))
+
 
   return (
     <section className="buttonCategory">
@@ -40,6 +44,9 @@ const ButtonCategory = () => {
         </Link>
         <Link to={`/home/category/${recipesLocalStorage[meatIndex].category}`}>
           <CategoryCard {...recipesLocalStorage[meatIndex]}/>
+        </Link>
+        <Link to={`/home/category/${recipesLocalStorage[pastaIndex].category}`}>
+          <CategoryCard {...recipesLocalStorage[pastaIndex]}/>
         </Link>
       </div>
     </section>

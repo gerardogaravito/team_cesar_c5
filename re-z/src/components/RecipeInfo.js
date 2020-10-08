@@ -42,7 +42,7 @@ function RecipeInfo (props){
                     </div>
                 </div>
                 <div className="Recipe__Information-image">
-                    <img src={props.data.picture} alt="food"/>
+                    <img src={props.data.img_url} alt="food"/>
                 </div>
                 <div className="Recipe__Information-button">
                     <Link to={`/home/PaymentPage/${props.data.id}`}>
