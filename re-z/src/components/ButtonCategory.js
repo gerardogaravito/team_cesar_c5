@@ -1,47 +1,52 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { useFetchRecipe } from '../hooks/useFetchRecipe';
+// import { useFetchRecipe } from '../hooks/useFetchRecipe';
 
 import './styles/ButtonCategory.css';
 
-import Button from './Button'
-import CategoryCard from './CategoryCard'
-import data from '../../recipe.json'
+import CategoryCard from './CategoryCard';
+
 
 const ButtonCategory = () => {
 
-  const [recipeList] = useFetchRecipe(data.recipes)
-  // const [recipeList, setRecipeList] = useState(data.recipes) LAS LINEAS COMENTADAS SON PARA CUANDO TENGAMOS LA URL DE LA API
+  //FETCH DE LAS RECETAS (usando llamadas a la API)
+  // const [recipeList] = useFetchRecipe('https://apidjango.azurewebsites.net/api/Recipe-list/');
 
-  // setRecipeList(data.recipes)
+   // se obtenien las recetas del local storage y se almacenan en una variable
+  const recipesLocalStorage = JSON.parse( localStorage.getItem("recipes"))
 
-
-  const baconIndex = recipeList.indexOf(recipeList.find( (item) => {
-    return item.category === "Bacon"
+  const chickenIndex = recipesLocalStorage.indexOf(recipesLocalStorage.find( (item) => {
+    return item.category === "chicken"
   }))
 
-  const appleIndex = recipeList.indexOf(recipeList.find( (item) => {
-    return item.category === "Apple"
+  const vegetarianIndex = recipesLocalStorage.indexOf(recipesLocalStorage.find( (item) => {
+    return item.category === "vegetarian"
   }))
 
-  const avocadoIndex = recipeList.indexOf(recipeList.find( (item) => {
-    return item.category === "Avocado"
+  const meatIndex = recipesLocalStorage.indexOf(recipesLocalStorage.find( (item) => {
+    return item.category === "Meat"
   }))
 
-  console.log(recipeList[baconIndex].category)
+  const pastaIndex = recipesLocalStorage.indexOf(recipesLocalStorage.find( (item) => {
+    return item.category === "pasta"
+  }))
+
 
   return (
     <section className="buttonCategory">
       <h3 className="buttonCategory__title">Categorías</h3>
       <div className="buttonCategory__buttons">
-        <Link to={`/home/category/${recipeList[baconIndex].category}`}>
-          <CategoryCard {...recipeList[baconIndex]}/>
+        <Link to={`/home/category/${recipesLocalStorage[chickenIndex].category}`}>
+          <CategoryCard {...recipesLocalStorage[chickenIndex]}/>
         </Link>
-        <Link to={`/home/category/${recipeList[appleIndex].category}`}>
-          <CategoryCard {...recipeList[appleIndex]}/>
+        <Link to={`/home/category/${recipesLocalStorage[vegetarianIndex].category}`}>
+          <CategoryCard {...recipesLocalStorage[vegetarianIndex]}/>
         </Link>
-        <Link to={`/home/category/${recipeList[avocadoIndex].category}`}>
-          <CategoryCard {...recipeList[avocadoIndex]}/>
+        <Link to={`/home/category/${recipesLocalStorage[meatIndex].category}`}>
+          <CategoryCard {...recipesLocalStorage[meatIndex]}/>
+        </Link>
+        <Link to={`/home/category/${recipesLocalStorage[pastaIndex].category}`}>
+          <CategoryCard {...recipesLocalStorage[pastaIndex]}/>
         </Link>
       </div>
     </section>

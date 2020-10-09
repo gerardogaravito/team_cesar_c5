@@ -7,7 +7,7 @@ const ShoppingCar= ({RecipeName,Amount,UserName,Address})=>{
       <h1 className='PaymentPageCard__title'>Carrito de Compras</h1>
       <div className="PaymentPageCard__DetailAmount">
         <h3 className='PaymentPageCard__DetailAmount--RecipeName'>{RecipeName}</h3>
-        <h1 className='PaymentPageCard__DetailAmount--Amount'>{Amount}</h1>
+        <h1 className='PaymentPageCard__DetailAmount--Amount'>Total: {Amount}</h1>
       </div>
       <h5 className='PaymentPageCard__Username'>{UserName}</h5>
       <h5 className='PaymentPageCard__Address'>{Address}</h5>

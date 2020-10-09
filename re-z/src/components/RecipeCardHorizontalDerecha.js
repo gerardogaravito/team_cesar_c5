@@ -18,7 +18,7 @@ const RecipeCardHorizontalDerecha =(props) => {
           <CookTimeBlack />
           <div className='cardright__time--text'>{props.data.preparationTime} min</div>
         </div>
-          <img className='cardright__image' src={props.data.picture} alt="foto de comida"/>
+          <img className='cardright__image' src={props.data.img_url} alt="foto de comida"/>
       </button>
     </Link>
   )

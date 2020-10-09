@@ -38,32 +38,39 @@
     font-size: 15px;
     font-weight: bold;
 }
-    .Recipe-info-Time{
-        grid-row: 1 / 2;
-    }
-    .Time-icon{
-        position: relative;
-        margin: 10px 0px 20px 0px;
-        display: flex;
-      }
-      .Time-icon p{
-        color: #ffbc42;
-      }
-    .Recipe-info-complexity{
-        grid-row: 2 / 3;
-    }
-    .Recipe-info-Portion{
-        grid-row: 3 / 4;
-    }
-    .Recipe-info-ingredient{
-        grid-row: 4 / 5;
-    }
-    .Recipe-info-ingredient ul li{
-        color: #ffbc42;
-        font-size: 15px;
-        list-style: none;
-        padding-top: 10px;
-    }
+.Recipe-info-Time{
+    grid-row: 1 / 2;
+}
+.Time-icon{
+    position: relative;
+    margin: 10px 0px 20px 0px;
+    display: flex;
+}
+.Time-icon p{
+    color: #ffbc42;
+}
+.Recipe-info-complexity{
+    grid-row: 2 / 3;
+}
+.Recipe-info-Portion{
+    grid-row: 3 / 4;
+}
+.Recipe-info-ingredient{
+    grid-row: 4 / 5;
+    grid-column: 1 / 3;
+    color: #ffbc42;
+    font-size: 14px;
+    overflow: auto;
+}
+.recipe-info-texto{
+    font-size: 30px;
+}
+.Recipe-info-ingredient ul li{
+    color: #ffbc42;
+    font-size: 15px;
+    list-style: none;
+    padding-top: 10px;
+}
 .Recipe__Information-image{
     grid-column: 2 / -1;
     grid-row: 2 / 3;

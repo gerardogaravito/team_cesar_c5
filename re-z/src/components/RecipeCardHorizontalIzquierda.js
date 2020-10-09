@@ -6,7 +6,7 @@ import CookTimeBlack from '../Animation/CookTimeBlack';
 
 
 const RecipeCardHorizontalIzquierda = (props) => {
-  const { id, picture, name, preparationTime, instructions } = props;
+  const { id, name, preparationTime, instructions, img_url } = props;
 
   return (
     <Link to={`/home/page-recipe/${id}`}>
@@ -19,7 +19,7 @@ const RecipeCardHorizontalIzquierda = (props) => {
         <CookTimeBlack />
         <div className='cardleft__time--text'>{preparationTime} min</div>
       </div>
-      <img src={picture} alt="foto de comida" className="cardleft__image"/>
+      <img src={img_url} alt="foto de comida" className="cardleft__image"/>
     </button>
     </Link>
   )

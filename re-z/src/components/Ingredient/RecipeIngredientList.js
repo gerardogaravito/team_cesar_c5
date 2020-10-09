@@ -15,11 +15,10 @@ const RecipeIngredientsList = () => {
         <div className="Recipe-ingredients">
 			<div className="Recipe-ingredients__container-list">
 				{recipeList.ingredients?.map((item) => {
-                    
+
 					return (
 						<RecipeIngredient
-							
-                            {...item}
+							{...item}
 						/>
 					);
 				})}

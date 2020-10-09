@@ -1,10 +1,8 @@
 import React from 'react'
 import { useEffect } from 'react'
 import { useParams } from 'react-router-dom';
-import { useFetchRecipe } from '../../hooks/useFetchRecipe';
 
 import Navbar from '../Navbar'
-import data from '../../../recipe.json'
 import RecipeCardHorizontalSimple from '../RecipeCardHorizontalSimple';
 
 import '../styles/Category.css'
@@ -12,9 +10,11 @@ import '../styles/Category.css'
 
 const Category = () => {
 
+  
   const {myCategory} = useParams();
-  const [recipeList] = useFetchRecipe(data.recipes);
-  const recipe = recipeList.filter(item => item.category === `${myCategory}`);
+  // se obtenien las recetas del local storage y se almacenan en una variable
+  const recipesLocalStorage = JSON.parse( localStorage.getItem("recipes"))
+  const recipe = recipesLocalStorage.filter(item => item.category === `${myCategory}`);
   
   useEffect(() => { //esta linea sirve para que cuando se renderice la pagina envíe al usuario hasta arriba de la pagina
     window.scrollTo(0, 0)

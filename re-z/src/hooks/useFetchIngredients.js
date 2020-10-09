@@ -1,27 +1,27 @@
 import { useState, useEffect } from 'react';
 
 
-export function useFetchRecipe (url) {
+export function useFetchIngredients (url) {
 
   // ------ PARA USAR EL CUSTOM HOOK CONSUMIENDO INFO DEL JSON
   // const [recipe, setRecipe] = useState(url);
 
   // ------- PARA USAR EL CUSTOM HOOK Y CONSUMIR DE LA API
-  const [recipe, setRecipe] = useState([]);
+  const [ingredients, setIngredients] = useState([]);
 
 
-  async function fetchRecipe (url) {
+  async function fetchIngredients (url) {
     const response = await fetch(url);
     const data = await response.json();
-    setRecipe(data)
+    setIngredients(data)
   }
 
   useEffect (() => {
-    fetchRecipe(url);
+    fetchIngredients(url);
   }, [])
 
 
   // -----ESTA LINEA NUNCA SE DEBE DE COMENTAR -----
-  return [recipe]
+  return [ingredients]
 }
 
