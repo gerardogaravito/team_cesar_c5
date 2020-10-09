@@ -11,7 +11,7 @@ import '../styles/PaymentPage.css';
 
 
 const PaymentPage = (props) => {
-  const ingredientes = useSelector(state => state.cart)
+  // const ingredientes = useSelector(state => state.cart)
 
   const GoToPlay = <section className='PaymentPage__GoToPay'>
     <Button text="Comprar" />
@@ -36,7 +36,13 @@ const PaymentPage = (props) => {
   const ingredientsLocalStorage = JSON.parse( localStorage.getItem("ingredients"))
 
 
-  const Totalprice = ingredientes.reduce((accumulator,current) => {
+  const ingredients = ingredientsLocalStorage.filter( (item) => {
+    return item.Recipe === parseInt(myId)
+  })
+
+
+
+  const Totalprice = ingredients.reduce((accumulator,current) => {
     return accumulator += current.price
   },0
   )
@@ -44,11 +50,11 @@ const PaymentPage = (props) => {
       <>
         <Navbar />
         <div className='PaymentPage'>
-          <ShoppingCar RecipeName={recipe.name} Amount= {`US $ ${Totalprice}`} UserName={"Homero J. Simpson"} Address ={Addresexample}/>
+          <ShoppingCar RecipeName={recipe.name} Amount= {`$${Totalprice} dlls`} UserName={"Homero J. Simpson"} Address ={Addresexample}/>
           <div className="PaymentPage__ingredients">
             Ingredientes
             {
-              ingredientes.map((item) => (
+              ingredients.map((item) => (
                   <RecipeIngredient key={item.id} data={item} />
               ))
             }

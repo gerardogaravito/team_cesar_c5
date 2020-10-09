@@ -1,10 +1,11 @@
 .RecipeIngredientItem {
-  background-color: #d81159;
-  width: 40%;
+  background-color: #ffbc42;
+  color: #8f2d56;
+  width: 95%;
   border-radius: 25px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 20% 50% 30%;
+  text-align: justify;
   height: 100px;
   margin: 10px;
 }
@@ -12,24 +13,36 @@
 .RecipeIngredientItem__label {
   display: flex;
   align-items: center;
+  grid-column: 1 / 2;
 }
 
 .RecipeIngredientItem__cant {
   margin: 0px 0px 0px 30px;
-  font-size: 30px;
+  font-size: 20px;
 }
 
 .RecipeIngredientItem__cant--name {
-  font-size: 30px;
+  font-size: 20px;
+  margin-left: 10px;
 }
 
 .RecipeIngredientItem__name {
   margin: 0px 50px;
-  font-size: 30px;
+  font-size: 20px;
+  grid-column: 2 / 3;
+  display: flex;
+  align-self: center;
 }
 
 .RecipeIngredientItem__price {
-  font-size: 30px;
-  color: #72d2de;
+  font-size: 20px;
+  padding: 10px 30px;
+  border-radius: 5px;
+  color: #ffbc42;
+  background-color: #218380;
   margin: 0px 50px;
+  grid-column: 3 / 4;
+  display: flex;
+  align-self: center;
+  justify-self: flex-end;
 }
